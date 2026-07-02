@@ -1,0 +1,52 @@
+{
+  "verification_date": "2026-07-02",
+  "china_webgame_market": {
+    "2019_revenue_billion_cny": 98.7,
+    "2020_revenue_billion_cny": 76.08,
+    "2021_revenue_billion_cny": 60.30,
+    "2022_revenue_billion_cny": 52.80,
+    "2023_revenue_billion_cny": 47.5,
+    "2024_revenue_billion_cny": 46.38,
+    "2025_revenue_billion_cny": 43.25,
+    "absolute_change_2019_2025_billion_cny": -55.45,
+    "absolute_change_2019_2025_pct": -56.18034447821783,
+    "cagr_2019_2025_pct": -12.416706991314708
+  },
+  "china_minigame_market": {
+    "2023_revenue_billion_cny": 200.0,
+    "2024_revenue_billion_cny": 398.36,
+    "2025_revenue_billion_cny": 535.35,
+    "absolute_change_2023_2025_billion_cny": 335.35,
+    "absolute_change_2023_2025_pct": 167.675,
+    "cagr_2023_2025_pct": 63.62367625088298
+  },
+  "half_year_trend": {
+    "2024_h1_webgame_billion_cny": 23.4,
+    "2025_h1_webgame_billion_cny": 22.03,
+    "webgame_h1_yoy_pct_2025": -5.87,
+    "2024_h1_minigame_billion_cny": 166.03,
+    "2025_h1_minigame_billion_cny": 232.76,
+    "minigame_h1_yoy_pct_2025": 40.2
+  },
+  "37_interactive": {
+    "2023_total_revenue_billion_cny": 16.54687173785,
+    "2023_webgame_revenue_billion_cny": 0.49716502629,
+    "2023_mobile_revenue_billion_cny": 15.89847509113,
+    "2023_traffic_cost_billion_cny": 8.46601288013,
+    "2024_total_revenue_billion_cny": 17.44095749558,
+    "2024_net_profit_billion_cny": 2.6730213273,
+    "2024_webgame_revenue_billion_cny": 0.41047482976,
+    "2024_mobile_revenue_billion_cny": 16.88213749698,
+    "2024_traffic_cost_billion_cny": 9.15126922328,
+    "webgame_revenue_yoy_pct_2024": -17.436730636571237,
+    "traffic_cost_yoy_pct_2024": 8.093088708681512,
+    "webgame_share_of_total_2023_pct": 3.0045953771617482,
+    "webgame_share_of_total_2024_pct": 2.3535011860944603
+  },
+  "forecast": {
+    "assumption": "If traditional Chinese web game revenue continues shrinking near the 2019-2025 CAGR and no structural distribution reversal occurs, 2028-2030 market size remains materially below 2025.",
+    "2028_base_case_billion_cny": 29.34,
+    "2030_base_case_billion_cny": 22.54,
+    "method": "Using 2019-2025 CAGR of -12.4167% as a base case extrapolation from 2025 revenue of 43.25 billion CNY."
+  }
+}
