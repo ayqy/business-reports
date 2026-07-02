@@ -1,0 +1,151 @@
+{
+  "verified_at": "2026-07-02",
+  "base_year": 2024,
+  "source_numbers": {
+    "industry_2024": {
+      "upstream_core_components_and_base_tech_billion_rmb": 903.6,
+      "upstream_yoy": 0.183,
+      "midstream_products_and_solutions_billion_rmb": 3519.9,
+      "midstream_yoy": 0.052,
+      "downstream_system_integration_and_engineering_billion_rmb": 4048.6,
+      "downstream_engineering_yoy": -0.0024,
+      "downstream_ops_and_maintenance_billion_rmb": 1007.9,
+      "downstream_ops_yoy": 0.1714,
+      "total_billion_rmb": 9480.0
+    },
+    "fiscal": {
+      "public_safety_expenditure_2024_billion_rmb": 14792.78,
+      "public_safety_expenditure_2024_vs_2023_ratio": 0.995,
+      "local_general_public_budget_expenditure_2025_billion_rmb": 244361.0,
+      "local_general_public_budget_expenditure_2025_yoy": 0.002
+    },
+    "hikvision": {
+      "revenue_2021_billion_rmb": 814.2,
+      "revenue_2024_billion_rmb": 924.96,
+      "net_profit_2021_billion_rmb": 168.0,
+      "net_profit_2024_billion_rmb": 119.77,
+      "pbg_2021_billion_rmb": 191.61,
+      "pbg_2024_billion_rmb": 134.67,
+      "ebg_2021_billion_rmb": 166.29,
+      "ebg_2024_billion_rmb": 176.51,
+      "smbg_2021_billion_rmb": 134.9,
+      "smbg_2024_billion_rmb": 119.71,
+      "overseas_main_business_2021_billion_rmb": 189.26,
+      "overseas_main_business_2024_billion_rmb": 259.89,
+      "innovative_business_2021_billion_rmb": 122.71,
+      "innovative_business_2024_billion_rmb": 224.84
+    },
+    "dahua": {
+      "revenue_2024_billion_rmb": 321.81,
+      "net_profit_2024_billion_rmb": 29.06,
+      "operating_cash_flow_2024_billion_rmb": 27.1,
+      "revenue_2025_billion_rmb": 327.44,
+      "net_profit_2025_billion_rmb": 38.58,
+      "operating_cash_flow_2025_billion_rmb": 39.08
+    },
+    "ai_players": {
+      "cloudwalk_revenue_2025_billion_rmb": 5.005985,
+      "cloudwalk_net_profit_2025_billion_rmb": -5.556098,
+      "cloudwalk_non_gaap_net_profit_2025_billion_rmb": -6.54382,
+      "cloudwalk_operating_cash_flow_2025_billion_rmb": -0.807,
+      "ytlf_revenue_2025_billion_rmb": 13.392841,
+      "ytlf_net_profit_2025_billion_rmb": -4.221943,
+      "ytlf_non_gaap_net_profit_2025_billion_rmb": -5.502797,
+      "pcitech_revenue_2025_billion_rmb": 101.28,
+      "pcitech_net_profit_2025_billion_rmb": 1.738599268,
+      "pcitech_non_gaap_net_profit_2025_billion_rmb": 0.28,
+      "pcitech_operating_cash_flow_2025_billion_rmb": -5.1205936007
+    },
+    "sentiment": {
+      "q1_2024_industry_sentiment_index": 149,
+      "q1_2024_production_construction_index": 138,
+      "q3_2024_industry_sentiment_index": 143,
+      "q3_2024_production_construction_index": 125,
+      "q3_2024_labor_demand_index": 104,
+      "q3_2024_sales_index": 125
+    }
+  },
+  "derived_metrics": {
+    "industry_2023_back_solved": {
+      "upstream_billion_rmb": 763.82,
+      "midstream_billion_rmb": 3345.91,
+      "downstream_engineering_billion_rmb": 4058.34,
+      "downstream_ops_billion_rmb": 860.42,
+      "total_billion_rmb": 9028.5
+    },
+    "industry_total_2024_yoy": 0.05,
+    "hikvision": {
+      "domestic_three_groups_2021_billion_rmb": 492.8,
+      "domestic_three_groups_2024_billion_rmb": 430.89,
+      "overseas_plus_innovative_2021_billion_rmb": 311.97,
+      "overseas_plus_innovative_2024_billion_rmb": 484.73,
+      "pbg_cagr_2021_2024": -0.110899,
+      "domestic_three_groups_cagr_2021_2024": -0.043764,
+      "overseas_plus_innovative_cagr_2021_2024": 0.158232,
+      "total_revenue_cagr_2021_2024": 0.043432
+    },
+    "ai_players": {
+      "cloudwalk_net_margin_2025": -1.1099,
+      "ytlf_net_margin_2025": -0.3152,
+      "pcitech_net_margin_2025": 0.0172
+    },
+    "fiscal": {
+      "public_safety_expenditure_2024_yoy": -0.005
+    }
+  },
+  "scenarios": {
+    "industry_total_billion_rmb": {
+      "2029": {
+        "cagr_2pct": 10466.69,
+        "cagr_3pct": 10989.92,
+        "cagr_4pct": 11533.87
+      },
+      "2030": {
+        "cagr_2pct": 10676.02,
+        "cagr_3pct": 11319.62,
+        "cagr_4pct": 11995.22
+      }
+    },
+    "ops_and_maintenance_billion_rmb": {
+      "2029": {
+        "cagr_8pct": 1480.94,
+        "cagr_10pct": 1623.23,
+        "cagr_12pct": 1776.26
+      },
+      "2030": {
+        "cagr_8pct": 1599.41,
+        "cagr_10pct": 1785.56,
+        "cagr_12pct": 1989.42
+      }
+    },
+    "direct_data_sales_risk_index_2024_equals_100": {
+      "2029": {
+        "annual_decline_15pct": 44.37,
+        "annual_decline_20pct": 32.77
+      },
+      "2030": {
+        "annual_decline_15pct": 37.71,
+        "annual_decline_20pct": 26.21
+      }
+    }
+  },
+  "assumptions": {
+    "industry_total_scenarios": [
+      "以 2024 年 9480 亿元为基数。",
+      "2025-2030 年行业总盘不会重回高双位数增长，因为预算约束和工程侧停滞将抵消部分 AI 升级增量。",
+      "因此采用 2%-4% CAGR 作为较稳健区间。"
+    ],
+    "ops_scenarios": [
+      "以 2024 年 1007.9 亿元为基数。",
+      "2024 年运维同比 17.14%，但考虑高增长会回归常态，故采用 8%-12% CAGR。"
+    ],
+    "direct_data_sales_scenarios": [
+      "以 2024 年作为风险暴露基期，指数设为 100。",
+      "从 2025 年开始，如果直接卖社会面视频结构化数据持续受政策、预算与客户风险偏好压制，则按每年 15%-20% 收缩。"
+    ],
+    "interpretation_notes": [
+      "这些情景不是行业官方预测，而是基于公开数据结构、预算环境和可比公司经营结果的推演。",
+      "推演目的不是精确到单一年份，而是判断方向和相对强弱。"
+    ]
+  }
+}
