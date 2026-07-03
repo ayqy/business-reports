@@ -1,0 +1,176 @@
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  四部门关于发布《中小企业数字化赋能专项行动方案（2025—2027年）》的通知_国务院部门文件_中国政府网
+
+
+
+
+
+
+
+
+
+
+
+
+
+var INFO_FLAG={
+	channelinfo:"国务院部门文件479953709"
+}
+
+
+
+    body {
+        color: #333;
+        font-family: "宋体";
+    }
+
+    @media screen and (max-width:767px) and (orientation:portrait) {
+        .pages_contentm {
+            width: 710px;
+            font-size: 32px;
+        }
+    }
+
+
+
+
+
+
+
+
+  /* 20231023添加无障碍代码 */
+  .header_toolbar li {
+    font-size: 16px;
+  }
+
+  .header_toolbar li.split {
+    margin: 0 9px;
+  }
+
+
+  
+    
+      
+      
+        
+          
+          
+          
+        
+      
+      
+        首页
+        |
+        简
+        |
+        繁
+        |
+        EN
+        |
+        登录
+        
+          
+          
+            个人中心
+            退出
+          
+        
+        |
+        邮箱
+        |
+        无障碍
+
+      
+    
+  
+  
+    
+    EN
+    
+      
+      
+    
+
+    
+      
+        
+          
+          
+        
+        
+          function goSearch(event) {
+            var e = window.event || event;
+            if(e.preventDefault){
+              e.preventDefault();
+            }else{
+              e.returnValue=false;
+            }
+            var s = '', m = document.querySelector('.header .pchide [name=headSearchword]');
+            s = m.offsetHeight > 0 ? m.value : document.querySelector('.header .mhide [name=headSearchword]').value;
+            // 市场主体 dataTypeId=14
+            if (s == '市场主体') {
+              url = '//sousuo.www.gov.cn/sousuo/search.shtml?code=17da70961a7&dataTypeId=14&searchWord=' + s;
+            } else {
+              url = '//sousuo.www.gov.cn/sousuo/search.shtml?code=17da70961a7&dataTypeId=107&searchWord=' + encodeURIComponent(s);
+            }
+            window.open(url, '_blank');
+          }
+          function listenerKeyUpEventFn(){
+            if(event.keyCode==13){
+              goSearch();
+            };
+          }
+        
+      
+    
+  
+
+
+https://www.gov.cn/
+
+
+
+
+
+
+			//繁体和简体相互转换
+			var currUrl = window.location.href;
+			
+			var flag = currUrl.indexOf("big5.www.gov.cn/gate/big5/");
+			
+			var jtzw = 'ht'+'tps://www.gov.cn';
+			
+			//繁体
+			if (flag > 0) { 
+				
+				$('.header_logo a').attr('href',jtzw);
+				
+				$('.header_toolbar li').eq(2).find('a').attr('href', jtzw);
+				
+			}//简体
+			else { 
+				
+				$('.header_toolbar li').eq(2).find('a').attr('href', jtzw);
+				
+			};
+		
+
+

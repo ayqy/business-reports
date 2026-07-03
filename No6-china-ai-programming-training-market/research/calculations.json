@@ -1,0 +1,66 @@
+{
+  "validated_at": "2026-07-03",
+  "direct_metrics": {
+    "chuanzhi_revenue_2023_cny": 534468011.01,
+    "chuanzhi_revenue_2024_cny": 245663426.75,
+    "chuanzhi_revenue_2025_cny": 379371427.41,
+    "chuanzhi_short_term_training_2024_cny": 210977200.0,
+    "chuanzhi_short_term_training_2025_cny": 205058896.04,
+    "chuanzhi_net_profit_2024_cny": -133923419.2,
+    "chuanzhi_net_profit_2025_cny": -90448463.8,
+    "tarena_profed_revenue_2022_thousand_rmb": 1068230,
+    "tarena_profed_revenue_2023_thousand_rmb": 624586,
+    "tarena_profed_revenue_2024_thousand_rmb": 111878,
+    "china_online_education_users_2025": 327000000,
+    "china_genai_users_2025": 602000000,
+    "china_genai_user_growth_2025_vs_2024_pct": 141.7,
+    "china_ai_talent_gap_people": 5000000,
+    "china_ai_talent_supply_demand_ratio": "1:10",
+    "china_software_revenue_2024_cny": 13727600000000,
+    "china_info_software_gva_2024_cny": 6343800000000,
+    "hunan_ai_industry_target_2027_cny": 120000000000,
+    "hunan_ai_industry_target_2030_cny": 200000000000,
+    "changsha_gdp_2024_yi_cny": 15268.78,
+    "changsha_tertiary_2024_yi_cny": 9326.7,
+    "changsha_higher_ed_schools_2024": 57,
+    "changsha_higher_ed_students_2024": 805800,
+    "yongzhou_gdp_2024_yi_cny": 2692.57,
+    "yongzhou_tertiary_2024_yi_cny": 1334.65,
+    "yongzhou_higher_ed_school_count_min": 4,
+    "hunan_vocational_training_min_registered_capital_cny": 200000,
+    "hunan_vocational_training_min_annual_trainees": 300,
+    "hunan_vocational_training_min_teaching_area_sqm": 300
+  },
+  "derived_metrics": {
+    "chuanzhi_total_revenue_2023_to_2024_pct": -54.0359,
+    "chuanzhi_total_revenue_2024_to_2025_pct": 54.4273,
+    "chuanzhi_short_term_training_2024_to_2025_pct": -2.8052,
+    "tarena_profed_revenue_2022_to_2023_pct": -41.5308,
+    "changsha_to_yongzhou_gdp_ratio": 5.6707,
+    "changsha_to_yongzhou_tertiary_ratio": 6.9881,
+    "changsha_to_yongzhou_higher_ed_school_ratio": 14.25,
+    "changsha_avg_students_per_school_10k": 1.4137,
+    "estimated_yongzhou_higher_ed_students_10k_if_same_avg_as_changsha": 5.6547
+  },
+  "forecast_assumptions": {
+    "b2c_generic_training_cagr_range_pct": [
+      -10,
+      -5
+    ],
+    "b2b_ai_enablement_service_cagr_range_pct": [
+      12,
+      18
+    ],
+    "forecast_horizon_years": 5,
+    "notes": [
+      "B2C 区间依据：传智核心短训 2025 仍同比下降、达内成人专业教育 2022-2023 大幅收缩后剥离，采用较过去两年更保守的未来下滑区间。",
+      "B2B 区间依据：中小企业数字化专项行动、湖南 AI 产业目标、AI 用户与人才缺口数据，判断可服务需求保持中高增速，但训练费只是其中一部分。"
+    ]
+  },
+  "forecast_results_index_2025_equals_100": {
+    "b2c_generic_training_2030_if_minus_5pct_cagr": 77.3781,
+    "b2c_generic_training_2030_if_minus_10pct_cagr": 59.049,
+    "b2b_ai_enablement_2030_if_plus_12pct_cagr": 176.2342,
+    "b2b_ai_enablement_2030_if_plus_18pct_cagr": 228.7758
+  }
+}

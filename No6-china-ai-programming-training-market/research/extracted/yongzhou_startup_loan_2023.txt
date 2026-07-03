@@ -1,0 +1,617 @@
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+永州市：“三主动”发挥创业担保贷款倍增效应_工作动态_蓝山县人力资源和社会保障局
+  
+
+
+
+
+
+  
+  
+
+
+
+
+	
+		
+		
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		  
+			if(typeof jQuery == 'undefined'){
+				document.write("<script src='/lanshan/xhtml/js/jquery.js'><\/script>")
+			}else{
+				
+			}
+		
+		
+	
+	
+		
+				
+                  
+                      
+                      var Dt=new Date();
+                      var Y=Dt.getFullYear();
+                      var M=Dt.getMonth()+1;
+                      var D=Dt.getDate();
+                      var H=Dt.getHours();
+                      var MI=Dt.getMinutes();
+                      var d_W=Dt.getDay();
+                      var MD=M+"-"+D;
+                      var Wek=new Array("0:星期日","1:星期一","2:星期二","3:星期三","4:星期四","5:星期五","6:星期六");
+                      var datecontent=""+Y+"年"+M+"月"+D+"日 "+week(Wek,d_W);
+                      document.write(datecontent);
+                      function week(Wek,W)
+                       {
+                         var A;
+                         for(i=0;i<Wek.length;i++)
+                          {
+                            A=Wek[i].split(':');
+                            if(W==A[0])
+                             {
+                              return A[1];
+                             }
+                          }
+                       }
+                      
+                  
+					
+					
+                      | 适老版
+						
+							
+                          
+						
+						
+						
+						
+                      
+						
+							
+						
+                      
+  
+
+					
+                  
+                  
+                  
+          
+
+
+ function login(){
+	
+	$.ajax({
+		url : "/u/webuser/ajaxLogin",
+		type : "GET",
+		data : {
+			
+
+		},
+		dataType : "json",
+		
+		beforeSend: function(){
+			
+		},
+		success : function(json) {
+			if (!jQuery.isEmptyObject(json)){
+				
+				if (json.status=='0'){
+					$("#dlss").html('<a href="http://zwfw-new.hunan.gov.cn/hnvalidatelogon/personalcenternew/jsp/personalcenter.jsp?areacode=431127999000" target="_blank">'+json.name+'</a>');
+					
+				}else{  
+                  $("#dlss").html('<a href="/u/yhzx/home/lanshan" target="_blank">登录</a><a>|</a><a href="https://auth.zwfw.hunan.gov.cn/oauth2/register/register.html" target="_blank">注册</a>');
+				}
+				
+				
+			}
+			
+		}
+		
+	});
+	
+}
+$(function(){
+  login();
+ });
+
+
+                  
+				
+			
+			
+				
+					
+						
+							网站首页
+						
+						
+							走进蓝山
+						
+						
+							政务公开
+						
+						
+							办事服务
+						
+						
+							政民互动
+						
+                      
+					
+                         	
+                              
+                              	
+						
+					
+				
+			
+			    
+                  function checkForm(){
+                      var temp = searchForm.temp.value;
+                      if(temp==null || temp=="请输入关键字搜索"){
+                          alert("请输入搜索条件");
+                      }
+                      else{
+                          var url="http://searching.hunan.gov.cn:8977/hunan/981211001/news?q="+encodeURIComponent(temp);
+                          window.open(url);
+                      }
+                  }
+
+                  
+
+		
+    /***手机版头部***/
+    $(function(){
+        $('#mainnav').TMStickUp({})
+        $(".icon-xs-mainnav").click(function(){
+            $(".mainnav-xs").slideToggle("fast");
+            $(this).toggleClass("ms");
+            $(".header-xs-search").slideUp("fast");
+        })
+        $(".icon-xs-search").click(function(){
+            $(".header-xs-search").slideToggle("fast");
+            $(".icon-xs-mainnav").removeClass("ms");
+            $(".mainnav-xs").slideUp("fast");
+        })
+        
+    });
+    (function($,undefined){
+        var 
+            def={
+                stuckClass:'isStuck'            
+            }
+            ,doc=$(document),anim = false;
+
+        $.fn.TMStickUp=function(opt){
+            opt=$.extend(true,{},def,opt)
+
+            $(this).each(function(){
+                var $this=$(this)
+                    ,posY//=$this.offset().top+$this.outerHeight()
+                    ,isStuck=false
+                    ,clone=$this.clone().appendTo($this.parent()).addClass(opt.stuckClass)
+                    ,height//=$this.outerHeight()
+                    ,stuckedHeight=clone.outerHeight()
+                    ,opened//=$.cookie&&$.cookie('panel1')==='opened'
+                    ,tmr
+
+                $(window).resize(function(){
+                    clearTimeout(tmr)               
+                    clone.css({top:isStuck?0:-stuckedHeight,visibility:isStuck?'visible':'hidden'})
+                    tmr=setTimeout(function(){
+                        posY=$this.offset().top//+$this.outerHeight()               
+                        height=$this.outerHeight()
+                        stuckedHeight=clone.outerHeight()
+                        opened=$.cookie&&$.cookie('panel1')==='opened'
+
+                        clone.css({top:isStuck?0:-stuckedHeight})
+                    },40)
+                }).resize()
+
+                clone.css({
+                    position:'fixed'                
+                    ,width:'100%'
+                })
+
+                $this
+                    .on('rePosition',function(e,d){
+                        if(isStuck)
+                            clone.animate({marginTop:d},{easing:'linear'})
+                        if(d===0)
+                            opened=false
+                        else
+                            opened=true
+                    })
+                
+                doc
+                    .on('scroll',function(){
+                        var scrollTop=doc.scrollTop()
+
+                        if(scrollTop>=posY&&!isStuck){                      
+                            clone
+                                .stop()
+                                .css({visibility:'visible'})
+                                .animate({
+                                    top:0
+                                    ,marginTop:opened?50:0
+                                },{
+
+                                })
+                                
+                            isStuck=true
+                        }
+                        
+                        if(scrollTop<posY+height&&isStuck){
+                            clone
+                                .stop()
+                                .animate({
+                                    top:-stuckedHeight
+                                    ,marginTop:0
+                                },{
+                                    duration:200
+                                    ,complete:function(){
+                                        clone.css({visibility:'hidden'})
+                                    }
+                                });
+                            
+                            isStuck=false;
+
+                        }           
+                    })              
+                    .trigger('scroll')
+            })
+        }
+    })(jQuery)
+
+ 
+    
+        
+            
+            
+                
+                    
+                
+            
+            
+           适老版
+        
+        
+            
+                	
+							网站首页
+						
+						
+							走进蓝山
+						
+						
+							信息公开
+						
+						
+							办事服务
+						
+						
+							政民互动
+						
+				
+                      
+            
+        
+        
+               
+              
+            	
+               搜索
+               
+                 
+           
+                  function checkForm2(){
+                      var temp = searchForm2.temp2.value;
+                      if(temp==null || temp=="请输入关键字搜索"){
+                          alert("请输入搜索条件");
+                      }
+                      else{
+                          var url="http://searching.hunan.gov.cn:8977/hunan/981211001/news?q="+encodeURIComponent(temp);
+                          window.open(url);
+                      }
+                  }
+                  
+        
+    
+
+      
+	
+ 
+
+
+			
+ 	 var websitename = "县人力资源和社会保障局";
+	 var webjg = "县人力资源和社会保障局";
+			
+            
+            
+			
+			
+			$(function() {
+				var sourceText = $('#ly').text();//来源
+				var xxgkfbjg = $('#xxgkfbjg').text();//来源
+				// alert(sourceText);
+				if( null==sourceText|| ""==sourceText ){
+				  
+							$('#ly').text(websitename);
+			
+				}
+				if( null==xxgkfbjg|| ""==xxgkfbjg ){
+				  
+							$('#xxgkfbjg').text(websitename);
+			
+				}
+			});
+			
+		
+
+
+
+	
+  
+    
+      您现在所在的位置 :
+首页 > 政务公开 > 工作动态
+
+      
+      
+        
+          分享到：
+    
+    
+        $('#share-1').share();
+        $('#share-2').share({sites: ['weibo','wechat']});
+        $('#share-3').share();
+        $('#share-4').share();
+    
+        
+      
+      
+    
+    
+        
+          
+            索引号:
+            4311270010/2023-00832
+            分类:
+             
+          
+          
+            发文机关:
+            蓝山县人民政府
+            发文日期:
+            
+                2023-08-04
+              
+          
+          
+            名称:
+            
+                永州市：“三主动”发挥创业担保贷款倍增效应
+              
+          
+          
+            文号 
+              :
+            
+             
+             
+          
+        
+      
+    
+      
+            永州市：“三主动”发挥创业担保贷款倍增效应
+      
+      
+        
+          
+            
+            	2023-08-04 09:48
+            
+            来源： 湖南人社厅
+            作者：
+            
+            【字体：
+              
+              
+              function doZoom(size4) {
+				if( size4 == 18) {
+               $("#font").attr("class", "cfont18");
+            } else if( size4 == 16) {
+               $("#font").attr("class", "cfont16");
+            } else if( size4 == 14) {
+               $("#font").attr("class", "cfont14");
+            }
+              
+			}
+
+			
+              
+              大 中 小】
+          
+        
+      
+      
+        
+          
+              
+
+永州市聚焦“三主动”举措,加大创业担保贷款发放力度,充分发挥创业担保贷款促就业带动就业作用。今年上半年发放创业担保贷款2.32亿元,发放额居全省前列,扶持967人自主创业,带动就业和再就业4961人。
+
+
+
+政策宣传“主动出击”
+走进小微企业、商业协会、门店商铺、高等院校等宣讲政策,依托乡镇街道、社区(村)等基层公共服务平台,通过经办机构、网站、“永就业”和“永州人社”等公众号、新闻媒体、社区公告栏等多种形式宣传创业担保贷款政策和申贷办法,做到家喻户晓。结合线下的创业培训班,为学员专门讲解创业担保贷款的政策及办理程序,让每一个有创业意向的创业者能够深入了解创业担保政策,找到适合的创业项目,让符合条件的项目都能得到创业担保贷款支持。
+
+
+
+放贷扩面“主动对接”
+通过对10万元以下贷款免除反担保要求,引入第三方担保公司进行批量反担保,结合信用反担保、财产反担保等方式有效降低了反担保门槛。主动对接市场管理部门和社保经办机构,动态了解全市新注册的小微企业和个体工商户,利用大数据手段筛选符合创业担保贷款申请条件的企业,上门发动申贷。为已申请通过的个体工商户和小微企业提供全程跟踪服务,不定期上门了解贷款人经营状况,帮助其及时解决经营过程中遇到的困难和问题,对贷款到期,信用良好的个体工商户和小微企业积极推行二次贷款发放。
+
+"
+
+审批程序“主动优化”
+
+进一步简化创业担保贷款审核发放程序,在考察店面时带资料上门,符合条件的当场予以办理相关手续,凡是能联网查询的证照不再需要申请人提供,做到“应简尽简”。对全市各县市区的办事流程进行全面梳理,力争做到统一口径、统一流程、统一服务标准。探索延伸服务触角,对乡镇街道、社区(村)的基层公共就业服务平台及合作银行的工作人员进行业务培训,打通基层服务“最后一公里”。
+
+
+            
+        
+            
+      
+      
+        
+          
+            扫一扫在手机打开当前页
+            
+          
+        
+      
+      
+        【TOP】【打印页面】【关闭页面】
+        
+      
+    
+    
+  
+
+  
+
+
+
+
+
+            
+
+	
+     
+		
+			
+				          - 国家部委 -    外交部  国防部  国家发展和改革委员会  教育部  科学技术部  工业和信息化部  国家民族事务委员会  公安部  民政部  司法部  财政部  人力资源和社会保障部  自然资源部  生态环境部  住房和城乡建设部  交通运输部  水利部  农业农村部  商务部  文化和旅游部  国家卫生健康委员会  退役军人事务部  应急管理部  人民银行  审计署  国有资产监督管理委员会  海关总署  国家税务总局  国家市场监督管理总局  国家广播电视总局  国家体育总局  国家统计局  国家国际发展合作署  国家医疗保障局  国务院参事室  国家机关事务管理局  港澳办  国研室  中科院  社科院  工程院  发展研究中心  气象局  银保监会  证监会  信访局  粮食和物资储备局  煤矿安全局  能源局  国防科技工业局  烟草局  移民管理局  林业和草原局  铁路局  民航局  邮政局  文物局  中医药局  外汇局  药品监管局  知识产权局                 - 各省市政府 -    北京    天津    河北    山西    内蒙古    辽宁    吉林    黑龙江    上海    江苏    浙江    安徽    福建    江西    山东    河南    湖北    湖南    广东    广西    海南    重庆    四川    贵州    云南    西藏    陕西    甘肃    宁夏    青海    新疆    香港    澳门    台湾    新疆生产建设兵团                - 市州政府 -    湘西自治州    张家界市    怀化市    永州市    娄底市    郴州市    邵阳市    岳阳市    常德市    益阳市    湘潭市    株洲市    衡阳市    长沙市                -县区管理区网站 -    冷水滩区人民政府    零陵区人民政府    祁阳市人民政府    东安县人民政府    双牌县人民政府    道县人民政府    江华县人民政府    江永县人民政府    新田县人民政府    宁远县人民政府    金洞管理区人民政府        
+
+		
+		
+			
+				
+					document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='//dcs.conac.cn/js/19/284/1933/40648879/CA192841933406488790001.js' type='text/javascript'%3E%3C/script%3E"));
+				
+			
+			
+				
+			
+          
+			
+				设为首页 |
+				加入收藏 |
+				网站声明 |
+				站点地图|
+				联系我们|邮箱：lsjjxxzx@126.com  主办：蓝山县人民政府办公室    承办：蓝山县数据局(蓝山县营商环境建设局)    联系电话：0746-2226151
+				 备案号：湘ICP备05012207号  网站标识码：4311270010  
+				
+				湘公网安备 43112702000005号
+			
+          
+            湖南省政府网
+            蓝山政务
+          
+		
+	
+
+
+  $(function(){
+	var codename=$('.nav_title').html();
+	if(codename=='政务公开'){
+		$('.ls-nav li').eq(2).addClass('hover')
+	}
+	else if(codename=='政民互动'){
+		$('.ls-nav li').eq(4).addClass('hover')
+	}
+	else if(codename=='走进蓝山'){
+		$('.ls-nav li').eq(1).addClass('hover')
+	}
+	else{
+		$('.ls-nav li').eq(0).addClass('hover')
+	}
+})
+  
+	//收藏本页
+	function addFavorite2() {
+		var url = window.location;
+		var title = document.title;
+		var ua = navigator.userAgent.toLowerCase();
+		if(ua.indexOf("360se") > -1) {
+			alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+		} else if(ua.indexOf("msie 8") > -1) {
+			window.external.AddToFavoritesBar(url, title); //IE8
+		} else if(document.all) {
+			try {
+				window.external.addFavorite(url, title);
+			} catch(e) {
+				alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+			}
+		} else if(window.sidebar) {
+			window.sidebar.addPanel(title, url, "");
+		} else {
+			alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+		}
+	}
+
+
+  承办：蓝山县行政审批服务局  技术支持：开普云
+
+
+
+	//请配置domain 和 fullUrl 参数，user为test是本机测试环境，正式环境改为official,输出位置id为visitCount
+	var visitConfig = {
+			api : {
+				test : '',
+				official  : '/u/visit/count',
+				use : 'official',
+				domain : 'http://www.lanshan.gov.cn',
+				fullUrl: 'http://www.lanshan.gov.cn/lanshan/index.shtml',
+				showId : ''
+			}
+	};
+	
+
+var _trackDataType = 'web';var _trackData = _trackData || [];
+
+ 
+
+
