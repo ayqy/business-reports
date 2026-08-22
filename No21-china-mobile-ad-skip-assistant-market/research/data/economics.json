@@ -1,0 +1,93 @@
+{
+  "ad_supported_sensitivity": {
+    "impressions_per_mau_per_month_scenario": 10,
+    "mau_required_at_realized_ecpm_usd_1": 153847,
+    "mau_required_at_realized_ecpm_usd_5": 30770
+  },
+  "common_inputs": {
+    "monthly_fixed_cash_cost_cny": 1000.0,
+    "refund_rate_percent": 3.0,
+    "required_monthly_contribution_cny": 11000.0,
+    "target_monthly_cash_profit_cny_before_personal_tax": 10000.0,
+    "usd_cny_scenario_rate": 7.15
+  },
+  "evidence_boundary": {
+    "direct_inputs": [
+      "Google Play 15% service-fee tier",
+      "Skipify public $4.99 lifetime unlock",
+      "GKD release asset download counts and dates"
+    ],
+    "scenario_inputs_not_industry_facts": [
+      "CNY 29.90 mainland buyout price",
+      "3% refund rate",
+      "0.6% mainland payment fee",
+      "CNY 1,000 monthly fixed cash cost",
+      "USD/CNY 7.15 conversion rate",
+      "2% and 5% paid conversion rates",
+      "USD 1–5 realized ad eCPM and 10 impressions per MAU",
+      "forecast annual change rates"
+    ]
+  },
+  "gkd_head_proxy": {
+    "latest_apk_downloads": 42417,
+    "latest_release": "v1.12.1",
+    "latest_release_published_at": "2026-05-20T09:43:34Z",
+    "mainland_2pct_required_installs_as_head_proxy_percent": 140.5,
+    "mainland_5pct_required_installs_as_head_proxy_percent": 56.2,
+    "normalized_apk_downloads_per_30_4375_days": 13590.2,
+    "observed_days_inclusive": 95,
+    "warning": "Release-asset downloads are not unique users or new installs; this is a directional head-product traffic proxy only."
+  },
+  "google_play_buyout": {
+    "contribution_per_order_cny": 29.42,
+    "contribution_per_order_usd": 4.11,
+    "gross_sales_at_threshold_cny": 13343.76,
+    "gross_sales_at_threshold_usd": 1866.26,
+    "installs_required_at_2pct_conversion": 18700,
+    "installs_required_at_5pct_conversion": 7480,
+    "monthly_contribution_at_threshold_cny": 11001.93,
+    "monthly_operating_profit_at_threshold_cny": 10001.93,
+    "orders_required_per_month": 374,
+    "price_usd": 4.99,
+    "service_fee_percent": 15.0
+  },
+  "google_play_subscription": {
+    "active_payers_required": 938,
+    "contribution_per_active_payer_cny": 11.73,
+    "gross_sales_at_threshold_usd": 1866.62,
+    "monthly_operating_profit_at_threshold_cny": 10004.05,
+    "price_usd_per_month": 1.99
+  },
+  "mainland_buyout": {
+    "contribution_per_order_cny": 28.83,
+    "gross_sales_at_threshold_cny": 11421.8,
+    "installs_required_at_2pct_conversion": 19100,
+    "installs_required_at_5pct_conversion": 7640,
+    "monthly_contribution_at_threshold_cny": 11012.67,
+    "monthly_operating_profit_at_threshold_cny": 10012.67,
+    "orders_required_per_month": 382,
+    "payment_fee_percent": 0.6,
+    "price_cny": 29.9
+  },
+  "model_date": "2026-08-22",
+  "paid_tool_revenue_pool_scenario_index": {
+    "base": {
+      "annual_change_percent": -5.0,
+      "index_2026": 100.0,
+      "index_2029": 85.7,
+      "index_2031": 77.4
+    },
+    "optimistic": {
+      "annual_change_percent": 3.0,
+      "index_2026": 100.0,
+      "index_2029": 109.3,
+      "index_2031": 115.9
+    },
+    "pessimistic": {
+      "annual_change_percent": -15.0,
+      "index_2026": 100.0,
+      "index_2029": 61.4,
+      "index_2031": 44.4
+    }
+  }
+}

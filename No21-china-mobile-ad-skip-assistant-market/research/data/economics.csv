@@ -1,0 +1,10 @@
+model,metric,value,unit
+mainland_buyout,orders_required_per_month,382,orders
+mainland_buyout,installs_required_at_2pct_conversion,19100,installs
+mainland_buyout,installs_required_at_5pct_conversion,7640,installs
+play_buyout,orders_required_per_month,374,orders
+play_buyout,installs_required_at_2pct_conversion,18700,installs
+play_buyout,installs_required_at_5pct_conversion,7480,installs
+play_subscription,active_payers_required,938,active_payers
+ad_supported,mau_required_at_realized_ecpm_usd_1,153847,MAU
+ad_supported,mau_required_at_realized_ecpm_usd_5,30770,MAU

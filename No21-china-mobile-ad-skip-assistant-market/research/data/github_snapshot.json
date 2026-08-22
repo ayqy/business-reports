@@ -1,0 +1,1823 @@
+{
+  "gkd_repository": {
+    "created_at": "2023-07-04T03:59:15Z",
+    "default_branch": "main",
+    "description": "基于无障碍，高级选择器，订阅规则的自定义屏幕点击安卓应用 | An Android APP with custom screen tapping based on Accessibility, Advanced Selectors, and Subscription Rules",
+    "forks_count": 1944,
+    "full_name": "gkd-kit/gkd",
+    "html_url": "https://github.com/gkd-kit/gkd",
+    "license": "GPL-3.0",
+    "open_issues_count": 12,
+    "pushed_at": "2026-08-22T07:11:33Z",
+    "readme_facts": {
+      "default_rules_included": false,
+      "has_snapshot_inspection": true,
+      "has_sponsor_link": true,
+      "has_subscription_model": true
+    },
+    "stargazers_count": 41076,
+    "subscribers_count": 117,
+    "updated_at": "2026-08-22T08:14:02Z"
+  },
+  "head_rule_repository": {
+    "adapted_apps": 886,
+    "app_rule_groups": 2074,
+    "archived": true,
+    "created_at": "2024-01-03T06:40:13Z",
+    "domestic_distribution_prohibited_by_maintainer": true,
+    "forks_count": 489,
+    "full_name": "AIsouler/GKD_subscription",
+    "html_url": "https://github.com/AIsouler/GKD_subscription",
+    "maintenance_reason_present": true,
+    "pushed_at": "2026-02-13T12:36:06Z",
+    "stargazers_count": 11930,
+    "stopped_maintenance_date": "2026.02.12"
+  },
+  "releases": {
+    "all_asset_downloads": 589825,
+    "apk_downloads": 565905,
+    "items": [
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.1/gkd-v1.12.1.apk",
+            "download_count": 42417,
+            "name": "gkd-v1.12.1.apk",
+            "size": 3287479
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.1/outputs-v1.12.1.zip",
+            "download_count": 1623,
+            "name": "outputs-v1.12.1.zip",
+            "size": 40463401
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.1",
+        "published_at": "2026-05-20T09:43:34Z",
+        "tag_name": "v1.12.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0/gkd-v1.12.0.apk",
+            "download_count": 5804,
+            "name": "gkd-v1.12.0.apk",
+            "size": 3287471
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0/outputs-v1.12.0.zip",
+            "download_count": 148,
+            "name": "outputs-v1.12.0.zip",
+            "size": 40449155
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.0",
+        "published_at": "2026-05-15T10:23:33Z",
+        "tag_name": "v1.12.0"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.9/gkd-v1.12.0-beta.9.apk",
+            "download_count": 1662,
+            "name": "gkd-v1.12.0-beta.9.apk",
+            "size": 3370079
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.9/outputs-v1.12.0-beta.9.zip",
+            "download_count": 67,
+            "name": "outputs-v1.12.0-beta.9.zip",
+            "size": 40328956
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.0-beta.9",
+        "published_at": "2026-05-09T03:24:13Z",
+        "tag_name": "v1.12.0-beta.9"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.8/gkd-v1.12.0-beta.8.apk",
+            "download_count": 1677,
+            "name": "gkd-v1.12.0-beta.8.apk",
+            "size": 3370083
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.8/outputs-v1.12.0-beta.8.zip",
+            "download_count": 101,
+            "name": "outputs-v1.12.0-beta.8.zip",
+            "size": 40313324
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.0-beta.8",
+        "published_at": "2026-04-29T12:28:41Z",
+        "tag_name": "v1.12.0-beta.8"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.7/gkd-v1.12.0-beta.7.apk",
+            "download_count": 1300,
+            "name": "gkd-v1.12.0-beta.7.apk",
+            "size": 3353623
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.7/outputs-v1.12.0-beta.7.zip",
+            "download_count": 53,
+            "name": "outputs-v1.12.0-beta.7.zip",
+            "size": 23171109
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.0-beta.7",
+        "published_at": "2026-04-23T02:43:51Z",
+        "tag_name": "v1.12.0-beta.7"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.6/gkd-v1.12.0-beta.6.apk",
+            "download_count": 284,
+            "name": "gkd-v1.12.0-beta.6.apk",
+            "size": 3353615
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.6/outputs-v1.12.0-beta.6.zip",
+            "download_count": 13,
+            "name": "outputs-v1.12.0-beta.6.zip",
+            "size": 23172262
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.0-beta.6",
+        "published_at": "2026-04-22T12:46:04Z",
+        "tag_name": "v1.12.0-beta.6"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.5/gkd-v1.12.0-beta.5.apk",
+            "download_count": 411,
+            "name": "gkd-v1.12.0-beta.5.apk",
+            "size": 3353627
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.5/outputs-v1.12.0-beta.5.zip",
+            "download_count": 15,
+            "name": "outputs-v1.12.0-beta.5.zip",
+            "size": 23171475
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.0-beta.5",
+        "published_at": "2026-04-21T06:48:56Z",
+        "tag_name": "v1.12.0-beta.5"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.4/gkd-v1.12.0-beta.4.apk",
+            "download_count": 115,
+            "name": "gkd-v1.12.0-beta.4.apk",
+            "size": 3353619
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.4/outputs-v1.12.0-beta.4.zip",
+            "download_count": 7,
+            "name": "outputs-v1.12.0-beta.4.zip",
+            "size": 23161053
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.0-beta.4",
+        "published_at": "2026-04-21T03:49:24Z",
+        "tag_name": "v1.12.0-beta.4"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.3/gkd-v1.12.0-beta.3.apk",
+            "download_count": 347,
+            "name": "gkd-v1.12.0-beta.3.apk",
+            "size": 3353623
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.3/outputs-v1.12.0-beta.3.zip",
+            "download_count": 8,
+            "name": "outputs-v1.12.0-beta.3.zip",
+            "size": 23170128
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.0-beta.3",
+        "published_at": "2026-04-20T04:07:27Z",
+        "tag_name": "v1.12.0-beta.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.2/gkd-v1.12.0-beta.2.apk",
+            "download_count": 1011,
+            "name": "gkd-v1.12.0-beta.2.apk",
+            "size": 3353619
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.2/outputs-v1.12.0-beta.2.zip",
+            "download_count": 59,
+            "name": "outputs-v1.12.0-beta.2.zip",
+            "size": 23167053
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.0-beta.2",
+        "published_at": "2026-04-14T13:24:30Z",
+        "tag_name": "v1.12.0-beta.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.1/gkd-v1.12.0-beta.1.apk",
+            "download_count": 1672,
+            "name": "gkd-v1.12.0-beta.1.apk",
+            "size": 3353891
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.0-beta.1/outputs-v1.12.0-beta.1.zip",
+            "download_count": 98,
+            "name": "outputs-v1.12.0-beta.1.zip",
+            "size": 23126486
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.0-beta.1",
+        "published_at": "2026-04-05T10:35:15Z",
+        "tag_name": "v1.12.0-beta.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.6/gkd-v1.11.6.apk",
+            "download_count": 48789,
+            "name": "gkd-v1.11.6.apk",
+            "size": 4057956
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.6/outputs-v1.11.6.zip",
+            "download_count": 1798,
+            "name": "outputs-v1.11.6.zip",
+            "size": 27115966
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.6",
+        "published_at": "2025-12-13T18:03:36Z",
+        "tag_name": "v1.11.6"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.4/gkd-v1.11.4.apk",
+            "download_count": 11441,
+            "name": "gkd-v1.11.4.apk",
+            "size": 4039155
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.4/outputs-v1.11.4.zip",
+            "download_count": 445,
+            "name": "outputs-v1.11.4.zip",
+            "size": 26943121
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.4",
+        "published_at": "2025-11-20T11:17:33Z",
+        "tag_name": "v1.11.4"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.3/gkd-v1.11.3.apk",
+            "download_count": 3741,
+            "name": "gkd-v1.11.3.apk",
+            "size": 4039163
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.3/outputs-v1.11.3.zip",
+            "download_count": 123,
+            "name": "outputs-v1.11.3.zip",
+            "size": 26936984
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.3",
+        "published_at": "2025-11-17T07:54:08Z",
+        "tag_name": "v1.11.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.2/gkd-v1.11.2.apk",
+            "download_count": 2876,
+            "name": "gkd-v1.11.2.apk",
+            "size": 4039159
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.2/outputs-v1.11.2.zip",
+            "download_count": 89,
+            "name": "outputs-v1.11.2.zip",
+            "size": 26938274
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.2",
+        "published_at": "2025-11-15T16:40:35Z",
+        "tag_name": "v1.11.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.1/gkd-v1.11.1.apk",
+            "download_count": 2543,
+            "name": "gkd-v1.11.1.apk",
+            "size": 4039163
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.1/outputs-v1.11.1.zip",
+            "download_count": 70,
+            "name": "outputs-v1.11.1.zip",
+            "size": 26934241
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.1",
+        "published_at": "2025-11-13T11:46:28Z",
+        "tag_name": "v1.11.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0/gkd-v1.11.0.apk",
+            "download_count": 2229,
+            "name": "gkd-v1.11.0.apk",
+            "size": 4039171
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0/outputs-v1.11.0.zip",
+            "download_count": 48,
+            "name": "outputs-v1.11.0.zip",
+            "size": 26932970
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.0",
+        "published_at": "2025-11-12T08:01:16Z",
+        "tag_name": "v1.11.0"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0-beta.7/gkd-v1.11.0-beta.7.apk",
+            "download_count": 1746,
+            "name": "gkd-v1.11.0-beta.7.apk",
+            "size": 4025111
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0-beta.7/outputs-v1.11.0-beta.7.zip",
+            "download_count": 80,
+            "name": "outputs-v1.11.0-beta.7.zip",
+            "size": 26907685
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.0-beta.7",
+        "published_at": "2025-11-05T10:23:51Z",
+        "tag_name": "v1.11.0-beta.7"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0-beta.6/gkd-v1.11.0-beta.6.apk",
+            "download_count": 958,
+            "name": "gkd-v1.11.0-beta.6.apk",
+            "size": 4008731
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0-beta.6/outputs-v1.11.0-beta.6.zip",
+            "download_count": 49,
+            "name": "outputs-v1.11.0-beta.6.zip",
+            "size": 26894894
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.0-beta.6",
+        "published_at": "2025-11-02T16:18:34Z",
+        "tag_name": "v1.11.0-beta.6"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0-beta.3/gkd-v1.11.0-beta.3.apk",
+            "download_count": 2946,
+            "name": "gkd-v1.11.0-beta.3.apk",
+            "size": 4008735
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0-beta.3/outputs-v1.11.0-beta.3.zip",
+            "download_count": 138,
+            "name": "outputs-v1.11.0-beta.3.zip",
+            "size": 26862004
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.0-beta.3",
+        "published_at": "2025-10-17T12:51:04Z",
+        "tag_name": "v1.11.0-beta.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0-beta.2/gkd-v1.11.0-beta.2.apk",
+            "download_count": 586,
+            "name": "gkd-v1.11.0-beta.2.apk",
+            "size": 4008735
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0-beta.2/outputs-v1.11.0-beta.2.zip",
+            "download_count": 25,
+            "name": "outputs-v1.11.0-beta.2.zip",
+            "size": 26859126
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.0-beta.2",
+        "published_at": "2025-10-16T13:30:02Z",
+        "tag_name": "v1.11.0-beta.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0-beta.1/gkd-v1.11.0-beta.1.apk",
+            "download_count": 2062,
+            "name": "gkd-v1.11.0-beta.1.apk",
+            "size": 3992823
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.11.0-beta.1/outputs-v1.11.0-beta.1.zip",
+            "download_count": 79,
+            "name": "outputs-v1.11.0-beta.1.zip",
+            "size": 26787584
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.11.0-beta.1",
+        "published_at": "2025-09-30T21:31:01Z",
+        "tag_name": "v1.11.0-beta.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.4/gkd-v1.10.4.apk",
+            "download_count": 50546,
+            "name": "gkd-v1.10.4.apk",
+            "size": 6801310
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.4/outputs-v1.10.4.zip",
+            "download_count": 1936,
+            "name": "outputs-v1.10.4.zip",
+            "size": 30149135
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.10.4",
+        "published_at": "2025-05-26T06:17:26Z",
+        "tag_name": "v1.10.4"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.4-beta.1/gkd-v1.10.4-beta.1.apk",
+            "download_count": 1115,
+            "name": "gkd-v1.10.4-beta.1.apk",
+            "size": 6801310
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.4-beta.1/outputs-v1.10.4-beta.1.zip",
+            "download_count": 59,
+            "name": "outputs-v1.10.4-beta.1.zip",
+            "size": 30145304
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.10.4-beta.1",
+        "published_at": "2025-05-17T13:55:02Z",
+        "tag_name": "v1.10.4-beta.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.3/gkd-v1.10.3.apk",
+            "download_count": 13639,
+            "name": "gkd-v1.10.3.apk",
+            "size": 6784734
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.3/outputs-v1.10.3.zip",
+            "download_count": 448,
+            "name": "outputs-v1.10.3.zip",
+            "size": 29985313
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.10.3",
+        "published_at": "2025-04-27T17:06:54Z",
+        "tag_name": "v1.10.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.2-beta.2/gkd-v1.10.2-beta.2.apk",
+            "download_count": 1978,
+            "name": "gkd-v1.10.2-beta.2.apk",
+            "size": 6733330
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.2-beta.2/outputs-v1.10.2-beta.2.zip",
+            "download_count": 86,
+            "name": "outputs-v1.10.2-beta.2.zip",
+            "size": 29611986
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.10.2-beta.2",
+        "published_at": "2025-04-14T13:41:28Z",
+        "tag_name": "v1.10.2-beta.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.1/gkd-v1.10.1.apk",
+            "download_count": 14202,
+            "name": "gkd-v1.10.1.apk",
+            "size": 6081268
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.1/outputs-v1.10.1.zip",
+            "download_count": 400,
+            "name": "outputs-v1.10.1.zip",
+            "size": 22425678
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.10.1",
+        "published_at": "2025-04-05T15:36:25Z",
+        "tag_name": "v1.10.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.0/gkd-v1.10.0.apk",
+            "download_count": 2033,
+            "name": "gkd-v1.10.0.apk",
+            "size": 6081260
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.0/outputs-v1.10.0.zip",
+            "download_count": 93,
+            "name": "outputs-v1.10.0.zip",
+            "size": 22426507
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.10.0",
+        "published_at": "2025-04-05T10:30:56Z",
+        "tag_name": "v1.10.0"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.0-beta.4/gkd-v1.10.0-beta.4.apk",
+            "download_count": 1788,
+            "name": "gkd-v1.10.0-beta.4.apk",
+            "size": 6362542
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.0-beta.4/outputs-v1.10.0-beta.4.zip",
+            "download_count": 72,
+            "name": "outputs-v1.10.0-beta.4.zip",
+            "size": 23428255
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.10.0-beta.4",
+        "published_at": "2025-03-25T14:00:57Z",
+        "tag_name": "v1.10.0-beta.4"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.0-beta.3/gkd-v1.10.0-beta.3.apk",
+            "download_count": 5565,
+            "name": "gkd-v1.10.0-beta.3.apk",
+            "size": 6259183
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.0-beta.3/outputs-v1.10.0-beta.3.zip",
+            "download_count": 162,
+            "name": "outputs-v1.10.0-beta.3.zip",
+            "size": 23038495
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.10.0-beta.3",
+        "published_at": "2025-02-24T09:01:02Z",
+        "tag_name": "v1.10.0-beta.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.0-beta.2/gkd-v1.10.0-beta.2.apk",
+            "download_count": 433,
+            "name": "gkd-v1.10.0-beta.2.apk",
+            "size": 5965782
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.0-beta.2/outputs-v1.10.0-beta.2.zip",
+            "download_count": 32,
+            "name": "outputs-v1.10.0-beta.2.zip",
+            "size": 22707275
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.10.0-beta.2",
+        "published_at": "2025-02-23T14:54:19Z",
+        "tag_name": "v1.10.0-beta.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.0-beta.1/gkd-v1.10.0-beta.1.apk",
+            "download_count": 1124,
+            "name": "gkd-v1.10.0-beta.1.apk",
+            "size": 5965778
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.10.0-beta.1/outputs-v1.10.0-beta.1.zip",
+            "download_count": 73,
+            "name": "outputs-v1.10.0-beta.1.zip",
+            "size": 22685351
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.10.0-beta.1",
+        "published_at": "2025-02-18T10:44:59Z",
+        "tag_name": "v1.10.0-beta.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.3/gkd-v1.9.3.apk",
+            "download_count": 45065,
+            "name": "gkd-v1.9.3.apk",
+            "size": 5731780
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.3/outputs-v1.9.3.zip",
+            "download_count": 1836,
+            "name": "outputs-v1.9.3.zip",
+            "size": 21789299
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.9.3",
+        "published_at": "2024-12-06T14:00:36Z",
+        "tag_name": "v1.9.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.3-beta.1/gkd-v1.9.3-beta.1.apk",
+            "download_count": 912,
+            "name": "gkd-v1.9.3-beta.1.apk",
+            "size": 5731720
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.3-beta.1/outputs-v1.9.3-beta.1.zip",
+            "download_count": 56,
+            "name": "outputs-v1.9.3-beta.1.zip",
+            "size": 21779190
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.9.3-beta.1",
+        "published_at": "2024-11-30T09:00:54Z",
+        "tag_name": "v1.9.3-beta.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.2/gkd-v1.9.2.apk",
+            "download_count": 6340,
+            "name": "gkd-v1.9.2.apk",
+            "size": 5731712
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.2/outputs-v1.9.2.zip",
+            "download_count": 297,
+            "name": "outputs-v1.9.2.zip",
+            "size": 21751498
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.9.2",
+        "published_at": "2024-11-25T03:04:00Z",
+        "tag_name": "v1.9.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.2-beta.1/gkd-v1.9.2-beta.1.apk",
+            "download_count": 2865,
+            "name": "gkd-v1.9.2-beta.1.apk",
+            "size": 5731724
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.2-beta.1/outputs-v1.9.2-beta.1.zip",
+            "download_count": 145,
+            "name": "outputs-v1.9.2-beta.1.zip",
+            "size": 21749662
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.9.2-beta.1",
+        "published_at": "2024-11-18T12:14:29Z",
+        "tag_name": "v1.9.2-beta.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.1/gkd-v1.9.1.apk",
+            "download_count": 12924,
+            "name": "gkd-v1.9.1.apk",
+            "size": 5693639
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.1/outputs-v1.9.1.zip",
+            "download_count": 239,
+            "name": "outputs-v1.9.1.zip",
+            "size": 21564275
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.9.1",
+        "published_at": "2024-11-11T09:09:33Z",
+        "tag_name": "v1.9.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.1-beta.1/gkd-v1.9.1-beta.1.apk",
+            "download_count": 4719,
+            "name": "gkd-v1.9.1-beta.1.apk",
+            "size": 5693651
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.1-beta.1/outputs-v1.9.1-beta.1.zip",
+            "download_count": 226,
+            "name": "outputs-v1.9.1-beta.1.zip",
+            "size": 21559790
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.9.1-beta.1",
+        "published_at": "2024-11-06T08:01:13Z",
+        "tag_name": "v1.9.1-beta.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.0/gkd-v1.9.0.apk",
+            "download_count": 9976,
+            "name": "gkd-v1.9.0.apk",
+            "size": 5693571
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.0/outputs-v1.9.0.zip",
+            "download_count": 423,
+            "name": "outputs-v1.9.0.zip",
+            "size": 21576181
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.9.0",
+        "published_at": "2024-10-28T12:42:50Z",
+        "tag_name": "v1.9.0"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.0-beta.3/gkd-v1.9.0-beta.3.apk",
+            "download_count": 7024,
+            "name": "gkd-v1.9.0-beta.3.apk",
+            "size": 5696959
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.0-beta.3/outputs-v1.9.0-beta.3.zip",
+            "download_count": 197,
+            "name": "outputs-v1.9.0-beta.3.zip",
+            "size": 21570053
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.9.0-beta.3",
+        "published_at": "2024-10-21T09:56:29Z",
+        "tag_name": "v1.9.0-beta.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.0-beta.2/gkd-v1.9.0-beta.2.apk",
+            "download_count": 1140,
+            "name": "gkd-v1.9.0-beta.2.apk",
+            "size": 5680563
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.0-beta.2/outputs-v1.9.0-beta.2.zip",
+            "download_count": 53,
+            "name": "outputs-v1.9.0-beta.2.zip",
+            "size": 21560650
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.9.0-beta.2",
+        "published_at": "2024-10-19T16:34:35Z",
+        "tag_name": "v1.9.0-beta.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.0-beta.1/gkd-v1.9.0-beta.1.apk",
+            "download_count": 6441,
+            "name": "gkd-v1.9.0-beta.1.apk",
+            "size": 5731167
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.9.0-beta.1/outputs-v1.9.0-beta.1.zip",
+            "download_count": 330,
+            "name": "outputs-v1.9.0-beta.1.zip",
+            "size": 21779225
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.9.0-beta.1",
+        "published_at": "2024-10-03T04:31:38Z",
+        "tag_name": "v1.9.0-beta.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0/gkd-v1.8.0.apk",
+            "download_count": 24617,
+            "name": "gkd-v1.8.0.apk",
+            "size": 5538128
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0/outputs-v1.8.0.zip",
+            "download_count": 920,
+            "name": "outputs-v1.8.0.zip",
+            "size": 20982183
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0",
+        "published_at": "2024-08-27T03:16:10Z",
+        "tag_name": "v1.8.0"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.13/gkd-v1.8.0-beta.13.apk",
+            "download_count": 5642,
+            "name": "gkd-v1.8.0-beta.13.apk",
+            "size": 5554520
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.13/outputs-v1.8.0-beta.13.zip",
+            "download_count": 174,
+            "name": "outputs-v1.8.0-beta.13.zip",
+            "size": 20989319
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.13",
+        "published_at": "2024-08-20T12:41:22Z",
+        "tag_name": "v1.8.0-beta.13"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.12/gkd-v1.8.0-beta.12.apk",
+            "download_count": 4185,
+            "name": "gkd-v1.8.0-beta.12.apk",
+            "size": 5537152
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.12/outputs-v1.8.0-beta.12.zip",
+            "download_count": 131,
+            "name": "outputs-v1.8.0-beta.12.zip",
+            "size": 20996273
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.12",
+        "published_at": "2024-08-16T03:13:30Z",
+        "tag_name": "v1.8.0-beta.12"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.11/gkd-v1.8.0-beta.11.apk",
+            "download_count": 5776,
+            "name": "gkd-v1.8.0-beta.11.apk",
+            "size": 5553362
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.11/outputs-v1.8.0-beta.11.zip",
+            "download_count": 170,
+            "name": "outputs-v1.8.0-beta.11.zip",
+            "size": 21027750
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.11",
+        "published_at": "2024-08-10T14:21:02Z",
+        "tag_name": "v1.8.0-beta.11"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.10/gkd-v1.8.0-beta.10.apk",
+            "download_count": 2193,
+            "name": "gkd-v1.8.0-beta.10.apk",
+            "size": 5559822
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.10/outputs-v1.8.0-beta.10.zip",
+            "download_count": 69,
+            "name": "outputs-v1.8.0-beta.10.zip",
+            "size": 21041445
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.10",
+        "published_at": "2024-08-08T14:05:01Z",
+        "tag_name": "v1.8.0-beta.10"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.9/gkd-v1.8.0-beta.9.apk",
+            "download_count": 3327,
+            "name": "gkd-v1.8.0-beta.9.apk",
+            "size": 5559626
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.9/outputs-v1.8.0-beta.9.zip",
+            "download_count": 140,
+            "name": "outputs-v1.8.0-beta.9.zip",
+            "size": 21044611
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.9",
+        "published_at": "2024-08-06T03:07:37Z",
+        "tag_name": "v1.8.0-beta.9"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.8/gkd-v1.8.0-beta.8.apk",
+            "download_count": 8655,
+            "name": "gkd-v1.8.0-beta.8.apk",
+            "size": 5526846
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.8/outputs-v1.8.0-beta.8.zip",
+            "download_count": 361,
+            "name": "outputs-v1.8.0-beta.8.zip",
+            "size": 20905065
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.8",
+        "published_at": "2024-07-22T15:41:43Z",
+        "tag_name": "v1.8.0-beta.8"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.7/gkd-v1.8.0-beta.7.apk",
+            "download_count": 5209,
+            "name": "gkd-v1.8.0-beta.7.apk",
+            "size": 5625978
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.7/outputs-v1.8.0-beta.7.zip",
+            "download_count": 239,
+            "name": "outputs-v1.8.0-beta.7.zip",
+            "size": 49134534
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.7",
+        "published_at": "2024-07-13T16:27:41Z",
+        "tag_name": "v1.8.0-beta.7"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.6/gkd-v1.8.0-beta.6.apk",
+            "download_count": 1834,
+            "name": "gkd-v1.8.0-beta.6.apk",
+            "size": 5609586
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.6/outputs-v1.8.0-beta.6.zip",
+            "download_count": 74,
+            "name": "outputs-v1.8.0-beta.6.zip",
+            "size": 49118630
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.6",
+        "published_at": "2024-07-11T14:10:23Z",
+        "tag_name": "v1.8.0-beta.6"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.5/gkd-v1.8.0-beta.5.apk",
+            "download_count": 3948,
+            "name": "gkd-v1.8.0-beta.5.apk",
+            "size": 5599674
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.5/outputs-v1.8.0-beta.5.zip",
+            "download_count": 151,
+            "name": "outputs-v1.8.0-beta.5.zip",
+            "size": 49061551
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.5",
+        "published_at": "2024-07-05T12:20:36Z",
+        "tag_name": "v1.8.0-beta.5"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.4/gkd-v1.8.0-beta.4.apk",
+            "download_count": 631,
+            "name": "gkd-v1.8.0-beta.4.apk",
+            "size": 5599674
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.4/outputs-v1.8.0-beta.4.zip",
+            "download_count": 39,
+            "name": "outputs-v1.8.0-beta.4.zip",
+            "size": 33482309
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.4",
+        "published_at": "2024-07-05T03:13:41Z",
+        "tag_name": "v1.8.0-beta.4"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.3/gkd-v1.8.0-beta.3.apk",
+            "download_count": 2339,
+            "name": "gkd-v1.8.0-beta.3.apk",
+            "size": 5599658
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.3/outputs-v1.8.0-beta.3.zip",
+            "download_count": 101,
+            "name": "outputs-v1.8.0-beta.3.zip",
+            "size": 33469632
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.3",
+        "published_at": "2024-07-02T13:49:57Z",
+        "tag_name": "v1.8.0-beta.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.2/gkd-v1.8.0-beta.2.apk",
+            "download_count": 6728,
+            "name": "gkd-v1.8.0-beta.2.apk",
+            "size": 5583242
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.2/outputs-v1.8.0-beta.2.zip",
+            "download_count": 368,
+            "name": "outputs-v1.8.0-beta.2.zip",
+            "size": 33409721
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.2",
+        "published_at": "2024-06-19T14:05:44Z",
+        "tag_name": "v1.8.0-beta.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.1/gkd-v1.8.0-beta.1.apk",
+            "download_count": 7553,
+            "name": "gkd-v1.8.0-beta.1.apk",
+            "size": 5599726
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.8.0-beta.1/outputs-v1.8.0-beta.1.zip",
+            "download_count": 388,
+            "name": "outputs-v1.8.0-beta.1.zip",
+            "size": 33426352
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.8.0-beta.1",
+        "published_at": "2024-06-10T13:10:20Z",
+        "tag_name": "v1.8.0-beta.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.3/gkd-v1.7.3.apk",
+            "download_count": 33814,
+            "name": "gkd-v1.7.3.apk",
+            "size": 5491640
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.3/outputs-v1.7.3.zip",
+            "download_count": 1482,
+            "name": "outputs-v1.7.3.zip",
+            "size": 33151366
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.7.3",
+        "published_at": "2024-03-28T10:49:26Z",
+        "tag_name": "v1.7.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.2/gkd-v1.7.2.apk",
+            "download_count": 2716,
+            "name": "gkd-v1.7.2.apk",
+            "size": 5513580
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.2/outputs-v1.7.2.zip",
+            "download_count": 147,
+            "name": "outputs-v1.7.2.zip",
+            "size": 32796261
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.7.2",
+        "published_at": "2024-03-24T07:44:55Z",
+        "tag_name": "v1.7.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.1/gkd-v1.7.1.apk",
+            "download_count": 2889,
+            "name": "gkd-v1.7.1.apk",
+            "size": 5513576
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.1/outputs-v1.7.1.zip",
+            "download_count": 169,
+            "name": "outputs-v1.7.1.zip",
+            "size": 32797383
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.7.1",
+        "published_at": "2024-03-21T03:27:26Z",
+        "tag_name": "v1.7.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0/gkd-v1.7.0.apk",
+            "download_count": 921,
+            "name": "gkd-v1.7.0.apk",
+            "size": 5517676
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0/outputs-v1.7.0.zip",
+            "download_count": 65,
+            "name": "outputs-v1.7.0.zip",
+            "size": 32799203
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.7.0",
+        "published_at": "2024-03-20T12:47:43Z",
+        "tag_name": "v1.7.0"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.6/gkd-v1.7.0-beta.6.apk",
+            "download_count": 3715,
+            "name": "gkd-v1.7.0-beta.6.apk",
+            "size": 5513068
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.6/outputs-v1.7.0-beta.6.zip",
+            "download_count": 134,
+            "name": "outputs-v1.7.0-beta.6.zip",
+            "size": 32780898
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.7.0-beta.6",
+        "published_at": "2024-03-16T05:10:54Z",
+        "tag_name": "v1.7.0-beta.6"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.5/gkd-v1.7.0-beta.5.apk",
+            "download_count": 824,
+            "name": "gkd-v1.7.0-beta.5.apk",
+            "size": 5508972
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.5/outputs-v1.7.0-beta.5.zip",
+            "download_count": 33,
+            "name": "outputs-v1.7.0-beta.5.zip",
+            "size": 32772194
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.7.0-beta.5",
+        "published_at": "2024-03-15T13:08:03Z",
+        "tag_name": "v1.7.0-beta.5"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.4/gkd-v1.7.0-beta.4.apk",
+            "download_count": 1889,
+            "name": "gkd-v1.7.0-beta.4.apk",
+            "size": 5500784
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.4/outputs-v1.7.0-beta.4.zip",
+            "download_count": 74,
+            "name": "outputs-v1.7.0-beta.4.zip",
+            "size": 32741474
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.7.0-beta.4",
+        "published_at": "2024-03-13T14:15:36Z",
+        "tag_name": "v1.7.0-beta.4"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.3/gkd-v1.7.0-beta.3.apk",
+            "download_count": 757,
+            "name": "gkd-v1.7.0-beta.3.apk",
+            "size": 5500784
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.3/outputs-v1.7.0-beta.3.zip",
+            "download_count": 34,
+            "name": "outputs-v1.7.0-beta.3.zip",
+            "size": 32727032
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.7.0-beta.3",
+        "published_at": "2024-03-13T03:16:27Z",
+        "tag_name": "v1.7.0-beta.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.2/gkd-v1.7.0-beta.2.apk",
+            "download_count": 2901,
+            "name": "gkd-v1.7.0-beta.2.apk",
+            "size": 5497737
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.2/outputs-v1.7.0-beta.2.zip",
+            "download_count": 143,
+            "name": "outputs-v1.7.0-beta.2.zip",
+            "size": 32706967
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.7.0-beta.2",
+        "published_at": "2024-03-09T04:57:08Z",
+        "tag_name": "v1.7.0-beta.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.1/gkd-v1.7.0-beta.1.apk",
+            "download_count": 472,
+            "name": "gkd-v1.7.0-beta.1.apk",
+            "size": 5497737
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.7.0-beta.1/outputs-v1.7.0-beta.1.zip",
+            "download_count": 29,
+            "name": "outputs-v1.7.0-beta.1.zip",
+            "size": 32706268
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.7.0-beta.1",
+        "published_at": "2024-03-08T17:14:58Z",
+        "tag_name": "v1.7.0-beta.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.6.4/gkd-v1.6.4.apk",
+            "download_count": 36330,
+            "name": "gkd-v1.6.4.apk",
+            "size": 5861139
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.6.4/outputs-v1.6.4.zip",
+            "download_count": 2307,
+            "name": "outputs-v1.6.4.zip",
+            "size": 30973053
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.6.4",
+        "published_at": "2024-01-04T16:47:58Z",
+        "tag_name": "v1.6.4"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.6.3/gkd-v1.6.3.apk",
+            "download_count": 2160,
+            "name": "gkd-v1.6.3.apk",
+            "size": 5861139
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.6.3/outputs-v1.6.3.zip",
+            "download_count": 138,
+            "name": "outputs-v1.6.3.zip",
+            "size": 30972125
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.6.3",
+        "published_at": "2024-01-03T12:07:10Z",
+        "tag_name": "v1.6.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.6.2/gkd-v1.6.2.apk",
+            "download_count": 9369,
+            "name": "gkd-v1.6.2.apk",
+            "size": 5892427
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.6.2",
+        "published_at": "2023-12-28T14:13:53Z",
+        "tag_name": "v1.6.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.6.0/gkd-v1.6.0.apk",
+            "download_count": 505,
+            "name": "gkd-v1.6.0.apk",
+            "size": 5892427
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.6.0/outputs-v1.6.0.zip",
+            "download_count": 50,
+            "name": "outputs-v1.6.0.zip",
+            "size": 25338613
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.6.0",
+        "published_at": "2023-12-28T13:02:16Z",
+        "tag_name": "v1.6.0"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.5.4/gkd-v1.5.4.apk",
+            "download_count": 48769,
+            "name": "gkd-v1.5.4.apk",
+            "size": 5822751
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.5.4/outputs.zip",
+            "download_count": 3254,
+            "name": "outputs.zip",
+            "size": 25048415
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.5.4",
+        "published_at": "2023-11-24T17:19:57Z",
+        "tag_name": "v1.5.4"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.5.3/gkd-v1.5.3.apk",
+            "download_count": 1590,
+            "name": "gkd-v1.5.3.apk",
+            "size": 5822755
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.5.3/outputs.zip",
+            "download_count": 121,
+            "name": "outputs.zip",
+            "size": 25046105
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.5.3",
+        "published_at": "2023-11-23T11:28:04Z",
+        "tag_name": "v1.5.3"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.5.2/gkd-v1.5.2.apk",
+            "download_count": 1818,
+            "name": "gkd-v1.5.2.apk",
+            "size": 5822751
+          },
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.5.2/outputs.zip",
+            "download_count": 116,
+            "name": "outputs.zip",
+            "size": 25042133
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.5.2",
+        "published_at": "2023-11-22T13:19:33Z",
+        "tag_name": "v1.5.2"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.5.1/gkd-v1.5.1.apk",
+            "download_count": 5007,
+            "name": "gkd-v1.5.1.apk",
+            "size": 13193593
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.5.1",
+        "published_at": "2023-11-18T07:30:11Z",
+        "tag_name": "v1.5.1"
+      },
+      {
+        "assets": [
+          {
+            "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.5.0/gkd-v1.5.0.apk",
+            "download_count": 376,
+            "name": "gkd-v1.5.0.apk",
+            "size": 13193589
+          }
+        ],
+        "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.5.0",
+        "published_at": "2023-11-18T07:02:40Z",
+        "tag_name": "v1.5.0"
+      }
+    ],
+    "latest": {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.1/gkd-v1.12.1.apk",
+          "download_count": 42417,
+          "name": "gkd-v1.12.1.apk",
+          "size": 3287479
+        },
+        {
+          "browser_download_url": "https://github.com/gkd-kit/gkd/releases/download/v1.12.1/outputs-v1.12.1.zip",
+          "download_count": 1623,
+          "name": "outputs-v1.12.1.zip",
+          "size": 40463401
+        }
+      ],
+      "html_url": "https://github.com/gkd-kit/gkd/releases/tag/v1.12.1",
+      "published_at": "2026-05-20T09:43:34Z",
+      "tag_name": "v1.12.1"
+    },
+    "release_count": 75
+  },
+  "snapshot_at": "2026-08-22T09:32:07+00:00",
+  "sources": {
+    "gkd_readme": "https://github.com/gkd-kit/gkd",
+    "head_rule_repo": "https://github.com/AIsouler/GKD_subscription",
+    "releases": "https://api.github.com/repos/gkd-kit/gkd/releases?per_page=100",
+    "repository": "https://api.github.com/repos/gkd-kit/gkd",
+    "successor_rule_repo": "https://github.com/Lin-arm/GKD_subscription",
+    "topic_search": "https://api.github.com/search/repositories?q=topic%3Agkd-subscription&per_page=100"
+  },
+  "subscription_topic": {
+    "archived_repositories": 1,
+    "items": [
+      {
+        "archived": true,
+        "created_at": "2024-01-03T06:40:13Z",
+        "description": "GKD 第三方订阅规则",
+        "forks_count": 489,
+        "full_name": "AIsouler/GKD_subscription",
+        "html_url": "https://github.com/AIsouler/GKD_subscription",
+        "pushed_at": "2026-02-13T12:36:06Z",
+        "stargazers_count": 11930,
+        "updated_at": "2026-08-22T06:23:21Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2025-11-15T03:15:04Z",
+        "description": "用于安卓 GKD 的第三方订阅规则 (👻Fork版)",
+        "forks_count": 134,
+        "full_name": "Lin-arm/GKD_subscription",
+        "html_url": "https://github.com/Lin-arm/GKD_subscription",
+        "pushed_at": "2026-08-22T07:08:09Z",
+        "stargazers_count": 4641,
+        "updated_at": "2026-08-22T08:13:51Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2024-02-17T09:07:22Z",
+        "description": "GKD 订阅规则",
+        "forks_count": 18,
+        "full_name": "ganlinte/GKD-subscription",
+        "html_url": "https://github.com/ganlinte/GKD-subscription",
+        "pushed_at": "2026-07-27T03:23:45Z",
+        "stargazers_count": 843,
+        "updated_at": "2026-08-21T08:04:23Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2024-03-22T12:55:08Z",
+        "description": "梦念逍遥 の GKD 订阅规则",
+        "forks_count": 8,
+        "full_name": "MengNianxiaoyao/gkd-subscription",
+        "html_url": "https://github.com/MengNianxiaoyao/gkd-subscription",
+        "pushed_at": "2026-08-21T13:39:36Z",
+        "stargazers_count": 441,
+        "updated_at": "2026-08-21T22:18:47Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2025-04-15T06:29:38Z",
+        "description": "GKD 第三方订阅规则",
+        "forks_count": 8,
+        "full_name": "mrlctate/gkd-mrlc",
+        "html_url": "https://github.com/mrlctate/gkd-mrlc",
+        "pushed_at": "2026-08-20T09:30:40Z",
+        "stargazers_count": 136,
+        "updated_at": "2026-08-22T06:52:34Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2025-10-19T05:33:34Z",
+        "description": "自用的GKD订阅🧧",
+        "forks_count": 4,
+        "full_name": "Lin-arm/gkd-Rules",
+        "html_url": "https://github.com/Lin-arm/gkd-Rules",
+        "pushed_at": "2026-08-09T15:20:09Z",
+        "stargazers_count": 69,
+        "updated_at": "2026-08-09T15:20:23Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2023-10-06T04:02:34Z",
+        "description": "💡自用GKD规则集 / Extra rules for GKD-KIT",
+        "forks_count": 1,
+        "full_name": "CKylinMC/gkd-rule-extras",
+        "html_url": "https://github.com/CKylinMC/gkd-rule-extras",
+        "pushed_at": "2026-06-01T02:45:56Z",
+        "stargazers_count": 29,
+        "updated_at": "2026-07-13T10:18:05Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2024-07-09T15:44:13Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "fifizy/gkd",
+        "html_url": "https://github.com/fifizy/gkd",
+        "pushed_at": "2024-07-09T15:44:16Z",
+        "stargazers_count": 16,
+        "updated_at": "2026-07-02T14:32:24Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2025-03-11T18:02:41Z",
+        "description": "本仓库为GKD无全局第三方附加订阅，与其他订阅叠加使用，请阅读说明后订阅！！！",
+        "forks_count": 0,
+        "full_name": "yanmuq/muqi_gkd",
+        "html_url": "https://github.com/yanmuq/muqi_gkd",
+        "pushed_at": "2026-06-12T01:51:51Z",
+        "stargazers_count": 15,
+        "updated_at": "2026-07-13T10:17:49Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2024-09-12T15:45:23Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "VolcanoSAhrimp/gkd-rule",
+        "html_url": "https://github.com/VolcanoSAhrimp/gkd-rule",
+        "pushed_at": "2026-05-31T11:11:39Z",
+        "stargazers_count": 14,
+        "updated_at": "2026-07-13T10:28:48Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2024-11-08T07:30:06Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "MINIPuffer/GKD_subscription",
+        "html_url": "https://github.com/MINIPuffer/GKD_subscription",
+        "pushed_at": "2024-11-08T08:48:09Z",
+        "stargazers_count": 12,
+        "updated_at": "2026-06-03T12:22:45Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2024-10-12T05:03:08Z",
+        "description": "GKD 订阅模板",
+        "forks_count": 0,
+        "full_name": "0123z/gkd-subscription",
+        "html_url": "https://github.com/0123z/gkd-subscription",
+        "pushed_at": "2024-10-12T05:03:11Z",
+        "stargazers_count": 11,
+        "updated_at": "2026-06-03T12:22:41Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2026-01-12T12:36:22Z",
+        "description": "自用gkd规则，部分策略更新更快或更激进。作为id667规则的补充。接受并鼓励PR，接受常用（主播也在用）的app的适配请求",
+        "forks_count": 0,
+        "full_name": "LenorEric/GK-Lemon-D",
+        "html_url": "https://github.com/LenorEric/GK-Lemon-D",
+        "pushed_at": "2026-08-12T11:29:50Z",
+        "stargazers_count": 11,
+        "updated_at": "2026-08-12T11:29:53Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2025-11-29T05:43:39Z",
+        "description": "一份仅随作者实际需求手动编写的gkd规则，为了方便更新故上传github，无法保证覆盖各种app，仅自用，部分规则参考其他大佬规则编写",
+        "forks_count": 0,
+        "full_name": "lisrain/GKD_subscription",
+        "html_url": "https://github.com/lisrain/GKD_subscription",
+        "pushed_at": "2026-05-31T20:04:08Z",
+        "stargazers_count": 11,
+        "updated_at": "2026-06-16T11:35:41Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2024-09-27T00:38:07Z",
+        "description": "gkd-kit/subscription-template",
+        "forks_count": 0,
+        "full_name": "xedmondy/gkd",
+        "html_url": "https://github.com/xedmondy/gkd",
+        "pushed_at": "2024-09-27T00:38:14Z",
+        "stargazers_count": 10,
+        "updated_at": "2026-06-03T12:22:39Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2024-11-27T10:52:00Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "sinchan3001/gkd",
+        "html_url": "https://github.com/sinchan3001/gkd",
+        "pushed_at": "2024-11-27T10:52:02Z",
+        "stargazers_count": 6,
+        "updated_at": "2026-06-03T12:22:48Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2026-02-07T13:13:25Z",
+        "description": "自用GKD规则，偏细分与功能",
+        "forks_count": 1,
+        "full_name": "cjy0812/Ling033_GKD_Rules",
+        "html_url": "https://github.com/cjy0812/Ling033_GKD_Rules",
+        "pushed_at": "2026-08-16T07:57:50Z",
+        "stargazers_count": 4,
+        "updated_at": "2026-07-27T08:11:15Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2025-10-05T07:14:19Z",
+        "description": "gkd远程订阅规则",
+        "forks_count": 0,
+        "full_name": "QING-XIAO/subscription-template",
+        "html_url": "https://github.com/QING-XIAO/subscription-template",
+        "pushed_at": "2025-10-05T07:14:22Z",
+        "stargazers_count": 3,
+        "updated_at": "2026-06-09T08:06:51Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2025-11-07T14:57:18Z",
+        "description": "gkd规则",
+        "forks_count": 0,
+        "full_name": "panglw/gkd",
+        "html_url": "https://github.com/panglw/gkd",
+        "pushed_at": "2025-11-07T14:57:20Z",
+        "stargazers_count": 2,
+        "updated_at": "2025-12-21T15:23:55Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2025-11-14T18:07:14Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "shixv/subscription-template",
+        "html_url": "https://github.com/shixv/subscription-template",
+        "pushed_at": "2025-11-14T18:07:16Z",
+        "stargazers_count": 2,
+        "updated_at": "2025-12-21T15:23:57Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2025-04-10T04:18:40Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "Linjoeel/8417",
+        "html_url": "https://github.com/Linjoeel/8417",
+        "pushed_at": "2025-04-10T04:18:42Z",
+        "stargazers_count": 2,
+        "updated_at": "2025-12-21T15:24:14Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2022-06-02T12:11:32Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "fatherest/joker",
+        "html_url": "https://github.com/fatherest/joker",
+        "pushed_at": "2022-12-28T07:01:00Z",
+        "stargazers_count": 2,
+        "updated_at": "2025-12-21T15:24:11Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2025-06-12T02:15:39Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "DevlMeIKraI/gkd-subscription",
+        "html_url": "https://github.com/DevlMeIKraI/gkd-subscription",
+        "pushed_at": "2025-06-12T02:15:41Z",
+        "stargazers_count": 2,
+        "updated_at": "2025-12-21T15:24:21Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2026-06-16T18:08:53Z",
+        "description": "My  gkd-subscription",
+        "forks_count": 0,
+        "full_name": "ACGZOOM/subscription-template",
+        "html_url": "https://github.com/ACGZOOM/subscription-template",
+        "pushed_at": "2026-06-16T18:08:57Z",
+        "stargazers_count": 1,
+        "updated_at": "2026-08-16T05:40:47Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2026-02-27T13:59:07Z",
+        "description": "模版",
+        "forks_count": 0,
+        "full_name": "Liangism/gkd",
+        "html_url": "https://github.com/Liangism/gkd",
+        "pushed_at": "2026-02-27T13:59:10Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-02-27T13:59:59Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2026-04-18T14:06:26Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "wongchao-IG/subscription",
+        "html_url": "https://github.com/wongchao-IG/subscription",
+        "pushed_at": "2026-04-18T14:06:28Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-04-18T14:07:38Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2026-05-26T09:08:33Z",
+        "description": "GKD_subscription",
+        "forks_count": 0,
+        "full_name": "Breathe0503/GKD_subscription",
+        "html_url": "https://github.com/Breathe0503/GKD_subscription",
+        "pushed_at": "2026-06-01T01:54:09Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-05-28T01:52:51Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2026-03-11T14:34:16Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "kkyoung2025/kkyoung",
+        "html_url": "https://github.com/kkyoung2025/kkyoung",
+        "pushed_at": "2026-03-11T15:15:56Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-03-11T15:16:00Z"
+      },
+      {
+        "archived": false,
+        "created_at": "2026-07-10T11:20:20Z",
+        "description": null,
+        "forks_count": 0,
+        "full_name": "kira-kasum/AAA",
+        "html_url": "https://github.com/kira-kasum/AAA",
+        "pushed_at": "2026-07-10T11:20:24Z",
+        "stargazers_count": 0,
+        "updated_at": "2026-07-10T11:21:33Z"
+      }
+    ],
+    "reported_total_count": 29,
+    "repositories_with_stars_lte_10": 15,
+    "repositories_with_stars_lte_100": 24,
+    "repositories_with_stars_lte_1000": 27,
+    "returned_count": 29,
+    "stars_top3": 17414,
+    "stars_top3_share_percent": 95.61302366441554,
+    "stars_total": 18213,
+    "zero_star_repositories": 5
+  },
+  "successor_rule_repository": {
+    "adapted_apps": 972,
+    "app_rule_groups": 2408,
+    "archived": false,
+    "created_at": "2025-11-15T03:15:04Z",
+    "describes_itself_as_successor_fork": true,
+    "forks_count": 134,
+    "full_name": "Lin-arm/GKD_subscription",
+    "html_url": "https://github.com/Lin-arm/GKD_subscription",
+    "pushed_at": "2026-08-22T07:08:09Z",
+    "stargazers_count": 4641
+  }
+}
