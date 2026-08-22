@@ -29,6 +29,18 @@
 | S23 | A1 | [Google Play 服务费](https://support.google.com/googleplay/android-developer/answer/112622?hl=en) | 15% 服务费档：开发者每年前 100 万美元收入 15%；自动续订订阅 15% | 测算采用 15%；是否成功注册该档仍需经营者确认 |
 | S24 | A1 | [Apple Platform Security：运行时进程安全](https://support.apple.com/guide/security/security-of-runtime-process-sec15bfe098e/web) | 第三方 App 受沙箱限制，不能收集/修改其他 App 信息，只能使用 iOS 明确提供的服务 | “不能复制 Android 跨 App 自动点击”是基于该架构的推断 |
 | S25 | B2 | [南方都市报：App“摇一摇”广告有了新标准](https://m.mp.oeeee.com/a/BAAFRD0000202507221105494.html) | 2025 实践指南给出加速度不小于 15m/s²、双向转角不小于 35°、操作不少于 3 秒等触发参考，并要求一键关闭 | 行业实践指南的媒体转述；与 S01 的监管方向交叉验证 |
+| S26 | A1 | [Apple：App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) | 2.5.1 只允许公开 API；2.5.2 不得读写指定容器外数据；2.5.4 后台服务只用于规定用途；2.5.14 记录屏幕须明确同意并给出指示；2.5.18 插屏广告须提供清晰关闭/跳过入口 | 审核规则与 S24 的运行时架构相互印证；规则不等于 Apple 提供跨 App 控制 API |
+| S27 | A1 | [Apple Developer：Creating a content blocker](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker) | Safari 内容拦截扩展可按规则隐藏网页元素、阻止浏览器窗口中的资源加载、去除 Cookie | 官方明确作用对象是 Safari；不能外推到知乎/豆瓣原生界面 |
+| S28 | A1 | [Apple Shortcuts：Setting triggers](https://support.apple.com/guide/shortcuts/setting-triggers-apde31e9638b/ios) | App Trigger 可在打开/切换到指定 App 或关闭/切离时启动自动化 | 证明能感知前台切换，不证明能读取或点击目标 App UI；后者受 S24、S26 限制 |
+| S29 | A1 | [Apple Developer：Network Extension](https://developer.apple.com/documentation/networkextension) | iOS 可实现 VPN、网络内容过滤与系统级 DNS 配置；不同能力有平台和受监督设备限制 | 只证明网络层扩展，不证明能够控制宿主 App 的界面或传感器 |
+| S30 | A1 | [Apple Developer：DNS settings](https://developer.apple.com/documentation/networkextension/dns-settings) | App 可配置系统级 DoH/DoT，用户必须明确启用指定服务器 | 可按域名局部挡请求；对同域资源、App 本地 UI 和事件处理无控制权 |
+| S31 | A1 | [Apple Technote TN3134：Network Extension provider deployment](https://developer.apple.com/documentation/technotes/tn3134-network-extension-provider-deployment) | iOS Packet Tunnel 可面向普通设备；内容过滤器和 DNS Proxy 通常要求受监督/受管设备或儿童 Screen Time；URL Filter 从 iOS 26 起可用 | 用于区分消费者、企业和儿童设备路线；部署资格不改变功能仍位于网络层 |
+| S32 | A1 | [Apple Developer：URL filters](https://developer.apple.com/documentation/networkextension/url-filters) | iOS 26 URL Filter 可过滤 WebKit 与 `URLSession` 的完整 URL；其他网络实现须目标 App 自愿调用 Participation API | 消费者网络过滤的新能力；不能删除目标 App 本地容器或自动点击，且自定义网络栈覆盖有限 |
+| S33 | A1 | [Apple Support：Use Voice Control](https://support.apple.com/en-us/111778) | 用户可说出 “Tap” 加控件名称，或显示控件名称/编号后口述操作 | 证明用户主动语音点击可行，不是第三方 App 的无人值守自动点击 |
+| S34 | A1 | [Apple Support：Use AssistiveTouch](https://support.apple.com/en-us/111794) | 用户可录制自定义点击/滑动并保存到 AssistiveTouch 菜单 | 可做用户触发的固定坐标手势；不同布局下的脆弱性是工程推断 |
+| S35 | A1 | [Apple Support：About alternative app distribution](https://support.apple.com/en-us/118110) | 合格地区可使用替代市场或 Web Distribution；替代分发 App 仍要经过平台完整性 Notarization | 改变安装渠道而非运行时；结合 S24 推断不会解除第三方 App 沙箱 |
+| S36 | A1 | [Apple iPhone User Guide：Control access to hardware features](https://support.apple.com/guide/iphone/control-access-to-hardware-features-iph168c4bbd5/ios) | 用户可在“隐私与安全性”查看并关闭 App 对运动与健身传感器等硬件的访问 | 关闭豆瓣权限是否能阻断摇动取决于豆瓣当前实现，尚未真机验证 |
+| S37 | A1 | [Apple Developer：ReplayKit](https://developer.apple.com/documentation/replaykit) | ReplayKit 允许用户录制屏幕或使用扩展直播内容，并提供广播选择器与样本处理能力 | 可支持识别/提醒假设；结合 S26，录屏需用户同意，且没有由此获得跨 App 触摸注入权 |
 
 ## 数据文件对应关系
 

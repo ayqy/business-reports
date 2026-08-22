@@ -26,6 +26,7 @@ def main() -> None:
         RESEARCH / "sources.md",
         RESEARCH / "calculations.md",
         RESEARCH / "scan" / "competitor-functional-matrix.md",
+        RESEARCH / "scan" / "ios-feasibility-matrix.md",
         DATA / "github_snapshot.json",
         DATA / "google_play_snapshot.json",
         DATA / "google_play_snapshot.csv",
@@ -39,6 +40,9 @@ def main() -> None:
     report = (ROOT / "report.md").read_text(encoding="utf-8")
     sources = (RESEARCH / "sources.md").read_text(encoding="utf-8")
     matrix = (RESEARCH / "scan" / "competitor-functional-matrix.md").read_text(
+        encoding="utf-8"
+    )
+    ios_matrix = (RESEARCH / "scan" / "ios-feasibility-matrix.md").read_text(
         encoding="utf-8"
     )
     economics = json.loads((DATA / "economics.json").read_text(encoding="utf-8"))
@@ -70,9 +74,28 @@ def main() -> None:
     ]:
         require(marker in report, f"report marker missing: {marker}")
 
-    for source_id in [f"S{index:02d}" for index in range(1, 25)]:
+    for source_id in [f"S{index:02d}" for index in range(1, 38)]:
         require(source_id in sources, f"source ledger missing {source_id}")
-    require(sources.count("https://") >= 24, "too few source links")
+    require(sources.count("https://") >= 37, "too few source links")
+
+    for marker in [
+        "iOS 原生自动跳过不可行",
+        "iOS 26 URL Filter",
+        "对知乎与豆瓣的直接回答",
+        "关闭豆瓣 Motion & Fitness",
+        "替代分发改变安装路径，不改变沙箱",
+    ]:
+        require(marker in report, f"iOS feasibility marker missing from report: {marker}")
+    for marker in [
+        "原生第三方 App 自动跳过：不可行",
+        "路线能力矩阵",
+        "知乎：熄屏后切回出现原生开屏广告",
+        "豆瓣：轻微移动触发广告落地页",
+        "直接证据",
+        "推断",
+        "待真机验证缺口",
+    ]:
+        require(marker in ios_matrix, f"iOS matrix marker missing: {marker}")
 
     require(
         economics["mainland_buyout"]["orders_required_per_month"] == 382,
@@ -145,7 +168,7 @@ def main() -> None:
         "status": "passed",
         "required_files": len(required_files),
         "play_comparators": len(play["apps"]),
-        "source_ledger_entries_checked": 24,
+        "source_ledger_entries_checked": 37,
         "prd_trigger": "not_triggered",
     }
     print(json.dumps(result, ensure_ascii=False))
