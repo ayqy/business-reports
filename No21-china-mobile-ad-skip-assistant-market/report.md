@@ -4,19 +4,19 @@
 
 验证日期：2026-08-22（Asia/Shanghai）。
 
-地理范围：中国大陆小范围分发，以及 Google Play 可验证的海外 Android 市场。
+地理范围：中国大陆小范围分发、Google Play 可验证的海外 Android 市场，以及中国区/美国区 App Store 可验证的 iOS 相邻产品。
 
 产品口径：使用 Android AccessibilityService 和静态人工规则识别可见界面、点击“跳过/关闭”、可选静音的第三方工具；iOS 增量分别评估“等价跨 App 自动跳过”和“网络/辅助功能局部缓解”，不把 root、越狱、注入、破解付费内容或自主 AI 操作纳入默认产品。
 
 经营目标口径：独立开发者每月现金经营利润 10,000 元，个人所得税前，不另计本人工资；公开数据缺失处只做情景测算。
 
-比较集合：李跳跳、GKD、AIsouler 与 Lin-arm 规则生态、AD Jump、Skip Ad、Mavenka Ad Skipper、December AdSkipper、Skipify、Ad Skip、Skip Ads Pro、Ad-silence。
+比较集合：李跳跳、GKD、AIsouler 与 Lin-arm 规则生态、AD Jump、Skip Ad、Mavenka Ad Skipper、December AdSkipper、Skipify、Ad Skip、Skip Ads Pro、Ad-silence；iOS 增量包括开屏弃、别跳、Jinx、AdGuard、1Blocker、Lockdown、Blokada、NextDNS、Wipr 2、AdBlock 与 AdBlock Pro for Safari。
 
 ## 核心判断
 
 高置信判断：
 - **需求真实，但最恶劣的需求正在缩小。** 2026 年新华社报道，黑猫“摇一摇”相关投诉超过 2,600 条，工信部累计通报 50 余批次侵害用户权益的 App 与 SDK；监管针对乱跳、关不掉和诱导误触，而不是禁止所有开屏广告。[官方报道 S01]
-- **Android 能做静态点击，普通 iOS 不能复制，两个平台都无法以默认权限源头拦截豆瓣摇动。** Google 明确允许静态、人工定义的确定性规则；Apple 则把所有第三方 App 放进沙箱，并限制为公开 API 和自身容器。Safari、DNS、iOS 26 URL Filter、快捷指令与辅助功能只能局部拦截网络请求或由用户手动操作，不能读取并点击知乎原生界面。[官方直接证据 S21、S22、S24、S26—S34；不能跨 App 点击为架构推断]
+- **Android 能做静态点击，iOS 有相邻产品却不能复制，两个平台都无法以默认权限源头拦截豆瓣摇动。** Google 明确允许静态人工规则；Apple 则把第三方 App 限制在沙箱、公开 API 与自身容器。中国区开屏弃只做 Web Clip/深链启动绕行，别跳只做配置后的误跳回退，Jinx 与海外成熟样本集中于 Safari 和网络过滤；它们都不能读取并点击知乎原生界面。[官方直接证据 S21、S22、S24、S26—S34、S38—S49；不能跨 App 点击为架构推断]
 - **免费替代很强。** GKD 冻结快照有 41,076 Star、1,944 Fork、75 个 Release、565,905 次 APK 历史下载，Google Play 为 50K+ 安装；官方 README 明确默认不提供规则、公开入口是赞助而非收费。[官方直接证据 S05—S08]
 - **规则维护是长期运营，不是一次开发。** 原头部规则库覆盖 886 个 App、2,074 个应用规则组，维护两年后于 2026-02-12 因“热情终究会耗尽”停更；社区 Fork 接力后扩至 972 个 App、2,408 个规则组。[官方直接证据 S10、S11]
 - **找到了价格锚，没找到温饱收入证据。** Skipify 为 1K+ 安装、每日 6 次免费、4.99 美元终身解锁；其他多个 100K+ 样本主要免费或含广告。所有样本都没有公开购买数、MAU、营收或利润。[官方直接证据 S12—S20]
@@ -31,6 +31,7 @@
 - 中国小范围使用、不过度宣传，以及海外分发，是否能降低被大公司关注的概率。
 - 政策、经济和 AI 冲击后，未来 3—5 年需求和收入池会扩大还是缩小。
 - 未越狱 iPhone 能否实现与 Android 相同的自动跳过；如果不能，Safari、DNS、iOS 26 URL Filter、快捷指令或辅助功能能补到什么程度。
+- iOS 市场是否已经存在类似李跳跳的产品，它们实际使用什么技术、能自动处理哪些广告，尤其是否覆盖知乎恢复前台与豆瓣摇一摇。
 - 只有商业结论可行，才值得继续用 scan 做完整需求规格说明书。
 
 ## 抽象后的研究问题
@@ -235,12 +236,28 @@ GKD v1.12.1 APK 从 2026-05-20 到冻结日累计 42,417 次下载，按 95 天�
 
 完整的逐路线证据、推断和缺口见 [research/scan/ios-feasibility-matrix.md](research/scan/ios-feasibility-matrix.md)。
 
+### iOS 市场上有哪些类似产品
+
+本轮用 Apple 官方 Search/Lookup API 对中国区与美国区做 8 组关键词检索，并定点核验 12 个 SKU。搜索排名包含大量浏览器、视频播放器、播客和无关结果，不是全量商店普查；但它与 Apple 平台权限边界共同给出清晰分类。[S38]
+
+| 产品路线 | 代表产品 | 实际自动化程度 | 可处理的广告 | 不能处理的广告/动作 |
+|---|---|---|---|---|
+| 深链启动绕行 | 开屏弃 | 用户改点新 Web Clip 后，自动用 URL Scheme 换启动入口；25+ App，1.5 版明确新增知乎 [S39] | 受支持 App 从新图标发起的部分冷启动开屏或摇一摇启动路径 | 信息流、视频中插、网络广告、熄屏直接恢复前台、运行期摇动、自动点按钮 |
+| 误跳后回退 | 别跳 | 用户安装快捷指令、创建 App 自动化并配置规则后，触发辅助回到前一 App [S40] | 跳到已配置外部 App 的误触场景 | 原 App 内 WebView、阻止摇动、去除广告、自动点跳过 |
+| DNS/本地 VPN/URL 过滤 | Jinx、AdGuard、Lockdown、Blokada、NextDNS、Wipr、AdBlock | 启用后自动拒绝命中域名或 URL 规则的请求 [S41—S48] | Safari 广告、独立广告域名、部分可检查的原生广告请求与追踪器 | 同域/本地素材、容器与倒计时、第三方 UI、传感器事件；证书锁定和协议也会限制覆盖 |
+| Safari 内容拦截 | 1Blocker、AdBlock Pro、AdGuard、Wipr | Safari 在加载阶段自动挡资源、脚本或隐藏网页元素 [S42、S43、S47、S49] | Safari 横幅、弹窗、遮罩、自动播放、追踪脚本和部分网页视频广告 | 知乎/豆瓣原生 App 与任何跨 App 点击 |
+| 李跳跳式跨 App UI 点击 | **没有检出可验证产品** | 无 | 无 | Apple 没有提供普通第三方 App 查询并操作其他 App UI 的公开能力 [S24、S26、S38] |
+
+商店信号也要防止误读：中国区开屏弃、别跳、Jinx 分别只有 15、102、1,626 个评分；海外成熟 Safari/DNS 样本为 1,273—72,327 个评分。Apple 不公开这些产品的安装量、购买数、营收或利润，因此这些数字只证明产品存在与相对采用，不能证明商业成功。[S38—S49]
+
+完整逐产品价格、评分、技术边界、广告类型和三桶证据见 [research/scan/ios-competitor-functional-matrix.md](research/scan/ios-competitor-functional-matrix.md)，冻结数据见 `research/data/ios_app_store_snapshot.json` 和 `.csv`。
+
 ### 对知乎与豆瓣的直接回答
 
 | 原始场景 | 能完整解决吗 | 当前最现实办法 | 仍然缺什么 |
 |---|---|---|---|
-| 知乎熄屏后切回出现原生开屏广告 | **不能自动点击。** 第三方 App 不能查询并操作知乎 UI [S24、S26；结论为架构推断] | 若广告请求可分离，尝试 DNS、Packet Tunnel 或 iOS 26 URL Filter；否则由用户用 Voice Control 说 “Tap Skip” 或播放固定手势 [S29—S34] | 知乎当前版本的请求域名、网络栈、阻断后是否仍显示空白容器/倒计时尚未真机验证 |
-| 豆瓣轻微移动触发广告跳转 | **不能由第三方 App 从源头截获。** 摇动读取和导航在豆瓣进程内 [S24、S26；后句为架构推断] | 先在“隐私与安全性 → 运动与健身”查看并关闭豆瓣权限；若落地 URL 可识别，再用 DNS/URL Filter 阻断；失效时只能手动返回 [S30—S34、S36] | 豆瓣是否列在权限页、当前实现是否依赖该权限、落地页是否第一方同域尚未真机验证 |
+| 知乎熄屏后切回出现原生开屏广告 | **不能自动点击。** 第三方 App 不能查询并操作知乎 UI [S24、S26；结论为架构推断] | 开屏弃 1.5 明确新增知乎，但只在用户从 Web Clip/深链主动启动时换入口，不能外推到熄屏直接恢复；若广告请求可分离，再试 Jinx/DNS/Packet Tunnel/iOS 26 URL Filter [S29—S32、S39—S42] | 开屏弃对知乎当前版的启动成功率、知乎请求域名/网络栈、阻断后是否仍显示空白容器或倒计时尚未真机验证 |
+| 豆瓣轻微移动触发广告跳转 | **不能由第三方 App 从源头截获。** 摇动读取和导航在豆瓣进程内 [S24、S26；后句为架构推断] | 先查看并关闭 Motion & Fitness 权限；若跳到外部 App，别跳可尝试配置跳后回退；若落地 URL 可识别，再用 Jinx/DNS/URL Filter 阻断 [S30—S32、S36、S40、S41] | 豆瓣是否列在权限页、开屏弃是否适配豆瓣、别跳对具体跳转链路是否有效、落地页是否第一方同域尚未真机验证 |
 
 关闭豆瓣 Motion & Fitness 是成本最低、值得先试的用户级办法。Apple 直接证明用户可以撤销运动与健身传感器访问 [S36]；**关闭后是否真的阻断豆瓣当前摇动广告仍是待验证假设**，不能当作已解决。
 
@@ -254,6 +271,7 @@ ReplayKit 允许用户录屏或直播屏幕，理论上可结合 OCR 识别“�
 
 - 现有海外可服务市场继续只按 Android 计算，不能把 iPhone 用户加进 374—382 名月买家的模型。
 - 若转向 Safari/DNS/iOS 26 URL 隐私拦截器，产品任务、竞品、价格、服务器和获客均已改变，应作为另一个创业假设重新调研，不能称为“iOS 版李跳跳”。
+- iOS 相邻产品证明用户会采用启动绕行、误跳恢复和网络过滤，但中国区两个最近似产品免费，Jinx 只披露 2 元/月；评分数不能换算安装或付费，仍没有稳定月入一万元的经营正证据。[S38—S41]
 - 替代分发改变安装路径，不改变沙箱；大陆小范围或海外分发都无法绕过这个结构性瓶颈。[S24、S35]
 - iOS 增量不会反转 no-go，也不触发完整 PRD。
 
@@ -359,7 +377,7 @@ ReplayKit 允许用户录屏或直播屏幕，理论上可结合 OCR 识别“�
 
 ## scan 条件判断：不触发完整需求规格说明书
 
-scan 已按证据等级完成目标选择和竞品功能矩阵，结果保存在 [research/scan/competitor-functional-matrix.md](research/scan/competitor-functional-matrix.md)。
+scan 已按证据等级完成目标选择和竞品功能矩阵，Android 结果保存在 [research/scan/competitor-functional-matrix.md](research/scan/competitor-functional-matrix.md)，iOS 市场产品与广告类型边界保存在 [research/scan/ios-competitor-functional-matrix.md](research/scan/ios-competitor-functional-matrix.md)。
 
 GKD 是最合适的功能参照；矩阵已经确认无障碍授权、静态规则、订阅、快照审查、开屏默认类别、本地处理和误触控制等关键表面。商业结论仍为 no-go，任务契约中的“最终结论评估可行才输出详细需求规格说明书”未被触发。
 
@@ -388,6 +406,8 @@ GKD 是最合适的功能参照；矩阵已经确认无障碍授权、静态规�
 > **能做产品吗？** 能，限定为 Android 静态规则自动点击/静音助手；两个平台的默认第三方权限都不能源头拦截豆瓣进程内的摇动事件。
 >
 > **iOS 能做吗？** 普通、未越狱 iPhone 不能做等价自动跳过。Safari、DNS、Packet Tunnel、iOS 26 URL Filter 可局部挡网络请求，Voice Control、AssistiveTouch 可由用户手动点击；快捷指令只能感知打开/切换 App，替代分发也不会解除沙箱。最现实的豆瓣用户级尝试是关闭其 Motion & Fitness 权限，但效果仍须按当前版本真机验证。
+>
+> **iOS 市场有类似李跳跳的产品吗，能自动跳什么？** 有相邻品，没有等价品。开屏弃通过 Web Clip/深链绕过受支持 App 的部分冷启动开屏路径，1.5 版明确新增知乎，但不处理熄屏直接恢复、信息流或视频广告；别跳可在预设的外部 App 误跳后回退，但不拦截广告或摇动；Jinx、AdGuard、NextDNS 等自动挡命中域名/URL 的网络广告，1Blocker、AdBlock Pro 等自动清理 Safari。没有一款可验证的普通 iOS 产品能跨 App 识别并点击“跳过”。[S38—S49]
 >
 > **有市场需求吗？** 有，投诉、GKD 采用和多个 100K+ 商店产品共同证明。
 >
@@ -420,11 +440,15 @@ GKD 是最合适的功能参照；矩阵已经确认无障碍授权、静态规�
 - [Apple Network Extension](https://developer.apple.com/documentation/networkextension)
 - [Apple iOS 26 URL Filter](https://developer.apple.com/documentation/networkextension/url-filters)
 - [Apple Network Extension 部署矩阵 TN3134](https://developer.apple.com/documentation/technotes/tn3134-network-extension-provider-deployment)
+- [App Store：开屏弃](https://apps.apple.com/cn/app/id6772937977)
+- [App Store：别跳](https://apps.apple.com/cn/app/id6755753217)
+- [App Store：Jinx](https://apps.apple.com/cn/app/id6755475735)
+- [Apple iTunes Search API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html)
 
 ## 证据分类
 
-- **官方直接证据：** GitHub/Google Play 动态计数、官方 README，以及 Google/Android/Apple 的政策、沙箱、网络、快捷指令和辅助功能说明。
+- **官方直接证据：** GitHub/Google Play 动态计数、Apple Search/Lookup 与 App Store 商店字段、官方 README，以及 Google/Android/Apple 的政策、沙箱、网络、快捷指令和辅助功能说明；商店描述和截图只证明厂商公开声明。
 - **高可信直接报道：** 新华社、央广网、QuestMobile 经认证作者页发布、中国新闻网对开发者声明的记录。
 - **基于公开数据的测算：** 374—382 名买家、7,480—19,100 安装、938 活跃订阅者、30,770—153,847 MAU、3—5 年指数。
-- **推断：** iOS 无法复制跨 App 自动点击、网络过滤不能删除目标 App 本地容器或取消其传感器事件、普通 Android 无障碍不能源头拦截其他 App 传感器、AI 更可能降低全行业维护成本而非建立独占壁垒。
-- **仍存在不确定性：** 真实付费率、MAU、CAC、退款、维护工时、知乎/豆瓣当前版本命中率、iOS 广告请求网络栈、豆瓣 Motion & Fitness 权限效果和细分市场收入。
+- **推断：** iOS 无法复制跨 App 自动点击、开屏弃不能在熄屏直接恢复时触发深链绕行、别跳只能覆盖发生外部 App 切换的误跳、网络过滤不能删除目标 App 本地容器或取消其传感器事件、普通 Android 无障碍不能源头拦截其他 App 传感器、AI 更可能降低全行业维护成本而非建立独占壁垒。
+- **仍存在不确定性：** 真实付费率、MAU、CAC、退款、维护工时、开屏弃/别跳/Jinx 对知乎和豆瓣当前版本的真机效果、iOS 广告请求网络栈、豆瓣 Motion & Fitness 权限效果和细分市场收入。

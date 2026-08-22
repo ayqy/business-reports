@@ -2,7 +2,7 @@
 
 本目录保存 FF-0177 的完整调研过程、公开证据快照、可复现测算、竞品功能扫描和最终报告。
 
-一句话结果：产品在 Android 上可做，但目前不应把它当作可稳定月入一万元的独立开发者生意；普通 iPhone 不能复制跨 App 自动点击，Safari、DNS、iOS 26 URL Filter、快捷指令和辅助功能都只能局部缓解，不能反转商业 no-go。
+一句话结果：产品在 Android 上可做，但目前不应把它当作可稳定月入一万元的独立开发者生意；iOS 市场已有深链启动绕行、误跳回退、Safari/DNS/VPN/URL 过滤产品，却没有可验证的跨 App 自动点击器，不能反转商业 no-go。
 
 ## 文件导航
 
@@ -12,8 +12,9 @@
 - [research/calculations.md](research/calculations.md)：月入一万元单位经济、获客阈值和 3—5 年情景模型。
 - [research/scan/competitor-functional-matrix.md](research/scan/competitor-functional-matrix.md)：按 scan 证据分级形成的竞品功能矩阵与 PRD 触发判断。
 - [research/scan/ios-feasibility-matrix.md](research/scan/ios-feasibility-matrix.md)：iOS 路线能力矩阵、知乎/豆瓣场景判断、直接证据、架构推断与待真机验证缺口。
-- research/data/：2026-08-22 冻结的 GitHub、Google Play、经济模型和预测情景结构化快照。
-- research/scripts/：公开证据采集、模型计算和一致性验证脚本。
+- [research/scan/ios-competitor-functional-matrix.md](research/scan/ios-competitor-functional-matrix.md)：开屏弃、别跳、Jinx 及成熟海外相邻产品的技术、可自动广告类型、商店信号与证据三桶。
+- research/data/：2026-08-22 冻结的 GitHub、Google Play、Apple App Store、经济模型和预测情景结构化快照。
+- research/scripts/：公开证据采集、iOS 竞品采集、模型计算和一致性验证脚本。
 
 ## 证据口径
 

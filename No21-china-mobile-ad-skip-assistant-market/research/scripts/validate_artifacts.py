@@ -27,9 +27,12 @@ def main() -> None:
         RESEARCH / "calculations.md",
         RESEARCH / "scan" / "competitor-functional-matrix.md",
         RESEARCH / "scan" / "ios-feasibility-matrix.md",
+        RESEARCH / "scan" / "ios-competitor-functional-matrix.md",
         DATA / "github_snapshot.json",
         DATA / "google_play_snapshot.json",
         DATA / "google_play_snapshot.csv",
+        DATA / "ios_app_store_snapshot.json",
+        DATA / "ios_app_store_snapshot.csv",
         DATA / "economics.json",
         DATA / "economics.csv",
         DATA / "forecast_scenarios.csv",
@@ -45,12 +48,18 @@ def main() -> None:
     ios_matrix = (RESEARCH / "scan" / "ios-feasibility-matrix.md").read_text(
         encoding="utf-8"
     )
+    ios_competitor_matrix = (
+        RESEARCH / "scan" / "ios-competitor-functional-matrix.md"
+    ).read_text(encoding="utf-8")
     economics = json.loads((DATA / "economics.json").read_text(encoding="utf-8"))
     github = json.loads(
         (DATA / "github_snapshot.json").read_text(encoding="utf-8")
     )
     play = json.loads(
         (DATA / "google_play_snapshot.json").read_text(encoding="utf-8")
+    )
+    ios_store = json.loads(
+        (DATA / "ios_app_store_snapshot.json").read_text(encoding="utf-8")
     )
 
     require(
@@ -74,9 +83,9 @@ def main() -> None:
     ]:
         require(marker in report, f"report marker missing: {marker}")
 
-    for source_id in [f"S{index:02d}" for index in range(1, 38)]:
+    for source_id in [f"S{index:02d}" for index in range(1, 50)]:
         require(source_id in sources, f"source ledger missing {source_id}")
-    require(sources.count("https://") >= 37, "too few source links")
+    require(sources.count("https://") >= 49, "too few source links")
 
     for marker in [
         "iOS 原生自动跳过不可行",
@@ -84,6 +93,10 @@ def main() -> None:
         "对知乎与豆瓣的直接回答",
         "关闭豆瓣 Motion & Fitness",
         "替代分发改变安装路径，不改变沙箱",
+        "iOS 市场上有哪些类似产品",
+        "开屏弃",
+        "别跳",
+        "没有检出可验证产品",
     ]:
         require(marker in report, f"iOS feasibility marker missing from report: {marker}")
     for marker in [
@@ -96,6 +109,20 @@ def main() -> None:
         "待真机验证缺口",
     ]:
         require(marker in ios_matrix, f"iOS matrix marker missing: {marker}")
+    for marker in [
+        "有相邻产品，但没有普通 iOS 上等价于李跳跳的产品",
+        "最接近李跳跳的中国区产品",
+        "开屏弃：绕过启动路径，不点击广告",
+        "别跳：误跳后的自动回退，不跳过广告",
+        "Jinx：DNS/本地 VPN/HTTPS URL 过滤，不操作界面",
+        "到底能自动跳过哪些广告",
+        "对知乎与豆瓣的直接回答",
+        "scan 三桶结论",
+        "官方直接证据",
+        "基于证据的推断",
+        "待真机验证缺口",
+    ]:
+        require(marker in ios_competitor_matrix, f"iOS competitor marker missing: {marker}")
 
     require(
         economics["mainland_buyout"]["orders_required_per_month"] == 382,
@@ -154,6 +181,50 @@ def main() -> None:
         all(app["page_marker_found"] for app in play["apps"]),
         "one or more Play pages failed extraction",
     )
+    require(len(ios_store["queries"]) == 8, "iOS query set is incomplete")
+    require(
+        ios_store["methodology"]["query_limit"] == 200,
+        "iOS query limit drifted",
+    )
+    require(
+        len(ios_store["selected_apps"]) == 12,
+        "iOS selected comparator set is incomplete",
+    )
+    ios_bundles = {app["bundle_id"] for app in ios_store["selected_apps"]}
+    for bundle_id in [
+        "com.twostones.adblocker",
+        "com.app.nojump",
+        "com.appstudio.Jinx",
+        "com.adguard.AdguardExtension",
+        "com.khanov.BlockerX",
+        "com.confirmed.lockdown",
+        "net.blocka.app",
+        "io.nextdns.NextDNS",
+        "site.kaylees.Wipr2",
+    ]:
+        require(bundle_id in ios_bundles, f"missing iOS comparator: {bundle_id}")
+    require(
+        all(app["track_view_url"] for app in ios_store["selected_apps"]),
+        "one or more iOS comparators lack an official store URL",
+    )
+    require(
+        "新增央视频、知乎、浙里办"
+        in next(
+            app["release_notes"]
+            for app in ios_store["selected_apps"]
+            if app["bundle_id"] == "com.twostones.adblocker"
+        ),
+        "JumpBlocker Zhihu release evidence is missing",
+    )
+    require(
+        "不会屏蔽广告"
+        in next(
+            app["description"]
+            for app in ios_store["selected_apps"]
+            if app["bundle_id"] == "com.app.nojump"
+        ),
+        "NoJump scope disclaimer is missing",
+    )
 
     require(
         "完整 PRD 条件未触发" in matrix,
@@ -168,7 +239,9 @@ def main() -> None:
         "status": "passed",
         "required_files": len(required_files),
         "play_comparators": len(play["apps"]),
-        "source_ledger_entries_checked": 37,
+        "ios_comparator_skus": len(ios_store["selected_apps"]),
+        "ios_search_queries": len(ios_store["queries"]),
+        "source_ledger_entries_checked": 49,
         "prd_trigger": "not_triggered",
     }
     print(json.dumps(result, ensure_ascii=False))

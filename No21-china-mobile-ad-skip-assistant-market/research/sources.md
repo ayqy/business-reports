@@ -41,6 +41,18 @@
 | S35 | A1 | [Apple Support：About alternative app distribution](https://support.apple.com/en-us/118110) | 合格地区可使用替代市场或 Web Distribution；替代分发 App 仍要经过平台完整性 Notarization | 改变安装渠道而非运行时；结合 S24 推断不会解除第三方 App 沙箱 |
 | S36 | A1 | [Apple iPhone User Guide：Control access to hardware features](https://support.apple.com/guide/iphone/control-access-to-hardware-features-iph168c4bbd5/ios) | 用户可在“隐私与安全性”查看并关闭 App 对运动与健身传感器等硬件的访问 | 关闭豆瓣权限是否能阻断摇动取决于豆瓣当前实现，尚未真机验证 |
 | S37 | A1 | [Apple Developer：ReplayKit](https://developer.apple.com/documentation/replaykit) | ReplayKit 允许用户录制屏幕或使用扩展直播内容，并提供广播选择器与样本处理能力 | 可支持识别/提醒假设；结合 S26，录屏需用户同意，且没有由此获得跨 App 触摸注入权 |
+| S38 | A1 | [Apple Developer：iTunes Search API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html) | 通过 Apple 官方 Search/Lookup API 冻结 8 组中美关键词结果和 12 个相关 SKU 的价格、评分数、版本、描述、截图与商店链接 | 搜索排序不是全量普查；API/商店不提供安装量、MAU、购买数、营收或利润；结构化快照见 ios_app_store_snapshot.json/csv |
+| S39 | A1 | [App Store：开屏弃](https://apps.apple.com/cn/app/id6772937977)、[官方帮助页](https://xiaonandp.github.io/jumpblocker-support.html) | 免费、4.73 分/15 个评分；25+ App Web Clip + URL Scheme 启动绕行；1.5 版更新说明新增知乎；明确不屏蔽信息流、视频中插或网络广告 | 证明厂商公开范围和商店信号，不证明每个 App/版本成功率；熄屏恢复前台没有重新点击 Web Clip 是运行路径推断 |
+| S40 | A1 | [App Store：别跳](https://apps.apple.com/cn/app/id6755753217) | 免费、4.65 分/102 个评分；基于快捷指令与自动化，在触发后本地判断是否回到前一 App；明确不修改其他 App、不屏蔽广告、不拦截系统行为 | 可缓解已配置外部 App 误跳是有界推断；不能外推到原 App 内 WebView 或跨 App 点击 |
+| S41 | A1 | [App Store：Jinx](https://apps.apple.com/cn/app/id6755475735) | 免费下载、4.43 分/1,626 个评分，描述披露 2 元/月；商店描述/截图宣称本地 VPN/DNS 与本地 MITM HTTPS URL 过滤，并列出证书锁定、TLS 握手、HTTP/1.1/HTTP/2 边界 | 描述和截图是厂商声明，未在知乎/豆瓣真机复验；不能证明公开成功率，也不提供 UI 自动点击能力 |
+| S42 | A1 | [App Store：AdGuard](https://apps.apple.com/us/app/adguard-ad-blocker-for-safari/id1047223162)、[AdGuard Pro](https://apps.apple.com/us/app/adguard-pro-safari-ad-blocker/id1126386264) | 免费版 4.32 分/18,825 个评分；Pro 9.99 美元、4.41 分/3,049 个评分；Safari 内容拦截与 DNS 保护 | DNS 覆盖请求而非第三方 UI；商店信号不等于安装或收入 |
+| S43 | A1 | [App Store：1Blocker](https://apps.apple.com/us/app/1blocker-ad-blocker/id1365531024) | 免费下载、4.50 分/12,778 个评分；以 Safari 原生 Content Blocking API 屏蔽站点广告、追踪器与网页元素 | 官方描述以 Safari 站点为产品边界，不外推到原生 App 界面 |
+| S44 | A1 | [App Store：Lockdown Privacy](https://apps.apple.com/us/app/lockdown-privacy-adblock-vpn/id1469783711) | 免费下载、4.29 分/9,781 个评分；设备内 Firewall 以域名规则覆盖各 App，另有 VPN | 域名过滤不能区分同域广告、控制按钮或传感器事件；商店描述为厂商范围声明 |
+| S45 | A1 | [App Store：Blokada](https://apps.apple.com/us/app/ad-blocker-vpn-dns-blokada/id1508341781) | 免费下载、3.90 分/9,475 个评分；明确使用 DNS 覆盖浏览器和 App，另有 VPN | DNS 只能对域名作决策；不能由“覆盖 App”推断成跨 App UI 操作 |
+| S46 | A1 | [App Store：NextDNS](https://apps.apple.com/us/app/nextdns/id1463342498) | 免费下载、4.48 分/1,670 个评分；全设备加密 DNS，可自动阻断广告、追踪与恶意域名 | 不公开安装/收入；域名层不能识别广告屏幕或点击跳过 |
+| S47 | A1 | [App Store：Wipr 2](https://apps.apple.com/us/app/wipr-2/id1662217862) | 4.99 美元、4.67 分/1,273 个评分；Safari 拦截，Filtr 附加功能宣称把网络层过滤扩展到所有 App | 厂商没有声称跨 App UI 控制；“全部 App”只按其网络层描述理解 |
+| S48 | A1 | [App Store：AdBlock](https://apps.apple.com/us/app/adblock/id691121579) | 1.99 美元、4.30 分/34,001 个评分，当前版发布于 2021-07；本地 DNS Proxy + Safari Content Blocker | 版本陈旧是直接商店事实；DNS/Safari 能力不能外推成原生 UI 跳过 |
+| S49 | A1 | [App Store：AdBlock Pro for Safari](https://apps.apple.com/us/app/adblock-pro-for-safari/id1018301773) | 免费下载、4.47 分/72,327 个评分；使用 Apple Content Blocking API，范围是 Safari 弹窗、横幅、自动播放、脚本和网页元素 | 大评分数是采用代理而非安装量；不覆盖知乎/豆瓣原生 App UI |
 
 ## 数据文件对应关系
 
@@ -48,6 +60,7 @@
 - google_play_snapshot.json / csv：S08、S12—S20 的冻结结构化数据。
 - economics.json / csv：S17、S23 与显式情景输入形成的测算结果。
 - forecast_scenarios.csv：3—5 年指数情景，不是第三方预测数据。
+- ios_app_store_snapshot.json / csv：S38—S49 的 Apple Search/Lookup 冻结结构化数据；描述和截图字段保留厂商原话，不视为独立实测。
 
 ## 来源冲突处理
 
