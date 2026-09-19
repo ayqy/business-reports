@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "summary": "A single real Ausca browser.session invocation paid USD 0.05 over x402 on Base, returned a ready 600-second lease, loaded https://example.com/ through one CDP connection with title 'Example Domain', and was explicitly closed with an authoritative closed-state readback.",
+  "cohort": "FRANTIC-134-AUSCA-BROWSER-SESSION-20260920",
+  "frantic": {
+    "bounty_number": 134,
+    "agent_kid": "agent-904bdb",
+    "operator": "@ayqy",
+    "claim_id": "6beb8299-2c3d-4717-8795-5dfd41531770",
+    "claim_ref": "frantic:claim:6beb8299-2c3d-4717-8795-5dfd41531770",
+    "claimed_at": "2026-09-19T19:56:25.580Z",
+    "fuse_expires_at": "2026-09-19T22:56:20.523Z",
+    "fuse_minutes": 180
+  },
+  "offer": {
+    "offer_id": "browser.session",
+    "offer_revision": "browser-duration-r3",
+    "offer_revision_digest": "sha256:d3f408b995bed34d613543d1e810c9dde96e83d21b6f195afcb2b73142ada99f",
+    "input_schema_digest": "sha256:b61ca378ca30dc89969629b0b69c9ee36343dbb77441ff757853fa871ba0068f",
+    "output_schema_digest": "sha256:82b79fb36c669dac6660128ce0b9d49a79d2aaa59d7ddc21f72b3c5435866ce9",
+    "input": {
+      "duration_seconds": 600
+    },
+    "idempotency_key": "ff0637-browser-session-20260920-v1",
+    "envelope_sha256": "sha256:74ab3c3055e0d5b290e4c039bc2e3cf314bd19ee1c8ae39137d46fa94d8b10ce",
+    "envelope_byte_length": 448
+  },
+  "x402": {
+    "unsigned_http_status": 402,
+    "version": 2,
+    "scheme": "exact",
+    "network": "eip155:8453",
+    "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "amount_atomic": "50000",
+    "amount_usd": "0.05",
+    "pay_to": "0x26572ff23c6c52bfb1a69cb0c9114a8be443b422",
+    "payer": "0xA29D08d14eC2614B29cf06d5ee59a1bB710b4366",
+    "max_timeout_seconds": 300,
+    "wallet_balance_atomic_before": "1000000",
+    "payment_payload_created_ms": 10,
+    "paid_http_status": 200,
+    "settlement_success": true,
+    "transaction": "0x617ee320c9550acdbe5aafaed46bcb592e36667e0d9f835b7ce5427021fba2e1",
+    "settle_elapsed_ms": 9304,
+    "transaction_url": "https://basescan.org/tx/0x617ee320c9550acdbe5aafaed46bcb592e36667e0d9f835b7ce5427021fba2e1"
+  },
+  "invocation": {
+    "invocation_id": "paid_b68d9f17-4475-405c-9f57-38cbc6bacdbb",
+    "inspect_url": "https://ausca.com/v1/invocations/paid_b68d9f17-4475-405c-9f57-38cbc6bacdbb",
+    "admission_status": "accepted",
+    "http_status": 200,
+    "state": "succeeded",
+    "offer_revision_digest": "sha256:d3f408b995bed34d613543d1e810c9dde96e83d21b6f195afcb2b73142ada99f",
+    "output_digest": "sha256:72675ed60dbcd73dd9f7239ddd6a616af9c9b8efad5983af657eab22c8ea9c55",
+    "updated_at": "2026-09-19T19:56:34.640Z",
+    "poll_count": 0,
+    "body_shape": {
+      "top_level_keys": [
+        "inspect_url",
+        "invocation",
+        "resource_access",
+        "status"
+      ],
+      "invocation_keys": [
+        "invocation_id",
+        "offer_revision_digest",
+        "output",
+        "output_digest",
+        "state",
+        "updated_at"
+      ],
+      "resource_access_keys": [
+        "capability",
+        "expires_at",
+        "kind",
+        "session_id"
+      ]
+    }
+  },
+  "browser_session": {
+    "session_id": "brs_Bg5NtBBLh8q07na5NoAR4MAqDRtsrIo7OV_CxuEAHJA",
+    "created_at": "2026-09-19T19:56:28.807Z",
+    "expires_at": "2026-09-19T20:06:28.807Z",
+    "ready_state": "ready",
+    "ready_poll_count": 0,
+    "connection_count": 1,
+    "connection_http_status": 200,
+    "target_url": "https://example.com/",
+    "final_url": "https://example.com/",
+    "navigation_http_status": 200,
+    "page_title": "Example Domain",
+    "browser_version": "Chrome/128.0.6613.137",
+    "cdp_elapsed_ms": 6840,
+    "close_http_status": 200,
+    "close_status": "closed",
+    "close_state": "closed",
+    "closed_at": "2026-09-19T19:56:41.218Z",
+    "final_status_readback": "closed"
+  },
+  "receipt": {
+    "receipt_ref": "runx:receipt:sha256:0926cc9059409313f3d129d9fc0cb0b79fc4ee1d077f1a167d956137e12879cc",
+    "public_url": "https://runx.ai/r/0926cc9059409313f3d129d9fc0cb0b79fc4ee1d077f1a167d956137e12879cc",
+    "http_status": 200,
+    "html_sha256": "sha256:5be85424c1e6c025aa911b8fa6203456255dc69202e34a4f05da03af0865f55b",
+    "page_title": "L1 Notarized receipt 0926cc905940",
+    "page_date_created": "2026-09-19T19:56:42.725Z",
+    "page_statement": "Ausca published a delivery receipt: Ausca Browser Session completed.",
+    "page_amount_present": false,
+    "page_transaction_present": false,
+    "advertised_alternate_json_url": "https://runx.ai/v1/receipts/notarizations/0926cc9059409313f3d129d9fc0cb0b79fc4ee1d077f1a167d956137e12879cc",
+    "advertised_alternate_json_http_status": 404
+  },
+  "observations": [
+    {
+      "step": "discovery",
+      "elapsed_ms": 2697,
+      "actual": "GET /v1/offers/browser.session returned revision browser-duration-r3 and all three frozen digests; Frantic #134 was funded/open with 7 of 10 slots available; agent-904bdb was eligible with zero active claims; the required GitHub star returned HTTP 204.",
+      "identifiers": [
+        "browser.session",
+        "browser-duration-r3",
+        "Frantic #134",
+        "agent-904bdb"
+      ]
+    },
+    {
+      "step": "challenge",
+      "elapsed_ms": 1579,
+      "actual": "POST /v1/invocations/prepare returned paid_b68d9f17-4475-405c-9f57-38cbc6bacdbb and an x402 v2 quote; the exact 448-byte envelope then returned unsigned HTTP 402 with Base USDC amount 50000 and payTo 0x26572ff23c6c52bfb1a69cb0c9114a8be443b422.",
+      "identifiers": [
+        "sha256:74ab3c3055e0d5b290e4c039bc2e3cf314bd19ee1c8ae39137d46fa94d8b10ce",
+        "sha256:7eec131c5bc2737b031e6096563391ad2aa9b288236e8eb23e70b342c2cb78da"
+      ]
+    },
+    {
+      "step": "payment",
+      "elapsed_ms": 14937,
+      "actual": "After the single Frantic claim was created, the unchanged envelope was sent once with a host-held PAYMENT-SIGNATURE. Settlement took 9304 ms and returned success=true for payer 0xA29D08d14eC2614B29cf06d5ee59a1bB710b4366 in transaction 0x617ee320c9550acdbe5aafaed46bcb592e36667e0d9f835b7ce5427021fba2e1.",
+      "identifiers": [
+        "6beb8299-2c3d-4717-8795-5dfd41531770",
+        "0x617ee320c9550acdbe5aafaed46bcb592e36667e0d9f835b7ce5427021fba2e1"
+      ]
+    },
+    {
+      "step": "invocation",
+      "elapsed_ms": 0,
+      "actual": "The paid POST returned HTTP 200 synchronously with status=accepted and invocation.state=succeeded. The body had inspect_url, invocation, resource_access, and status; the public readback preserved output_digest sha256:72675ed60dbcd73dd9f7239ddd6a616af9c9b8efad5983af657eab22c8ea9c55.",
+      "identifiers": [
+        "paid_b68d9f17-4475-405c-9f57-38cbc6bacdbb",
+        "sha256:72675ed60dbcd73dd9f7239ddd6a616af9c9b8efad5983af657eab22c8ea9c55"
+      ]
+    },
+    {
+      "step": "wait",
+      "elapsed_ms": 0,
+      "actual": "No terminal polling was required: poll_count=0 because the first paid response was already succeeded; no replay and no second payment identity were used.",
+      "identifiers": [
+        "poll_count=0",
+        "replay_http_status=null"
+      ]
+    },
+    {
+      "step": "result",
+      "elapsed_ms": 7473,
+      "actual": "The lease status was ready, one connection ticket was minted, one CDP connection loaded https://example.com/ with HTTP 200 and title 'Example Domain', then DELETE returned status=closed and a final authenticated GET returned state=closed.",
+      "identifiers": [
+        "brs_Bg5NtBBLh8q07na5NoAR4MAqDRtsrIo7OV_CxuEAHJA",
+        "Chrome/128.0.6613.137"
+      ]
+    },
+    {
+      "step": "receipt",
+      "elapsed_ms": 1935,
+      "actual": "The public invocation exposed a runx receipt URL that returned HTTP 200 and stated that Ausca Browser Session completed. Its HTML did not expose the settled amount or transaction, and its advertised application/json alternate returned HTTP 404; the Base explorer independently showed the successful 0.05 USDC transfer.",
+      "identifiers": [
+        "runx:receipt:sha256:0926cc9059409313f3d129d9fc0cb0b79fc4ee1d077f1a167d956137e12879cc",
+        "sha256:5be85424c1e6c025aa911b8fa6203456255dc69202e34a4f05da03af0865f55b"
+      ]
+    },
+    {
+      "step": "total",
+      "elapsed_ms": 28624,
+      "actual": "The successful-run timeline began at 2026-09-19T19:56:15.669Z and ended at 2026-09-19T19:56:44.293Z. The invocation succeeded, CDP proof completed, lease closed, and public receipt appeared inside that interval.",
+      "identifiers": [
+        "2026-09-19T19:56:15.669Z",
+        "2026-09-19T19:56:44.293Z"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "step": "discovery",
+      "identifier": "Frantic #134 criteria.description / Ausca InvocationEnvelope",
+      "finding": "The bounty text says to preserve a canonicalizer, but the live Ausca OpenAPI InvocationEnvelope has no canonicalizer property and sets additionalProperties=false. I followed the machine schema and preserved the revision, three digests, input, and idempotency key instead."
+    },
+    {
+      "step": "challenge",
+      "identifier": "PAYMENT-REQUIRED accepts[0].extra.assetTransferMethod",
+      "finding": "The live exact/Base/USDC requirement omitted assetTransferMethod, so @x402/evm had to use its backward-compatible EIP-3009 default. The payment succeeded, but the transfer method was inferred rather than explicit in the challenge."
+    },
+    {
+      "step": "result",
+      "identifier": "POST /v1/browser-sessions/{session_id}/connections status=connected",
+      "finding": "The endpoint returned status=connected while it had only minted a single-use WebSocket ticket; the actual CDP handshake happened afterward. A status such as ticket_issued would distinguish issuance from a live connection."
+    },
+    {
+      "step": "receipt",
+      "identifier": "https://runx.ai/v1/receipts/notarizations/0926cc9059409313f3d129d9fc0cb0b79fc4ee1d077f1a167d956137e12879cc",
+      "finding": "The receipt HTML advertised this application/json alternate, but the alternate returned HTTP 404. The HTML also omitted the USD 0.05 amount and transaction hash that the bounty asks a reviewer to confirm."
+    }
+  ],
+  "proposed_improvement": {
+    "step": "receipt",
+    "change": "Make the advertised receipt JSON endpoint return a stable public document containing the non-secret service id, settled amount, network, transaction hash, and completion time, and render those same fields on the receipt page. This would let a stranger complete the review from receipt_ref alone instead of combining Ausca readback with a chain explorer."
+  },
+  "request_shapes": [
+    {
+      "request": "POST https://ausca.com/v1/invocations/prepare",
+      "body": "the exact offer envelope recorded above"
+    },
+    {
+      "request": "POST https://ausca.com/v1/lease-browser",
+      "header": "PAYMENT-SIGNATURE omitted",
+      "body": "the same 448-byte envelope",
+      "response": "HTTP 402 with PAYMENT-REQUIRED"
+    },
+    {
+      "request": "POST https://ausca.com/v1/lease-browser",
+      "header": "PAYMENT-SIGNATURE: <REDACTED_HOST_SECRET>",
+      "body": "the same 448-byte envelope",
+      "response": "HTTP 200 accepted; capability value redacted"
+    },
+    {
+      "request": "POST https://ausca.com/v1/browser-sessions/{session_id}/connections",
+      "headers": "Authorization: Bearer <REDACTED_CAPABILITY>; Idempotency-Key: ff0637-cdp-connection-20260920-v1",
+      "response": "HTTP 200; WebSocket URL redacted"
+    },
+    {
+      "request": "DELETE https://ausca.com/v1/browser-sessions/{session_id}",
+      "header": "Authorization: Bearer <REDACTED_CAPABILITY>",
+      "response": "HTTP 200 status=closed"
+    }
+  ],
+  "secret_redaction": {
+    "wallet_private_key": "never persisted or emitted",
+    "frantic_agent_token": "never persisted or emitted",
+    "payment_signature": "redacted",
+    "browser_capability": "redacted",
+    "cdp_websocket_url": "redacted",
+    "public_artifact_scan": "passed before publication"
+  }
+}
