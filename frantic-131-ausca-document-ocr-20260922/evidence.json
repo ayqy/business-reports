@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "summary": "One real Ausca document.ocr invocation committed a self-authored non-sensitive scan, paid exactly USD 0.25 once over x402 on Base, reached succeeded after ten bounded polls, validated the published OCR schema plus source and output digests, and exposed an independently readable public receipt without publishing the source image or OCR text.",
+  "cohort": "agent-904bdb × Frantic #131 × one Base USDC wallet × one self-authored PNG × one ocr-fixed-r8 invocation",
+  "frantic": {
+    "bounty_number": 131,
+    "agent_kid": "agent-904bdb",
+    "operator": "@ayqy",
+    "claim_id": "8820b9e2-afc7-437b-a31e-7a8aaedc96ae",
+    "claim_ref": "frantic:claim:8820b9e2-afc7-437b-a31e-7a8aaedc96ae",
+    "claimed_at": "2026-09-21T23:32:12.113Z",
+    "fuse_expires_at": "2026-09-22T02:39:46.351Z",
+    "claim_window_minutes": 180
+  },
+  "offer": {
+    "offer_id": "document.ocr",
+    "offer_revision": "ocr-fixed-r8",
+    "offer_revision_digest": "sha256:cbb1a3959b730ccac70b99bf72e1e58192cb924203854e6c3800fd87250fa4ad",
+    "input_schema_digest": "sha256:aa86a0fc7e01438f3f99dc35550f4c3d710795e4302e489de32eae7e403ffd5d",
+    "output_schema_digest": "sha256:d9f05704955fca53ed5813e2522f56d4b9fb95e072f84771a369f780b77741d6",
+    "price_policy_digest": "sha256:43471572b3558076a3af4a7236ebb0568147611e0406e9b37bcee7a60b4fe015",
+    "price_usd": "0.25",
+    "artifact_maximum_bytes": 10485760
+  },
+  "artifact": {
+    "ownership": "self-authored by FangFang for this run",
+    "rights": "no third-party content",
+    "privacy": "no customer identity, login state, credentials, or sensitive content",
+    "media_type": "image/png",
+    "size_bytes": 59474,
+    "content_digest": "sha256:f71d04ac27fcb0721d5862aafeff08a95a161391673b79d604771404120341e2",
+    "commit_http_status": 200,
+    "commit_status": "stored",
+    "artifact_ref_sha256": "sha256:e1739d17307da6907021cb0670fc8aad3a24bc204fd51426d39ce3ff03fb3178",
+    "local_commitment_match": true,
+    "original_publication": "forbidden"
+  },
+  "invocation": {
+    "invocation_id": "paid_6da9fcdd-99da-4aa0-b0ac-92fdb148d7a4",
+    "envelope_byte_length": 655,
+    "envelope_sha256": "sha256:a434a95f9ce5ae563b3a59eeb8b493fcc863e9c10754c82b81fedcff5fe7672e",
+    "initial_http_status": 202,
+    "initial_status": "accepted",
+    "state": "succeeded",
+    "offer_revision_digest": "sha256:cbb1a3959b730ccac70b99bf72e1e58192cb924203854e6c3800fd87250fa4ad",
+    "output_digest": "sha256:47a89f60e984e40fcdd22226d340d59ae414f422a17d33d6aa1c0bc31295c640",
+    "updated_at": "2026-09-21T23:32:23.092Z",
+    "poll_count": 10,
+    "wait_elapsed_ms": 10008,
+    "payment_replay_count": 0,
+    "public_readback_http_status": 200
+  },
+  "settlement": {
+    "x402_version": 2,
+    "scheme": "exact",
+    "network": "eip155:8453",
+    "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "amount_atomic": "250000",
+    "amount_usd": "0.25",
+    "pay_to": "0x26572ff23c6c52bfb1a69cb0c9114a8be443b422",
+    "payer": "0xA29D08d14eC2614B29cf06d5ee59a1bB710b4366",
+    "transaction": "0xe1df85f079bbe67515c5751acd67bbd1942035144db7d626798ff8ebf4d17714",
+    "transaction_status": "success",
+    "settle_elapsed_ms": 2278,
+    "wallet_usdc_atomic_delta": "250000",
+    "company_chain_fee_wei": "0",
+    "paid_request_count": 1
+  },
+  "result": {
+    "retrieval": "inline_output",
+    "schema": "ausca.document_ocr.output.v1",
+    "published_schema_digest": "sha256:d9f05704955fca53ed5813e2522f56d4b9fb95e072f84771a369f780b77741d6",
+    "schema_validation": "passed",
+    "schema_validation_errors": 0,
+    "source_digest": "sha256:f71d04ac27fcb0721d5862aafeff08a95a161391673b79d604771404120341e2",
+    "source_digest_matches_local": true,
+    "output_digest": "sha256:47a89f60e984e40fcdd22226d340d59ae414f422a17d33d6aa1c0bc31295c640",
+    "output_digest_method": "sha256-json-stringify",
+    "output_digest_locally_recomputed": true,
+    "text_length": 305,
+    "text_sha256": "sha256:a1b81647c41136fa46e0d6d0c911a978e013c010125b4e6fe202eab879ff3f23",
+    "line_count": 7,
+    "lines_sha256": "sha256:5417696fe8a848921d6a1f7ffa61977f3a42062078c24325cbc0f15e06d7d540",
+    "line_confidence_present_count": 7,
+    "page_numbers": [],
+    "raw_text_persisted": false
+  },
+  "receipt": {
+    "uri": "runx:receipt:sha256:11f8086ffca82915375e2b42395d5d4eb4d737b3aba077236ba3ca6e6d357418",
+    "public_url": "https://runx.ai/r/11f8086ffca82915375e2b42395d5d4eb4d737b3aba077236ba3ca6e6d357418",
+    "http_status": 200,
+    "public_body_sha256": "sha256:a8f48719851bef8fdb0a21faff4b3ff77b8e5731b6a19de8320e0608feb30f47",
+    "completed_at": "2026-09-21T23:32:23.092Z",
+    "publisher_service_amount_and_completion_visible": true,
+    "transaction_visible_in_html": false,
+    "advertised_json_alternate_http_status": 404
+  },
+  "observations": [
+    {
+      "step": "discovery",
+      "elapsed_ms": 3655,
+      "actual": "GET /v1/offers/document.ocr fixed ocr-fixed-r8 and the revision/input/output digests; catalog.json separately fixed the USD 0.25 price policy. Frantic #131 was funded/open with 4 of 10 slots available, agent-904bdb was eligible with zero active claims, and the required auscahq/ausca star returned HTTP 204. The offer endpoint itself lacked price and price_policy_digest.",
+      "identifiers": [
+        "ocr-fixed-r8",
+        "sha256:cbb1a3959b730ccac70b99bf72e1e58192cb924203854e6c3800fd87250fa4ad",
+        "Frantic #131",
+        "agent-904bdb"
+      ]
+    },
+    {
+      "step": "challenge",
+      "elapsed_ms": 3657,
+      "actual": "POST /v1/invocations/prepare assigned paid_6da9fcdd-99da-4aa0-b0ac-92fdb148d7a4; the exact 655-byte envelope was then sent unsigned to POST /v1/extract-text and returned HTTP 402 with one x402 v2 exact requirement for Base USDC amount 250000, network eip155:8453, asset 0x833589fcd6edb6e08f4c7c32d4f71b54bda02913, and payTo 0x26572ff23c6c52bfb1a69cb0c9114a8be443b422.",
+      "identifiers": [
+        "sha256:a434a95f9ce5ae563b3a59eeb8b493fcc863e9c10754c82b81fedcff5fe7672e",
+        "sha256:f2372e25e5e7dd373496f9fd48466ea3cb10211a7e394c47a28082904c2cb212"
+      ]
+    },
+    {
+      "step": "payment",
+      "elapsed_ms": 2278,
+      "actual": "After the single Frantic claim was created in 1560 ms, the unchanged envelope was sent exactly once with a host-held PAYMENT-SIGNATURE. Settlement returned success=true for payer 0xA29D08d14eC2614B29cf06d5ee59a1bB710b4366 in Base transaction 0xe1df85f079bbe67515c5751acd67bbd1942035144db7d626798ff8ebf4d17714; the payer USDC delta was exactly 250000 and the company wallet paid zero ETH gas.",
+      "identifiers": [
+        "8820b9e2-afc7-437b-a31e-7a8aaedc96ae",
+        "0xe1df85f079bbe67515c5751acd67bbd1942035144db7d626798ff8ebf4d17714"
+      ]
+    },
+    {
+      "step": "invocation",
+      "elapsed_ms": 10009,
+      "actual": "The paid POST returned HTTP 202 with top-level status=accepted and nested invocation metadata but no terminal output. The measured invocation stage then continued through terminal polling and public readback; it ended at state=succeeded with the prepared ocr-fixed-r8 revision digest and one authoritative output digest.",
+      "identifiers": [
+        "paid_6da9fcdd-99da-4aa0-b0ac-92fdb148d7a4",
+        "HTTP 202",
+        "sha256:47a89f60e984e40fcdd22226d340d59ae414f422a17d33d6aa1c0bc31295c640"
+      ]
+    },
+    {
+      "step": "wait",
+      "elapsed_ms": 10008,
+      "actual": "Ten bounded public invocation polls were required before state=succeeded; this wait is contained within the 10009 ms invocation stage. No second paid request, payment replay, second document, or second invocation identity was used.",
+      "identifiers": [
+        "poll_count=10",
+        "payment_replay_count=0"
+      ]
+    },
+    {
+      "step": "result",
+      "elapsed_ms": 10009,
+      "actual": "Inside the same measured invocation interval, public GET /v1/invocations/paid_6da9fcdd-99da-4aa0-b0ac-92fdb148d7a4 returned inline output. It validated against ausca.document_ocr.output.v1, source_digest equaled the locally committed PNG digest, and a local JSON-stringify SHA-256 recomputation equaled the authoritative output_digest; OCR text remained unpublished.",
+      "identifiers": [
+        "sha256:d9f05704955fca53ed5813e2522f56d4b9fb95e072f84771a369f780b77741d6",
+        "sha256:f71d04ac27fcb0721d5862aafeff08a95a161391673b79d604771404120341e2",
+        "sha256:47a89f60e984e40fcdd22226d340d59ae414f422a17d33d6aa1c0bc31295c640"
+      ]
+    },
+    {
+      "step": "receipt",
+      "elapsed_ms": 1868,
+      "actual": "The succeeded invocation exposed a public runx receipt that returned HTTP 200 and identified Ausca Document OCR, USD 0.25, and completion. The HTML omitted the settlement transaction and its advertised /v1/receipts/notarizations/{hash} alternate returned HTTP 404, so settlement was verified with PAYMENT-RESPONSE plus the public Base transaction.",
+      "identifiers": [
+        "runx:receipt:sha256:11f8086ffca82915375e2b42395d5d4eb4d737b3aba077236ba3ca6e6d357418",
+        "sha256:a8f48719851bef8fdb0a21faff4b3ff77b8e5731b6a19de8320e0608feb30f47"
+      ]
+    },
+    {
+      "step": "total",
+      "elapsed_ms": 26376,
+      "actual": "The successful-run timeline began at 2026-09-21T23:32:01.334Z and ended at 2026-09-21T23:32:27.710Z: discovery, one artifact commit, unsigned challenge, one claim, one settlement, ten terminal polls, schema/digest validation, public receipt, and cost accounting all completed.",
+      "identifiers": [
+        "2026-09-21T23:32:01.334Z",
+        "2026-09-21T23:32:27.710Z"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "step": "discovery",
+      "identifier": "GET https://ausca.com/v1/offers/document.ocr",
+      "finding": "The response had the revision and schema digests but no price or price_policy_digest, so proving the USD 0.25 ceiling required a separate join to catalog.json."
+    },
+    {
+      "step": "discovery",
+      "identifier": "Frantic #131 bounty.criteria.description / Ausca InvocationEnvelope",
+      "finding": "The criteria description says to preserve a canonicalizer, while the live catalog request example, offer response, and accepted 655-byte envelope expose no canonicalizer field. The current machine bindings therefore cannot preserve the named field."
+    },
+    {
+      "step": "invocation",
+      "identifier": "POST https://ausca.com/v1/extract-text HTTP 202",
+      "finding": "The paid response exposed status=accepted and invocation metadata but no retry_after_ms or equivalent polling hint; the client needed ten polls before succeeded."
+    },
+    {
+      "step": "result",
+      "identifier": "document_ocr output lines[*].page",
+      "finding": "All seven returned lines included confidence but omitted the optional page field, so even this one-page scan required the consumer to infer page membership."
+    },
+    {
+      "step": "receipt",
+      "identifier": "https://runx.ai/v1/receipts/notarizations/11f8086ffca82915375e2b42395d5d4eb4d737b3aba077236ba3ca6e6d357418",
+      "finding": "The receipt HTML omitted the Base transaction hash and the advertised application/json alternate returned HTTP 404, preventing receipt_ref alone from proving the settlement transaction."
+    }
+  ],
+  "proposed_improvement": {
+    "step": "receipt",
+    "change": "Make the advertised receipt JSON endpoint return a stable public document containing the non-secret publisher, service id, settled amount, network, transaction hash, completion time, revision digest, source digest, and output digest, and render the same settlement fields in HTML. A reviewer could then validate this Document OCR run from receipt_ref alone."
+  },
+  "request_shapes": [
+    {
+      "request": "POST https://ausca.com/v1/artifacts",
+      "headers": "Idempotency-Key present; no account credential",
+      "body": "multipart self-authored image/png; original bytes not published",
+      "response": "HTTP 200 stored; artifact_ref redacted"
+    },
+    {
+      "request": "POST https://ausca.com/v1/invocations/prepare",
+      "body": "the exact 655-byte ocr-fixed-r8 envelope recorded by digest above"
+    },
+    {
+      "request": "POST https://ausca.com/v1/extract-text",
+      "header": "PAYMENT-SIGNATURE omitted",
+      "body": "the same 655-byte envelope",
+      "response": "HTTP 402 with PAYMENT-REQUIRED"
+    },
+    {
+      "request": "POST https://ausca.com/v1/extract-text",
+      "header": "PAYMENT-SIGNATURE: <REDACTED_HOST_SECRET>",
+      "body": "the same 655-byte envelope",
+      "response": "HTTP 202 accepted; invocation id recorded above"
+    },
+    {
+      "request": "GET https://ausca.com/v1/invocations/paid_6da9fcdd-99da-4aa0-b0ac-92fdb148d7a4",
+      "response": "HTTP 200 succeeded; output text redacted and represented only by hash and length"
+    }
+  ],
+  "redactions": {
+    "wallet_private_key": "not present",
+    "frantic_agent_token": "not present",
+    "payment_signature": "not present",
+    "artifact_ref": "digest only",
+    "artifact_access": "not present",
+    "source_document": "digest, media type, and size only",
+    "ocr_text": "digest and length only"
+  }
+}
