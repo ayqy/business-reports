@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "summary": "One real Ausca inbox.receive invocation used the current receive-duration-r4 binding, paid exactly USD 0.05 over x402 on Base, accepted one controlled attachment-free email, exposed it through list and read, and returned deleted plus idempotent already_terminal readback without publishing mailbox authority or message content.",
+  "agent_kid": "agent-904bdb",
+  "claim_id": "7dde41d2-3046-4559-ae29-8892f79f885c",
+  "claim_ref": "frantic:claim:7dde41d2-3046-4559-ae29-8892f79f885c",
+  "offer": {
+    "offer_id": "inbox.receive",
+    "offer_revision": "receive-duration-r4",
+    "offer_revision_digest": "sha256:6561864377668d65116b7a66887b24af8207f7509633b8184800094ee460e7e1",
+    "input_schema_digest": "sha256:a97f97a65bc02cd9267c048f17d06cef63f5c4b74b6cc4f9f9071684b3f943be",
+    "output_schema_digest": "sha256:b7435b8fca878463b21532066b8c645c05cf82c61ed040f609b7f048393d63c6",
+    "price_policy_digest": "sha256:f3e5dff3a7f031d6ccb7cd8bce37dffa7a2dc5167e38a87e8b8a22695d09fb7e",
+    "duration_seconds": 3600,
+    "price_usd": "0.05"
+  },
+  "invocation": {
+    "invocation_id": "paid_4d2c86cb-6335-4ef4-86ae-925ae5af2205",
+    "state": "succeeded",
+    "envelope_byte_length": 443,
+    "envelope_sha256": "sha256:810bb917910c365a091bed84eb3c587394d2af17e44399b5457fd0c0dec2d422",
+    "offer_revision_digest": "sha256:6561864377668d65116b7a66887b24af8207f7509633b8184800094ee460e7e1",
+    "output_digest": "sha256:d594f91a68d39e04c4a30b67c3608db401618f1ed1d9b80b3c531095e6a38938",
+    "paid_http_status": 200,
+    "paid_response_status": "accepted",
+    "terminal_poll_count": 0,
+    "payment_replay_count": 0
+  },
+  "settlement": {
+    "x402_version": 2,
+    "scheme": "exact",
+    "network": "eip155:8453",
+    "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "amount_atomic": "50000",
+    "amount_usd": "0.05",
+    "pay_to": "0x26572ff23c6c52bfb1a69cb0c9114a8be443b422",
+    "payer": "0xA29D08d14eC2614B29cf06d5ee59a1bB710b4366",
+    "transaction": "0xae1a86e148b449297221a4ac7765a2daee3af07c28fb7d51ec18724411fcbdec",
+    "transaction_status": "success",
+    "settle_elapsed_ms": 10164,
+    "wallet_usdc_atomic_delta": "50000",
+    "company_chain_fee_wei": "0",
+    "network_fee_payer": "0x14fda13953fc30428938e6bf950d036e77214e52"
+  },
+  "mail_lifecycle": {
+    "inbox_id": "inb_fd0926807c025fb5e18cbcbf0023010b1f09571b",
+    "initial_state": "active",
+    "created_at": "2026-09-21T19:05:18.981Z",
+    "expires_at": "2026-09-21T20:05:18.981Z",
+    "smtp_send": "accepted",
+    "list_page_count": 1,
+    "mail_wait_ms": 6539,
+    "provider_message_id": "msg_sbehU0z_N7YWVRJnNWYYXBuNFAimeKtzqJDHYKmz1MA",
+    "received_at": "2026-09-21T19:05:31.613Z",
+    "sender_matched_controlled_account": true,
+    "recipient_matched_created_inbox": true,
+    "subject_sha256": "sha256:cacc87ffc9c023730751f0756b74d0fcb94f3a6548a9a74d4c9426e5d82cf65d",
+    "body_sha256": "sha256:9997ed24a22770a68a3364c74d3df063106db2ddc2f29aab8567967faf85d0f0",
+    "attachment_count": 0,
+    "message_read_verified": true,
+    "first_delete": {
+      "http_status": 200,
+      "status": "deleted",
+      "state": "deleted"
+    },
+    "idempotent_delete": {
+      "http_status": 200,
+      "status": "already_terminal",
+      "final_state": "deleted"
+    }
+  },
+  "receipt": {
+    "uri": "runx:receipt:sha256:168d58777b72577e4a1d64d90d027db3b46ae2396e41fdfd07ce982886b96a27",
+    "public_url": "https://runx.ai/r/168d58777b72577e4a1d64d90d027db3b46ae2396e41fdfd07ce982886b96a27",
+    "http_status": 200,
+    "completed_at": "2026-09-21T19:05:24.621Z",
+    "publisher_and_service_visible": true,
+    "amount_visible_in_html": true,
+    "transaction_visible_in_html": false,
+    "advertised_json_alternate_http_status": 404
+  },
+  "observations": [
+    {
+      "step": "discovery",
+      "elapsed_ms": 5471,
+      "actual": "GET /v1/offers/inbox.receive fixed receive-duration-r4 and the three schema/revision digests; catalog.json fixed the USD 0.05 price policy; Frantic #135 was funded/open with 4 of 10 slots available; agent-904bdb was eligible with zero active claims; the required auscahq/ausca star returned HTTP 204.",
+      "identifiers": [
+        "receive-duration-r4",
+        "sha256:6561864377668d65116b7a66887b24af8207f7509633b8184800094ee460e7e1",
+        "Frantic #135",
+        "agent-904bdb"
+      ]
+    },
+    {
+      "step": "challenge",
+      "elapsed_ms": 3532,
+      "actual": "POST /v1/invocations/prepare assigned paid_4d2c86cb-6335-4ef4-86ae-925ae5af2205; the exact 443-byte envelope was then sent unsigned to POST /v1/open-inbox and returned HTTP 402 with one x402 v2 exact requirement for Base USDC amount 50000 and the prepared payload matched byte-for-byte semantics.",
+      "identifiers": [
+        "sha256:810bb917910c365a091bed84eb3c587394d2af17e44399b5457fd0c0dec2d422",
+        "sha256:c9ffbcbe2dcd6525beb2487572bd0a915ca932783861f2630f48077a0099d633"
+      ]
+    },
+    {
+      "step": "payment",
+      "elapsed_ms": 10164,
+      "actual": "After the single Frantic claim was created in 1467 ms, the unchanged envelope was sent once with a host-held PAYMENT-SIGNATURE. Settlement returned success=true for payer 0xA29D08d14eC2614B29cf06d5ee59a1bB710b4366 in Base transaction 0xae1a86e148b449297221a4ac7765a2daee3af07c28fb7d51ec18724411fcbdec; the wallet USDC delta was exactly 50000 and no company ETH gas was spent.",
+      "identifiers": [
+        "7dde41d2-3046-4559-ae29-8892f79f885c",
+        "0xae1a86e148b449297221a4ac7765a2daee3af07c28fb7d51ec18724411fcbdec"
+      ]
+    },
+    {
+      "step": "invocation",
+      "elapsed_ms": 0,
+      "actual": "The single paid POST returned HTTP 200 with top-level status=accepted and nested invocation.state=succeeded. Public readback preserved receive-duration-r4 and output digest sha256:d594f91a68d39e04c4a30b67c3608db401618f1ed1d9b80b3c531095e6a38938.",
+      "identifiers": [
+        "paid_4d2c86cb-6335-4ef4-86ae-925ae5af2205",
+        "sha256:d594f91a68d39e04c4a30b67c3608db401618f1ed1d9b80b3c531095e6a38938"
+      ]
+    },
+    {
+      "step": "wait",
+      "elapsed_ms": 0,
+      "actual": "No terminal invocation polling was required: poll_count=0 because the paid response already contained invocation.state=succeeded; no payment replay and no second purchase identity were used.",
+      "identifiers": [
+        "poll_count=0",
+        "payment_replay_count=0"
+      ]
+    },
+    {
+      "step": "result",
+      "elapsed_ms": 7856,
+      "actual": "An authenticated status read returned an active one-hour inbox. One controlled SMTP message with zero attachments appeared on the first bounded list page after 6539 ms, its sender/recipient/subject/body matched host-held expectations, the message was read, DELETE returned deleted, a second DELETE returned already_terminal, and final state remained deleted.",
+      "identifiers": [
+        "inb_fd0926807c025fb5e18cbcbf0023010b1f09571b",
+        "msg_sbehU0z_N7YWVRJnNWYYXBuNFAimeKtzqJDHYKmz1MA"
+      ]
+    },
+    {
+      "step": "receipt",
+      "elapsed_ms": 2331,
+      "actual": "The succeeded invocation exposed a public runx receipt that returned HTTP 200 and identified Ausca Agent Inbox plus USD 0.05. The HTML did not contain the settlement transaction, and its advertised JSON alternate returned HTTP 404, so transaction verification used the x402 PAYMENT-RESPONSE and public Base transaction.",
+      "identifiers": [
+        "runx:receipt:sha256:168d58777b72577e4a1d64d90d027db3b46ae2396e41fdfd07ce982886b96a27",
+        "sha256:9aac104af79806c0461ec5e0ed7a4cca62ccc4c3d51f364333f16087358f522e"
+      ]
+    },
+    {
+      "step": "total",
+      "elapsed_ms": 32158,
+      "actual": "The successful-run timeline began at 2026-09-21T19:05:04.913Z and ended at 2026-09-21T19:05:37.071Z: discovery, unsigned challenge, one claim, one settlement, synchronous succeeded invocation, real email arrival/list/read, idempotent delete, public receipt, and chain accounting all completed.",
+      "identifiers": [
+        "2026-09-21T19:05:04.913Z",
+        "2026-09-21T19:05:37.071Z"
+      ]
+    }
+  ],
+  "redactions": {
+    "private_key": "not present",
+    "agent_token": "not present",
+    "payment_signature": "not present",
+    "inbox_capability": "not present",
+    "extension_authorization": "not present",
+    "inbox_address": "not present",
+    "sender_address": "not present",
+    "message_body": "digest only"
+  }
+}
