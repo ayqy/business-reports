@@ -387,6 +387,42 @@ def coldlight_health_on_play(state: dict, source: dict, action: dict,
                        "grade": "reference_rule"})
 
 
+def rockpool_buff_on_play(state: dict, source: dict, action: dict,
+                          events: list[dict]) -> None:
+    """Resolve one injected other-Murloc target per bounded battlecry."""
+    targets = action.get("rockpool_targets", [])
+    require(type(targets) is list, "invalid_rockpool_targets")
+    require(type(action.get("exact_mode", False)) is bool, "invalid_exact_mode")
+    require(not action.get("exact_mode", False), "unknown_rockpool_target_timing")
+    eligible = {item["instance_id"]: item for item in state["board"]
+                if item["instance_id"] != source["instance_id"] and
+                ROWS[item["normal_id"]]["client_race"] in {"MURLOC", "ALL"}}
+    if not eligible:
+        require(not targets, "unexpected_rockpool_target")
+        return
+    branns = [item for item in state["board"] if item["normal_id"] == "LOE_077"]
+    require(len(branns) <= 1, "unknown_multi_repeat_order")
+    repeats = (3 if branns[0].get("golden", False) else 2) if branns else 1
+    require(len(targets) == repeats, "wrong_rockpool_target_count")
+    amount = 2 if source.get("golden", False) else 1
+    for trigger, target in enumerate(targets, start=1):
+        require(type(target) is dict and set(target) == {"instance_id", "grade"},
+                "invalid_rockpool_target_input")
+        require(target["grade"] == "reference_injected", "ungraded_rockpool_target")
+        target_id = target["instance_id"]
+        require(type(target_id) is str, "invalid_rockpool_target")
+        require(target_id != source["instance_id"], "unknown_rockpool_self_target")
+        require(target_id in eligible, "invalid_rockpool_target")
+        item = eligible[target_id]
+        item["buff_attack"] = item.get("buff_attack", 0) + amount
+        item["buff_health"] = item.get("buff_health", 0) + amount
+        events.append({"type": "rockpool_buff", "source_instance_id": source["instance_id"],
+                       "battlecry_trigger": trigger, "target_instance_id": target_id,
+                       "repeat_source_instance_id": branns[0]["instance_id"] if branns else None,
+                       "buff_attack": amount, "buff_health": amount,
+                       "grade": "reference_injected"})
+
+
 def run_action(original: dict, action: dict) -> tuple[dict, list[dict], str | None]:
     state = copy.deepcopy(original)
     events: list[dict] = []
@@ -467,6 +503,10 @@ def run_action(original: dict, action: dict) -> tuple[dict, list[dict], str | No
                 require("adapt_offers" not in action, "unexpected_adapt_offer")
             if item["normal_id"] == "EX1_103":
                 coldlight_health_on_play(state, item, action, events)
+            if item["normal_id"] == "UNG_073":
+                rockpool_buff_on_play(state, item, action, events)
+            else:
+                require("rockpool_targets" not in action, "unexpected_rockpool_target")
         elif op == "triple_discover":
             require(bool(state["pending_rewards"]), "reward_missing")
             require(len(state["hand"]) < 10, "hand_full")
@@ -550,17 +590,21 @@ def main() -> None:
     murloc_vectors = load("historical-recruitment-murloc-vectors.json")
     adapt_vectors = load("historical-recruitment-adapt-vectors.json")
     coldlight_vectors = load("historical-recruitment-coldlight-vectors.json")
+    rockpool_vectors = load("historical-recruitment-rockpool-vectors.json")
     assert RULES["mode"] == vectors["mode"] == PARAMETERS["rule_set"]
     assert zerus_vectors["mode"] == RULES["mode"]
     assert murloc_vectors["mode"] == RULES["mode"]
     assert adapt_vectors["mode"] == RULES["mode"]
     assert coldlight_vectors["mode"] == RULES["mode"]
+    assert rockpool_vectors["mode"] == RULES["mode"]
     assert RULES["build"] == vectors["build"] == PARAMETERS["build"] == 35747
     assert zerus_vectors["build"] == 35747
     assert murloc_vectors["build"] == 35747
     assert adapt_vectors["build"] == 35747
     assert coldlight_vectors["build"] == 35747
+    assert rockpool_vectors["build"] == 35747
     assert all(value == "unknown" for value in coldlight_vectors["historical_unknown"].values())
+    assert all(value == "unknown" for value in rockpool_vectors["historical_unknown"].values())
     assert all(value == "unknown" for value in RULES["historical_unknown"].values())
     assert len(ROWS) == 81 and len([r for r in ROWS.values() if r["golden_id"] is None]) == 13
     assert (ROWS["EX1_103"]["normal_effect_summary"],
@@ -572,6 +616,11 @@ def main() -> None:
             ROWS["LOE_077"]["golden_id"],
             ROWS["LOE_077"]["golden_effect_summary"]) == (
                 "己方战吼结算2遍", "TB_BaconUps_045", "己方战吼结算3遍")
+    assert (ROWS["UNG_073"]["normal_effect_summary"],
+            ROWS["UNG_073"]["golden_id"],
+            ROWS["UNG_073"]["golden_effect_summary"]) == (
+                "打出时指定一名己方鱼人，使其增加1/1", "TB_BaconUps_061",
+                "打出时指定一名己方鱼人，使其增加2/2")
     assert ZERUS["build"] == 35747 and ZERUS["candidate_grade"] == "reference_design_only"
     assert len(ZERUS_POOL) == len(set(ZERUS_POOL)) == 80
     assert ZERUS_POOL == [row["normal_id"] for row in
@@ -594,7 +643,7 @@ def main() -> None:
     seen: set[str] = set()
     used_ops: set[str] = set()
     cases = (vectors["cases"] + zerus_vectors["cases"] + murloc_vectors["cases"] +
-             adapt_vectors["cases"] + coldlight_vectors["cases"])
+             adapt_vectors["cases"] + coldlight_vectors["cases"] + rockpool_vectors["cases"])
     for case in cases:
         assert case["id"] not in seen, case["id"]
         seen.add(case["id"])

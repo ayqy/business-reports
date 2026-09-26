@@ -14,4 +14,4 @@
 
 三种数值进化在招募阶段累加 `buff_attack`／`buff_health`，战斗快照继续读取这些字段。七种非数值效果由[招募执行器](verify_historical_recruitment_transitions.py)产生带 `reference_injected` 等级的类型化记录，经[逐击执行器](verify_historical_combat_events.py)的快照入口核对；无来源标记或关键词与记录不符则拒绝。战斗结算使用[生命周期执行器](verify_historical_combat_lifecycle.py)计算存活单位伤害、英雄生命与淘汰，战斗中的损伤、破盾和植物不会写回招募阵容。
 
-[19 个贯通向量](historical-combat-adapt-vectors.json)覆盖七种效果、金色双次进化、重复孢子与风怒、潜行显形与次轮消失、七格截断、非法目标/伪造关键词/植物等级缺失的原子回滚，以及从出牌、逐击、亡语到英雄淘汰的终局路径。新增 `AC-19` 将[布莱恩的两次战吼参考选择](historical-recruitment-adapt-brann-audit.md)接入嘲讽、圣盾、逐击与英雄淘汰。[专项验证器](verify_historical_adapt_combat.py)另与现有 128 个招募场景、211 个逐击场景和 47 个生命周期场景独立合跑。这些向量只证明参考合同内部相容；无法把卡面文字推成原版候选资格、权重或完整战斗事件顺序。
+[19 个贯通向量](historical-combat-adapt-vectors.json)覆盖七种效果、金色双次进化、重复孢子与风怒、潜行显形与次轮消失、七格截断、非法目标/伪造关键词/植物等级缺失的原子回滚，以及从出牌、逐击、亡语到英雄淘汰的终局路径。新增 `AC-19` 将[布莱恩的两次战吼参考选择](historical-recruitment-adapt-brann-audit.md)接入嘲讽、圣盾、逐击与英雄淘汰。[专项验证器](verify_historical_adapt_combat.py)另与现有 147 个招募场景、211 个逐击场景和 47 个生命周期场景独立合跑。这些向量只证明参考合同内部相容；无法把卡面文字推成原版候选资格、权重或完整战斗事件顺序。

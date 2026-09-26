@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "source": "H04 build-35747 UNG_073/TB_BaconUps_061 and LOE_077/TB_BaconUps_045 card faces",
+  "historical_unknown": {
+    "self_target_eligibility": "unknown",
+    "brann_retarget_timing": "unknown",
+    "all_race_server_filter": "unknown",
+    "combat_handoff_priority": "unknown"
+  },
+  "cases": [
+    {
+      "id": "RP-01", "grade": "reference_only", "purpose": "normal Rockpool gives one other board Murloc +1/+1, leaving unselected ALL, beast, hand and itself unchanged",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}, {"instance_id": "held", "normal_id": "EX1_509"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "a", "normal_id": "GIL_681"}, {"instance_id": "b", "normal_id": "CFM_315"}]},
+      "action": {"op": "play", "instance_id": "s", "position": 1,
+                 "rockpool_targets": [{"instance_id": "m", "grade": "reference_injected"}]},
+      "expect_state": {"board_ids": ["m", "s", "a", "b"], "hand_ids": ["held"],
+                       "board_cards": [{"buff_attack": 1, "buff_health": 1}, {}, {}, {}],
+                       "hand_cards": [{"instance_id": "held"}]},
+      "expect_events": ["play", "rockpool_buff"],
+      "expect_event_details": [{"type": "play"},
+        {"type": "rockpool_buff", "battlecry_trigger": 1, "target_instance_id": "m",
+         "buff_attack": 1, "buff_health": 1, "repeat_source_instance_id": null,
+         "grade": "reference_injected"}]
+    },
+    {
+      "id": "RP-02", "grade": "reference_only", "purpose": "golden Rockpool gives selected ALL +2/+2, queues and collects one triple reward",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073", "golden": true, "reward_pending": true}],
+                  "board": [{"instance_id": "a", "normal_id": "GIL_681"}]},
+      "actions": [{"op": "play", "instance_id": "s", "rockpool_targets": [{"instance_id": "a", "grade": "reference_injected"}]},
+                  {"op": "triple_discover", "options": ["OG_256", "KAR_005", "BGS_001"], "chosen": "BGS_001"}],
+      "expect_state": {"board_ids": ["a", "s"], "hand_ids": ["ref-1"], "serial": 2,
+                       "pending_target_tiers": [], "board_cards": [{"buff_attack": 2, "buff_health": 2}, {"reward_pending": false}],
+                       "hand_cards": [{"normal_id": "BGS_001"}]},
+      "expect_events": ["play", "queue_discover", "rockpool_buff", "discover"],
+      "expect_event_details": [{"type": "play"}, {"type": "queue_discover", "target_tier": 2},
+        {"type": "rockpool_buff", "target_instance_id": "a", "buff_attack": 2, "buff_health": 2},
+        {"type": "discover", "card_id": "BGS_001"}]
+    },
+    {
+      "id": "RP-03", "grade": "reference_only", "purpose": "one normal Brann repeats normal Rockpool twice on the same chosen fish",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "brann", "normal_id": "LOE_077"}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [
+        {"instance_id": "m", "grade": "reference_injected"}, {"instance_id": "m", "grade": "reference_injected"}]},
+      "expect_state": {"board_cards": [{"buff_attack": 2, "buff_health": 2}, {}, {}]},
+      "expect_events": ["play", "rockpool_buff", "rockpool_buff"],
+      "expect_event_details": [{"type": "play"},
+        {"type": "rockpool_buff", "battlecry_trigger": 1, "target_instance_id": "m", "repeat_source_instance_id": "brann"},
+        {"type": "rockpool_buff", "battlecry_trigger": 2, "target_instance_id": "m", "repeat_source_instance_id": "brann"}]
+    },
+    {
+      "id": "RP-04", "grade": "reference_only", "purpose": "one golden Brann makes three normal Rockpool prompts, with a reference retarget on the middle prompt",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "a", "normal_id": "GIL_681"},
+                            {"instance_id": "brann", "normal_id": "LOE_077", "golden": true}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [
+        {"instance_id": "m", "grade": "reference_injected"}, {"instance_id": "a", "grade": "reference_injected"},
+        {"instance_id": "m", "grade": "reference_injected"}]},
+      "expect_state": {"board_cards": [{"buff_attack": 2, "buff_health": 2},
+                                       {"buff_attack": 1, "buff_health": 1}, {}, {}]},
+      "expect_events": ["play", "rockpool_buff", "rockpool_buff", "rockpool_buff"],
+      "expect_event_details": [{"type": "play"},
+        {"type": "rockpool_buff", "battlecry_trigger": 1, "target_instance_id": "m", "repeat_source_instance_id": "brann"},
+        {"type": "rockpool_buff", "battlecry_trigger": 2, "target_instance_id": "a", "repeat_source_instance_id": "brann"},
+        {"type": "rockpool_buff", "battlecry_trigger": 3, "target_instance_id": "m", "repeat_source_instance_id": "brann"}]
+    },
+    {
+      "id": "RP-05", "grade": "reference_only", "purpose": "one normal Brann repeats golden Rockpool +2/+2 twice on the same target",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073", "golden": true}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "brann", "normal_id": "LOE_077"}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [
+        {"instance_id": "m", "grade": "reference_injected"}, {"instance_id": "m", "grade": "reference_injected"}]},
+      "expect_state": {"board_cards": [{"buff_attack": 4, "buff_health": 4}, {}, {}]},
+      "expect_events": ["play", "rockpool_buff", "rockpool_buff"],
+      "expect_event_details": [{"type": "play"},
+        {"type": "rockpool_buff", "battlecry_trigger": 1, "buff_attack": 2, "buff_health": 2},
+        {"type": "rockpool_buff", "battlecry_trigger": 2, "buff_attack": 2, "buff_health": 2}]
+    },
+    {
+      "id": "RP-06", "grade": "reference_only", "purpose": "one golden Brann repeats golden Rockpool +2/+2 three times on an already buffed target",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073", "golden": true}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509", "buff_attack": 1, "buff_health": 1},
+                            {"instance_id": "brann", "normal_id": "LOE_077", "golden": true}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [
+        {"instance_id": "m", "grade": "reference_injected"}, {"instance_id": "m", "grade": "reference_injected"},
+        {"instance_id": "m", "grade": "reference_injected"}]},
+      "expect_state": {"board_cards": [{"buff_attack": 7, "buff_health": 7}, {}, {}]},
+      "expect_events": ["play", "rockpool_buff", "rockpool_buff", "rockpool_buff"],
+      "expect_event_details": [{"type": "play"},
+        {"type": "rockpool_buff", "battlecry_trigger": 1, "buff_attack": 2, "buff_health": 2},
+        {"type": "rockpool_buff", "battlecry_trigger": 2, "buff_attack": 2, "buff_health": 2},
+        {"type": "rockpool_buff", "battlecry_trigger": 3, "buff_attack": 2, "buff_health": 2}]
+    },
+    {
+      "id": "RP-07", "grade": "reference_only", "purpose": "source alone has no unambiguous other-Murloc target in this bounded branch",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}]},
+      "action": {"op": "play", "instance_id": "s"},
+      "expect_state": {"board_ids": ["s"], "board_cards": [{"normal_id": "UNG_073"}]},
+      "expect_events": ["play"]
+    },
+    {
+      "id": "RP-08", "grade": "reference_only", "purpose": "no other Murloc rejects an extra target request",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [{"instance_id": "s", "grade": "reference_injected"}]},
+      "error": "unexpected_rockpool_target"
+    },
+    {
+      "id": "RP-09", "grade": "reference_only", "purpose": "source self-target legality has no direct original evidence and rejects even if another fish exists",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [{"instance_id": "s", "grade": "reference_injected"}]},
+      "error": "unknown_rockpool_self_target"
+    },
+    {
+      "id": "RP-10", "grade": "reference_only", "purpose": "a hand Murloc cannot be selected as the on-board reference target",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}, {"instance_id": "held", "normal_id": "EX1_509"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [{"instance_id": "held", "grade": "reference_injected"}]},
+      "error": "invalid_rockpool_target"
+    },
+    {
+      "id": "RP-11", "grade": "reference_only", "purpose": "a friendly beast is not a Murloc target",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "b", "normal_id": "CFM_315"}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [{"instance_id": "b", "grade": "reference_injected"}]},
+      "error": "invalid_rockpool_target"
+    },
+    {
+      "id": "RP-12", "grade": "reference_only", "purpose": "two Branns make repeat ordering unknown and roll back a golden reward queue",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073", "golden": true, "reward_pending": true}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"},
+                            {"instance_id": "b1", "normal_id": "LOE_077"},
+                            {"instance_id": "b2", "normal_id": "LOE_077", "golden": true}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": []},
+      "error": "unknown_multi_repeat_order"
+    },
+    {
+      "id": "RP-13", "grade": "reference_only", "purpose": "exact original target timing cannot be claimed from card faces",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}]},
+      "action": {"op": "play", "instance_id": "s", "exact_mode": true,
+                 "rockpool_targets": [{"instance_id": "m", "grade": "reference_injected"}]},
+      "error": "unknown_rockpool_target_timing"
+    },
+    {
+      "id": "RP-14", "grade": "reference_only", "purpose": "one normal Brann requires two explicit target choices",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "brann", "normal_id": "LOE_077"}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [{"instance_id": "m", "grade": "reference_injected"}]},
+      "error": "wrong_rockpool_target_count"
+    },
+    {
+      "id": "RP-15", "grade": "reference_only", "purpose": "invalid final Brann choice rolls back previous two buffs and placement",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "brann", "normal_id": "LOE_077", "golden": true}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [
+        {"instance_id": "m", "grade": "reference_injected"}, {"instance_id": "m", "grade": "reference_injected"},
+        {"instance_id": "missing", "grade": "reference_injected"}]},
+      "error": "invalid_rockpool_target"
+    },
+    {
+      "id": "RP-16", "grade": "reference_only", "purpose": "non-Rockpool play cannot consume target input",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "CFM_315"}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": []},
+      "error": "unexpected_rockpool_target"
+    },
+    {
+      "id": "RP-17", "grade": "reference_only", "purpose": "Brann sold before play no longer repeats the target buff",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "brann", "normal_id": "LOE_077"}]},
+      "actions": [{"op": "sell", "instance_id": "brann"},
+                  {"op": "play", "instance_id": "s", "rockpool_targets": [{"instance_id": "m", "grade": "reference_injected"}]}],
+      "expect_state": {"coins": 4, "board_ids": ["m", "s"],
+                       "board_cards": [{"buff_attack": 1, "buff_health": 1}, {}]},
+      "expect_events": ["sell", "play", "rockpool_buff"]
+    },
+    {
+      "id": "RP-18", "grade": "reference_only", "purpose": "a later triple carries Rockpool +1/+1 from the selected fish into its golden form",
+      "initial": {"coins": 3, "hand": [{"instance_id": "s", "normal_id": "UNG_073"}],
+                  "board": [{"instance_id": "m1", "normal_id": "EX1_509"}, {"instance_id": "m2", "normal_id": "EX1_509"}],
+                  "shop": [{"instance_id": "m3", "card_id": "EX1_509", "frozen": false}]},
+      "actions": [{"op": "play", "instance_id": "s", "rockpool_targets": [{"instance_id": "m1", "grade": "reference_injected"}]},
+                  {"op": "buy", "instance_id": "m3"}],
+      "expect_state": {"board_ids": ["s"], "hand_ids": ["ref-1"], "coins": 0,
+                       "hand_cards": [{"normal_id": "EX1_509", "golden": true, "buff_attack": 1,
+                                       "buff_health": 1, "attack": 3, "health": 5, "reward_pending": true}]},
+      "expect_events": ["play", "rockpool_buff", "buy", "triple"]
+    },
+    {
+      "id": "RP-19", "grade": "reference_only", "purpose": "forged target provenance rejects the entire play",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "UNG_073"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}]},
+      "action": {"op": "play", "instance_id": "s", "rockpool_targets": [{"instance_id": "m", "grade": "original_verified"}]},
+      "error": "ungraded_rockpool_target"
+    }
+  ]
+}

@@ -39,6 +39,9 @@
     "adapt_effect_combat_handoff": "unknown",
     "coldlight_brann_repeat_and_event_order": "unknown",
     "coldlight_all_race_filter_and_combat_handoff": "unknown",
+    "rockpool_self_target_eligibility": "unknown",
+    "rockpool_brann_retarget_timing": "unknown",
+    "rockpool_all_race_filter_and_combat_handoff": "unknown",
     "same_tick_trigger_priority": "unknown"
   },
   "reference_decisions": {
@@ -53,7 +56,7 @@
     "triple": "after buy or discover creates a third normal instance, combine exact same definition IDs across board then hand into one reference golden hand instance; add permanent buff deltas and ordered attachments",
     "triple_reward": "playing a golden from hand queues exactly one discovery for min(6, current_tier+1); candidate options are injected and checked only against study tier and uniqueness",
     "hand_limit": "10 as explicitly marked historical-rule reference assumption; board limit 7",
-    "card_effect_dispatch": "the reducer resolves bounded held-Zerus, Primalfin discovery, Megasaur adapt, and Coldlight Seer health-buff recruitment effects; other card effects, hero skills, simultaneous trigger priority, and shared stock remain outside this reducer",
+    "card_effect_dispatch": "the reducer resolves bounded held-Zerus, Primalfin discovery, Megasaur adapt, Coldlight Seer health, and Rockpool Hunter targeted stat recruitment effects; other card effects, hero skills, simultaneous trigger priority, and shared stock remain outside this reducer",
     "zerus_tick": "at the end of advance_round, after next shop and coins are prepared, each held BGS_029 source transforms once in hand order using a caller-supplied reference_injected index; the same instance remains eligible on subsequent round advances",
     "zerus_candidates": "the ordered 80-ID index is historical-recruitment-zerus-candidates.json, derived from the 81-row study shop inventory without BGS_029; it is not a Blizzard candidate table",
     "zerus_form": "normal or golden state is preserved as an explicit reference choice; golden candidates lacking an independent 35747 golden entity reject; printed target stats replace source stats, but existing buffs and attachments reject",
@@ -71,7 +74,9 @@
     "adapt_reward_and_boundaries": "a pending golden reward queues before adapt; exact mode, more than one Brann, malformed or missing prompts, forged grade, and a triple consuming adapted targets reject atomically; original offer eligibility, probability, Brann/golden order, and combat handoff are unknown",
     "coldlight_other_murlocs": "after EX1_103 enters the board and any golden triple reward is queued, snapshot friendly MURLOC and ALL study-card instances except the source; each normal/golden battlecry adds permanent buff_health +2/+4 to those targets, excluding hand and shop",
     "coldlight_single_brann": "one board Brann repeats that printed buff twice if normal or three times if golden; each repeat emits a separate reference_rule event after source placement, so normal/golden source totals are +2/+4/+6 or +4/+8/+12 per target without/with normal/with golden Brann; this order and ALL-race filter are reference-only",
-    "coldlight_boundaries": "two Branns with eligible targets or exact historic mode reject atomically, including placement and queued golden reward; no eligible other Murloc emits no buff event; original repeat timing, same-tick priorities, and combat handoff remain unknown"
+    "coldlight_boundaries": "two Branns with eligible targets or exact historic mode reject atomically, including placement and queued golden reward; no eligible other Murloc emits no buff event; original repeat timing, same-tick priorities, and combat handoff remain unknown",
+    "rockpool_target_and_sequence": "after UNG_073 enters the board and any golden reward is queued, one explicit reference_injected target is supplied per battlecry from other friendly MURLOC or ALL study-card instances; normal/golden adds permanent buff_attack and buff_health +1/+1 or +2/+2 per chosen target; repeated target IDs accumulate, while distinct IDs may be chosen on successive reference triggers",
+    "rockpool_single_brann_and_boundaries": "one normal/golden board Brann gives two/three reference target requests, sampled after source placement; an exact-mode claim, self target, multi-Brann, missing/extra target, forged grade, hand/shop/non-Murloc target, or malformed later target rejects the whole play and queued reward atomically; original self eligibility, target reselection timing, ALL filter, and combat handoff remain unknown"
   },
   "actions": [
     {"op":"buy","phase":"recruit","coin_cost":3,"source_zone":"shop","dest_zone":"hand","evidence":"H01/H03 cost; reference capacity and inventory routing"},
@@ -80,7 +85,7 @@
     {"op":"freeze","phase":"recruit","coin_cost":0,"source_zone":"shop","dest_zone":"shop","evidence":"H01 free freeze; per-instance retention reference"},
     {"op":"upgrade","phase":"recruit","base_cost_by_target_tier":{"2":5,"3":7,"4":8,"5":9,"6":11},"source_zone":"hero_coins","dest_zone":"tavern_tier","evidence":"H04/H05 base values direct; stacked discount formula reference"},
     {"op":"resolve_triple","phase":"recruit","coin_cost":0,"source_zone":"hand_or_board","dest_zone":"golden_in_hand","evidence":"H01/H03 three same definition and reward; merge and 13 gold ID fallback reference"},
-    {"op":"play","phase":"recruit","coin_cost":0,"source_zone":"hand","dest_zone":"board","evidence":"H01/H03 golden play produces next-tier reward; H04 BGS_020 discovery, BGS_031 adapt, and EX1_103 other-Murloc health buff faces; selection, repeat order, and sequencing reference"},
+    {"op":"play","phase":"recruit","coin_cost":0,"source_zone":"hand","dest_zone":"board","evidence":"H01/H03 golden play produces next-tier reward; H04 BGS_020 discovery, BGS_031 adapt, EX1_103 other-Murloc health, and UNG_073 targeted Murloc buff faces; target selection, repeat order, and sequencing reference"},
     {"op":"triple_discover","phase":"recruit","coin_cost":0,"source_zone":"pending_reward","dest_zone":"hand","evidence":"H01/H03 higher tier discovery; injected options and stock omission reference"},
     {"op":"advance_round","phase":"recruit","coin_cost":0,"source_zone":"shop_and_hand","dest_zone":"next_recruit_shop_and_hand","evidence":"H01 stage loop; H04 Zerus card face only; timing, candidates and form carry are reference choices"}
   ],
@@ -90,5 +95,6 @@
   "murloc_candidate_index_file": "historical-recruitment-murloc-candidates.json",
   "murloc_vectors_file": "historical-recruitment-murloc-vectors.json",
   "adapt_vectors_file": "historical-recruitment-adapt-vectors.json",
-  "coldlight_vectors_file": "historical-recruitment-coldlight-vectors.json"
+  "coldlight_vectors_file": "historical-recruitment-coldlight-vectors.json",
+  "rockpool_vectors_file": "historical-recruitment-rockpool-vectors.json"
 }
