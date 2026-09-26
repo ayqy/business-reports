@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "unverified": true,
+  "source": {
+    "card_faces": "H04 build-35747 CardDefs.xml; historical-random-effect-shells.json",
+    "client_candidate_tags": "historical-combat-random-legendary-candidates.json; H05 build-35747 cards.json",
+    "reference_pool": "H09 third-party simulator ec2733704590c4de8c02ad7488d7fabe5a779506; historical-community-simulator-pools.json",
+    "count_crosscheck": "H10 Old Guardian description claims 12 legendary minions, no member IDs or build"
+  },
+  "historical_unknown": {
+    "live_candidate_eligibility": "unknown",
+    "live_draw_weights": "unknown",
+    "live_stock_policy": "unknown",
+    "golden_source_generated_form": "unknown",
+    "same_batch_random_order": "unknown",
+    "baron_random_order": "unknown",
+    "khadgar_random_order": "unknown",
+    "generated_recursive_sneed_chain": "unknown"
+  },
+  "reference_scope": {
+    "pool": "H09's 12-item array is accepted only with a reference_injected index, never as original-server eligibility",
+    "supported_candidates": "only BGS_029 and LOE_077 execute; their hand or played-battlecry text has no action in the bounded combat state",
+    "form": "ordinary candidate entities are generated even by a golden source; this is a reference choice",
+    "position": "insert sequentially at the dead source's former index, with a seven-unit side cap",
+    "repeats": "one surviving Baron repeats the deathrattle two or three times; Khadgar combinations reject",
+    "same_batch": "two compiled random-summon sources dying together reject atomically"
+  },
+  "nodes": [
+    {
+      "normal_id": "BGS_006",
+      "golden_id": "TB_BaconUps_080",
+      "name_zh": "斯尼德的伐木机",
+      "tier": 6,
+      "trigger": "source_died",
+      "family": "summon_legendary",
+      "candidate_source": "legendary_candidates",
+      "normal": {"attempts": 1},
+      "golden": {"attempts": 2},
+      "reference_supported_ids": ["BGS_029", "LOE_077"],
+      "cardface_grade": "H04_client_direct",
+      "candidate_grade": "H09_community_reference_only",
+      "count_grade": "H10_independent_author_count_only",
+      "execution_grade": "reference_only"
+    }
+  ]
+}

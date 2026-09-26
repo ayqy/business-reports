@@ -1,0 +1,949 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "fixtures": {
+    "sneed_normal": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_006"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "sneed_golden": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_006"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "sneed_cap": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_006"
+            },
+            {
+              "instance_id": "f1",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f2",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f3",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f4",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f5",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f6",
+              "card_id": "CFM_315"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        },
+        "f1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f2": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f3": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f4": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f5": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f6": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "left"
+    },
+    "sneed_baron": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_006"
+            },
+            {
+              "instance_id": "r",
+              "card_id": "FP1_031"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        },
+        "r": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "left"
+    },
+    "enemy_sneed": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_006"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "sneed_two_sources": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_006"
+            },
+            {
+              "instance_id": "x",
+              "card_id": "BGS_025"
+            }
+          ]
+        },
+        "right": {
+          "tier": 4,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "LOOT_078",
+              "buff_attack": 10,
+              "buff_health": 10
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "x": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "cleave"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right"
+    },
+    "sneed_khadgar": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_006"
+            },
+            {
+              "instance_id": "x",
+              "card_id": "DAL_575"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        },
+        "x": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "left"
+    }
+  },
+  "cases": [
+    {
+      "id": "LG-01",
+      "grade": "reference_only",
+      "fixture": "sneed_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1"
+        ],
+        "right_ids": [
+          "e"
+        ],
+        "left_units": [
+          {
+            "card_id": "BGS_029",
+            "attack": 1,
+            "health": 1,
+            "golden": false
+          }
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "BGS_029",
+              "source_instance_id": "s",
+              "client_rarity": "LEGENDARY",
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "poison_kill",
+        "death",
+        "random_legendary_trigger",
+        "random_legendary_summon"
+      ],
+      "expect_event_details": [
+        {
+          "type": "attack"
+        },
+        {
+          "type": "damage"
+        },
+        {
+          "type": "damage"
+        },
+        {
+          "type": "poison_kill",
+          "target": "s"
+        },
+        {
+          "type": "death",
+          "instance_id": "s"
+        },
+        {
+          "type": "random_legendary_trigger",
+          "pool": "legendary_candidates",
+          "requests": 1
+        },
+        {
+          "type": "random_legendary_summon",
+          "card_id": "BGS_029",
+          "pool_index": 1
+        }
+      ]
+    },
+    {
+      "id": "LG-02",
+      "grade": "reference_only",
+      "fixture": "sneed_golden",
+      "golden_instances": [
+        "s"
+      ],
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1,
+          4
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [
+          "combat-1",
+          "combat-2"
+        ],
+        "right_ids": [],
+        "left_units": [
+          {
+            "card_id": "BGS_029",
+            "golden": false
+          },
+          {
+            "card_id": "LOE_077",
+            "attack": 2,
+            "health": 4,
+            "golden": false
+          }
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "BGS_029",
+              "client_rarity": "LEGENDARY"
+            },
+            {
+              "card_id": "LOE_077",
+              "client_rarity": "LEGENDARY"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "poison_kill",
+        "death",
+        "random_legendary_trigger",
+        "random_legendary_summon",
+        "random_legendary_summon",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "LG-03",
+      "grade": "reference_only",
+      "fixture": "sneed_cap",
+      "golden_instances": [
+        "s"
+      ],
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          4
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [
+          "combat-1",
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6"
+        ],
+        "right_ids": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "LOE_077"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "poison_kill",
+        "death",
+        "random_legendary_trigger",
+        "random_legendary_summon",
+        "random_legendary_dropped",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "LG-04",
+      "grade": "reference_only",
+      "fixture": "sneed_baron",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1,
+          4
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1",
+          "combat-2",
+          "r"
+        ],
+        "right_ids": [
+          "e"
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "BGS_029"
+            },
+            {
+              "card_id": "LOE_077"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "poison_kill",
+        "death",
+        "deathrattle_repeat",
+        "random_legendary_trigger",
+        "random_legendary_summon",
+        "random_legendary_trigger",
+        "random_legendary_summon"
+      ]
+    },
+    {
+      "id": "LG-05",
+      "grade": "reference_only",
+      "fixture": "enemy_sneed",
+      "action": {
+        "op": "attack",
+        "attacker_id": "e",
+        "target_id": "s",
+        "random_draw_indexes": [
+          4
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "e"
+        ],
+        "right_ids": [
+          "combat-1"
+        ],
+        "generated": {
+          "right": [
+            {
+              "card_id": "LOE_077",
+              "source_side": "right"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "poison_kill",
+        "damage",
+        "death",
+        "random_legendary_trigger",
+        "random_legendary_summon"
+      ]
+    },
+    {
+      "id": "LG-06",
+      "grade": "reference_only",
+      "fixture": "sneed_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          10
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_candidate_outside_bounded_subset"
+    },
+    {
+      "id": "LG-07",
+      "grade": "reference_only",
+      "fixture": "sneed_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          9
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_candidate_outside_bounded_subset"
+    },
+    {
+      "id": "LG-08",
+      "grade": "reference_only",
+      "fixture": "sneed_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          12
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_draw_out_of_range"
+    },
+    {
+      "id": "LG-09",
+      "grade": "reference_only",
+      "fixture": "sneed_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          4
+        ]
+      },
+      "error": "random_draw_grade_missing"
+    },
+    {
+      "id": "LG-10",
+      "grade": "reference_only",
+      "fixture": "sneed_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e"
+      },
+      "error": "random_draw_missing"
+    },
+    {
+      "id": "LG-11",
+      "grade": "reference_only",
+      "fixture": "sneed_two_sources",
+      "action": {
+        "op": "attack",
+        "attacker_id": "e",
+        "target_id": "s",
+        "random_draw_indexes": [
+          1,
+          0
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "unknown_random_sources_same_batch"
+    },
+    {
+      "id": "LG-12",
+      "grade": "reference_only",
+      "fixture": "sneed_khadgar",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          4
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "unknown_random_khadgar_order"
+    },
+    {
+      "id": "LG-13",
+      "grade": "reference_only",
+      "fixture": "sneed_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [1],
+        "random_draw_grade": "reference_injected",
+        "mode": "exact_2019"
+      },
+      "error": "exact_mode_unverified"
+    },
+    {
+      "id": "LG-14",
+      "grade": "reference_only",
+      "fixture": "sneed_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [1, 4],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "unused_random_draws"
+    }
+  ],
+  "bridge_cases": [
+    {
+      "id": "LG-B01",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 40,
+          "tier": 6,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_006",
+              "golden": false
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 11,
+          "tier": 1,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 6
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "s",
+          "target_id": "e",
+          "random_draw_indexes": [
+            4
+          ],
+          "random_draw_grade": "reference_injected"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "combat-1"
+        ],
+        "right_survivors": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "LOE_077",
+              "source_instance_id": "s",
+              "origin": "combat_generated_minion",
+              "pool_grade": "reference_injected",
+              "client_rarity": "LEGENDARY"
+            }
+          ]
+        }
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": 0
+        },
+        "alive": {
+          "A": true,
+          "B": false
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "left",
+                "damage": 11,
+                "damaged_seat": "B"
+              }
+            ],
+            "eliminated": [
+              "B"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "LG-B02",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 40,
+          "tier": 6,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_006",
+              "golden": true
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 14,
+          "tier": 1,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 13,
+              "buff_health": 7
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "s",
+          "target_id": "e",
+          "random_draw_indexes": [
+            1,
+            4
+          ],
+          "random_draw_grade": "reference_injected"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "combat-1",
+          "combat-2"
+        ],
+        "right_survivors": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "BGS_029",
+              "source_instance_id": "s",
+              "origin": "combat_generated_minion",
+              "pool_grade": "reference_injected",
+              "client_rarity": "LEGENDARY"
+            },
+            {
+              "card_id": "LOE_077",
+              "source_instance_id": "s",
+              "origin": "combat_generated_minion",
+              "pool_grade": "reference_injected",
+              "client_rarity": "LEGENDARY"
+            }
+          ]
+        }
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": 0
+        },
+        "alive": {
+          "A": true,
+          "B": false
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "left",
+                "damage": 14,
+                "damaged_seat": "B"
+              }
+            ],
+            "eliminated": [
+              "B"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "units": "CNY unless stated; forecast market units are 亿元",
+  "warning": "All prices, conversion, refunds, renewal, fixed cost and growth rates are declared scenarios, not observed averages.",
+  "pass_base": {
+    "inputs": {
+      "price": 68,
+      "months": 4,
+      "commission": 0.15,
+      "refund": 0.03,
+      "monthly_fixed_cost": 3000,
+      "owner_pre_tax_target": 10000,
+      "payer_share": 0.02,
+      "renewal": 0.4
+    },
+    "net_per_season_pass_yuan": 56.066,
+    "monthly_net_per_active_payer_yuan": 14.016,
+    "active_season_payers_for_target": 928,
+    "mau_for_target": 46400,
+    "monthly_new_payers_at_renewal": 140,
+    "monthly_new_installs_at_same_conversion": 6960,
+    "lifetime_net_receipts_per_payer_at_renewal": 93.443,
+    "break_even_acquisition_cost_per_install": 1.869
+  },
+  "pass_sensitivity": [
+    {
+      "inputs": {
+        "price": 68,
+        "months": 4,
+        "commission": 0.15,
+        "refund": 0.03,
+        "monthly_fixed_cost": 3000,
+        "owner_pre_tax_target": 10000,
+        "payer_share": 0.01,
+        "renewal": 0.4
+      },
+      "net_per_season_pass_yuan": 56.066,
+      "monthly_net_per_active_payer_yuan": 14.016,
+      "active_season_payers_for_target": 928,
+      "mau_for_target": 92800,
+      "monthly_new_payers_at_renewal": 140,
+      "monthly_new_installs_at_same_conversion": 13920,
+      "lifetime_net_receipts_per_payer_at_renewal": 93.443,
+      "break_even_acquisition_cost_per_install": 0.934
+    },
+    {
+      "inputs": {
+        "price": 68,
+        "months": 4,
+        "commission": 0.3,
+        "refund": 0.03,
+        "monthly_fixed_cost": 3000,
+        "owner_pre_tax_target": 10000,
+        "payer_share": 0.01,
+        "renewal": 0.4
+      },
+      "net_per_season_pass_yuan": 46.172,
+      "monthly_net_per_active_payer_yuan": 11.543,
+      "active_season_payers_for_target": 1127,
+      "mau_for_target": 112700,
+      "monthly_new_payers_at_renewal": 170,
+      "monthly_new_installs_at_same_conversion": 16905,
+      "lifetime_net_receipts_per_payer_at_renewal": 76.953,
+      "break_even_acquisition_cost_per_install": 0.77
+    },
+    {
+      "inputs": {
+        "price": 68,
+        "months": 4,
+        "commission": 0.15,
+        "refund": 0.03,
+        "monthly_fixed_cost": 3000,
+        "owner_pre_tax_target": 10000,
+        "payer_share": 0.02,
+        "renewal": 0.4
+      },
+      "net_per_season_pass_yuan": 56.066,
+      "monthly_net_per_active_payer_yuan": 14.016,
+      "active_season_payers_for_target": 928,
+      "mau_for_target": 46400,
+      "monthly_new_payers_at_renewal": 140,
+      "monthly_new_installs_at_same_conversion": 6960,
+      "lifetime_net_receipts_per_payer_at_renewal": 93.443,
+      "break_even_acquisition_cost_per_install": 1.869
+    },
+    {
+      "inputs": {
+        "price": 68,
+        "months": 4,
+        "commission": 0.3,
+        "refund": 0.03,
+        "monthly_fixed_cost": 3000,
+        "owner_pre_tax_target": 10000,
+        "payer_share": 0.02,
+        "renewal": 0.4
+      },
+      "net_per_season_pass_yuan": 46.172,
+      "monthly_net_per_active_payer_yuan": 11.543,
+      "active_season_payers_for_target": 1127,
+      "mau_for_target": 56350,
+      "monthly_new_payers_at_renewal": 170,
+      "monthly_new_installs_at_same_conversion": 8453,
+      "lifetime_net_receipts_per_payer_at_renewal": 76.953,
+      "break_even_acquisition_cost_per_install": 1.539
+    },
+    {
+      "inputs": {
+        "price": 68,
+        "months": 4,
+        "commission": 0.15,
+        "refund": 0.03,
+        "monthly_fixed_cost": 3000,
+        "owner_pre_tax_target": 10000,
+        "payer_share": 0.05,
+        "renewal": 0.4
+      },
+      "net_per_season_pass_yuan": 56.066,
+      "monthly_net_per_active_payer_yuan": 14.016,
+      "active_season_payers_for_target": 928,
+      "mau_for_target": 18560,
+      "monthly_new_payers_at_renewal": 140,
+      "monthly_new_installs_at_same_conversion": 2784,
+      "lifetime_net_receipts_per_payer_at_renewal": 93.443,
+      "break_even_acquisition_cost_per_install": 4.672
+    },
+    {
+      "inputs": {
+        "price": 68,
+        "months": 4,
+        "commission": 0.3,
+        "refund": 0.03,
+        "monthly_fixed_cost": 3000,
+        "owner_pre_tax_target": 10000,
+        "payer_share": 0.05,
+        "renewal": 0.4
+      },
+      "net_per_season_pass_yuan": 46.172,
+      "monthly_net_per_active_payer_yuan": 11.543,
+      "active_season_payers_for_target": 1127,
+      "mau_for_target": 22540,
+      "monthly_new_payers_at_renewal": 170,
+      "monthly_new_installs_at_same_conversion": 3381,
+      "lifetime_net_receipts_per_payer_at_renewal": 76.953,
+      "break_even_acquisition_cost_per_install": 3.848
+    }
+  ],
+  "monthly_profit_examples": [
+    {
+      "mau": 5000,
+      "payer_share": 0.01,
+      "gross_sales_per_month_yuan": 850.0,
+      "developer_receipts_per_month_yuan": 700.82,
+      "owner_profit_pre_tax_per_month_yuan": -2299.18
+    },
+    {
+      "mau": 10000,
+      "payer_share": 0.02,
+      "gross_sales_per_month_yuan": 3400.0,
+      "developer_receipts_per_month_yuan": 2803.3,
+      "owner_profit_pre_tax_per_month_yuan": -196.7
+    },
+    {
+      "mau": 20000,
+      "payer_share": 0.02,
+      "gross_sales_per_month_yuan": 6800.0,
+      "developer_receipts_per_month_yuan": 5606.6,
+      "owner_profit_pre_tax_per_month_yuan": 2606.6
+    },
+    {
+      "mau": 50000,
+      "payer_share": 0.02,
+      "gross_sales_per_month_yuan": 17000.0,
+      "developer_receipts_per_month_yuan": 14016.5,
+      "owner_profit_pre_tax_per_month_yuan": 11016.5
+    },
+    {
+      "mau": 20000,
+      "payer_share": 0.05,
+      "gross_sales_per_month_yuan": 17000.0,
+      "developer_receipts_per_month_yuan": 14016.5,
+      "owner_profit_pre_tax_per_month_yuan": 11016.5
+    }
+  ],
+  "paid_indie_price_examples": [
+    {
+      "storefront_price_yuan": 15,
+      "net_per_sale_after_assumed_15pct_fee_and_3pct_refunds_yuan": 12.3675,
+      "monthly_sales_for_13000_yuan_receipts": 1052
+    },
+    {
+      "storefront_price_yuan": 18,
+      "net_per_sale_after_assumed_15pct_fee_and_3pct_refunds_yuan": 14.841,
+      "monthly_sales_for_13000_yuan_receipts": 876
+    }
+  ],
+  "mobile_market_forecast_from_2025_2570_76_yi": {
+    "-0.02": {
+      "2029": 2371.19,
+      "2031": 2277.29
+    },
+    "0.03": {
+      "2029": 2893.41,
+      "2031": 3069.62
+    },
+    "0.08": {
+      "2029": 3497.49,
+      "2031": 4079.47
+    }
+  }
+}

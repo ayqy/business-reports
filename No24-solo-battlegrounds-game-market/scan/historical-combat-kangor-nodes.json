@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "unverified": true,
+  "source": "H04 build-35747 normal and golden Kangor card faces, cross-checked with historical-composite-nodes.json and historical-card-pool.json",
+  "historical_unknown": {
+    "same_batch_friendly_mech_order": "unknown",
+    "kangor_and_mech_same_batch_priority": "unknown",
+    "resummoned_stats_and_enchantments": "unknown",
+    "resummoned_keywords_and_shield": "unknown",
+    "resummoned_token_damage_tier": "unknown",
+    "repeat_death_identity": "unknown",
+    "baron_and_khadgar_priority": "unknown",
+    "summon_listener_order": "unknown",
+    "resummoned_deathrattle_chain": "unknown"
+  },
+  "reference_scope": {
+    "history": "record each friendly MECHANICAL or ALL death from combat start with an explicit death batch; only a strict one-mech-per-batch history is eligible",
+    "copy_policy": "reference_death_snapshot",
+    "copy_state": "copy combat attack and effective maximum health excluding current aura contributions, current keywords, race and normal/golden form; restore the copy to that health",
+    "position": "insert the selected copies from the dead Kangor's former index in death-history order, up to seven board slots",
+    "repeat": "one surviving friendly Baron repeats the same first-N selection twice or three times; Khadgar interaction is rejected",
+    "generated_manifest": "new instance IDs keep the initial Kangor as lifecycle source and carry reference provenance; a token inherits its explicitly graded damage tier",
+    "reject": "same-batch ties, a mech dying with Kangor, duplicate root death identities, unsupported copy state or generated deathrattle chains fail atomically"
+  },
+  "nodes": [
+    {
+      "normal_id": "BGS_012",
+      "golden_id": "TB_BaconUps_087",
+      "family": "first_dead_mechs",
+      "trigger": "source_died",
+      "target": "earliest_friendly_mech_deaths",
+      "normal": {"first_count": 2},
+      "golden": {"first_count": 4},
+      "copy_policy": "reference_death_snapshot",
+      "cardface_grade": "H04_client_direct",
+      "execution_grade": "reference_only"
+    }
+  ]
+}

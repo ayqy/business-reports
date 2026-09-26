@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "unverified": true,
+  "evidence": {
+    "phase_loop": "H01 official: recruit, automatic combat, hero damage and elimination",
+    "damage_formula_and_ghost": "H03 contemporary community account: winner tier plus surviving minion tiers; draw zero; odd-player ghost may damage live player",
+    "card_tiers": "H03 tier index cross-matched to H04 build 35747 card definitions",
+    "combat_snapshot": "H01/H03 phase semantics; exact persistence and serialization are reference design"
+  },
+  "historical_unknown": {
+    "pairing_constraints_and_weights": "unknown",
+    "ghost_snapshot_selection": "unknown",
+    "first_attacker_selection": "unknown",
+    "same_tick_combat_event_order": "unknown",
+    "simultaneous_elimination_placement": "unknown",
+    "combat_generated_token_damage_tier": "unknown",
+    "combat_generated_pool_eligibility": "unknown",
+    "malganis_immunity_phase_and_damage_order": "unknown",
+    "recruit_self_damage_trigger_order": "unknown"
+  },
+  "reference_decisions": {
+    "pairings": "caller injects a complete disjoint matching of living seats; odd count requires one ghost from a previously eliminated seat",
+    "combat_engine_boundary": "caller injects terminal survivor IDs and a generated-token manifest; reducer validates identity and computes outcome, never simulates attacks",
+    "snapshot": "deep-copy locked recruitment boards and tavern tiers before combat; no combat mutation is written to recruit boards",
+    "damage": "draw gives zero; surviving winner deals own tavern tier plus each surviving minion damage tier; a ghost can damage a living loser but cannot take damage",
+    "token_tier": "combat-generated token damage tier is caller supplied with reference_injected grade and must not be presented as original server fact",
+    "elimination": "apply all pair results in one atomic action, then eliminate seats at health zero or below; preserve original boards as eligible ghost snapshots",
+    "placement": "winner_id is known when exactly one seat remains; simultaneous elimination placements remain unknown",
+    "next_round": "emit an advance_recruit hook for each living seat; per-seat shop, coin and discount mutation belongs to historical-recruitment-transitions.json",
+    "recruit_hero_immunity": "only a board-present Mal'Ganis on the damaged seat prevents the bounded Wrath Weaver damage event; the card-play trigger is reference-injected and stat growth is modeled separately",
+    "combat_hero_immunity": "derive immunity at hero-damage settlement from terminal survivor IDs, never from the preserved recruitment board; a losing side has no survivors, so its Mal'Ganis does not suppress combat damage in this reference model"
+  },
+  "actions": [
+    {"op": "end_recruit", "from": "recruit", "to": "recruit_or_await_pairing"},
+    {"op": "apply_recruit_hero_damage", "from": "recruit", "to": "recruit_or_match_over"},
+    {"op": "begin_combat", "from": "await_pairing", "to": "combat"},
+    {"op": "settle_combat", "from": "combat", "to": "post_combat_or_match_over"},
+    {"op": "open_next_recruit", "from": "post_combat", "to": "recruit"}
+  ],
+  "vectors_file": "historical-combat-lifecycle-vectors.json",
+  "hero_immunity_nodes_file": "historical-hero-immunity-nodes.json",
+  "hero_immunity_vectors_file": "historical-hero-immunity-vectors.json"
+}

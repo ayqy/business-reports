@@ -1,0 +1,2824 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "option_source": "H04 client entities; candidate eligibility, weights, and golden server order unknown",
+  "cases": [
+    {
+      "id": "RA-01",
+      "grade": "reference_only",
+      "purpose": "build-35747 UNG_999t2 option persists its typed reference effect on MURLOC and ALL only",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              0,
+              1,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "hand_ids": [],
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t2",
+                "effect": {
+                  "kind": "deathrattle_summon",
+                  "card_id": "UNG_999t2t1",
+                  "count": 2
+                }
+              }
+            ]
+          },
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t2",
+                "effect": {
+                  "kind": "deathrattle_summon",
+                  "card_id": "UNG_999t2t1",
+                  "count": 2
+                }
+              }
+            ]
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t2",
+          "effect": {
+            "kind": "deathrattle_summon",
+            "card_id": "UNG_999t2t1",
+            "count": 2
+          },
+          "targets": [
+            "m",
+            "a"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-02",
+      "grade": "reference_only",
+      "purpose": "build-35747 UNG_999t3 option persists its typed reference effect on MURLOC and ALL only",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              0,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "hand_ids": [],
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3",
+                "effect": {
+                  "kind": "stat_buff",
+                  "attack": 3,
+                  "health": 0
+                }
+              }
+            ],
+            "buff_attack": 3,
+            "buff_health": 0
+          },
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3",
+                "effect": {
+                  "kind": "stat_buff",
+                  "attack": 3,
+                  "health": 0
+                }
+              }
+            ],
+            "buff_attack": 3,
+            "buff_health": 0
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t3",
+          "effect": {
+            "kind": "stat_buff",
+            "attack": 3,
+            "health": 0
+          },
+          "targets": [
+            "m",
+            "a"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-03",
+      "grade": "reference_only",
+      "purpose": "build-35747 UNG_999t4 option persists its typed reference effect on MURLOC and ALL only",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              2,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "hand_ids": [],
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t4",
+                "effect": {
+                  "kind": "stat_buff",
+                  "attack": 0,
+                  "health": 3
+                }
+              }
+            ],
+            "buff_attack": 0,
+            "buff_health": 3
+          },
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t4",
+                "effect": {
+                  "kind": "stat_buff",
+                  "attack": 0,
+                  "health": 3
+                }
+              }
+            ],
+            "buff_attack": 0,
+            "buff_health": 3
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t4",
+          "effect": {
+            "kind": "stat_buff",
+            "attack": 0,
+            "health": 3
+          },
+          "targets": [
+            "m",
+            "a"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-04",
+      "grade": "reference_only",
+      "purpose": "build-35747 UNG_999t5 option persists its typed reference effect on MURLOC and ALL only",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              3,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "hand_ids": [],
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t5",
+                "effect": {
+                  "kind": "untargetable_by_spell_or_hero_power"
+                }
+              }
+            ]
+          },
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t5",
+                "effect": {
+                  "kind": "untargetable_by_spell_or_hero_power"
+                }
+              }
+            ]
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t5",
+          "effect": {
+            "kind": "untargetable_by_spell_or_hero_power"
+          },
+          "targets": [
+            "m",
+            "a"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-05",
+      "grade": "reference_only",
+      "purpose": "build-35747 UNG_999t6 option persists its typed reference effect on MURLOC and ALL only",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              4,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "hand_ids": [],
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t6",
+                "effect": {
+                  "kind": "grant_keyword",
+                  "keyword": "TAUNT"
+                }
+              }
+            ]
+          },
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t6",
+                "effect": {
+                  "kind": "grant_keyword",
+                  "keyword": "TAUNT"
+                }
+              }
+            ]
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t6",
+          "effect": {
+            "kind": "grant_keyword",
+            "keyword": "TAUNT"
+          },
+          "targets": [
+            "m",
+            "a"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-06",
+      "grade": "reference_only",
+      "purpose": "build-35747 UNG_999t7 option persists its typed reference effect on MURLOC and ALL only",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              5,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "hand_ids": [],
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t7",
+                "effect": {
+                  "kind": "grant_keyword",
+                  "keyword": "WINDFURY"
+                }
+              }
+            ]
+          },
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t7",
+                "effect": {
+                  "kind": "grant_keyword",
+                  "keyword": "WINDFURY"
+                }
+              }
+            ]
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t7",
+          "effect": {
+            "kind": "grant_keyword",
+            "keyword": "WINDFURY"
+          },
+          "targets": [
+            "m",
+            "a"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-07",
+      "grade": "reference_only",
+      "purpose": "build-35747 UNG_999t8 option persists its typed reference effect on MURLOC and ALL only",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              6,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "hand_ids": [],
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t8",
+                "effect": {
+                  "kind": "grant_keyword",
+                  "keyword": "DIVINE_SHIELD"
+                }
+              }
+            ]
+          },
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t8",
+                "effect": {
+                  "kind": "grant_keyword",
+                  "keyword": "DIVINE_SHIELD"
+                }
+              }
+            ]
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t8",
+          "effect": {
+            "kind": "grant_keyword",
+            "keyword": "DIVINE_SHIELD"
+          },
+          "targets": [
+            "m",
+            "a"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-08",
+      "grade": "reference_only",
+      "purpose": "build-35747 UNG_999t10 option persists its typed reference effect on MURLOC and ALL only",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              7,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "hand_ids": [],
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t10",
+                "effect": {
+                  "kind": "grant_keyword_until_next_turn",
+                  "keyword": "STEALTH"
+                }
+              }
+            ]
+          },
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t10",
+                "effect": {
+                  "kind": "grant_keyword_until_next_turn",
+                  "keyword": "STEALTH"
+                }
+              }
+            ]
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t10",
+          "effect": {
+            "kind": "grant_keyword_until_next_turn",
+            "keyword": "STEALTH"
+          },
+          "targets": [
+            "m",
+            "a"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-09",
+      "grade": "reference_only",
+      "purpose": "build-35747 UNG_999t13 option persists its typed reference effect on MURLOC and ALL only",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              8,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "hand_ids": [],
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t13",
+                "effect": {
+                  "kind": "grant_keyword",
+                  "keyword": "POISONOUS"
+                }
+              }
+            ]
+          },
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t13",
+                "effect": {
+                  "kind": "grant_keyword",
+                  "keyword": "POISONOUS"
+                }
+              }
+            ]
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t13",
+          "effect": {
+            "kind": "grant_keyword",
+            "keyword": "POISONOUS"
+          },
+          "targets": [
+            "m",
+            "a"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-10",
+      "grade": "reference_only",
+      "purpose": "build-35747 UNG_999t14 option persists its typed reference effect on MURLOC and ALL only",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              9,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "hand_ids": [],
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t14",
+                "effect": {
+                  "kind": "stat_buff",
+                  "attack": 1,
+                  "health": 1
+                }
+              }
+            ],
+            "buff_attack": 1,
+            "buff_health": 1
+          },
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t14",
+                "effect": {
+                  "kind": "stat_buff",
+                  "attack": 1,
+                  "health": 1
+                }
+              }
+            ],
+            "buff_attack": 1,
+            "buff_health": 1
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t14",
+          "effect": {
+            "kind": "stat_buff",
+            "attack": 1,
+            "health": 1
+          },
+          "targets": [
+            "m",
+            "a"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-11",
+      "grade": "reference_only",
+      "purpose": "golden applies two independent stat choices to one initial MURLOC/ALL snapshot and queues reward first",
+      "initial": {
+        "tier": 5,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true,
+            "reward_pending": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              0,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              9,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "board_ids": [
+          "m",
+          "a",
+          "b",
+          "s"
+        ],
+        "pending_target_tiers": [
+          6
+        ],
+        "board_cards": [
+          {
+            "buff_attack": 4,
+            "buff_health": 1,
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3",
+                "effect": {
+                  "kind": "stat_buff",
+                  "attack": 3,
+                  "health": 0
+                }
+              },
+              {
+                "option_id": "UNG_999t14",
+                "effect": {
+                  "kind": "stat_buff",
+                  "attack": 1,
+                  "health": 1
+                }
+              }
+            ]
+          },
+          {
+            "buff_attack": 4,
+            "buff_health": 1
+          },
+          {},
+          {
+            "reward_pending": false
+          }
+        ]
+      },
+      "expect_events": [
+        "play",
+        "queue_discover",
+        "adapt",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "target_tier": 6
+        },
+        {
+          "offer_number": 1,
+          "chosen": "UNG_999t3",
+          "targets": [
+            "m",
+            "a"
+          ]
+        },
+        {
+          "offer_number": 2,
+          "chosen": "UNG_999t14",
+          "targets": [
+            "m",
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RA-12",
+      "grade": "reference_only",
+      "purpose": "golden repeat of the same stat choice accumulates two printed buffs",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              0,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              1,
+              0,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "board_cards": [
+          {
+            "buff_attack": 6,
+            "buff_health": 0,
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3"
+              },
+              {
+                "option_id": "UNG_999t3"
+              }
+            ]
+          },
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt",
+        "adapt"
+      ]
+    },
+    {
+      "id": "RA-13",
+      "grade": "reference_only",
+      "purpose": "no MURLOC/ALL target means no option is requested",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s"
+      },
+      "expect_state": {
+        "board_ids": [
+          "b",
+          "s"
+        ]
+      },
+      "expect_events": [
+        "play"
+      ]
+    },
+    {
+      "id": "RA-14",
+      "grade": "reference_only",
+      "purpose": "no target rejects unsolicited option",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              0,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "error": "unexpected_adapt_offer"
+    },
+    {
+      "id": "RA-15",
+      "grade": "reference_only",
+      "purpose": "exact historical mode fails closed on unknown option eligibility and order",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "exact_mode": true
+      },
+      "error": "unknown_adapt_options_and_order"
+    },
+    {
+      "id": "RA-16",
+      "grade": "reference_only",
+      "purpose": "normal source cannot omit its offered choice",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s"
+      },
+      "error": "wrong_adapt_offer_count"
+    },
+    {
+      "id": "RA-17",
+      "grade": "reference_only",
+      "purpose": "one offer cannot repeat an option",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              1,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "error": "duplicate_adapt_options"
+    },
+    {
+      "id": "RA-18",
+      "grade": "reference_only",
+      "purpose": "option index ten exceeds the ten-entity reference table",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              2,
+              10
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "error": "invalid_adapt_option_indexes"
+    },
+    {
+      "id": "RA-19",
+      "grade": "reference_only",
+      "purpose": "choice must address one of the three offered options",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              2,
+              3
+            ],
+            "choice_index": 3,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "error": "invalid_adapt_choice"
+    },
+    {
+      "id": "RA-20",
+      "grade": "reference_only",
+      "purpose": "caller cannot forge original-server provenance",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "a",
+            "normal_id": "GIL_681"
+          },
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              0,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "original_verified"
+          }
+        ]
+      },
+      "error": "ungraded_adapt_offer"
+    },
+    {
+      "id": "RA-21",
+      "grade": "reference_only",
+      "purpose": "invalid second golden offer rolls back placement, first buffs and queued reward",
+      "initial": {
+        "tier": 5,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true,
+            "reward_pending": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              0,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              2,
+              2,
+              3
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "error": "duplicate_adapt_options"
+    },
+    {
+      "id": "RA-22",
+      "grade": "reference_only",
+      "purpose": "one normal Brann doubles normal Megasaur; two injected choices occur after placement",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "brann",
+            "normal_id": "LOE_077"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              2,
+              3
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              2,
+              3,
+              4
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "board_ids": [
+          "m",
+          "brann",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "buff_attack": 3,
+            "buff_health": 3,
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3"
+              },
+              {
+                "option_id": "UNG_999t4"
+              }
+            ]
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t3",
+          "battlecry_trigger": 1,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 2,
+          "chosen": "UNG_999t4",
+          "battlecry_trigger": 2,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-23",
+      "grade": "reference_only",
+      "purpose": "unrelated card cannot consume adapt input",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "b",
+        "adapt_offers": []
+      },
+      "error": "unexpected_adapt_offer"
+    },
+    {
+      "id": "RA-24",
+      "grade": "reference_only",
+      "purpose": "three Megasaurs become golden, adapt twice, then collect the queued tier-six reward",
+      "initial": {
+        "tier": 5,
+        "hand": [
+          {
+            "instance_id": "x1",
+            "normal_id": "BGS_031"
+          },
+          {
+            "instance_id": "x2",
+            "normal_id": "BGS_031"
+          },
+          {
+            "instance_id": "x3",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "resolve_triple",
+          "card_id": "BGS_031"
+        },
+        {
+          "op": "play",
+          "instance_id": "ref-1",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                1,
+                0,
+                2
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            },
+            {
+              "option_indexes": [
+                9,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        },
+        {
+          "op": "triple_discover",
+          "options": [
+            "BGS_012",
+            "BGS_031",
+            "BGS_008"
+          ],
+          "chosen": "BGS_012"
+        }
+      ],
+      "expect_state": {
+        "serial": 3,
+        "hand_ids": [
+          "ref-2"
+        ],
+        "board_ids": [
+          "m",
+          "ref-1"
+        ],
+        "pending_target_tiers": [],
+        "hand_cards": [
+          {
+            "normal_id": "BGS_012",
+            "golden": false
+          }
+        ],
+        "board_cards": [
+          {
+            "normal_id": "EX1_509",
+            "buff_attack": 4,
+            "buff_health": 1,
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3"
+              },
+              {
+                "option_id": "UNG_999t14"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": true,
+            "reward_pending": false
+          }
+        ]
+      },
+      "expect_events": [
+        "triple",
+        "play",
+        "queue_discover",
+        "adapt",
+        "adapt",
+        "discover"
+      ],
+      "expect_event_details": [
+        {
+          "form": "TB_BaconUps_084"
+        },
+        {
+          "type": "play"
+        },
+        {
+          "target_tier": 6
+        },
+        {
+          "chosen": "UNG_999t3"
+        },
+        {
+          "chosen": "UNG_999t14"
+        },
+        {
+          "card_id": "BGS_012",
+          "target_tier": 6
+        }
+      ]
+    },
+    {
+      "id": "RA-25",
+      "grade": "reference_only",
+      "purpose": "a triple consuming an adapted source rejects until merge semantics are proven",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "m1",
+            "normal_id": "EX1_509",
+            "adapt_grade": "reference_injected",
+            "buff_attack": 3,
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3",
+                "effect": {
+                  "kind": "stat_buff",
+                  "attack": 3,
+                  "health": 0
+                }
+              }
+            ]
+          },
+          {
+            "instance_id": "m2",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "m3",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "action": {
+        "op": "resolve_triple",
+        "card_id": "EX1_509"
+      },
+      "error": "unknown_adapt_triple_merge"
+    },
+    {
+      "id": "RA-26",
+      "grade": "reference_only",
+      "purpose": "golden source requires two complete choices",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              0,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "error": "wrong_adapt_offer_count"
+    },
+    {
+      "id": "RA-27",
+      "grade": "reference_only",
+      "purpose": "exact mode with no eligible fish has no option to decide",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "b",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "exact_mode": true
+      },
+      "expect_state": {
+        "board_ids": [
+          "b",
+          "s"
+        ]
+      },
+      "expect_events": [
+        "play"
+      ]
+    },
+    {
+      "id": "RA-28",
+      "grade": "reference_only",
+      "purpose": "one golden Brann repeats normal Megasaur battlecry three times; repeated option accumulates",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "brann",
+            "normal_id": "LOE_077",
+            "golden": true
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              2,
+              3
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              1,
+              2,
+              3
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              9,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "board_ids": [
+          "m",
+          "brann",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "buff_attack": 7,
+            "buff_health": 1,
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3"
+              },
+              {
+                "option_id": "UNG_999t3"
+              },
+              {
+                "option_id": "UNG_999t14"
+              }
+            ]
+          },
+          {},
+          {}
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt",
+        "adapt",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t3",
+          "battlecry_trigger": 1,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 2,
+          "chosen": "UNG_999t3",
+          "battlecry_trigger": 2,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 3,
+          "chosen": "UNG_999t14",
+          "battlecry_trigger": 3,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-29",
+      "grade": "reference_only",
+      "purpose": "normal Brann repeats golden Megasaur twice, with two choices in each trigger and reward collected afterward",
+      "initial": {
+        "tier": 5,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true,
+            "reward_pending": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "brann",
+            "normal_id": "LOE_077"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                1,
+                2,
+                3
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            },
+            {
+              "option_indexes": [
+                2,
+                3,
+                4
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            },
+            {
+              "option_indexes": [
+                9,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            },
+            {
+              "option_indexes": [
+                6,
+                7,
+                8
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        },
+        {
+          "op": "triple_discover",
+          "options": [
+            "BGS_012",
+            "BGS_031",
+            "BGS_008"
+          ],
+          "chosen": "BGS_012"
+        }
+      ],
+      "expect_state": {
+        "serial": 2,
+        "hand_ids": [
+          "ref-1"
+        ],
+        "board_ids": [
+          "m",
+          "brann",
+          "s"
+        ],
+        "pending_target_tiers": [],
+        "hand_cards": [
+          {
+            "normal_id": "BGS_012"
+          }
+        ],
+        "board_cards": [
+          {
+            "buff_attack": 4,
+            "buff_health": 4,
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3"
+              },
+              {
+                "option_id": "UNG_999t4"
+              },
+              {
+                "option_id": "UNG_999t14"
+              },
+              {
+                "option_id": "UNG_999t8"
+              }
+            ]
+          },
+          {},
+          {
+            "golden": true,
+            "reward_pending": false
+          }
+        ]
+      },
+      "expect_events": [
+        "play",
+        "queue_discover",
+        "adapt",
+        "adapt",
+        "adapt",
+        "adapt",
+        "discover"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "queue_discover",
+          "target_tier": 6
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t3",
+          "battlecry_trigger": 1,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 2,
+          "chosen": "UNG_999t4",
+          "battlecry_trigger": 1,
+          "adapt_number_in_trigger": 2,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 3,
+          "chosen": "UNG_999t14",
+          "battlecry_trigger": 2,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 4,
+          "chosen": "UNG_999t8",
+          "battlecry_trigger": 2,
+          "adapt_number_in_trigger": 2,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "discover",
+          "card_id": "BGS_012",
+          "target_tier": 6
+        }
+      ]
+    },
+    {
+      "id": "RA-30",
+      "grade": "reference_only",
+      "purpose": "golden Brann repeats golden Megasaur three times and each trigger selects twice",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "brann",
+            "normal_id": "LOE_077",
+            "golden": true
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              2,
+              3
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              2,
+              3,
+              4
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              9,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              4,
+              5,
+              6
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              6,
+              7,
+              8
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              8,
+              9,
+              0
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "board_ids": [
+          "m",
+          "brann",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "buff_attack": 4,
+            "buff_health": 4,
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3"
+              },
+              {
+                "option_id": "UNG_999t4"
+              },
+              {
+                "option_id": "UNG_999t14"
+              },
+              {
+                "option_id": "UNG_999t6"
+              },
+              {
+                "option_id": "UNG_999t8"
+              },
+              {
+                "option_id": "UNG_999t13"
+              }
+            ]
+          },
+          {},
+          {
+            "golden": true
+          }
+        ]
+      },
+      "expect_events": [
+        "play",
+        "adapt",
+        "adapt",
+        "adapt",
+        "adapt",
+        "adapt",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t3",
+          "battlecry_trigger": 1,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 2,
+          "chosen": "UNG_999t4",
+          "battlecry_trigger": 1,
+          "adapt_number_in_trigger": 2,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 3,
+          "chosen": "UNG_999t14",
+          "battlecry_trigger": 2,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 4,
+          "chosen": "UNG_999t6",
+          "battlecry_trigger": 2,
+          "adapt_number_in_trigger": 2,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 5,
+          "chosen": "UNG_999t8",
+          "battlecry_trigger": 3,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 6,
+          "chosen": "UNG_999t13",
+          "battlecry_trigger": 3,
+          "adapt_number_in_trigger": 2,
+          "repeat_source_instance_id": "brann",
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-31",
+      "grade": "reference_only",
+      "purpose": "invalid sixth Brann-plus-golden-Megasaur choice rolls back placement, reward and first five effects",
+      "initial": {
+        "tier": 5,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true,
+            "reward_pending": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "brann",
+            "normal_id": "LOE_077",
+            "golden": true
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              2,
+              3
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              2,
+              3,
+              4
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              9,
+              0,
+              1
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              4,
+              5,
+              6
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              6,
+              7,
+              8
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              1,
+              1,
+              2
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "error": "duplicate_adapt_options"
+    },
+    {
+      "id": "RA-32",
+      "grade": "reference_only",
+      "purpose": "two Brann sources have unverified stacking and reject the entire play",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "b1",
+            "normal_id": "LOE_077"
+          },
+          {
+            "instance_id": "b2",
+            "normal_id": "LOE_077",
+            "golden": true
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              2,
+              3
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              2,
+              3,
+              4
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "error": "unknown_multi_repeat_order"
+    },
+    {
+      "id": "RA-33",
+      "grade": "reference_only",
+      "purpose": "a Brann Megasaur request cannot claim exact historic options or order",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "brann",
+            "normal_id": "LOE_077"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "exact_mode": true,
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              2,
+              3
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          },
+          {
+            "option_indexes": [
+              2,
+              3,
+              4
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "error": "unknown_adapt_options_and_order"
+    },
+    {
+      "id": "RA-34",
+      "grade": "reference_only",
+      "purpose": "one Brann with no eligible fish consumes no adapt choices",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "brann",
+            "normal_id": "LOE_077"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": []
+      },
+      "expect_state": {
+        "board_ids": [
+          "brann",
+          "s"
+        ]
+      },
+      "expect_events": [
+        "play"
+      ]
+    },
+    {
+      "id": "RA-35",
+      "grade": "reference_only",
+      "purpose": "Brann sold before play no longer repeats Megasaur; source is sampled at play time",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "brann",
+            "normal_id": "LOE_077"
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "sell",
+          "instance_id": "brann"
+        },
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                1,
+                2,
+                3
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_state": {
+        "coins": 4,
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "buff_attack": 3,
+            "buff_health": 0,
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3"
+              }
+            ]
+          },
+          {}
+        ]
+      },
+      "expect_events": [
+        "sell",
+        "play",
+        "adapt"
+      ],
+      "expect_event_details": [
+        {
+          "type": "sell",
+          "instance_id": "brann"
+        },
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "chosen": "UNG_999t3",
+          "battlecry_trigger": 1,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": null,
+          "targets": [
+            "m"
+          ],
+          "grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "RA-36",
+      "grade": "reference_only",
+      "purpose": "active normal Brann requires two complete normal-Megasaur choices",
+      "initial": {
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "brann",
+            "normal_id": "LOE_077"
+          }
+        ]
+      },
+      "action": {
+        "op": "play",
+        "instance_id": "s",
+        "adapt_offers": [
+          {
+            "option_indexes": [
+              1,
+              2,
+              3
+            ],
+            "choice_index": 0,
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "error": "wrong_adapt_offer_count"
+    }
+  ]
+}

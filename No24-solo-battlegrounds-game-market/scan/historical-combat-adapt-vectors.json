@@ -1,0 +1,2693 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "historical_unknown": {
+    "adapt_live_eligibility": "unknown",
+    "adapt_offer_weights": "unknown",
+    "adapt_golden_sequence": "unknown",
+    "adapt_keyword_interaction_order": "unknown",
+    "all_stealthed_target_rule": "unknown",
+    "plant_damage_tier": "unknown",
+    "adapt_deathrattle_same_batch_order": "unknown",
+    "adapt_brann_repeat_order": "unknown"
+  },
+  "cases": [
+    {
+      "id": "AC-01",
+      "grade": "reference_only",
+      "purpose": "adapted Taunt forces target, then recruit-to-combat-to-hero-elimination",
+      "enemy_health": 10,
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                4,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t6"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "CFM_315"
+        },
+        {
+          "instance_id": "b2",
+          "card_id": "CFM_315"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b2": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [
+              "taunt"
+            ]
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1",
+          "b2"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "s"
+          },
+          "error": "taunt_target_required"
+        },
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death"
+          ],
+          "expect": {
+            "phase": "combat",
+            "left_ids": [
+              "m",
+              "s"
+            ],
+            "right_ids": [
+              "b2"
+            ],
+            "left_units": [
+              {
+                "health": 1
+              },
+              {}
+            ]
+          }
+        },
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "m",
+            "target_id": "b2"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "death",
+            "terminal"
+          ],
+          "expect": {
+            "phase": "terminal",
+            "left_ids": [
+              "s"
+            ],
+            "right_ids": []
+          }
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "s"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": -2
+        }
+      }
+    },
+    {
+      "id": "AC-02",
+      "grade": "reference_only",
+      "purpose": "adapted Divine Shield absorbs once and survives terminal damage",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                6,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t8"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "CFM_315"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [
+              "divine_shield"
+            ]
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m"
+          },
+          "events": [
+            "attack",
+            "shield_lost",
+            "damage",
+            "death",
+            "terminal"
+          ],
+          "expect": {
+            "phase": "terminal",
+            "left_ids": [
+              "m",
+              "s"
+            ],
+            "right_ids": [],
+            "left_units": [
+              {
+                "health": 2,
+                "keywords": []
+              },
+              {}
+            ]
+          }
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "m",
+          "s"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "post_combat",
+        "health": {
+          "A": 40,
+          "B": 7
+        }
+      }
+    },
+    {
+      "id": "AC-03",
+      "grade": "reference_only",
+      "purpose": "adapted Poisonous kills only after positive damage and terminal survivors settle",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                8,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t13"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "UNG_073"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [
+              "poisonous"
+            ]
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "poison_kill",
+            "death",
+            "death",
+            "terminal"
+          ],
+          "expect": {
+            "phase": "terminal",
+            "left_ids": [
+              "s"
+            ],
+            "right_ids": []
+          }
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "s"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "post_combat",
+        "health": {
+          "A": 40,
+          "B": 8
+        }
+      }
+    },
+    {
+      "id": "AC-04",
+      "grade": "reference_only",
+      "purpose": "adapted Windfury queues one second strike against the current remaining target",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                5,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t7"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "CFM_315"
+        },
+        {
+          "instance_id": "b2",
+          "card_id": "CFM_315"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b2": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "left",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [
+              "windfury"
+            ]
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1",
+          "b2"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "m",
+            "target_id": "b1"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "extra_attack_ready"
+          ],
+          "expect": {
+            "phase": "combat",
+            "turn": "left",
+            "pending_extra_attack": {
+              "attacker_id": "m",
+              "remaining": 1
+            },
+            "right_ids": [
+              "b2"
+            ]
+          }
+        },
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "m",
+            "target_id": "b2"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "death",
+            "terminal"
+          ],
+          "expect": {
+            "phase": "terminal",
+            "left_ids": [
+              "s"
+            ],
+            "right_ids": []
+          }
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "s"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "post_combat",
+        "health": {
+          "A": 40,
+          "B": 8
+        }
+      }
+    },
+    {
+      "id": "AC-05",
+      "grade": "reference_only",
+      "purpose": "Stealth target is rejected while a visible minion remains",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                7,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t10"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "CFM_315"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [
+              "stealth"
+            ]
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m"
+          },
+          "error": "stealth_target_forbidden"
+        },
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "s"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "terminal"
+          ],
+          "expect": {
+            "phase": "terminal",
+            "left_ids": [
+              "m",
+              "s"
+            ],
+            "right_ids": [],
+            "left_units": [
+              {
+                "keywords": [
+                  "stealth"
+                ]
+              },
+              {
+                "health": 3
+              }
+            ]
+          }
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "m",
+          "s"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "post_combat",
+        "health": {
+          "A": 40,
+          "B": 7
+        }
+      }
+    },
+    {
+      "id": "AC-06",
+      "grade": "reference_only",
+      "purpose": "a Stealth minion reveals on attack and becomes a valid next target",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                7,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t10"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "CFM_315"
+        },
+        {
+          "instance_id": "b2",
+          "card_id": "CFM_315"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b2": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "left",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [
+              "stealth"
+            ]
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1",
+          "b2"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "m",
+            "target_id": "b1"
+          },
+          "events": [
+            "stealth_revealed",
+            "attack",
+            "damage",
+            "damage",
+            "death"
+          ],
+          "expect": {
+            "phase": "combat",
+            "left_units": [
+              {
+                "keywords": [],
+                "health": 1
+              },
+              {}
+            ],
+            "right_ids": [
+              "b2"
+            ]
+          }
+        },
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b2",
+            "target_id": "m"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "death",
+            "terminal"
+          ],
+          "expect": {
+            "phase": "terminal",
+            "left_ids": [
+              "s"
+            ],
+            "right_ids": []
+          }
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "s"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "post_combat",
+        "health": {
+          "A": 40,
+          "B": 8
+        }
+      }
+    },
+    {
+      "id": "AC-07",
+      "grade": "reference_only",
+      "purpose": "spell-and-hero-power untargetability remains a typed combat state, not minion-attack immunity",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                3,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t5"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "CFM_315"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [],
+            "untargetable_by_spell_or_hero_power": true
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "terminal"
+          ],
+          "expect": {
+            "phase": "terminal",
+            "left_ids": [
+              "m",
+              "s"
+            ],
+            "right_ids": [],
+            "left_units": [
+              {
+                "health": 1,
+                "untargetable_by_spell_or_hero_power": true
+              },
+              {}
+            ]
+          }
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "m",
+          "s"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "post_combat",
+        "health": {
+          "A": 40,
+          "B": 7
+        }
+      }
+    },
+    {
+      "id": "AC-08",
+      "grade": "reference_only",
+      "purpose": "adapted Spore deathrattle creates two graded Plants and both may die before hero settlement",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                0,
+                1,
+                2
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t2"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "UNG_073"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": []
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m",
+            "token_tiers": {
+              "UNG_999t2t1": 1
+            }
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "adapt_spore_trigger",
+            "summon",
+            "summon"
+          ],
+          "expect": {
+            "phase": "combat",
+            "left_ids": [
+              "combat-1",
+              "combat-2",
+              "s"
+            ],
+            "right_ids": [
+              "b1"
+            ],
+            "generated": {
+              "left": [
+                {
+                  "card_id": "UNG_999t2t1",
+                  "damage_tier": 1
+                },
+                {
+                  "card_id": "UNG_999t2t1",
+                  "damage_tier": 1
+                }
+              ]
+            }
+          }
+        },
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "combat-1",
+            "target_id": "b1"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death"
+          ],
+          "expect": {
+            "phase": "combat",
+            "left_ids": [
+              "combat-2",
+              "s"
+            ],
+            "right_ids": [
+              "b1"
+            ]
+          }
+        },
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "combat-2"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "death",
+            "terminal"
+          ],
+          "expect": {
+            "phase": "terminal",
+            "left_ids": [
+              "s"
+            ],
+            "right_ids": []
+          }
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "s"
+        ],
+        "right_survivors": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "UNG_999t2t1"
+            },
+            {
+              "card_id": "UNG_999t2t1"
+            }
+          ]
+        }
+      },
+      "expect_match": {
+        "phase": "post_combat",
+        "health": {
+          "A": 40,
+          "B": 8
+        }
+      }
+    },
+    {
+      "id": "AC-09",
+      "grade": "reference_only",
+      "purpose": "golden repeated Spore choice makes four separate bounded summons",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                0,
+                1,
+                2
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            },
+            {
+              "option_indexes": [
+                0,
+                1,
+                2
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t2"
+              },
+              {
+                "option_id": "UNG_999t2"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "UNG_073"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": []
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m",
+            "token_tiers": {
+              "UNG_999t2t1": 1
+            }
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "adapt_spore_trigger",
+            "summon",
+            "summon",
+            "adapt_spore_trigger",
+            "summon",
+            "summon"
+          ],
+          "expect": {
+            "phase": "combat",
+            "left_ids": [
+              "combat-1",
+              "combat-2",
+              "combat-3",
+              "combat-4",
+              "s"
+            ],
+            "right_ids": [
+              "b1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "AC-10",
+      "grade": "reference_only",
+      "purpose": "golden Shield then Poisonous combines independently and wins without health loss",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                6,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            },
+            {
+              "option_indexes": [
+                8,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t8"
+              },
+              {
+                "option_id": "UNG_999t13"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "UNG_073"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [
+              "divine_shield",
+              "poisonous"
+            ]
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m"
+          },
+          "events": [
+            "attack",
+            "shield_lost",
+            "damage",
+            "poison_kill",
+            "death",
+            "terminal"
+          ],
+          "expect": {
+            "phase": "terminal",
+            "left_ids": [
+              "m",
+              "s"
+            ],
+            "right_ids": [],
+            "left_units": [
+              {
+                "health": 2,
+                "keywords": [
+                  "poisonous"
+                ]
+              },
+              {}
+            ]
+          }
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "m",
+          "s"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "post_combat",
+        "health": {
+          "A": 40,
+          "B": 7
+        }
+      }
+    },
+    {
+      "id": "AC-11",
+      "grade": "reference_only",
+      "purpose": "missing Plant damage tier atomically rejects a fatal Spore action",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                0,
+                1,
+                2
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t2"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "UNG_073"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": []
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m"
+          },
+          "error": "token_tier_missing"
+        }
+      ]
+    },
+    {
+      "id": "AC-12",
+      "grade": "reference_only",
+      "purpose": "forged keyword input cannot erase an adapted combat keyword",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                8,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t13"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "CFM_315"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "left",
+      "steps": [],
+      "override_traits": {
+        "m": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "start_error": "adapt_keyword_mismatch"
+    },
+    {
+      "id": "AC-13",
+      "grade": "reference_only",
+      "purpose": "repeated Windfury remains one extra attack rather than stacking extra attacks",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                5,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            },
+            {
+              "option_indexes": [
+                5,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t7"
+              },
+              {
+                "option_id": "UNG_999t7"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "CFM_315"
+        },
+        {
+          "instance_id": "b2",
+          "card_id": "CFM_315"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b2": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "left",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [
+              "windfury"
+            ]
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1",
+          "b2"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "m",
+            "target_id": "b1"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "extra_attack_ready"
+          ],
+          "expect": {
+            "phase": "combat",
+            "pending_extra_attack": {
+              "remaining": 1
+            },
+            "right_ids": [
+              "b2"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "AC-14",
+      "grade": "reference_only",
+      "purpose": "when every enemy is stealthed, reference mode refuses to invent a legal target",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                4,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t6"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": false
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "EX1_509"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [
+            "stealth"
+          ],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "left",
+      "expect_start": {
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [
+              "taunt"
+            ]
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "m",
+            "target_id": "b1"
+          },
+          "error": "unknown_all_enemy_stealthed"
+        }
+      ]
+    },
+    {
+      "id": "AC-15",
+      "grade": "reference_only",
+      "purpose": "temporary Stealth expires at the next recruitment",
+      "initial": {
+        "tier": 1,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                7,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        },
+        {
+          "op": "advance_round",
+          "offers": [
+            {
+              "instance_id": "o1",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "o2",
+              "card_id": "ICC_038"
+            },
+            {
+              "instance_id": "o3",
+              "card_id": "EX1_509"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt",
+        "advance_round",
+        "adapt_expired"
+      ],
+      "expect_recruit": {
+        "round": 2,
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "normal_id": "EX1_509"
+          },
+          {
+            "normal_id": "BGS_031"
+          }
+        ],
+        "shop_ids": [
+          "o1",
+          "o2",
+          "o3"
+        ]
+      },
+      "expect_recruit_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt"
+        },
+        {
+          "type": "advance_round"
+        },
+        {
+          "type": "adapt_expired",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "AC-16",
+      "grade": "reference_only",
+      "purpose": "two temporary Stealth grants expire together at the next recruitment",
+      "initial": {
+        "tier": 1,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                7,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            },
+            {
+              "option_indexes": [
+                7,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        },
+        {
+          "op": "advance_round",
+          "offers": [
+            {
+              "instance_id": "o1",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "o2",
+              "card_id": "ICC_038"
+            },
+            {
+              "instance_id": "o3",
+              "card_id": "EX1_509"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt",
+        "adapt",
+        "advance_round",
+        "adapt_expired"
+      ],
+      "expect_recruit": {
+        "round": 2,
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "normal_id": "EX1_509"
+          },
+          {
+            "normal_id": "BGS_031"
+          }
+        ],
+        "shop_ids": [
+          "o1",
+          "o2",
+          "o3"
+        ]
+      },
+      "expect_recruit_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt"
+        },
+        {
+          "type": "adapt"
+        },
+        {
+          "type": "advance_round"
+        },
+        {
+          "type": "adapt_expired",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "AC-17",
+      "grade": "reference_only",
+      "purpose": "Spore summon obeys seven-slot cap and drops only the excess Plant",
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "u1",
+            "normal_id": "CFM_315"
+          },
+          {
+            "instance_id": "u2",
+            "normal_id": "CFM_315"
+          },
+          {
+            "instance_id": "u3",
+            "normal_id": "CFM_315"
+          },
+          {
+            "instance_id": "u4",
+            "normal_id": "CFM_315"
+          },
+          {
+            "instance_id": "u5",
+            "normal_id": "CFM_315"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                0,
+                1,
+                2
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt"
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "u1",
+          "u2",
+          "u3",
+          "u4",
+          "u5",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t2"
+              }
+            ]
+          },
+          {},
+          {},
+          {},
+          {},
+          {},
+          {
+            "normal_id": "BGS_031"
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "UNG_073"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_ids": [
+          "m",
+          "u1",
+          "u2",
+          "u3",
+          "u4",
+          "u5",
+          "s"
+        ],
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": []
+          },
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "right_ids": [
+          "b1"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m",
+            "token_tiers": {
+              "UNG_999t2t1": 1
+            }
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "adapt_spore_trigger",
+            "summon",
+            "summon_dropped"
+          ],
+          "expect": {
+            "phase": "combat",
+            "left_ids": [
+              "combat-1",
+              "u1",
+              "u2",
+              "u3",
+              "u4",
+              "u5",
+              "s"
+            ],
+            "right_ids": [
+              "b1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "AC-18",
+      "grade": "reference_only",
+      "purpose": "temporary Stealth expires but the other golden Adapt stat grant remains",
+      "initial": {
+        "tier": 1,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                7,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            },
+            {
+              "option_indexes": [
+                1,
+                0,
+                2
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        },
+        {
+          "op": "advance_round",
+          "offers": [
+            {
+              "instance_id": "o1",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "o2",
+              "card_id": "ICC_038"
+            },
+            {
+              "instance_id": "o3",
+              "card_id": "EX1_509"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt",
+        "adapt",
+        "advance_round",
+        "adapt_expired"
+      ],
+      "expect_recruit_details": [
+        {
+          "type": "play"
+        },
+        {
+          "chosen": "UNG_999t10"
+        },
+        {
+          "chosen": "UNG_999t3"
+        },
+        {
+          "type": "advance_round"
+        },
+        {
+          "type": "adapt_expired",
+          "count": 1
+        }
+      ],
+      "expect_recruit": {
+        "round": 2,
+        "board_ids": [
+          "m",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "buff_attack": 3,
+            "buff_health": 0,
+            "adapt_grade": "reference_injected",
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t3"
+              }
+            ]
+          },
+          {
+            "normal_id": "BGS_031",
+            "golden": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "AC-19",
+      "grade": "reference_only",
+      "purpose": "normal Brann supplies two post-play Megasaur choices; Taunt and Divine Shield enter combat and the surviving board eliminates the enemy hero",
+      "enemy_health": 10,
+      "initial": {
+        "tier": 6,
+        "hand": [
+          {
+            "instance_id": "s",
+            "normal_id": "BGS_031"
+          }
+        ],
+        "board": [
+          {
+            "instance_id": "m",
+            "normal_id": "EX1_509"
+          },
+          {
+            "instance_id": "brann",
+            "normal_id": "LOE_077"
+          }
+        ]
+      },
+      "recruit_actions": [
+        {
+          "op": "play",
+          "instance_id": "s",
+          "adapt_offers": [
+            {
+              "option_indexes": [
+                4,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            },
+            {
+              "option_indexes": [
+                6,
+                0,
+                1
+              ],
+              "choice_index": 0,
+              "grade": "reference_injected"
+            }
+          ]
+        }
+      ],
+      "expect_recruit_events": [
+        "play",
+        "adapt",
+        "adapt"
+      ],
+      "expect_recruit_details": [
+        {
+          "type": "play"
+        },
+        {
+          "type": "adapt",
+          "offer_number": 1,
+          "battlecry_trigger": 1,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "chosen": "UNG_999t6",
+          "targets": [
+            "m"
+          ]
+        },
+        {
+          "type": "adapt",
+          "offer_number": 2,
+          "battlecry_trigger": 2,
+          "adapt_number_in_trigger": 1,
+          "repeat_source_instance_id": "brann",
+          "chosen": "UNG_999t8",
+          "targets": [
+            "m"
+          ]
+        }
+      ],
+      "expect_recruit": {
+        "board_ids": [
+          "m",
+          "brann",
+          "s"
+        ],
+        "board_cards": [
+          {
+            "adapt_effects": [
+              {
+                "option_id": "UNG_999t6"
+              },
+              {
+                "option_id": "UNG_999t8"
+              }
+            ]
+          },
+          {
+            "normal_id": "LOE_077"
+          },
+          {
+            "normal_id": "BGS_031"
+          }
+        ]
+      },
+      "enemy_board": [
+        {
+          "instance_id": "b1",
+          "card_id": "CFM_315"
+        },
+        {
+          "instance_id": "b2",
+          "card_id": "CFM_315"
+        }
+      ],
+      "enemy_traits": {
+        "b1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b2": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "right",
+      "expect_start": {
+        "left_ids": [
+          "m",
+          "brann",
+          "s"
+        ],
+        "left_units": [
+          {
+            "instance_id": "m",
+            "keywords": [
+              "divine_shield",
+              "taunt"
+            ]
+          },
+          {
+            "instance_id": "brann",
+            "keywords": []
+          },
+          {
+            "instance_id": "s",
+            "keywords": []
+          }
+        ],
+        "right_ids": [
+          "b1",
+          "b2"
+        ]
+      },
+      "steps": [
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "b1",
+            "target_id": "m"
+          },
+          "events": [
+            "attack",
+            "shield_lost",
+            "damage",
+            "death"
+          ],
+          "expect": {
+            "phase": "combat",
+            "left_ids": [
+              "m",
+              "brann",
+              "s"
+            ],
+            "right_ids": [
+              "b2"
+            ],
+            "left_units": [
+              {
+                "health": 2,
+                "keywords": [
+                  "taunt"
+                ]
+              },
+              {},
+              {}
+            ]
+          }
+        },
+        {
+          "action": {
+            "op": "attack",
+            "attacker_id": "m",
+            "target_id": "b2"
+          },
+          "events": [
+            "attack",
+            "damage",
+            "damage",
+            "death",
+            "terminal"
+          ],
+          "expect": {
+            "phase": "terminal",
+            "left_ids": [
+              "m",
+              "brann",
+              "s"
+            ],
+            "right_ids": [],
+            "left_units": [
+              {
+                "health": 1
+              },
+              {},
+              {}
+            ]
+          }
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "m",
+          "brann",
+          "s"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": -8
+        },
+        "graveyard_ids": [
+          "B"
+        ]
+      }
+    }
+  ]
+}

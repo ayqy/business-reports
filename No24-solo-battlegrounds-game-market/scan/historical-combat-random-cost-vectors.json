@@ -1,0 +1,1939 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "fixtures": {
+    "shredder_normal": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_023"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 2,
+              "buff_health": 1
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "shredder_golden": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_023"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 5,
+              "buff_health": 5
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "golem_normal": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_024"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 3,
+              "buff_health": 3
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "golem_golden": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_024"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 7,
+              "buff_health": 9
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "shredder_cap": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_023"
+            },
+            {
+              "instance_id": "f1",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f2",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f3",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f4",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f5",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f6",
+              "card_id": "CFM_315"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 5,
+              "buff_health": 10
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f2": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f3": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f4": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f5": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f6": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "shredder_baron": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_023"
+            },
+            {
+              "instance_id": "r",
+              "card_id": "FP1_031"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 2,
+              "buff_health": 4
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "r": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "shredder_khadgar": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_023"
+            },
+            {
+              "instance_id": "x",
+              "card_id": "DAL_575"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 2,
+              "buff_health": 4
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "x": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "enemy_shredder": {
+      "snapshot": {
+        "left": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 2,
+              "buff_health": 1
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_023"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "two_sources": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_023"
+            },
+            {
+              "instance_id": "g",
+              "card_id": "BGS_024"
+            }
+          ]
+        },
+        "right": {
+          "tier": 4,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "LOOT_078",
+              "buff_attack": 10,
+              "buff_health": 10
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "cleave"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right"
+    },
+    "raptor_normal": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_025"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 2,
+              "buff_health": 1
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "raptor_golden": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_025"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 5,
+              "buff_health": 5
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "raptor_cap": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_025"
+            },
+            {
+              "instance_id": "f1",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f2",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f3",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f4",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f5",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f6",
+              "card_id": "CFM_315"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 5,
+              "buff_health": 10
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f2": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f3": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f4": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f5": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f6": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "raptor_baron": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_025"
+            },
+            {
+              "instance_id": "r",
+              "card_id": "FP1_031"
+            }
+          ]
+        },
+        "right": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 2,
+              "buff_health": 4
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "r": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "enemy_raptor": {
+      "snapshot": {
+        "left": {
+          "tier": 1,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 2,
+              "buff_health": 1
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_025"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "raptor_two_sources": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_025"
+            },
+            {
+              "instance_id": "g",
+              "card_id": "BGS_023"
+            }
+          ]
+        },
+        "right": {
+          "tier": 4,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "LOOT_078",
+              "buff_attack": 10,
+              "buff_health": 10
+            }
+          ]
+        }
+      },
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "cleave"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right"
+    }
+  },
+  "cases": [
+    {
+      "id": "RC-01",
+      "grade": "reference_only",
+      "fixture": "shredder_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [
+          "combat-1"
+        ],
+        "right_ids": [],
+        "left_units": [
+          {
+            "card_id": "BGS_027",
+            "attack": 1,
+            "health": 2,
+            "golden": false
+          }
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "BGS_027",
+              "source_instance_id": "s",
+              "candidate_grade": "H09_community_reference_only",
+              "pool_grade": "reference_injected",
+              "original_mana_cost": 2
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "random_cost_trigger",
+        "random_cost_summon",
+        "death",
+        "terminal"
+      ],
+      "expect_event_details": [
+        {
+          "type": "attack"
+        },
+        {
+          "type": "damage"
+        },
+        {
+          "type": "damage"
+        },
+        {
+          "type": "death",
+          "instance_id": "s"
+        },
+        {
+          "type": "random_cost_trigger",
+          "pool": "original_cost_2",
+          "requests": 1
+        },
+        {
+          "type": "random_cost_summon",
+          "card_id": "BGS_027",
+          "pool_index": 1
+        },
+        {
+          "type": "death",
+          "instance_id": "e"
+        },
+        {
+          "type": "terminal"
+        }
+      ]
+    },
+    {
+      "id": "RC-02",
+      "grade": "reference_only",
+      "fixture": "shredder_golden",
+      "golden_instances": [
+        "s"
+      ],
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1,
+          2
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [
+          "combat-1",
+          "combat-2"
+        ],
+        "right_ids": [],
+        "left_units": [
+          {
+            "card_id": "BGS_027",
+            "golden": false
+          },
+          {
+            "card_id": "EX1_506",
+            "golden": false
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "random_cost_trigger",
+        "random_cost_summon",
+        "random_cost_summon",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "RC-03",
+      "grade": "reference_only",
+      "fixture": "golem_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [
+          "combat-1"
+        ],
+        "right_ids": [],
+        "left_units": [
+          {
+            "card_id": "AT_121",
+            "attack": 4,
+            "health": 4
+          }
+        ],
+        "generated": {
+          "left": [
+            {
+              "original_mana_cost": 4,
+              "candidate_grade": "H09_community_reference_only"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "random_cost_trigger",
+        "random_cost_summon",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "RC-04",
+      "grade": "reference_only",
+      "fixture": "golem_golden",
+      "golden_instances": [
+        "s"
+      ],
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1,
+          2
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [
+          "combat-1",
+          "combat-2"
+        ],
+        "right_ids": [],
+        "left_units": [
+          {
+            "card_id": "AT_121",
+            "golden": false
+          },
+          {
+            "card_id": "CFM_610",
+            "attack": 5,
+            "health": 4,
+            "golden": false
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "random_cost_trigger",
+        "random_cost_summon",
+        "random_cost_summon",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "RC-05",
+      "grade": "reference_only",
+      "fixture": "shredder_cap",
+      "golden_instances": [
+        "s"
+      ],
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1",
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6"
+        ],
+        "right_ids": [
+          "e"
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "BGS_027"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "random_cost_trigger",
+        "random_cost_summon",
+        "random_cost_dropped"
+      ]
+    },
+    {
+      "id": "RC-06",
+      "grade": "reference_only",
+      "fixture": "shredder_baron",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1,
+          2
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1",
+          "combat-2",
+          "r"
+        ],
+        "right_ids": [
+          "e"
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "deathrattle_repeat",
+        "random_cost_trigger",
+        "random_cost_summon",
+        "random_cost_trigger",
+        "random_cost_summon"
+      ],
+      "expect_event_details": [
+        {
+          "type": "attack"
+        },
+        {
+          "type": "damage"
+        },
+        {
+          "type": "damage"
+        },
+        {
+          "type": "death",
+          "instance_id": "s"
+        },
+        {
+          "type": "deathrattle_repeat",
+          "times": 2
+        },
+        {
+          "type": "random_cost_trigger",
+          "repetition": 1
+        },
+        {
+          "type": "random_cost_summon",
+          "card_id": "BGS_027"
+        },
+        {
+          "type": "random_cost_trigger",
+          "repetition": 2
+        },
+        {
+          "type": "random_cost_summon",
+          "card_id": "EX1_506"
+        }
+      ]
+    },
+    {
+      "id": "RC-07",
+      "grade": "reference_only",
+      "fixture": "enemy_shredder",
+      "action": {
+        "op": "attack",
+        "attacker_id": "e",
+        "target_id": "s",
+        "random_draw_indexes": [
+          1
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [],
+        "right_ids": [
+          "combat-1"
+        ],
+        "generated": {
+          "right": [
+            {
+              "card_id": "BGS_027",
+              "source_side": "right"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "death",
+        "random_cost_trigger",
+        "random_cost_summon",
+        "terminal"
+      ]
+    },
+    {
+      "id": "RC-08",
+      "grade": "reference_only",
+      "fixture": "shredder_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          0
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_candidate_outside_bounded_subset"
+    },
+    {
+      "id": "RC-09",
+      "grade": "reference_only",
+      "fixture": "shredder_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e"
+      },
+      "error": "random_draw_missing"
+    },
+    {
+      "id": "RC-10",
+      "grade": "reference_only",
+      "fixture": "shredder_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1
+        ]
+      },
+      "error": "random_draw_grade_missing"
+    },
+    {
+      "id": "RC-11",
+      "grade": "reference_only",
+      "fixture": "golem_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          14
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_draw_out_of_range"
+    },
+    {
+      "id": "RC-12",
+      "grade": "reference_only",
+      "fixture": "shredder_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1,
+          2
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "unused_random_draws"
+    },
+    {
+      "id": "RC-13",
+      "grade": "reference_only",
+      "fixture": "shredder_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1
+        ],
+        "random_draw_grade": "reference_injected",
+        "mode": "exact_2019"
+      },
+      "error": "exact_mode_unverified"
+    },
+    {
+      "id": "RC-14",
+      "grade": "reference_only",
+      "fixture": "two_sources",
+      "action": {
+        "op": "attack",
+        "attacker_id": "e",
+        "target_id": "s",
+        "random_draw_indexes": [
+          1,
+          1
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "unknown_random_sources_same_batch"
+    },
+    {
+      "id": "RC-15",
+      "grade": "reference_only",
+      "fixture": "shredder_khadgar",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "unknown_random_khadgar_order"
+    },
+    {
+      "id": "RC-16",
+      "grade": "reference_only",
+      "fixture": "raptor_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          0
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1"
+        ],
+        "right_ids": [
+          "e"
+        ],
+        "left_units": [
+          {
+            "card_id": "CFM_315",
+            "attack": 1,
+            "health": 1,
+            "golden": false
+          }
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "CFM_315",
+              "source_instance_id": "s",
+              "original_mana_cost": 1,
+              "candidate_grade": "H09_community_reference_only"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "random_cost_trigger",
+        "random_cost_summon"
+      ]
+    },
+    {
+      "id": "RC-17",
+      "grade": "reference_only",
+      "fixture": "raptor_golden",
+      "golden_instances": [
+        "s"
+      ],
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          0,
+          6
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1",
+          "combat-2"
+        ],
+        "right_ids": [
+          "e"
+        ],
+        "left_units": [
+          {
+            "card_id": "CFM_315",
+            "golden": false
+          },
+          {
+            "card_id": "BGS_028",
+            "attack": 1,
+            "health": 1,
+            "golden": false
+          }
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "CFM_315",
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_028",
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "random_cost_trigger",
+        "random_cost_summon",
+        "random_cost_summon"
+      ]
+    },
+    {
+      "id": "RC-18",
+      "grade": "reference_only",
+      "fixture": "raptor_cap",
+      "golden_instances": [
+        "s"
+      ],
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          6
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1",
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6"
+        ],
+        "right_ids": [
+          "e"
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "BGS_028"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "random_cost_trigger",
+        "random_cost_summon",
+        "random_cost_dropped"
+      ]
+    },
+    {
+      "id": "RC-19",
+      "grade": "reference_only",
+      "fixture": "raptor_baron",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          0,
+          6
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1",
+          "combat-2",
+          "r"
+        ],
+        "right_ids": [
+          "e"
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "CFM_315"
+            },
+            {
+              "card_id": "BGS_028"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "deathrattle_repeat",
+        "random_cost_trigger",
+        "random_cost_summon",
+        "random_cost_trigger",
+        "random_cost_summon"
+      ]
+    },
+    {
+      "id": "RC-20",
+      "grade": "reference_only",
+      "fixture": "enemy_raptor",
+      "action": {
+        "op": "attack",
+        "attacker_id": "e",
+        "target_id": "s",
+        "random_draw_indexes": [
+          0
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "e"
+        ],
+        "right_ids": [
+          "combat-1"
+        ],
+        "generated": {
+          "right": [
+            {
+              "card_id": "CFM_315",
+              "source_side": "right"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "random_cost_trigger",
+        "random_cost_summon"
+      ]
+    },
+    {
+      "id": "RC-21",
+      "grade": "reference_only",
+      "fixture": "raptor_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          1
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_candidate_outside_bounded_subset"
+    },
+    {
+      "id": "RC-22",
+      "grade": "reference_only",
+      "fixture": "raptor_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          7
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_candidate_outside_bounded_subset"
+    },
+    {
+      "id": "RC-23",
+      "grade": "reference_only",
+      "fixture": "raptor_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e",
+        "random_draw_indexes": [
+          9
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_draw_out_of_range"
+    },
+    {
+      "id": "RC-24",
+      "grade": "reference_only",
+      "fixture": "raptor_two_sources",
+      "action": {
+        "op": "attack",
+        "attacker_id": "e",
+        "target_id": "s",
+        "random_draw_indexes": [
+          0,
+          1
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "unknown_random_sources_same_batch"
+    },
+    {
+      "id": "RC-25",
+      "grade": "reference_only",
+      "fixture": "raptor_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "s",
+        "target_id": "e"
+      },
+      "error": "random_draw_missing"
+    }
+  ],
+  "bridge_cases": [
+    {
+      "id": "RC-B01",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 40,
+          "tier": 3,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_023",
+              "golden": false
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 4,
+          "tier": 1,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 2,
+              "buff_health": 1
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "s",
+          "target_id": "e",
+          "random_draw_indexes": [
+            1
+          ],
+          "random_draw_grade": "reference_injected"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "combat-1"
+        ],
+        "right_survivors": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "BGS_027",
+              "source_instance_id": "s",
+              "origin": "combat_generated_minion",
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": 0
+        },
+        "alive": {
+          "A": true,
+          "B": false
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "left",
+                "damage": 4,
+                "damaged_seat": "B"
+              }
+            ],
+            "eliminated": [
+              "B"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "RC-B02",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 40,
+          "tier": 4,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_024",
+              "golden": true
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 10,
+          "tier": 1,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 7,
+              "buff_health": 9
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "s",
+          "target_id": "e",
+          "random_draw_indexes": [
+            1,
+            2
+          ],
+          "random_draw_grade": "reference_injected"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "combat-1",
+          "combat-2"
+        ],
+        "right_survivors": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "AT_121",
+              "source_instance_id": "s",
+              "origin": "combat_generated_minion",
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "CFM_610",
+              "source_instance_id": "s",
+              "origin": "combat_generated_minion",
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": 0
+        },
+        "alive": {
+          "A": true,
+          "B": false
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "left",
+                "damage": 10,
+                "damaged_seat": "B"
+              }
+            ],
+            "eliminated": [
+              "B"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "RC-B03",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 40,
+          "tier": 2,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_025",
+              "golden": false
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 3,
+          "tier": 1,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 2
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "s",
+          "target_id": "e",
+          "random_draw_indexes": [
+            0
+          ],
+          "random_draw_grade": "reference_injected"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "combat-1"
+        ],
+        "right_survivors": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "CFM_315",
+              "source_instance_id": "s",
+              "origin": "combat_generated_minion",
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": 0
+        },
+        "alive": {
+          "A": true,
+          "B": false
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "left",
+                "damage": 3,
+                "damaged_seat": "B"
+              }
+            ],
+            "eliminated": [
+              "B"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "RC-B04",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 40,
+          "tier": 2,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "s",
+              "card_id": "BGS_025",
+              "golden": true
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 5,
+          "tier": 1,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 5,
+              "buff_health": 3
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "s": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "s",
+          "target_id": "e",
+          "random_draw_indexes": [
+            0,
+            6
+          ],
+          "random_draw_grade": "reference_injected"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "combat-1",
+          "combat-2"
+        ],
+        "right_survivors": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "CFM_315",
+              "source_instance_id": "s",
+              "origin": "combat_generated_minion",
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_028",
+              "source_instance_id": "s",
+              "origin": "combat_generated_minion",
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": 0
+        },
+        "alive": {
+          "A": true,
+          "B": false
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "left",
+                "damage": 5,
+                "damaged_seat": "B"
+              }
+            ],
+            "eliminated": [
+              "B"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

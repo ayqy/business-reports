@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "exact_2019_unknown": {
+    "dynamic_summon_eligibility": "unknown",
+    "dynamic_summon_weights": "unknown",
+    "simultaneous_death_event_order": "unknown"
+  },
+  "source_refs": ["H01", "H04", "H16", "H17"],
+  "merge_fixture": {
+    "instances": [
+      {"instance_id": "a", "zone": "board", "buff_attack": 1, "buff_health": 0},
+      {"instance_id": "b", "zone": "hand", "buff_attack": 0, "buff_health": 2},
+      {"instance_id": "c", "zone": "hand", "buff_attack": 2, "buff_health": 1}
+    ],
+    "expected_consumed": ["a", "b", "c"],
+    "expected_board_slots_freed": 1,
+    "expected_result_zone": "hand",
+    "expected_result_origin": "shop_triple",
+    "expected_buff_attack": 3,
+    "expected_buff_health": 3,
+    "expected_reward_count_after_merge": 0,
+    "expected_reward_count_after_play": 1,
+    "grade": "reference_rule_on_official_triple_semantics"
+  },
+  "golden_forms": [
+    {"normal_id": "ICC_038", "golden_client_id": null, "base_attack": 2, "base_health": 2, "keywords": ["taunt", "divine_shield"], "grade": "inferred_from_triple_rule"},
+    {"normal_id": "CS2_065", "golden_client_id": null, "base_attack": 2, "base_health": 6, "keywords": ["taunt"], "grade": "inferred_from_triple_rule_with_client_token_corrob"},
+    {"normal_id": "LOOT_013", "golden_client_id": null, "base_attack": 4, "base_health": 8, "keywords": ["taunt"], "grade": "inferred_from_triple_rule_with_contemporary_wiki_corrob"},
+    {"normal_id": "GIL_681", "golden_client_id": null, "base_attack": 6, "base_health": 8, "keywords": [], "grade": "inferred_from_triple_rule"},
+    {"normal_id": "GVG_085", "golden_client_id": null, "base_attack": 2, "base_health": 4, "keywords": ["taunt", "divine_shield"], "grade": "inferred_from_triple_rule"},
+    {"normal_id": "GVG_058", "golden_client_id": null, "base_attack": 4, "base_health": 4, "keywords": ["divine_shield"], "grade": "inferred_from_triple_rule"},
+    {"normal_id": "GVG_062", "golden_client_id": null, "base_attack": 12, "base_health": 6, "keywords": [], "grade": "inferred_from_triple_rule"},
+    {"normal_id": "OG_145", "golden_client_id": null, "base_attack": 6, "base_health": 8, "keywords": ["taunt", "divine_shield"], "grade": "inferred_from_triple_rule"},
+    {"normal_id": "LOOT_078", "golden_client_id": null, "base_attack": 4, "base_health": 8, "keywords": [], "grade": "inferred_from_triple_rule"},
+    {"normal_id": "DAL_077", "golden_client_id": null, "base_attack": 2, "base_health": 4, "keywords": [], "grade": "inferred_from_triple_rule"},
+    {"normal_id": "GVG_113", "golden_client_id": null, "base_attack": 12, "base_health": 18, "keywords": [], "grade": "inferred_from_triple_rule"},
+    {"normal_id": "BGS_022", "golden_client_id": null, "base_attack": 14, "base_health": 20, "keywords": ["windfury"], "grade": "inferred_stats_with_official_retrospective_windfury"},
+    {"normal_id": "FP1_010", "golden_client_id": null, "base_attack": 4, "base_health": 16, "keywords": ["poisonous"], "grade": "inferred_from_triple_rule"}
+  ],
+  "effect_cases": [
+    {"id": "GV-01", "normal_id": "ICC_038", "op": "shield_hit", "input": {"health": 2, "shield": true, "damage": 7}, "expected": {"health": 2, "shield": false}, "grade": "reference_inference"},
+    {"id": "GV-02", "normal_id": "CS2_065", "op": "taunt_target_pool", "input": {"candidates": [{"id": "gold", "taunt": true}, {"id": "other", "taunt": false}]}, "expected": {"eligible_target_ids": ["gold"]}, "grade": "reference_inference"},
+    {"id": "GV-03", "normal_id": "LOOT_013", "op": "self_damage_on_play", "input": {"event": "play", "hero_health": 30, "damage": 2}, "expected": {"hero_health": 28}, "grade": "reference_inference_with_H17_corrob"},
+    {"id": "GV-04", "normal_id": "GIL_681", "op": "tribe_match", "input": {"tribes": ["BEAST", "DEMON", "MECHANICAL", "MURLOC"]}, "expected": {"matches": [true, true, true, true]}, "grade": "client_normal_tag_plus_reference_inference"},
+    {"id": "GV-05", "normal_id": "GVG_085", "op": "shield_hit", "input": {"health": 4, "shield": true, "damage": 7}, "expected": {"health": 4, "shield": false}, "grade": "reference_inference"},
+    {"id": "GV-06", "normal_id": "GVG_058", "op": "shield_hit", "input": {"health": 4, "shield": true, "damage": 7}, "expected": {"health": 4, "shield": false}, "grade": "reference_inference"},
+    {"id": "GV-07", "normal_id": "GVG_062", "op": "restore_shield_on_mech_summon", "input": {"event": "friendly_summon", "shield": false, "summoned_tribe": "MECHANICAL"}, "expected": {"shield": true}, "grade": "reference_inference"},
+    {"id": "GV-08", "normal_id": "OG_145", "op": "shield_hit", "input": {"health": 8, "shield": true, "damage": 7}, "expected": {"health": 8, "shield": false}, "grade": "reference_inference"},
+    {"id": "GV-09", "normal_id": "LOOT_078", "op": "cleave_no_death", "input": {"enemy_health": [20, 20, 20], "main_enemy_index": 1, "main_enemy_attack": 0}, "expected": {"enemy_health": [16, 16, 16], "counterattack_sources": [1]}, "grade": "reference_inference_without_death_order"},
+    {"id": "GV-10", "normal_id": "DAL_077", "op": "grant_poisonous_on_play", "input": {"event": "play", "friendly_murlocs": [{"id": "m1", "poisonous": false}, {"id": "m2", "poisonous": false}], "selected_id": "m1"}, "expected": {"m1_poisonous": true, "m2_poisonous": false}, "grade": "reference_inference"},
+    {"id": "GV-11", "normal_id": "GVG_113", "op": "cleave_no_death", "input": {"enemy_health": [20, 20, 20], "main_enemy_index": 1, "main_enemy_attack": 0}, "expected": {"enemy_health": [8, 8, 8], "counterattack_sources": [1]}, "grade": "reference_inference_without_death_order"},
+    {"id": "GV-12", "normal_id": "BGS_022", "op": "windfury_lowest_attack", "input": {"enemies": [{"id": "low", "attack": 1, "health": 100}, {"id": "high", "attack": 3, "health": 100}]}, "expected": {"attack_targets": ["low", "low"], "remaining_health": {"low": 72, "high": 100}}, "grade": "official_retrospective_windfury_plus_reference_targeting"},
+    {"id": "GV-13", "normal_id": "FP1_010", "op": "poisonous_damage", "input": {"target_health": 20, "target_shield": false}, "expected": {"target_health": 0, "target_shield": false}, "grade": "reference_inference"},
+    {"id": "GV-14", "normal_id": "LOOT_013", "op": "self_damage_on_play", "input": {"event": "buy", "hero_health": 30, "damage": 2}, "expected": {"hero_health": 30}, "grade": "reference_trigger_guard"},
+    {"id": "GV-15", "normal_id": "GVG_062", "op": "restore_shield_on_mech_summon", "input": {"event": "friendly_summon", "shield": false, "summoned_tribe": "BEAST"}, "expected": {"shield": false}, "grade": "reference_trigger_guard"},
+    {"id": "GV-16", "normal_id": "GVG_062", "op": "restore_shield_on_mech_summon", "input": {"event": "enemy_summon", "shield": false, "summoned_tribe": "MECHANICAL"}, "expected": {"shield": false}, "grade": "reference_trigger_guard"},
+    {"id": "GV-17", "normal_id": "DAL_077", "op": "grant_poisonous_on_play", "input": {"event": "buy", "friendly_murlocs": [{"id": "m1", "poisonous": false}, {"id": "m2", "poisonous": false}], "selected_id": "m1"}, "expected": {"m1_poisonous": false, "m2_poisonous": false}, "grade": "reference_trigger_guard"},
+    {"id": "GV-18", "normal_id": "FP1_010", "op": "poisonous_damage", "input": {"target_health": 20, "target_shield": true}, "expected": {"target_health": 20, "target_shield": false}, "grade": "reference_trigger_guard"}
+  ],
+  "identity_guards": {
+    "voidwalker_shop_triple_form_key": "reference:CS2_065:golden",
+    "voidwalker_shop_triple_client_id": null,
+    "golden_voidwalker_token": {"client_id": "TB_BaconUps_059t", "premium": true, "attack": 2, "health": 6, "zone": "combat_board", "origin": "combat_token", "source_parent_id": "TB_BaconUps_059", "source_parent_grade": "inferred_from_id_and_card_text"},
+    "mixed_triple_must_reject": true,
+    "combat_token_must_not_enter_recruit_merge": true,
+    "exact_2019_requires_verified_pool_and_event_order": true
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "execution_grade": "reference_only",
+  "cardface_source": "H04 build-35747 card definitions, cross-checked with historical-composite-nodes.json and historical-effect-nodes.json",
+  "historical_unknown": {
+    "exact_original_immunity_evaluation_phase": "unknown",
+    "same_tick_recruit_damage_and_aura_order": "unknown",
+    "other_hero_damage_source_interactions": "unknown"
+  },
+  "immunity_source": {
+    "normal_id": "GVG_021",
+    "golden_id": "TB_BaconUps_060",
+    "trigger": "while_present_on_same_side_board",
+    "target": "own_hero",
+    "operation": "prevent_positive_damage",
+    "normal": {"immune": true},
+    "golden": {"immune": true},
+    "cardface_grade": "H04_client_direct"
+  },
+  "recruit_damage_source": {
+    "normal_id": "BGS_004",
+    "golden_id": "TB_BaconUps_079",
+    "trigger": "friendly_demon_played",
+    "target": "own_hero",
+    "operation": "deal_damage",
+    "amount": 1,
+    "trigger_grade": "reference_injected",
+    "cardface_grade": "H04_client_direct"
+  },
+  "reference_boundaries": [
+    "in recruit, evaluate own hero immunity from the current own board when the validated Wrath Weaver damage event arrives",
+    "in combat, retain the independent combat board; at terminal settlement derive immunity from the actual survivors, never from the unchanged recruitment snapshot",
+    "a losing side has no surviving minions, therefore no surviving Mal'Ganis can prevent terminal combat damage in this bounded model",
+    "the full demon play and Wrath Weaver growth sequence, other self-damage sources, and exact original same-tick event order remain outside this node"
+  ]
+}

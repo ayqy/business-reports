@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "build": 35747,
+  "checked_date_beijing": "2026-09-26",
+  "client_source_url": "https://api.hearthstonejson.com/v1/35747/enUS/cards.json",
+  "client_sha256": "cd50550ce04b96c1ee9ab66c5825164830ba3ee18aa2dd1b69ced6b60eceb6ad",
+  "client_source_grade": "H05_build_35747_client_direct_same_extract_family_as_H04",
+  "candidate_source": "H09_community_simulator_ec2733704590c4de8c02ad7488d7fabe5a779506",
+  "candidate_grade": "community_array_only_not_original_server_eligibility",
+  "simulator_minion_info_sha256": "dad5b477e705ec2cf9da951a885312a047a427cdf6cc2cf931fc0e67c14a8b58",
+  "client_shop_tag_count": 22,
+  "historical_unknown": {
+    "live_candidate_eligibility": "unknown",
+    "live_draw_weights": "unknown",
+    "live_stock_policy": "unknown",
+    "golden_source_generated_form": "unknown",
+    "generated_recursive_deathrattle_chain": "unknown"
+  },
+  "pools": {
+    "deathrattle_candidates": [
+      {
+        "id": "BOT_445",
+        "name_zh": "机械袋鼠",
+        "client_deathrattle_tag": true,
+        "attack": 1,
+        "health": 1,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 1
+      },
+      {
+        "id": "OG_221",
+        "name_zh": "无私的英雄",
+        "client_deathrattle_tag": true,
+        "attack": 2,
+        "health": 1,
+        "race": "NONE",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 1
+      },
+      {
+        "id": "EX1_556",
+        "name_zh": "麦田傀儡",
+        "client_deathrattle_tag": true,
+        "attack": 2,
+        "health": 3,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 2
+      },
+      {
+        "id": "BOT_606",
+        "name_zh": "爆爆机器人",
+        "client_deathrattle_tag": true,
+        "attack": 2,
+        "health": 2,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 2
+      },
+      {
+        "id": "KAR_005",
+        "name_zh": "慈祥的外婆",
+        "client_deathrattle_tag": true,
+        "attack": 1,
+        "health": 1,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 2
+      },
+      {
+        "id": "BGS_025",
+        "name_zh": "骑乘迅猛龙",
+        "client_deathrattle_tag": true,
+        "attack": 3,
+        "health": 2,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 2
+      },
+      {
+        "id": "CFM_316",
+        "name_zh": "瘟疫鼠群",
+        "client_deathrattle_tag": true,
+        "attack": 2,
+        "health": 2,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 2
+      },
+      {
+        "id": "OG_256",
+        "name_zh": "恩佐斯的子嗣",
+        "client_deathrattle_tag": true,
+        "attack": 2,
+        "health": 2,
+        "race": "NONE",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 2
+      },
+      {
+        "id": "OG_216",
+        "name_zh": "寄生恶狼",
+        "client_deathrattle_tag": true,
+        "attack": 3,
+        "health": 3,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 3
+      },
+      {
+        "id": "BGS_023",
+        "name_zh": "载人收割机",
+        "client_deathrattle_tag": true,
+        "attack": 4,
+        "health": 3,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 3
+      },
+      {
+        "id": "BOT_312",
+        "name_zh": "量产型恐吓机",
+        "client_deathrattle_tag": true,
+        "attack": 3,
+        "health": 1,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE",
+          "MODULAR"
+        ],
+        "shop_tier": 3
+      },
+      {
+        "id": "UNG_037",
+        "name_zh": "始祖龟执盾者",
+        "client_deathrattle_tag": true,
+        "attack": 2,
+        "health": 6,
+        "race": "NONE",
+        "client_mechanics": [
+          "DEATHRATTLE",
+          "TAUNT"
+        ],
+        "shop_tier": 3
+      },
+      {
+        "id": "BGS_024",
+        "name_zh": "载人飞天魔像",
+        "client_deathrattle_tag": true,
+        "attack": 6,
+        "health": 4,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 4
+      },
+      {
+        "id": "EX1_577",
+        "name_zh": "比斯巨兽",
+        "client_deathrattle_tag": true,
+        "attack": 9,
+        "health": 7,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 4
+      },
+      {
+        "id": "BGS_018",
+        "name_zh": "巨狼戈德林",
+        "client_deathrattle_tag": true,
+        "attack": 4,
+        "health": 4,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 5
+      },
+      {
+        "id": "BOT_537",
+        "name_zh": "机械蛋",
+        "client_deathrattle_tag": true,
+        "attack": 0,
+        "health": 5,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 5
+      },
+      {
+        "id": "UNG_010",
+        "name_zh": "臃肿的蛇颈龙",
+        "client_deathrattle_tag": true,
+        "attack": 5,
+        "health": 7,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 5
+      },
+      {
+        "id": "EX1_534",
+        "name_zh": "长鬃草原狮",
+        "client_deathrattle_tag": true,
+        "attack": 6,
+        "health": 5,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 5
+      },
+      {
+        "id": "BGS_008",
+        "name_zh": "阴森巨蟒",
+        "client_deathrattle_tag": true,
+        "attack": 7,
+        "health": 7,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 6
+      },
+      {
+        "id": "BGS_012",
+        "name_zh": "坎格尔的学徒",
+        "client_deathrattle_tag": true,
+        "attack": 4,
+        "health": 8,
+        "race": "NONE",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 6
+      },
+      {
+        "id": "BGS_006",
+        "name_zh": "斯尼德的伐木机",
+        "client_deathrattle_tag": true,
+        "attack": 5,
+        "health": 7,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 6
+      },
+      {
+        "id": "LOOT_368",
+        "name_zh": "虚空领主",
+        "client_deathrattle_tag": true,
+        "attack": 3,
+        "health": 9,
+        "race": "DEMON",
+        "client_mechanics": [
+          "DEATHRATTLE",
+          "TAUNT"
+        ],
+        "shop_tier": 6
+      }
+    ]
+  }
+}

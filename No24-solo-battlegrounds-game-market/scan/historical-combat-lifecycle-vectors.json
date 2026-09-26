@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "fixtures": {
+    "duel": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 4, "alive": true, "ready": false,
+       "board": [{"instance_id": "a2", "card_id": "OG_256"},
+                 {"instance_id": "a5", "card_id": "FP1_031"}]},
+      {"seat_id": "B", "health": 20, "tier": 2, "alive": true, "ready": false,
+       "board": [{"instance_id": "b1", "card_id": "ICC_038"}]}
+    ]},
+    "duel_fragile": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 4, "alive": true, "ready": false,
+       "board": [{"instance_id": "a2", "card_id": "OG_256"},
+                 {"instance_id": "a5", "card_id": "FP1_031"}]},
+      {"seat_id": "B", "health": 10, "tier": 2, "alive": true, "ready": false,
+       "board": [{"instance_id": "b1", "card_id": "ICC_038"}]}
+    ]},
+    "duel_pending": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 1, "alive": true, "ready": false,
+       "pending_rewards": 1, "board": []},
+      {"seat_id": "B", "health": 40, "tier": 1, "alive": true, "ready": false,
+       "board": []}
+    ]},
+    "four": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 2, "alive": true, "ready": false,
+       "board": [{"instance_id": "a1", "card_id": "OG_256"}]},
+      {"seat_id": "B", "health": 3, "tier": 1, "alive": true, "ready": false,
+       "board": [{"instance_id": "b1", "card_id": "ICC_038"}]},
+      {"seat_id": "C", "health": 40, "tier": 2, "alive": true, "ready": false,
+       "board": [{"instance_id": "c1", "card_id": "CFM_315"}]},
+      {"seat_id": "D", "health": 3, "tier": 1, "alive": true, "ready": false,
+       "board": [{"instance_id": "d1", "card_id": "BOT_445"}]}
+    ]},
+    "odd": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 2, "alive": true, "ready": false,
+       "board": [{"instance_id": "a1", "card_id": "OG_256"}]},
+      {"seat_id": "B", "health": 40, "tier": 1, "alive": true, "ready": false,
+       "board": [{"instance_id": "b1", "card_id": "ICC_038"}]},
+      {"seat_id": "C", "health": 2, "tier": 1, "alive": true, "ready": false,
+       "board": [{"instance_id": "c1", "card_id": "CFM_315"}]},
+      {"seat_id": "D", "health": -1, "tier": 2, "alive": false, "ready": false,
+       "board": [{"instance_id": "d1", "card_id": "ICC_038"}]}
+    ], "graveyard": [{"seat_id": "D", "tier": 2,
+                     "board": [{"instance_id": "d1", "card_id": "ICC_038"}],
+                     "eliminated_round": 0, "placement": "unknown"}]},
+    "token_duel": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 2, "alive": true, "ready": false,
+       "board": [{"instance_id": "src", "card_id": "BOT_445"}]},
+      {"seat_id": "B", "health": 20, "tier": 1, "alive": true, "ready": false,
+       "board": [{"instance_id": "b1", "card_id": "ICC_038"}]}
+    ]},
+    "finkle_duel": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 4, "alive": true, "ready": false,
+       "board": [{"instance_id": "src", "card_id": "EX1_577"}]},
+      {"seat_id": "B", "health": 20, "tier": 1, "alive": true, "ready": false,
+       "board": [{"instance_id": "b1", "card_id": "FP1_010"}]}
+    ]},
+    "overlap_token_duel": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 6, "alive": true, "ready": false,
+       "board": [{"instance_id": "src", "card_id": "LOOT_368"}]},
+      {"seat_id": "B", "health": 20, "tier": 1, "alive": true, "ready": false,
+       "board": [{"instance_id": "b1", "card_id": "ICC_038"}]}
+    ]},
+    "dynamic_duel": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 3, "alive": true, "ready": false,
+       "board": [{"instance_id": "src", "card_id": "BGS_023"}]},
+      {"seat_id": "B", "health": 20, "tier": 1, "alive": true, "ready": false,
+       "board": [{"instance_id": "b1", "card_id": "ICC_038"}]}
+    ]},
+    "invalid_persistent": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 2, "alive": true, "ready": false,
+       "board": [{"instance_id": "t1", "card_id": "BOT_445t", "origin": "combat_token",
+                  "damage_tier": 1, "tier_grade": "reference_injected"}]},
+      {"seat_id": "B", "health": 40, "tier": 1, "alive": true, "ready": false,
+       "board": []}
+    ]},
+    "eight": {"seats": [
+      {"seat_id": "A", "health": 40, "tier": 1, "alive": true, "ready": false, "board": []},
+      {"seat_id": "B", "health": 40, "tier": 1, "alive": true, "ready": false, "board": []},
+      {"seat_id": "C", "health": 40, "tier": 1, "alive": true, "ready": false, "board": []},
+      {"seat_id": "D", "health": 40, "tier": 1, "alive": true, "ready": false, "board": []},
+      {"seat_id": "E", "health": 40, "tier": 1, "alive": true, "ready": false, "board": []},
+      {"seat_id": "F", "health": 40, "tier": 1, "alive": true, "ready": false, "board": []},
+      {"seat_id": "G", "health": 40, "tier": 1, "alive": true, "ready": false, "board": []},
+      {"seat_id": "H", "health": 40, "tier": 1, "alive": true, "ready": false, "board": []}
+    ]}
+  },
+  "setups": {
+    "duel_ready": [
+      {"op": "end_recruit", "seat_id": "A"},
+      {"op": "end_recruit", "seat_id": "B"}
+    ],
+    "duel_combat": [
+      {"op": "end_recruit", "seat_id": "A"},
+      {"op": "end_recruit", "seat_id": "B"},
+      {"op": "begin_combat", "pairings": [{"pair_id": "p1", "left": "A", "right": "B"}]}
+    ],
+    "four_combat": [
+      {"op": "end_recruit", "seat_id": "A"},
+      {"op": "end_recruit", "seat_id": "B"},
+      {"op": "end_recruit", "seat_id": "C"},
+      {"op": "end_recruit", "seat_id": "D"},
+      {"op": "begin_combat", "pairings": [
+        {"pair_id": "p1", "left": "A", "right": "B"},
+        {"pair_id": "p2", "left": "C", "right": "D"}]}
+    ],
+    "odd_ready": [
+      {"op": "end_recruit", "seat_id": "A"},
+      {"op": "end_recruit", "seat_id": "B"},
+      {"op": "end_recruit", "seat_id": "C"}
+    ],
+    "odd_combat": [
+      {"op": "end_recruit", "seat_id": "A"},
+      {"op": "end_recruit", "seat_id": "B"},
+      {"op": "end_recruit", "seat_id": "C"},
+      {"op": "begin_combat", "pairings": [
+        {"pair_id": "p1", "left": "A", "right": "B"},
+        {"pair_id": "p2", "left": "C", "right": {"ghost_of": "D"}}]}
+    ],
+    "eight_ready": [
+      {"op": "end_recruit", "seat_id": "A"},
+      {"op": "end_recruit", "seat_id": "B"},
+      {"op": "end_recruit", "seat_id": "C"},
+      {"op": "end_recruit", "seat_id": "D"},
+      {"op": "end_recruit", "seat_id": "E"},
+      {"op": "end_recruit", "seat_id": "F"},
+      {"op": "end_recruit", "seat_id": "G"},
+      {"op": "end_recruit", "seat_id": "H"}
+    ]
+  },
+  "cases": [
+    {"id": "LC-01", "grade": "reference_only", "fixture": "duel",
+     "action": {"op": "end_recruit", "seat_id": "A"},
+     "expect_state": {"phase": "recruit", "ready": {"A": true, "B": false}},
+     "expect_events": ["recruit_locked"]},
+    {"id": "LC-02", "grade": "reference_only", "fixture": "duel",
+     "setup": [{"op": "end_recruit", "seat_id": "A"}],
+     "action": {"op": "end_recruit", "seat_id": "B"},
+     "expect_state": {"phase": "await_pairing", "ready": {"A": true, "B": true}},
+     "expect_events": ["recruit_locked", "all_recruit_locked"]},
+    {"id": "LC-03", "grade": "reference_only", "fixture": "duel_pending",
+     "action": {"op": "end_recruit", "seat_id": "A"}, "error": "reward_pending"},
+    {"id": "LC-04", "grade": "reference_only", "fixture": "duel",
+     "setup": [{"op": "end_recruit", "seat_id": "A"}],
+     "action": {"op": "end_recruit", "seat_id": "A"}, "error": "already_ready"},
+    {"id": "LC-05", "grade": "reference_only", "fixture": "duel", "setup_ref": "duel_ready",
+     "action": {"op": "begin_combat", "pairings": [{"pair_id": "p1", "left": "A", "right": "B"}]},
+     "expect_state": {"phase": "combat", "snapshots": {"p1": {
+       "left": {"tier": 4, "board": [{"instance_id": "a2"}, {"instance_id": "a5"}]},
+       "right": {"tier": 2, "board": [{"instance_id": "b1"}]}}}},
+     "expect_events": ["combat_snapshots_created"]},
+    {"id": "LC-06", "grade": "reference_only", "fixture": "duel", "setup_ref": "duel_ready",
+     "action": {"op": "begin_combat", "pairings": [{"pair_id": "p1", "left": "A", "right": "A"}]},
+     "error": "invalid_pair_right"},
+    {"id": "LC-07", "grade": "reference_only", "fixture": "odd", "setup_ref": "odd_ready",
+     "action": {"op": "begin_combat", "pairings": [
+       {"pair_id": "p1", "left": "A", "right": "B"},
+       {"pair_id": "p2", "left": "C", "right": {"ghost_of": "X"}}]},
+     "error": "ghost_snapshot_missing"},
+    {"id": "LC-08", "grade": "reference_only", "fixture": "odd", "setup_ref": "odd_ready",
+     "action": {"op": "begin_combat", "pairings": [
+       {"pair_id": "p1", "left": "A", "right": "B"},
+       {"pair_id": "p2", "left": "C", "right": {"ghost_of": "D"}}]},
+     "expect_state": {"phase": "combat", "snapshots": {"p2": {
+       "left": {"seat_id": "C"}, "right": {"ghost_of": "D", "tier": 2,
+         "board": [{"instance_id": "d1"}]}}}},
+     "expect_events": ["combat_snapshots_created"]},
+    {"id": "LC-09", "grade": "reference_only", "fixture": "duel", "setup_ref": "duel_combat",
+     "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": ["a2", "a5"], "right_survivors": []}]},
+     "expect_state": {"phase": "post_combat", "health": {"A": 40, "B": 9},
+       "boards": {"A": [{"instance_id": "a2"}, {"instance_id": "a5"}],
+                  "B": [{"instance_id": "b1"}]},
+       "history": [{"outcomes": [{"outcome": "left", "damage": 11,
+                                    "damaged_seat": "B"}], "eliminated": []}]},
+     "expect_events": ["hero_damage"],
+     "expect_event_details": [{"seat_id": "B", "amount": 11}]},
+    {"id": "LC-10", "grade": "reference_only", "fixture": "duel", "setup_ref": "duel_combat",
+     "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": [], "right_survivors": []}]},
+     "expect_state": {"phase": "post_combat", "health": {"A": 40, "B": 20},
+       "history": [{"outcomes": [{"outcome": "draw", "damage": 0}],
+                    "eliminated": []}]}, "expect_events": []},
+    {"id": "LC-11", "grade": "reference_only", "fixture": "duel", "setup_ref": "duel_combat",
+     "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": ["a2"], "right_survivors": ["b1"]}]},
+     "error": "both_sides_survive"},
+    {"id": "LC-12", "grade": "reference_only", "fixture": "duel", "setup_ref": "duel_combat",
+     "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": ["forged"], "right_survivors": []}]},
+     "error": "survivor_not_in_snapshot"},
+    {"id": "LC-13", "grade": "reference_only", "fixture": "duel_fragile", "setup_ref": "duel_combat",
+     "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": ["a2", "a5"], "right_survivors": []}]},
+     "expect_state": {"phase": "match_over", "winner_id": "A", "health": {"B": -1},
+       "alive": {"B": false}, "graveyard_ids": ["B"],
+       "placements": {"B": "unknown"}},
+     "expect_events": ["hero_damage", "eliminated", "match_over"]},
+    {"id": "LC-14", "grade": "reference_only", "fixture": "four", "setup_ref": "four_combat",
+     "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": ["a1"], "right_survivors": []},
+       {"pair_id": "p2", "left_survivors": ["c1"], "right_survivors": []}]},
+     "expect_state": {"phase": "post_combat", "health": {"B": -1, "D": 0},
+       "alive": {"A": true, "B": false, "C": true, "D": false},
+       "graveyard_ids": ["B", "D"], "placements": {"B": "unknown", "D": "unknown"}},
+     "expect_events": ["hero_damage", "hero_damage", "eliminated", "eliminated"]},
+    {"id": "LC-15", "grade": "reference_only", "fixture": "odd", "setup_ref": "odd_combat",
+     "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": [], "right_survivors": []},
+       {"pair_id": "p2", "left_survivors": [], "right_survivors": ["d1"]}]},
+     "expect_state": {"phase": "post_combat", "health": {"C": -1},
+       "alive": {"C": false}, "graveyard_ids": ["D", "C"],
+       "history": [{"outcomes": [{"outcome": "draw"},
+                                    {"outcome": "right", "damage": 3,
+                                     "damaged_seat": "C"}]}]},
+     "expect_events": ["hero_damage", "eliminated"]},
+    {"id": "LC-16", "grade": "reference_only", "fixture": "odd", "setup_ref": "odd_combat",
+     "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": [], "right_survivors": []},
+       {"pair_id": "p2", "left_survivors": ["c1"], "right_survivors": []}]},
+     "expect_state": {"phase": "post_combat", "health": {"C": 2},
+       "graveyard_ids": ["D"], "history": [{"outcomes": [
+         {"outcome": "draw"}, {"outcome": "left", "damage": 2,
+                                 "damaged_seat": null}]}]},
+     "expect_events": []},
+    {"id": "LC-17", "grade": "reference_only", "fixture": "token_duel", "setup_ref": "duel_combat",
+     "action": {"op": "settle_combat", "results": [{"pair_id": "p1",
+       "left_survivors": ["t1"], "right_survivors": [],
+       "generated": {"left": [{"instance_id": "t1", "card_id": "BOT_445t",
+         "origin": "combat_token", "source_instance_id": "src", "damage_tier": 1,
+         "tier_grade": "reference_injected"}], "right": []}}]},
+     "expect_state": {"phase": "post_combat", "health": {"B": 17},
+       "boards": {"A": [{"instance_id": "src"}]},
+       "history": [{"outcomes": [{"damage": 3, "survivors": {
+         "left": ["t1"], "right": []}}]}]},
+     "expect_events": ["hero_damage"]},
+    {"id": "LC-18", "grade": "reference_only", "fixture": "token_duel", "setup_ref": "duel_combat",
+     "action": {"op": "settle_combat", "results": [{"pair_id": "p1",
+       "left_survivors": ["t1"], "right_survivors": [],
+       "generated": {"left": [{"instance_id": "t1", "card_id": "BOT_445t",
+         "origin": "combat_token", "source_instance_id": "absent", "damage_tier": 1,
+         "tier_grade": "reference_injected"}], "right": []}}]},
+     "error": "token_source_missing"},
+    {"id": "LC-19", "grade": "reference_only", "fixture": "token_duel", "setup_ref": "duel_combat",
+     "action": {"op": "settle_combat", "results": [{"pair_id": "p1",
+       "left_survivors": ["t1"], "right_survivors": [],
+       "generated": {"left": [{"instance_id": "t1", "card_id": "BOT_445t",
+         "origin": "combat_token", "source_instance_id": "src", "damage_tier": 1}],
+         "right": []}}]}, "error": "ungraded_token_tier"},
+    {"id": "LC-20", "grade": "reference_only", "fixture": "duel", "setup_ref": "duel_combat",
+     "setup": [{"op": "settle_combat", "results": [{"pair_id": "p1",
+       "left_survivors": [], "right_survivors": []}]}],
+     "action": {"op": "open_next_recruit"},
+     "expect_state": {"phase": "recruit", "round": 2, "winner_id": null,
+       "ready": {"A": false, "B": false}, "pairings": [], "snapshots": {},
+       "boards": {"A": [{"instance_id": "a2"}, {"instance_id": "a5"}]}},
+     "expect_events": ["advance_recruit", "advance_recruit"]},
+    {"id": "LC-21", "grade": "reference_only", "fixture": "duel_fragile",
+     "setup_ref": "duel_combat", "setup": [{"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": ["a2", "a5"], "right_survivors": []}]}],
+     "action": {"op": "open_next_recruit"}, "error": "wrong_phase"},
+    {"id": "LC-22", "grade": "reference_only", "fixture": "duel", "setup_ref": "duel_combat",
+     "action": {"op": "settle_combat", "results": []}, "error": "wrong_result_count"},
+    {"id": "LC-23", "grade": "reference_only", "fixture": "duel", "setup_ref": "duel_ready",
+     "action": {"op": "begin_combat", "mode": "exact_2019", "pairings": [
+       {"pair_id": "p1", "left": "A", "right": "B"}]},
+     "error": "exact_mode_unverified"},
+    {"id": "LC-24", "grade": "reference_only", "fixture": "overlap_token_duel",
+     "setup_ref": "duel_combat", "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": ["t1"], "right_survivors": [],
+        "generated": {"left": [{"instance_id": "t1", "card_id": "CS2_065",
+          "origin": "combat_token", "source_instance_id": "src", "damage_tier": 1,
+          "tier_grade": "reference_injected"}], "right": []}}]},
+     "expect_state": {"phase": "post_combat", "health": {"B": 13},
+       "boards": {"A": [{"instance_id": "src"}]}},
+     "expect_events": ["hero_damage"]},
+    {"id": "LC-25", "grade": "reference_only", "fixture": "dynamic_duel",
+     "setup_ref": "duel_combat", "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": ["g1"], "right_survivors": [],
+        "generated": {"left": [{"instance_id": "g1", "card_id": "OG_256",
+          "origin": "combat_generated_minion", "source_instance_id": "src",
+          "pool_grade": "reference_injected"}], "right": []}}]},
+     "expect_state": {"phase": "post_combat", "health": {"B": 15},
+       "boards": {"A": [{"instance_id": "src"}]}},
+     "expect_events": ["hero_damage"]},
+    {"id": "LC-26", "grade": "reference_only", "fixture": "dynamic_duel",
+     "setup_ref": "duel_combat", "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": ["g1"], "right_survivors": [],
+        "generated": {"left": [{"instance_id": "g1", "card_id": "OG_256",
+          "origin": "combat_generated_minion", "source_instance_id": "src"}],
+          "right": []}}]}, "error": "ungraded_generated_pool"},
+    {"id": "LC-27", "grade": "reference_only", "fixture": "invalid_persistent",
+     "action": {"op": "end_recruit", "seat_id": "A"},
+     "error": "combat_instance_persisted"},
+    {"id": "LC-28", "grade": "reference_only", "fixture": "eight",
+     "setup_ref": "eight_ready", "action": {"op": "begin_combat", "pairings": [
+       {"pair_id": "p1", "left": "A", "right": "B"},
+       {"pair_id": "p2", "left": "C", "right": "D"},
+       {"pair_id": "p3", "left": "E", "right": "F"},
+       {"pair_id": "p4", "left": "G", "right": "H"}]},
+     "expect_state": {"phase": "combat", "snapshots": {
+       "p1": {"left": {"seat_id": "A"}, "right": {"seat_id": "B"}},
+       "p2": {"left": {"seat_id": "C"}, "right": {"seat_id": "D"}},
+       "p3": {"left": {"seat_id": "E"}, "right": {"seat_id": "F"}},
+       "p4": {"left": {"seat_id": "G"}, "right": {"seat_id": "H"}}}},
+     "expect_events": ["combat_snapshots_created"]},
+    {"id": "LC-29", "grade": "reference_only", "fixture": "finkle_duel",
+     "setup_ref": "duel_combat", "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": [], "right_survivors": ["finkle"],
+        "generated": {"left": [], "right": [{
+          "instance_id": "finkle", "card_id": "EX1_finkle",
+          "origin": "combat_token", "source_instance_id": "src",
+          "source_side": "left", "damage_tier": 1,
+          "tier_grade": "reference_injected"}]}}]},
+     "expect_state": {"phase": "post_combat", "health": {"A": 38, "B": 20},
+       "history": [{"outcomes": [{"outcome": "right", "damage": 2,
+                                   "damaged_seat": "A"}]}]},
+     "expect_events": ["hero_damage"]},
+    {"id": "LC-30", "grade": "reference_only", "fixture": "finkle_duel",
+     "setup_ref": "duel_combat", "action": {"op": "settle_combat", "results": [
+       {"pair_id": "p1", "left_survivors": [], "right_survivors": ["finkle"],
+        "generated": {"left": [], "right": [{
+          "instance_id": "finkle", "card_id": "EX1_finkle",
+          "origin": "combat_token", "source_instance_id": "missing",
+          "source_side": "left", "damage_tier": 1,
+          "tier_grade": "reference_injected"}]}}]},
+     "error": "token_source_missing"}
+  ]
+}

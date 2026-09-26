@@ -1,0 +1,1911 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "fixtures": {
+    "wolf": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "CS2_065"
+            },
+            {
+              "instance_id": "w",
+              "card_id": "EX1_162"
+            },
+            {
+              "instance_id": "z",
+              "card_id": "CS2_065"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        },
+        "w": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "z": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "murloc": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "EX1_509"
+            },
+            {
+              "instance_id": "l",
+              "card_id": "EX1_507"
+            },
+            {
+              "instance_id": "all",
+              "card_id": "GIL_681"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "l": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "all": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "phalanx": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "CS2_065"
+            },
+            {
+              "instance_id": "p",
+              "card_id": "ULD_179"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        },
+        "p": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "siege": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "CS2_065"
+            },
+            {
+              "instance_id": "s",
+              "card_id": "EX1_185"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        },
+        "s": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "malganis": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "CS2_065"
+            },
+            {
+              "instance_id": "m",
+              "card_id": "GVG_021"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        },
+        "m": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "all_demon": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "GIL_681"
+            },
+            {
+              "instance_id": "m",
+              "card_id": "GVG_021"
+            },
+            {
+              "instance_id": "s",
+              "card_id": "EX1_185"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "m": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "s": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "wolf_death": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "w",
+              "card_id": "EX1_162"
+            },
+            {
+              "instance_id": "z",
+              "card_id": "CFM_315"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "w": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "z": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right"
+    },
+    "collapse": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "BGS_010"
+            },
+            {
+              "instance_id": "m",
+              "card_id": "GVG_021",
+              "buff_health": -6
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "LOOT_078"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "m": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [
+            "cleave"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right"
+    },
+    "wolf_summon": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "BOT_445"
+            },
+            {
+              "instance_id": "w",
+              "card_id": "EX1_162"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CFM_315"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "w": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "left"
+    },
+    "shield_friend": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "GVG_058"
+            },
+            {
+              "instance_id": "p",
+              "card_id": "ICC_858"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        },
+        "p": {
+          "keywords": [
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right"
+    },
+    "shield_self": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "p",
+              "card_id": "ICC_858"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "p": {
+          "keywords": [
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right"
+    },
+    "shield_enemy": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "CS2_065"
+            },
+            {
+              "instance_id": "p",
+              "card_id": "ICC_858"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "ICC_038"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        },
+        "p": {
+          "keywords": [
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        },
+        "b": {
+          "keywords": [
+            "taunt",
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "shield_multi": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "GVG_058"
+            },
+            {
+              "instance_id": "p",
+              "card_id": "ICC_858"
+            },
+            {
+              "instance_id": "q",
+              "card_id": "ICC_858"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        },
+        "p": {
+          "keywords": [
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        },
+        "q": {
+          "keywords": [
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right"
+    },
+    "listener_shield": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "BGS_010"
+            },
+            {
+              "instance_id": "j",
+              "card_id": "BGS_002"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            },
+            {
+              "instance_id": "p",
+              "card_id": "ICC_858"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "a": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "j": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        },
+        "p": {
+          "keywords": [
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "stack": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "w1",
+              "card_id": "EX1_162"
+            },
+            {
+              "instance_id": "a",
+              "card_id": "CS2_065"
+            },
+            {
+              "instance_id": "w2",
+              "card_id": "EX1_162"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "w1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "a": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        },
+        "w2": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    }
+  },
+  "cases": [
+    {
+      "id": "CA-01",
+      "grade": "reference_only",
+      "fixture": "wolf",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_units": [
+          {
+            "attack": 2,
+            "health": 2,
+            "aura_attack": 1
+          },
+          {
+            "attack": 2,
+            "aura_attack": 0
+          },
+          {
+            "attack": 2,
+            "aura_attack": 1
+          }
+        ],
+        "right_units": [
+          {
+            "health": 1
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage"
+      ]
+    },
+    {
+      "id": "CA-02",
+      "grade": "reference_only",
+      "fixture": "wolf",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "golden_instances": [
+        "w"
+      ],
+      "expect_state": {
+        "phase": "terminal",
+        "left_units": [
+          {
+            "attack": 3,
+            "health": 2,
+            "aura_attack": 2
+          },
+          {
+            "attack": 4
+          },
+          {
+            "attack": 3,
+            "aura_attack": 2
+          }
+        ],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "CA-03",
+      "grade": "reference_only",
+      "fixture": "murloc",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_units": [
+          {
+            "attack": 3,
+            "health": 1
+          },
+          {
+            "attack": 3,
+            "aura_attack": 0
+          },
+          {
+            "attack": 5,
+            "health": 4
+          }
+        ],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "CA-04",
+      "grade": "reference_only",
+      "fixture": "murloc",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "golden_instances": [
+        "l"
+      ],
+      "expect_state": {
+        "phase": "terminal",
+        "left_units": [
+          {
+            "attack": 5,
+            "health": 1
+          },
+          {
+            "attack": 6,
+            "aura_attack": 0
+          },
+          {
+            "attack": 7,
+            "health": 4
+          }
+        ],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "CA-05",
+      "grade": "reference_only",
+      "fixture": "phalanx",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_units": [
+          {
+            "attack": 3,
+            "health": 2
+          },
+          {
+            "attack": 4,
+            "aura_attack": 0
+          }
+        ],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "CA-06",
+      "grade": "reference_only",
+      "fixture": "phalanx",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "golden_instances": [
+        "p"
+      ],
+      "expect_state": {
+        "phase": "terminal",
+        "left_units": [
+          {
+            "attack": 5,
+            "health": 2
+          },
+          {
+            "attack": 8,
+            "aura_attack": 0
+          }
+        ],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "CA-07",
+      "grade": "reference_only",
+      "fixture": "siege",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_units": [
+          {
+            "attack": 2,
+            "health": 2
+          },
+          {
+            "attack": 5,
+            "aura_attack": 0,
+            "keywords": [
+              "taunt"
+            ]
+          }
+        ],
+        "right_units": [
+          {
+            "health": 1
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage"
+      ]
+    },
+    {
+      "id": "CA-08",
+      "grade": "reference_only",
+      "fixture": "siege",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "golden_instances": [
+        "s"
+      ],
+      "expect_state": {
+        "phase": "terminal",
+        "left_units": [
+          {
+            "attack": 3,
+            "health": 2
+          },
+          {
+            "attack": 10,
+            "aura_attack": 0,
+            "keywords": [
+              "taunt"
+            ]
+          }
+        ],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "CA-09",
+      "grade": "reference_only",
+      "fixture": "malganis",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_units": [
+          {
+            "attack": 3,
+            "health": 4,
+            "aura_attack": 2,
+            "aura_health": 2
+          },
+          {
+            "attack": 9,
+            "health": 7,
+            "aura_attack": 0
+          }
+        ],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "CA-10",
+      "grade": "reference_only",
+      "fixture": "malganis",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "golden_instances": [
+        "m"
+      ],
+      "expect_state": {
+        "phase": "terminal",
+        "left_units": [
+          {
+            "attack": 5,
+            "health": 6,
+            "aura_attack": 4,
+            "aura_health": 4
+          },
+          {
+            "attack": 18,
+            "health": 14,
+            "aura_attack": 0
+          }
+        ],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "CA-11",
+      "grade": "reference_only",
+      "fixture": "all_demon",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_units": [
+          {
+            "attack": 6,
+            "health": 5,
+            "aura_attack": 3,
+            "aura_health": 2
+          },
+          {
+            "attack": 10,
+            "health": 7,
+            "aura_attack": 1
+          },
+          {
+            "attack": 7,
+            "health": 10,
+            "aura_attack": 2,
+            "aura_health": 2
+          }
+        ],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "CA-12",
+      "grade": "reference_only",
+      "fixture": "wolf_death",
+      "action": {
+        "op": "attack",
+        "attacker_id": "b",
+        "target_id": "w"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_units": [
+          {
+            "attack": 1,
+            "aura_attack": 0
+          },
+          {
+            "attack": 1,
+            "aura_attack": 0
+          }
+        ],
+        "right_units": [
+          {
+            "health": 6
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "poison_kill",
+        "damage",
+        "aura_change",
+        "aura_change",
+        "death"
+      ]
+    },
+    {
+      "id": "CA-13",
+      "grade": "reference_only",
+      "fixture": "collapse",
+      "action": {
+        "op": "attack",
+        "attacker_id": "b",
+        "target_id": "m"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "damage",
+        "aura_change",
+        "aura_collapse",
+        "death",
+        "death",
+        "death",
+        "terminal"
+      ],
+      "expect_event_details": [
+        {},
+        {},
+        {},
+        {},
+        {
+          "target": "a",
+          "attack": -2,
+          "health": -2
+        },
+        {
+          "target": "a"
+        },
+        {
+          "instance_id": "m"
+        },
+        {
+          "instance_id": "b"
+        },
+        {
+          "instance_id": "a"
+        },
+        {}
+      ]
+    },
+    {
+      "id": "CA-14",
+      "grade": "reference_only",
+      "fixture": "wolf_summon",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b",
+        "token_tiers": {
+          "BOT_445t": 1
+        }
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_units": [
+          {
+            "instance_id": "combat-1",
+            "attack": 2,
+            "aura_attack": 1
+          },
+          {
+            "instance_id": "w",
+            "attack": 2
+          }
+        ],
+        "right_ids": []
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "summon",
+        "aura_change",
+        "death",
+        "terminal"
+      ]
+    },
+    {
+      "id": "CA-15",
+      "grade": "reference_only",
+      "fixture": "shield_friend",
+      "action": {
+        "op": "attack",
+        "attacker_id": "b",
+        "target_id": "a"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_units": [
+          {
+            "keywords": []
+          },
+          {
+            "attack": 3,
+            "health": 7,
+            "keywords": [
+              "divine_shield"
+            ]
+          }
+        ],
+        "right_units": [
+          {
+            "health": 1
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "shield_lost",
+        "shield_listener_growth",
+        "damage"
+      ],
+      "expect_event_details": [
+        {},
+        {
+          "target": "a"
+        },
+        {
+          "listener": "p",
+          "shield_target": "a",
+          "attack": 2
+        },
+        {
+          "source": "a",
+          "target": "b",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "CA-16",
+      "grade": "reference_only",
+      "fixture": "shield_friend",
+      "action": {
+        "op": "attack",
+        "attacker_id": "b",
+        "target_id": "a"
+      },
+      "golden_instances": [
+        "p"
+      ],
+      "expect_state": {
+        "phase": "combat",
+        "left_units": [
+          {
+            "keywords": []
+          },
+          {
+            "attack": 6,
+            "health": 14,
+            "keywords": [
+              "divine_shield"
+            ]
+          }
+        ],
+        "right_units": [
+          {
+            "health": 1
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "shield_lost",
+        "shield_listener_growth",
+        "damage"
+      ]
+    },
+    {
+      "id": "CA-17",
+      "grade": "reference_only",
+      "fixture": "shield_self",
+      "action": {
+        "op": "attack",
+        "attacker_id": "b",
+        "target_id": "p"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_units": [
+          {
+            "attack": 3,
+            "keywords": []
+          }
+        ],
+        "right_units": [
+          {
+            "health": 2
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "shield_lost",
+        "shield_listener_growth",
+        "damage"
+      ],
+      "expect_event_details": [
+        {},
+        {
+          "target": "p"
+        },
+        {
+          "listener": "p",
+          "shield_target": "p",
+          "attack": 2
+        },
+        {
+          "source": "p",
+          "target": "b",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "id": "CA-18",
+      "grade": "reference_only",
+      "fixture": "shield_enemy",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_units": [
+          {
+            "health": 2
+          },
+          {
+            "attack": 1
+          }
+        ],
+        "right_units": [
+          {
+            "keywords": [
+              "taunt"
+            ]
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "shield_lost",
+        "damage"
+      ]
+    },
+    {
+      "id": "CA-19",
+      "grade": "reference_only",
+      "fixture": "shield_multi",
+      "action": {
+        "op": "attack",
+        "attacker_id": "b",
+        "target_id": "a"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_units": [
+          {},
+          {
+            "attack": 3
+          },
+          {
+            "attack": 3
+          }
+        ],
+        "right_units": [
+          {
+            "health": 1
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "shield_lost",
+        "shield_listener_growth",
+        "shield_listener_growth",
+        "damage"
+      ]
+    },
+    {
+      "id": "CA-20",
+      "grade": "reference_only",
+      "fixture": "listener_shield",
+      "action": {
+        "op": "attack",
+        "attacker_id": "a",
+        "target_id": "b",
+        "listener_targets": [
+          {
+            "target_id": "p",
+            "grade": "reference_injected"
+          }
+        ]
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "j"
+        ],
+        "right_units": [
+          {
+            "instance_id": "p",
+            "attack": 3,
+            "keywords": []
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "death",
+        "listener_damage",
+        "shield_lost",
+        "shield_listener_growth",
+        "death"
+      ]
+    },
+    {
+      "id": "CA-21",
+      "grade": "reference_only",
+      "fixture": "stack",
+      "action": {
+        "op": "attack",
+        "attacker_id": "w1",
+        "target_id": "b"
+      },
+      "golden_instances": [
+        "w2"
+      ],
+      "expect_state": {
+        "phase": "combat",
+        "left_units": [
+          {
+            "attack": 2,
+            "health": 1
+          },
+          {
+            "attack": 4,
+            "aura_attack": 3
+          },
+          {
+            "attack": 4
+          }
+        ],
+        "right_units": [
+          {
+            "health": 1
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage"
+      ]
+    }
+  ],
+  "bridge_cases": [
+    {
+      "id": "CA-B01",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 40,
+          "tier": 2,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "EX1_509"
+            },
+            {
+              "instance_id": "l",
+              "card_id": "EX1_507"
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 4,
+          "tier": 1,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "a": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "l": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "a",
+          "target_id": "b"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "a",
+          "l"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": -1
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "left",
+                "damage": 5
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "CA-B02",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 40,
+          "tier": 4,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "a",
+              "card_id": "GVG_058"
+            },
+            {
+              "instance_id": "p",
+              "card_id": "ICC_858"
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 8,
+          "tier": 1,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "CS2_065"
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "a": {
+          "keywords": [
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        },
+        "p": {
+          "keywords": [
+            "divine_shield"
+          ],
+          "grade": "client_35747"
+        },
+        "b": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "b",
+          "target_id": "a"
+        },
+        {
+          "op": "attack",
+          "attacker_id": "a",
+          "target_id": "b"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "a",
+          "p"
+        ],
+        "right_survivors": []
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": -2
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "left",
+                "damage": 10
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "CA-B03",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 10,
+          "tier": 5,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "m",
+              "card_id": "GVG_021"
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 20,
+          "tier": 6,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "FP1_010",
+              "buff_health": 5
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "m": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "b",
+          "target_id": "m"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [],
+        "right_survivors": [
+          "b"
+        ]
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "B",
+        "health": {
+          "A": -2,
+          "B": 20
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "right",
+                "damage": 12,
+                "hero_immune_at_settlement": {
+                  "left": false,
+                  "right": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "CA-B04",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 10,
+          "tier": 5,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "w",
+              "card_id": "BGS_004"
+            },
+            {
+              "instance_id": "m",
+              "card_id": "GVG_021"
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 20,
+          "tier": 6,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "b",
+              "card_id": "FP1_010",
+              "buff_health": 5
+            }
+          ]
+        }
+      ],
+      "recruit_actions": [
+        {
+          "op": "apply_recruit_hero_damage",
+          "seat_id": "A",
+          "source_instance_id": "w",
+          "trigger": "friendly_demon_played",
+          "trigger_grade": "reference_injected"
+        }
+      ],
+      "expect_recruit_events": [
+        "hero_damage_prevented"
+      ],
+      "traits": {
+        "w": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "m": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "b": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "b",
+          "target_id": "m"
+        },
+        {
+          "op": "attack",
+          "attacker_id": "w",
+          "target_id": "b"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [],
+        "right_survivors": [
+          "b"
+        ]
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "B",
+        "health": {
+          "A": -2,
+          "B": 20
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "right",
+                "damage": 12,
+                "hero_immune_at_settlement": {
+                  "left": false,
+                  "right": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

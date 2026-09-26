@@ -1,0 +1,2895 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "client_source": {
+    "url": "https://raw.githubusercontent.com/HearthSim/hsdata/35747/CardDefs.xml",
+    "sha256": "2ac3bec61c4c9efdcab2923a47b3fa2127a23c08d758debb384f68753fb0079a",
+    "evidence": "H04_client_cardface_not_server_execution"
+  },
+  "coverage": {
+    "fixed_token_group": 15,
+    "parent_forms": 30,
+    "token_definition_ids": 29,
+    "historical_generation_chain_directly_verified": 0
+  },
+  "reference_rules": {
+    "board_limit": 7,
+    "deathrattle_source_frees_own_slot_first": true,
+    "combat_summons_do_not_persist_to_recruit_snapshot": true,
+    "same_event_death_order": "unknown",
+    "historical_summon_insert_position": "unknown",
+    "reference_insert_position": "not_exercised_by_count_identity_vectors"
+  },
+  "nodes": [
+    {
+      "normal_id": "CFM_315",
+      "name_zh": "雄斑虎",
+      "golden_id": "TB_BaconUps_093",
+      "trigger": "battlecry",
+      "count": {
+        "kind": "fixed",
+        "value": 1
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "CFM_315t",
+          "name_zh": "雌斑虎",
+          "attack": 1,
+          "health": 1,
+          "race": "BEAST",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_093t",
+          "name_zh": "雌斑虎",
+          "attack": 2,
+          "health": 2,
+          "race": "BEAST",
+          "keywords": [],
+          "premium": false
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>召唤一个1/1的雌斑虎。",
+        "golden": "<b>战吼：</b>召唤一头2/2的雌斑虎。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "BOT_445",
+      "name_zh": "机械袋鼠",
+      "golden_id": "TB_BaconUps_002",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "fixed",
+        "value": 1
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "BOT_445t",
+          "name_zh": "机械袋鼠宝宝",
+          "attack": 1,
+          "health": 1,
+          "race": "MECHANICAL",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_002t",
+          "name_zh": "机械袋鼠宝宝",
+          "attack": 2,
+          "health": 2,
+          "race": "MECHANICAL",
+          "keywords": [],
+          "premium": true
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>亡语：</b>召唤一个1/1的机械袋鼠宝宝。",
+        "golden": "<b>亡语：</b>召唤一个2/2的机械袋鼠宝宝。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "EX1_506",
+      "name_zh": "鱼人猎潮者",
+      "golden_id": "TB_BaconUps_003",
+      "trigger": "battlecry",
+      "count": {
+        "kind": "fixed",
+        "value": 1
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "EX1_506a",
+          "name_zh": "鱼人斥候",
+          "attack": 1,
+          "health": 1,
+          "race": "MURLOC",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_003t",
+          "name_zh": "鱼人斥候",
+          "attack": 2,
+          "health": 2,
+          "race": "MURLOC",
+          "keywords": [],
+          "premium": false
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>召唤一个1/1的鱼人斥候。",
+        "golden": "<b>战吼：</b>召唤一个2/2的鱼人斥候。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "KAR_005",
+      "name_zh": "慈祥的外婆",
+      "golden_id": "TB_BaconUps_004",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "fixed",
+        "value": 1
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "KAR_005a",
+          "name_zh": "大灰狼",
+          "attack": 3,
+          "health": 2,
+          "race": "BEAST",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_004t",
+          "name_zh": "大灰狼",
+          "attack": 6,
+          "health": 4,
+          "race": "BEAST",
+          "keywords": [],
+          "premium": true
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>亡语：</b>召唤一只3/2的大灰狼。",
+        "golden": "<b>亡语：</b>召唤一只6/4的大灰狼。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "EX1_556",
+      "name_zh": "麦田傀儡",
+      "golden_id": "TB_BaconUps_006",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "fixed",
+        "value": 1
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "skele21",
+          "name_zh": "损坏的傀儡",
+          "attack": 2,
+          "health": 1,
+          "race": "MECHANICAL",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_006t",
+          "name_zh": "损坏的傀儡",
+          "attack": 4,
+          "health": 2,
+          "race": "MECHANICAL",
+          "keywords": [],
+          "premium": true
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>亡语：</b>召唤一个2/1的损坏的傀儡。",
+        "golden": "<b>亡语：</b>召唤一个4/2的损坏的傀儡。"
+      },
+      "token_identity_grade": "ambiguous_normal_token_alias_needs_replay",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "OG_216",
+      "name_zh": "寄生恶狼",
+      "golden_id": "TB_BaconUps_026",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "fixed",
+        "value": 2
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "OG_216a",
+          "name_zh": "蜘蛛",
+          "attack": 1,
+          "health": 1,
+          "race": "BEAST",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_026t",
+          "name_zh": "蜘蛛",
+          "attack": 2,
+          "health": 2,
+          "race": "BEAST",
+          "keywords": [],
+          "premium": false
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>亡语：</b>召唤两个1/1的蜘蛛。",
+        "golden": "<b>亡语：</b>召唤两个2/2的蜘蛛。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "BOT_312",
+      "name_zh": "量产型恐吓机",
+      "golden_id": "TB_BaconUps_032",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "fixed",
+        "value": 3
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "BOT_312t",
+          "name_zh": "微型机器人",
+          "attack": 1,
+          "health": 1,
+          "race": "MECHANICAL",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_032t",
+          "name_zh": "微型机器人",
+          "attack": 2,
+          "health": 2,
+          "race": "MECHANICAL",
+          "keywords": [],
+          "premium": false
+        }
+      },
+      "parent_keywords": [
+        "magnetic"
+      ],
+      "client_text_zh": {
+        "normal": "<b>磁力</b>\n<b>亡语：</b>召唤三个1/1的微型机器人。",
+        "golden": "<b>磁力</b>\n<b>亡语：</b>召唤三个2/2的微型机器人。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "EX1_577",
+      "name_zh": "比斯巨兽",
+      "golden_id": "TB_BaconUps_042",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "fixed",
+        "value": 1
+      },
+      "destination": "opponent",
+      "tokens": {
+        "normal": {
+          "id": "EX1_finkle",
+          "name_zh": "芬克·恩霍尔",
+          "attack": 3,
+          "health": 3,
+          "race": "NONE",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "EX1_finkle",
+          "name_zh": "芬克·恩霍尔",
+          "attack": 3,
+          "health": 3,
+          "race": "NONE",
+          "keywords": [],
+          "premium": false
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>亡语：</b>\n为你的对手召唤1个3/3的芬克·恩霍尔。",
+        "golden": "<b>亡语：</b>\n为你的对手召唤1个3/3的芬克·恩霍尔。"
+      },
+      "token_identity_grade": "matched_client_name_stats_same_id_both_forms",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "BOT_537",
+      "name_zh": "机械蛋",
+      "golden_id": "TB_BaconUps_039",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "fixed",
+        "value": 1
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "BOT_537t",
+          "name_zh": "机械暴龙",
+          "attack": 8,
+          "health": 8,
+          "race": "MECHANICAL",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_039t",
+          "name_zh": "机械暴龙",
+          "attack": 16,
+          "health": 16,
+          "race": "MECHANICAL",
+          "keywords": [],
+          "premium": false
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>亡语：</b>召唤一个8/8的机械暴龙。",
+        "golden": "<b>亡语：</b>召唤一个16/16的机械暴龙。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "UNG_010",
+      "name_zh": "臃肿的蛇颈龙",
+      "golden_id": "TB_BaconUps_052",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "fixed",
+        "value": 3
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "UNG_201t",
+          "name_zh": "蛮鱼战士",
+          "attack": 1,
+          "health": 1,
+          "race": "MURLOC",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_052t",
+          "name_zh": "蛮鱼战士",
+          "attack": 2,
+          "health": 2,
+          "race": "MURLOC",
+          "keywords": [],
+          "premium": false
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>亡语：</b>召唤三个1/1的鱼人。",
+        "golden": "<b>亡语：</b>召唤三个2/2的鱼人。"
+      },
+      "token_identity_grade": "generic_murloc_text_needs_generation_chain_replay",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "EX1_534",
+      "name_zh": "长鬃草原狮",
+      "golden_id": "TB_BaconUps_049",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "fixed",
+        "value": 2
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "EX1_534t",
+          "name_zh": "土狼",
+          "attack": 2,
+          "health": 2,
+          "race": "BEAST",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_049t",
+          "name_zh": "土狼",
+          "attack": 4,
+          "health": 4,
+          "race": "BEAST",
+          "keywords": [],
+          "premium": false
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>亡语：</b>召唤两只2/2的土狼。",
+        "golden": "<b>亡语：</b>召唤两只4/4的土狼。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "LOOT_368",
+      "name_zh": "虚空领主",
+      "golden_id": "TB_BaconUps_059",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "fixed",
+        "value": 3
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "CS2_065",
+          "name_zh": "虚空行者",
+          "attack": 1,
+          "health": 3,
+          "race": "DEMON",
+          "keywords": [
+            "taunt"
+          ],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_059t",
+          "name_zh": "虚空行者",
+          "attack": 2,
+          "health": 6,
+          "race": "DEMON",
+          "keywords": [
+            "taunt"
+          ],
+          "premium": true
+        }
+      },
+      "parent_keywords": [
+        "taunt"
+      ],
+      "client_text_zh": {
+        "normal": "<b>嘲讽，亡语：</b>\n召唤三个1/3并具有<b>嘲讽</b>的恶魔。",
+        "golden": "<b>嘲讽，亡语：</b>\n召唤三个2/6并具有<b>嘲讽</b>的恶魔。"
+      },
+      "token_identity_grade": "normal_token_definition_shared_with_shop_card",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "CFM_316",
+      "name_zh": "瘟疫鼠群",
+      "golden_id": "TB_BaconUps_027",
+      "trigger": "deathrattle",
+      "count": {
+        "kind": "source_attack_at_death",
+        "value": null
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "CFM_316t",
+          "name_zh": "狂鼠",
+          "attack": 1,
+          "health": 1,
+          "race": "BEAST",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_027t",
+          "name_zh": "狂鼠",
+          "attack": 2,
+          "health": 2,
+          "race": "BEAST",
+          "keywords": [],
+          "premium": false
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "<b>亡语：</b>召唤若干个1/1的狂鼠，数量等同于该随从的攻击力。",
+        "golden": "<b>亡语：</b>召唤若干个2/2的狂鼠，数量等同于该随从的攻击力。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "BRM_006",
+      "name_zh": "小鬼首领",
+      "golden_id": "TB_BaconUps_030",
+      "trigger": "on_source_damaged",
+      "count": {
+        "kind": "fixed",
+        "value": 1
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "BRM_006t",
+          "name_zh": "小鬼",
+          "attack": 1,
+          "health": 1,
+          "race": "DEMON",
+          "keywords": [],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_030t",
+          "name_zh": "小鬼",
+          "attack": 2,
+          "health": 2,
+          "race": "DEMON",
+          "keywords": [],
+          "premium": false
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "每当该随从受到伤害，召唤一个1/1的\n小鬼。",
+        "golden": "每当该随从受到伤害，召唤一个2/2的\n小鬼。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    },
+    {
+      "normal_id": "BOT_218",
+      "name_zh": "安保巡游者",
+      "golden_id": "TB_BaconUps_041",
+      "trigger": "on_source_damaged",
+      "count": {
+        "kind": "fixed",
+        "value": 1
+      },
+      "destination": "friendly",
+      "tokens": {
+        "normal": {
+          "id": "BOT_218t",
+          "name_zh": "警卫机器人",
+          "attack": 2,
+          "health": 3,
+          "race": "MECHANICAL",
+          "keywords": [
+            "taunt"
+          ],
+          "premium": false
+        },
+        "golden": {
+          "id": "TB_BaconUps_041t",
+          "name_zh": "警卫机器人",
+          "attack": 4,
+          "health": 6,
+          "race": "MECHANICAL",
+          "keywords": [
+            "taunt"
+          ],
+          "premium": false
+        }
+      },
+      "parent_keywords": [],
+      "client_text_zh": {
+        "normal": "每当该随从受到伤害，召唤一个2/3并具有<b>嘲讽</b>的机械。",
+        "golden": "每当该随从受到伤害，召唤一个4/6并具有<b>嘲讽</b>的机械。"
+      },
+      "token_identity_grade": "matched_client_name_stats_and_parent_id",
+      "evidence": {
+        "parent_trigger_count_and_token_stats": "H04_client_cardface_direct",
+        "effect_to_token_id_chain": "inference_from_client_name_stats_id",
+        "slot_and_snapshot_rule": "reference_rule"
+      }
+    }
+  ],
+  "vectors": [
+    {
+      "id": "FT-CFM_315-N-BASE",
+      "normal_id": "CFM_315",
+      "form": "normal",
+      "input": {
+        "phase": "recruit",
+        "event": "play_from_hand",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 1,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "CFM_315t",
+            "attack": 1,
+            "health": 1,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "recruit_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-CFM_315-N-FULL",
+      "normal_id": "CFM_315",
+      "form": "normal",
+      "input": {
+        "phase": "recruit",
+        "event": "play_from_hand",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 1,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 0,
+        "summon_owner": "friendly",
+        "token_instances": [],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-CFM_315-G-BASE",
+      "normal_id": "CFM_315",
+      "form": "golden",
+      "input": {
+        "phase": "recruit",
+        "event": "play_from_hand",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_093t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "recruit_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-CFM_315-G-FULL",
+      "normal_id": "CFM_315",
+      "form": "golden",
+      "input": {
+        "phase": "recruit",
+        "event": "play_from_hand",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 0,
+        "summon_owner": "friendly",
+        "token_instances": [],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_445-N-BASE",
+      "normal_id": "BOT_445",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 1,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "BOT_445t",
+            "attack": 1,
+            "health": 1,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_445-G-BASE",
+      "normal_id": "BOT_445",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_002t",
+            "attack": 2,
+            "health": 2,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": true,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_506-N-BASE",
+      "normal_id": "EX1_506",
+      "form": "normal",
+      "input": {
+        "phase": "recruit",
+        "event": "play_from_hand",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "EX1_506a",
+            "attack": 1,
+            "health": 1,
+            "race": "MURLOC",
+            "keywords": [],
+            "premium": false,
+            "origin": "recruit_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_506-N-FULL",
+      "normal_id": "EX1_506",
+      "form": "normal",
+      "input": {
+        "phase": "recruit",
+        "event": "play_from_hand",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 0,
+        "summon_owner": "friendly",
+        "token_instances": [],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_506-G-BASE",
+      "normal_id": "EX1_506",
+      "form": "golden",
+      "input": {
+        "phase": "recruit",
+        "event": "play_from_hand",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 4,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_003t",
+            "attack": 2,
+            "health": 2,
+            "race": "MURLOC",
+            "keywords": [],
+            "premium": false,
+            "origin": "recruit_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_506-G-FULL",
+      "normal_id": "EX1_506",
+      "form": "golden",
+      "input": {
+        "phase": "recruit",
+        "event": "play_from_hand",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 4,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 0,
+        "summon_owner": "friendly",
+        "token_instances": [],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-KAR_005-N-BASE",
+      "normal_id": "KAR_005",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 1,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "KAR_005a",
+            "attack": 3,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-KAR_005-G-BASE",
+      "normal_id": "KAR_005",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_004t",
+            "attack": 6,
+            "health": 4,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": true,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_556-N-BASE",
+      "normal_id": "EX1_556",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "skele21",
+            "attack": 2,
+            "health": 1,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_556-G-BASE",
+      "normal_id": "EX1_556",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 4,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_006t",
+            "attack": 4,
+            "health": 2,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": true,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-OG_216-N-BASE",
+      "normal_id": "OG_216",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 3,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 2,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "OG_216a",
+            "attack": 1,
+            "health": 1,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-OG_216-N-OPEN",
+      "normal_id": "OG_216",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 3,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 2,
+        "summoned_count": 2,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "OG_216a",
+            "attack": 1,
+            "health": 1,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "OG_216a",
+            "attack": 1,
+            "health": 1,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 2,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-OG_216-G-BASE",
+      "normal_id": "OG_216",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 6,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 2,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_026t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-OG_216-G-OPEN",
+      "normal_id": "OG_216",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 6,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 2,
+        "summoned_count": 2,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_026t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_026t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 2,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_312-N-BASE",
+      "normal_id": "BOT_312",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 3,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "BOT_312t",
+            "attack": 1,
+            "health": 1,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_312-N-OPEN",
+      "normal_id": "BOT_312",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 3,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 3,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "BOT_312t",
+            "attack": 1,
+            "health": 1,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "BOT_312t",
+            "attack": 1,
+            "health": 1,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "BOT_312t",
+            "attack": 1,
+            "health": 1,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 3,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_312-G-BASE",
+      "normal_id": "BOT_312",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 6,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_032t",
+            "attack": 2,
+            "health": 2,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_312-G-OPEN",
+      "normal_id": "BOT_312",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 6,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 3,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_032t",
+            "attack": 2,
+            "health": 2,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_032t",
+            "attack": 2,
+            "health": 2,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_032t",
+            "attack": 2,
+            "health": 2,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 3,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_577-N-BASE",
+      "normal_id": "EX1_577",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 9,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "opponent",
+        "token_instances": [
+          {
+            "definition_id": "EX1_finkle",
+            "attack": 3,
+            "health": 3,
+            "race": "NONE",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 6,
+        "opponent_board_count_after_event": 7,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_577-N-ENEMY-FULL",
+      "normal_id": "EX1_577",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 7,
+        "source_attack_at_death": 9,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 7
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 0,
+        "summon_owner": "opponent",
+        "token_instances": [],
+        "friendly_board_count_after_event": 6,
+        "opponent_board_count_after_event": 7,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 7
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_577-G-BASE",
+      "normal_id": "EX1_577",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 18,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "opponent",
+        "token_instances": [
+          {
+            "definition_id": "EX1_finkle",
+            "attack": 3,
+            "health": 3,
+            "race": "NONE",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 6,
+        "opponent_board_count_after_event": 7,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_577-G-ENEMY-FULL",
+      "normal_id": "EX1_577",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 7,
+        "source_attack_at_death": 18,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 7
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 0,
+        "summon_owner": "opponent",
+        "token_instances": [],
+        "friendly_board_count_after_event": 6,
+        "opponent_board_count_after_event": 7,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 7
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_537-N-BASE",
+      "normal_id": "BOT_537",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 0,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "BOT_537t",
+            "attack": 8,
+            "health": 8,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_537-G-BASE",
+      "normal_id": "BOT_537",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 0,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_039t",
+            "attack": 16,
+            "health": 16,
+            "race": "MECHANICAL",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-UNG_010-N-BASE",
+      "normal_id": "UNG_010",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 5,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "UNG_201t",
+            "attack": 1,
+            "health": 1,
+            "race": "MURLOC",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-UNG_010-N-OPEN",
+      "normal_id": "UNG_010",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 5,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 3,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "UNG_201t",
+            "attack": 1,
+            "health": 1,
+            "race": "MURLOC",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "UNG_201t",
+            "attack": 1,
+            "health": 1,
+            "race": "MURLOC",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "UNG_201t",
+            "attack": 1,
+            "health": 1,
+            "race": "MURLOC",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 3,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-UNG_010-G-BASE",
+      "normal_id": "UNG_010",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 10,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_052t",
+            "attack": 2,
+            "health": 2,
+            "race": "MURLOC",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-UNG_010-G-OPEN",
+      "normal_id": "UNG_010",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 10,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 3,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_052t",
+            "attack": 2,
+            "health": 2,
+            "race": "MURLOC",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_052t",
+            "attack": 2,
+            "health": 2,
+            "race": "MURLOC",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_052t",
+            "attack": 2,
+            "health": 2,
+            "race": "MURLOC",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 3,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_534-N-BASE",
+      "normal_id": "EX1_534",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 6,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 2,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "EX1_534t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_534-N-OPEN",
+      "normal_id": "EX1_534",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 6,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 2,
+        "summoned_count": 2,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "EX1_534t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "EX1_534t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 2,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_534-G-BASE",
+      "normal_id": "EX1_534",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 12,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 2,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_049t",
+            "attack": 4,
+            "health": 4,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-EX1_534-G-OPEN",
+      "normal_id": "EX1_534",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 12,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 2,
+        "summoned_count": 2,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_049t",
+            "attack": 4,
+            "health": 4,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_049t",
+            "attack": 4,
+            "health": 4,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 2,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-LOOT_368-N-BASE",
+      "normal_id": "LOOT_368",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 3,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "CS2_065",
+            "attack": 1,
+            "health": 3,
+            "race": "DEMON",
+            "keywords": [
+              "taunt"
+            ],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-LOOT_368-N-OPEN",
+      "normal_id": "LOOT_368",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 3,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 3,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "CS2_065",
+            "attack": 1,
+            "health": 3,
+            "race": "DEMON",
+            "keywords": [
+              "taunt"
+            ],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "CS2_065",
+            "attack": 1,
+            "health": 3,
+            "race": "DEMON",
+            "keywords": [
+              "taunt"
+            ],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "CS2_065",
+            "attack": 1,
+            "health": 3,
+            "race": "DEMON",
+            "keywords": [
+              "taunt"
+            ],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 3,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-LOOT_368-G-BASE",
+      "normal_id": "LOOT_368",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 6,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_059t",
+            "attack": 2,
+            "health": 6,
+            "race": "DEMON",
+            "keywords": [
+              "taunt"
+            ],
+            "premium": true,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-LOOT_368-G-OPEN",
+      "normal_id": "LOOT_368",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 6,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 3,
+        "summoned_count": 3,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_059t",
+            "attack": 2,
+            "health": 6,
+            "race": "DEMON",
+            "keywords": [
+              "taunt"
+            ],
+            "premium": true,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_059t",
+            "attack": 2,
+            "health": 6,
+            "race": "DEMON",
+            "keywords": [
+              "taunt"
+            ],
+            "premium": true,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_059t",
+            "attack": 2,
+            "health": 6,
+            "race": "DEMON",
+            "keywords": [
+              "taunt"
+            ],
+            "premium": true,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 3,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-CFM_316-N-BASE",
+      "normal_id": "CFM_316",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 2,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "CFM_316t",
+            "attack": 1,
+            "health": 1,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-CFM_316-N-OPEN",
+      "normal_id": "CFM_316",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 5,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 5,
+        "summoned_count": 5,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "CFM_316t",
+            "attack": 1,
+            "health": 1,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "CFM_316t",
+            "attack": 1,
+            "health": 1,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "CFM_316t",
+            "attack": 1,
+            "health": 1,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "CFM_316t",
+            "attack": 1,
+            "health": 1,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "CFM_316t",
+            "attack": 1,
+            "health": 1,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 5,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-CFM_316-G-BASE",
+      "normal_id": "CFM_316",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 4,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 4,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_027t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-CFM_316-G-OPEN",
+      "normal_id": "CFM_316",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 1,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 5,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 1,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 5,
+        "summoned_count": 5,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_027t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_027t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_027t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_027t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          },
+          {
+            "definition_id": "TB_BaconUps_027t",
+            "attack": 2,
+            "health": 2,
+            "race": "BEAST",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 5,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 1,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BRM_006-N-BASE",
+      "normal_id": "BRM_006",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "BRM_006t",
+            "attack": 1,
+            "health": 1,
+            "race": "DEMON",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 6,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BRM_006-N-FULL",
+      "normal_id": "BRM_006",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 0,
+        "summon_owner": "friendly",
+        "token_instances": [],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BRM_006-G-BASE",
+      "normal_id": "BRM_006",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 4,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_030t",
+            "attack": 2,
+            "health": 2,
+            "race": "DEMON",
+            "keywords": [],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 6,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BRM_006-G-FULL",
+      "normal_id": "BRM_006",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 4,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 0,
+        "summon_owner": "friendly",
+        "token_instances": [],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_218-N-BASE",
+      "normal_id": "BOT_218",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "BOT_218t",
+            "attack": 2,
+            "health": 3,
+            "race": "MECHANICAL",
+            "keywords": [
+              "taunt"
+            ],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 6,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_218-N-FULL",
+      "normal_id": "BOT_218",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 0,
+        "summon_owner": "friendly",
+        "token_instances": [],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_218-G-BASE",
+      "normal_id": "BOT_218",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 4,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 1,
+        "summon_owner": "friendly",
+        "token_instances": [
+          {
+            "definition_id": "TB_BaconUps_041t",
+            "attack": 4,
+            "health": 6,
+            "race": "MECHANICAL",
+            "keywords": [
+              "taunt"
+            ],
+            "premium": false,
+            "origin": "combat_token"
+          }
+        ],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 6,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_218-G-FULL",
+      "normal_id": "BOT_218",
+      "form": "golden",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 4,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 1,
+        "summoned_count": 0,
+        "summon_owner": "friendly",
+        "token_instances": [],
+        "friendly_board_count_after_event": 7,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 7,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BRM_006-N-SHIELD-ABSORBED",
+      "normal_id": "BRM_006",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 0,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 0,
+        "summoned_count": 0,
+        "summon_owner": "friendly",
+        "token_instances": [],
+        "friendly_board_count_after_event": 6,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 6,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BRM_006-N-LETHAL-UNKNOWN",
+      "normal_id": "BRM_006",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": false,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "grade": "reference_unknown_guard",
+      "expected_error": "unverified_lethal_damage_order"
+    },
+    {
+      "id": "FT-BOT_218-N-SHIELD-ABSORBED",
+      "normal_id": "BOT_218",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 0,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "expected": {
+        "requested_count": 0,
+        "summoned_count": 0,
+        "summon_owner": "friendly",
+        "token_instances": [],
+        "friendly_board_count_after_event": 6,
+        "opponent_board_count_after_event": 6,
+        "recruit_friendly_count_after_resolution": 6,
+        "recruit_opponent_count_after_resolution": 6
+      },
+      "grade": "cardface_count_stats_with_reference_slot_snapshot"
+    },
+    {
+      "id": "FT-BOT_218-N-LETHAL-UNKNOWN",
+      "normal_id": "BOT_218",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_damaged",
+        "friendly_board_count_before": 6,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 2,
+        "effective_damage_taken": 1,
+        "source_survives_hit": false,
+        "other_deaths_same_event": 0,
+        "recruit_snapshot_friendly_count": 6,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "grade": "reference_unknown_guard",
+      "expected_error": "unverified_lethal_damage_order"
+    },
+    {
+      "id": "FT-LOOT_368-N-SIMULTANEOUS-UNKNOWN",
+      "normal_id": "LOOT_368",
+      "form": "normal",
+      "input": {
+        "phase": "combat",
+        "event": "source_died",
+        "friendly_board_count_before": 7,
+        "opponent_board_count_before": 6,
+        "source_attack_at_death": 3,
+        "effective_damage_taken": 1,
+        "source_survives_hit": true,
+        "other_deaths_same_event": 1,
+        "recruit_snapshot_friendly_count": 7,
+        "recruit_snapshot_opponent_count": 6
+      },
+      "grade": "reference_unknown_guard",
+      "expected_error": "unverified_simultaneous_death_order"
+    }
+  ]
+}

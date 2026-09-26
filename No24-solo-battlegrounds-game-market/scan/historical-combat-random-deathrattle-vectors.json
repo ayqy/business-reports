@@ -1,0 +1,1194 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "fixtures": {
+    "coiler_normal": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "g",
+              "card_id": "BGS_008"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "coiler_golden": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "g",
+              "card_id": "BGS_008"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "coiler_cap": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "g",
+              "card_id": "BGS_008"
+            },
+            {
+              "instance_id": "f1",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f2",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f3",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f4",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f5",
+              "card_id": "CFM_315"
+            },
+            {
+              "instance_id": "f6",
+              "card_id": "CFM_315"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f1": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f2": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f3": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f4": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f5": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "f6": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "coiler_baron": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "g",
+              "card_id": "BGS_008"
+            },
+            {
+              "instance_id": "r",
+              "card_id": "FP1_031"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "r": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    },
+    "enemy_coiler": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "g",
+              "card_id": "BGS_008"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        },
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        }
+      },
+      "first_side": "left"
+    },
+    "coiler_two_sources": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "g",
+              "card_id": "BGS_008"
+            },
+            {
+              "instance_id": "x",
+              "card_id": "BGS_025"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "LOOT_078",
+              "buff_attack": 10,
+              "buff_health": 10
+            }
+          ]
+        }
+      },
+      "traits": {
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "x": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "cleave"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "right"
+    },
+    "coiler_khadgar": {
+      "snapshot": {
+        "left": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "g",
+              "card_id": "BGS_008"
+            },
+            {
+              "instance_id": "x",
+              "card_id": "DAL_575"
+            }
+          ]
+        },
+        "right": {
+          "tier": 6,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "FP1_010"
+            }
+          ]
+        }
+      },
+      "traits": {
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "x": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "poisonous"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left"
+    }
+  },
+  "cases": [
+    {
+      "id": "DR-01",
+      "grade": "reference_only",
+      "fixture": "coiler_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          7,
+          14
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1",
+          "combat-2"
+        ],
+        "right_ids": [
+          "e"
+        ],
+        "left_units": [
+          {
+            "card_id": "OG_256",
+            "attack": 2,
+            "health": 2,
+            "golden": false
+          },
+          {
+            "card_id": "BGS_018",
+            "attack": 4,
+            "health": 4,
+            "golden": false
+          }
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "poison_kill",
+        "death",
+        "random_deathrattle_trigger",
+        "random_deathrattle_summon",
+        "random_deathrattle_summon"
+      ],
+      "expect_event_details": [
+        {
+          "type": "attack"
+        },
+        {
+          "type": "damage"
+        },
+        {
+          "type": "damage"
+        },
+        {
+          "type": "poison_kill",
+          "target": "g"
+        },
+        {
+          "type": "death",
+          "instance_id": "g"
+        },
+        {
+          "type": "random_deathrattle_trigger",
+          "requests": 2,
+          "pool": "deathrattle_candidates"
+        },
+        {
+          "type": "random_deathrattle_summon",
+          "card_id": "OG_256",
+          "pool_index": 7
+        },
+        {
+          "type": "random_deathrattle_summon",
+          "card_id": "BGS_018",
+          "pool_index": 14
+        }
+      ]
+    },
+    {
+      "id": "DR-02",
+      "grade": "reference_only",
+      "fixture": "coiler_golden",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          7,
+          14,
+          7,
+          14
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [
+          "combat-1",
+          "combat-2",
+          "combat-3",
+          "combat-4"
+        ],
+        "right_ids": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "poison_kill",
+        "death",
+        "random_deathrattle_trigger",
+        "random_deathrattle_summon",
+        "random_deathrattle_summon",
+        "random_deathrattle_summon",
+        "random_deathrattle_summon",
+        "death",
+        "terminal"
+      ],
+      "golden_instances": [
+        "g"
+      ]
+    },
+    {
+      "id": "DR-03",
+      "grade": "reference_only",
+      "fixture": "coiler_cap",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          14
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [
+          "combat-1",
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6"
+        ],
+        "right_ids": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "poison_kill",
+        "death",
+        "random_deathrattle_trigger",
+        "random_deathrattle_summon",
+        "random_deathrattle_dropped",
+        "random_deathrattle_dropped",
+        "random_deathrattle_dropped",
+        "death",
+        "terminal"
+      ],
+      "golden_instances": [
+        "g"
+      ]
+    },
+    {
+      "id": "DR-04",
+      "grade": "reference_only",
+      "fixture": "coiler_baron",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          7,
+          14,
+          7,
+          14
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1",
+          "combat-2",
+          "combat-3",
+          "combat-4",
+          "r"
+        ],
+        "right_ids": [
+          "e"
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "poison_kill",
+        "death",
+        "deathrattle_repeat",
+        "random_deathrattle_trigger",
+        "random_deathrattle_summon",
+        "random_deathrattle_summon",
+        "random_deathrattle_trigger",
+        "random_deathrattle_summon",
+        "random_deathrattle_summon"
+      ]
+    },
+    {
+      "id": "DR-05",
+      "grade": "reference_only",
+      "fixture": "coiler_baron",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          7,
+          14,
+          7,
+          14,
+          7,
+          14
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "combat-1",
+          "combat-2",
+          "combat-3",
+          "combat-4",
+          "combat-5",
+          "combat-6",
+          "r"
+        ],
+        "right_ids": [
+          "e"
+        ],
+        "generated": {
+          "left": [
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "damage",
+        "poison_kill",
+        "death",
+        "deathrattle_repeat",
+        "random_deathrattle_trigger",
+        "random_deathrattle_summon",
+        "random_deathrattle_summon",
+        "random_deathrattle_trigger",
+        "random_deathrattle_summon",
+        "random_deathrattle_summon",
+        "random_deathrattle_trigger",
+        "random_deathrattle_summon",
+        "random_deathrattle_summon"
+      ],
+      "golden_instances": [
+        "r"
+      ]
+    },
+    {
+      "id": "DR-06",
+      "grade": "reference_only",
+      "fixture": "enemy_coiler",
+      "action": {
+        "op": "attack",
+        "attacker_id": "e",
+        "target_id": "g",
+        "random_draw_indexes": [
+          14,
+          7
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "expect_state": {
+        "phase": "combat",
+        "left_ids": [
+          "e"
+        ],
+        "right_ids": [
+          "combat-1",
+          "combat-2"
+        ],
+        "generated": {
+          "right": [
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "poison_kill",
+        "damage",
+        "death",
+        "random_deathrattle_trigger",
+        "random_deathrattle_summon",
+        "random_deathrattle_summon"
+      ]
+    },
+    {
+      "id": "DR-07",
+      "grade": "reference_only",
+      "fixture": "coiler_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "e",
+        "target_id": "combat-1"
+      },
+      "expect_state": {
+        "phase": "terminal",
+        "left_ids": [
+          "combat-2"
+        ],
+        "right_ids": [],
+        "left_units": [
+          {
+            "card_id": "BGS_018",
+            "attack": 5,
+            "health": 5,
+            "golden": false
+          }
+        ]
+      },
+      "expect_events": [
+        "attack",
+        "damage",
+        "poison_kill",
+        "damage",
+        "death",
+        "team_buff_trigger",
+        "team_buff",
+        "death",
+        "terminal"
+      ],
+      "setup": [
+        {
+          "op": "attack",
+          "attacker_id": "g",
+          "target_id": "e",
+          "random_draw_indexes": [
+            7,
+            14
+          ],
+          "random_draw_grade": "reference_injected"
+        }
+      ]
+    },
+    {
+      "id": "DR-08",
+      "grade": "reference_only",
+      "fixture": "coiler_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          18,
+          7
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_candidate_outside_bounded_subset"
+    },
+    {
+      "id": "DR-09",
+      "grade": "reference_only",
+      "fixture": "coiler_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          2,
+          7
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_candidate_outside_bounded_subset"
+    },
+    {
+      "id": "DR-10",
+      "grade": "reference_only",
+      "fixture": "coiler_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          22,
+          7
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "random_draw_out_of_range"
+    },
+    {
+      "id": "DR-11",
+      "grade": "reference_only",
+      "fixture": "coiler_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          7,
+          14
+        ]
+      },
+      "error": "random_draw_grade_missing"
+    },
+    {
+      "id": "DR-12",
+      "grade": "reference_only",
+      "fixture": "coiler_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e"
+      },
+      "error": "random_draw_missing"
+    },
+    {
+      "id": "DR-13",
+      "grade": "reference_only",
+      "fixture": "coiler_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          7,
+          14,
+          7
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "unused_random_draws"
+    },
+    {
+      "id": "DR-14",
+      "grade": "reference_only",
+      "fixture": "coiler_two_sources",
+      "action": {
+        "op": "attack",
+        "attacker_id": "e",
+        "target_id": "g",
+        "random_draw_indexes": [
+          7,
+          14,
+          0
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "unknown_random_sources_same_batch"
+    },
+    {
+      "id": "DR-15",
+      "grade": "reference_only",
+      "fixture": "coiler_khadgar",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          7,
+          14
+        ],
+        "random_draw_grade": "reference_injected"
+      },
+      "error": "unknown_random_khadgar_order"
+    },
+    {
+      "id": "DR-16",
+      "grade": "reference_only",
+      "fixture": "coiler_normal",
+      "action": {
+        "op": "attack",
+        "attacker_id": "g",
+        "target_id": "e",
+        "random_draw_indexes": [
+          7,
+          14
+        ],
+        "random_draw_grade": "reference_injected",
+        "mode": "exact_2019"
+      },
+      "error": "exact_mode_unverified"
+    }
+  ],
+  "bridge_cases": [
+    {
+      "id": "DR-B01",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 40,
+          "tier": 6,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "g",
+              "card_id": "BGS_008",
+              "golden": false
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 13,
+          "tier": 1,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 6
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "g",
+          "target_id": "e",
+          "random_draw_indexes": [
+            7,
+            14
+          ],
+          "random_draw_grade": "reference_injected"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "combat-1",
+          "combat-2"
+        ],
+        "right_survivors": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": 0
+        },
+        "alive": {
+          "A": true,
+          "B": false
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "left",
+                "damage": 13,
+                "damaged_seat": "B"
+              }
+            ],
+            "eliminated": [
+              "B"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-B02",
+      "grade": "reference_only",
+      "seats": [
+        {
+          "seat_id": "A",
+          "health": 40,
+          "tier": 6,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "g",
+              "card_id": "BGS_008",
+              "golden": true
+            }
+          ]
+        },
+        {
+          "seat_id": "B",
+          "health": 20,
+          "tier": 1,
+          "alive": true,
+          "ready": false,
+          "board": [
+            {
+              "instance_id": "e",
+              "card_id": "CS2_065",
+              "buff_attack": 13
+            }
+          ]
+        }
+      ],
+      "traits": {
+        "g": {
+          "keywords": [],
+          "grade": "reference_injected"
+        },
+        "e": {
+          "keywords": [
+            "taunt"
+          ],
+          "grade": "client_35747"
+        }
+      },
+      "first_side": "left",
+      "actions": [
+        {
+          "op": "attack",
+          "attacker_id": "g",
+          "target_id": "e",
+          "random_draw_indexes": [
+            7,
+            14,
+            7,
+            14
+          ],
+          "random_draw_grade": "reference_injected"
+        }
+      ],
+      "expect_result": {
+        "left_survivors": [
+          "combat-1",
+          "combat-2",
+          "combat-3",
+          "combat-4"
+        ],
+        "right_survivors": [],
+        "generated": {
+          "left": [
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "OG_256",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            },
+            {
+              "card_id": "BGS_018",
+              "source_instance_id": "g",
+              "client_deathrattle_tag": true,
+              "pool_grade": "reference_injected"
+            }
+          ]
+        }
+      },
+      "expect_match": {
+        "phase": "match_over",
+        "winner_id": "A",
+        "health": {
+          "A": 40,
+          "B": 0
+        },
+        "alive": {
+          "A": true,
+          "B": false
+        },
+        "history": [
+          {
+            "outcomes": [
+              {
+                "outcome": "left",
+                "damage": 20,
+                "damaged_seat": "B"
+              }
+            ],
+            "eliminated": [
+              "B"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

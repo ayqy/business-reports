@@ -1,0 +1,599 @@
+{
+  "build": 35747,
+  "status": "仅从81张历史商店卡与客户端标签筛出的研究子集；不证明其中任一条目可被动态生成，更不是2019服务端完整随机池。",
+  "sources": [
+    "H03",
+    "H04"
+  ],
+  "pools": {
+    "original_cost_1": [
+      {
+        "id": "ICC_038",
+        "name_zh": "正义保护者",
+        "shop_tier": 1,
+        "original_mana_cost": 1,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "CFM_315",
+        "name_zh": "雄斑虎",
+        "shop_tier": 1,
+        "original_mana_cost": 1,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "CS2_065",
+        "name_zh": "虚空行者",
+        "shop_tier": 1,
+        "original_mana_cost": 1,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BOT_445",
+        "name_zh": "机械袋鼠",
+        "shop_tier": 1,
+        "original_mana_cost": 1,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "EX1_509",
+        "name_zh": "鱼人招潮者",
+        "shop_tier": 1,
+        "original_mana_cost": 1,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "OG_221",
+        "name_zh": "无私的英雄",
+        "shop_tier": 1,
+        "original_mana_cost": 1,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "DAL_077",
+        "name_zh": "毒鳍鱼人",
+        "shop_tier": 4,
+        "original_mana_cost": 1,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      }
+    ],
+    "original_cost_2": [
+      {
+        "id": "EX1_162",
+        "name_zh": "恐狼前锋",
+        "shop_tier": 1,
+        "original_mana_cost": 2,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "LOOT_013",
+        "name_zh": "粗俗的矮劣魔",
+        "shop_tier": 1,
+        "original_mana_cost": 2,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "EX1_506",
+        "name_zh": "鱼人猎潮者",
+        "shop_tier": 1,
+        "original_mana_cost": 2,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "UNG_073",
+        "name_zh": "石塘猎人",
+        "shop_tier": 1,
+        "original_mana_cost": 2,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "KAR_005",
+        "name_zh": "慈祥的外婆",
+        "shop_tier": 2,
+        "original_mana_cost": 2,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "GVG_085",
+        "name_zh": "吵吵机器人",
+        "shop_tier": 2,
+        "original_mana_cost": 2,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "EX1_531",
+        "name_zh": "食腐土狼",
+        "shop_tier": 2,
+        "original_mana_cost": 2,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "GVG_058",
+        "name_zh": "护盾机器人",
+        "shop_tier": 2,
+        "original_mana_cost": 2,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "DAL_575",
+        "name_zh": "卡德加",
+        "shop_tier": 3,
+        "original_mana_cost": 2,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      }
+    ],
+    "original_cost_4": [
+      {
+        "id": "EX1_062",
+        "name_zh": "老瞎眼",
+        "shop_tier": 2,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "AT_121",
+        "name_zh": "人气选手",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "OG_216",
+        "name_zh": "寄生恶狼",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "CFM_610",
+        "name_zh": "魔瘾结晶者",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "DS1_070",
+        "name_zh": "驯兽师",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BOT_312",
+        "name_zh": "量产型恐吓机",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "GVG_055",
+        "name_zh": "废旧螺栓机甲",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "UNG_037",
+        "name_zh": "始祖龟执盾者",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "EX1_093",
+        "name_zh": "阿古斯防御者",
+        "shop_tier": 4,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BOT_911",
+        "name_zh": "吵吵模组",
+        "shop_tier": 4,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "FP1_031",
+        "name_zh": "瑞文戴尔男爵",
+        "shop_tier": 5,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "ICC_807",
+        "name_zh": "硬壳清道夫",
+        "shop_tier": 5,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      }
+    ],
+    "deathrattle_candidates": [
+      {
+        "id": "BOT_445",
+        "name_zh": "机械袋鼠",
+        "shop_tier": 1,
+        "original_mana_cost": 1,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "OG_221",
+        "name_zh": "无私的英雄",
+        "shop_tier": 1,
+        "original_mana_cost": 1,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "OG_256",
+        "name_zh": "恩佐斯的子嗣",
+        "shop_tier": 2,
+        "original_mana_cost": 3,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "KAR_005",
+        "name_zh": "慈祥的外婆",
+        "shop_tier": 2,
+        "original_mana_cost": 2,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BGS_025",
+        "name_zh": "骑乘迅猛龙",
+        "shop_tier": 2,
+        "original_mana_cost": 3,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": true
+      },
+      {
+        "id": "CFM_316",
+        "name_zh": "瘟疫鼠群",
+        "shop_tier": 2,
+        "original_mana_cost": 3,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "EX1_556",
+        "name_zh": "麦田傀儡",
+        "shop_tier": 2,
+        "original_mana_cost": 3,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BOT_606",
+        "name_zh": "爆爆机器人",
+        "shop_tier": 2,
+        "original_mana_cost": 3,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "OG_216",
+        "name_zh": "寄生恶狼",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BGS_023",
+        "name_zh": "载人收割机",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": true
+      },
+      {
+        "id": "BOT_312",
+        "name_zh": "量产型恐吓机",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "UNG_037",
+        "name_zh": "始祖龟执盾者",
+        "shop_tier": 3,
+        "original_mana_cost": 4,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "EX1_577",
+        "name_zh": "比斯巨兽",
+        "shop_tier": 4,
+        "original_mana_cost": 6,
+        "deathrattle_tag": true,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BGS_024",
+        "name_zh": "载人飞天魔像",
+        "shop_tier": 4,
+        "original_mana_cost": 6,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": true
+      },
+      {
+        "id": "BGS_018",
+        "name_zh": "巨狼戈德林",
+        "shop_tier": 5,
+        "original_mana_cost": 8,
+        "deathrattle_tag": true,
+        "legendary_tag": true,
+        "battlegrounds_only_id": true
+      },
+      {
+        "id": "BOT_537",
+        "name_zh": "机械蛋",
+        "shop_tier": 5,
+        "original_mana_cost": 5,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "UNG_010",
+        "name_zh": "臃肿的蛇颈龙",
+        "shop_tier": 5,
+        "original_mana_cost": 7,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "EX1_534",
+        "name_zh": "长鬃草原狮",
+        "shop_tier": 5,
+        "original_mana_cost": 6,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BGS_012",
+        "name_zh": "坎格尔的学徒",
+        "shop_tier": 6,
+        "original_mana_cost": 9,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": true
+      },
+      {
+        "id": "LOOT_368",
+        "name_zh": "虚空领主",
+        "shop_tier": 6,
+        "original_mana_cost": 9,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BGS_008",
+        "name_zh": "阴森巨蟒",
+        "shop_tier": 6,
+        "original_mana_cost": 6,
+        "deathrattle_tag": true,
+        "legendary_tag": false,
+        "battlegrounds_only_id": true
+      },
+      {
+        "id": "BGS_006",
+        "name_zh": "斯尼德的伐木机",
+        "shop_tier": 6,
+        "original_mana_cost": 8,
+        "deathrattle_tag": true,
+        "legendary_tag": true,
+        "battlegrounds_only_id": true
+      }
+    ],
+    "legendary_candidates": [
+      {
+        "id": "EX1_062",
+        "name_zh": "老瞎眼",
+        "shop_tier": 2,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "DAL_575",
+        "name_zh": "卡德加",
+        "shop_tier": 3,
+        "original_mana_cost": 2,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BGS_029",
+        "name_zh": "百变泽鲁斯",
+        "shop_tier": 3,
+        "original_mana_cost": 1,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": true
+      },
+      {
+        "id": "ICC_858",
+        "name_zh": "浴火者伯瓦尔",
+        "shop_tier": 4,
+        "original_mana_cost": 5,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "EX1_577",
+        "name_zh": "比斯巨兽",
+        "shop_tier": 4,
+        "original_mana_cost": 6,
+        "deathrattle_tag": true,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "FP1_031",
+        "name_zh": "瑞文戴尔男爵",
+        "shop_tier": 5,
+        "original_mana_cost": 4,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BGS_018",
+        "name_zh": "巨狼戈德林",
+        "shop_tier": 5,
+        "original_mana_cost": 8,
+        "deathrattle_tag": true,
+        "legendary_tag": true,
+        "battlegrounds_only_id": true
+      },
+      {
+        "id": "LOE_077",
+        "name_zh": "布莱恩·铜须",
+        "shop_tier": 5,
+        "original_mana_cost": 3,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "GVG_021",
+        "name_zh": "玛尔加尼斯",
+        "shop_tier": 5,
+        "original_mana_cost": 9,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "OG_300",
+        "name_zh": "波戈蒙斯塔",
+        "shop_tier": 5,
+        "original_mana_cost": 8,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "GVG_113",
+        "name_zh": "死神4000型",
+        "shop_tier": 6,
+        "original_mana_cost": 8,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      },
+      {
+        "id": "BGS_022",
+        "name_zh": "扎普·斯里维克",
+        "shop_tier": 6,
+        "original_mana_cost": 6,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": true
+      },
+      {
+        "id": "BGS_006",
+        "name_zh": "斯尼德的伐木机",
+        "shop_tier": 6,
+        "original_mana_cost": 8,
+        "deathrattle_tag": true,
+        "legendary_tag": true,
+        "battlegrounds_only_id": true
+      },
+      {
+        "id": "FP1_010",
+        "name_zh": "迈克斯纳",
+        "shop_tier": 6,
+        "original_mana_cost": 6,
+        "deathrattle_tag": false,
+        "legendary_tag": true,
+        "battlegrounds_only_id": false
+      }
+    ]
+  },
+  "candidate_universe_scope": "2019-11-10历史商店81张普通卡；原卡费用/亡语/传说标签来自35747客户端。随机召唤可能使用商店以外的同构建实体，不能以这81张作为全集。",
+  "server_eligibility": "unknown",
+  "weights": "unknown"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "unverified": true,
+  "source": "H04 build-35747 card faces; normal and golden text cross-checked with historical-card-pool.json",
+  "execution_grade": "reference_only",
+  "reference_order": [
+    "apply all living minion aura contributions to the copied combat snapshot",
+    "after each shield absorption, notify living friendly shield-loss listeners in board order",
+    "preserve pre-strike retaliation attack even if a shield listener grows during the strike",
+    "after each death batch removal and each successful summon, recompute minion aura deltas",
+    "if losing an aura makes current health nonpositive, queue that unit for the following death batch"
+  ],
+  "historical_unknown": {
+    "same_tick_shield_listener_order": "unknown",
+    "aura_recompute_vs_deathrattle_order": "unknown",
+    "aura_removal_health_collapse_order": "unknown",
+    "multiple_aura_source_order": "unknown",
+    "malganis_hero_immunity_phase": "unknown"
+  },
+  "nodes": [
+    {"normal_id": "EX1_162", "trigger": "while_alive", "operation": "modify_current_stats",
+     "target": "friendly_adjacent", "normal": {"attack": 1, "health": 0},
+     "golden": {"attack": 2, "health": 0},
+     "cardface_grade": "H04_client_direct", "execution_grade": "reference_only"},
+    {"normal_id": "EX1_507", "trigger": "while_alive", "operation": "modify_current_stats",
+     "target": "friendly_other_murloc", "normal": {"attack": 2, "health": 0},
+     "golden": {"attack": 4, "health": 0},
+     "cardface_grade": "H04_client_direct", "execution_grade": "reference_only"},
+    {"normal_id": "ULD_179", "trigger": "while_alive", "operation": "modify_current_stats",
+     "target": "friendly_taunt", "normal": {"attack": 2, "health": 0},
+     "golden": {"attack": 4, "health": 0},
+     "cardface_grade": "H04_client_direct", "execution_grade": "reference_only"},
+    {"normal_id": "EX1_185", "trigger": "while_alive", "operation": "modify_current_stats",
+     "target": "friendly_other_demon", "normal": {"attack": 1, "health": 0},
+     "golden": {"attack": 2, "health": 0},
+     "cardface_grade": "H04_client_direct", "execution_grade": "reference_only"},
+    {"normal_id": "GVG_021", "trigger": "while_alive", "operation": "modify_current_stats",
+     "target": "friendly_other_demon", "normal": {"attack": 2, "health": 2},
+     "golden": {"attack": 4, "health": 4},
+     "omitted_effect": "hero immunity is a separate phase-bound effect not implemented by this minion aura node",
+     "cardface_grade": "H04_client_direct", "execution_grade": "reference_only"},
+    {"normal_id": "ICC_858", "trigger": "friendly_shield_lost", "operation": "grow_self",
+     "target": "living_friendly_shield_listener", "normal": {"attack": 2, "health": 0},
+     "golden": {"attack": 4, "health": 0},
+     "cardface_grade": "H04_client_direct", "execution_grade": "reference_only"}
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "title": "2019 community battle simulator random pools versus build 35747 client tags",
+  "checked_date_beijing": "2026-09-25",
+  "simulator_commit": "ec2733704590c4de8c02ad7488d7fabe5a779506",
+  "simulator_commit_date_beijing": "2019-11-17 21:46:49",
+  "simulator_source": "https://github.com/twanvl/hearthstone-battlegrounds-simulator/tree/ec2733704590c4de8c02ad7488d7fabe5a779506/src",
+  "simulator_minion_info_sha256": "dad5b477e705ec2cf9da951a885312a047a427cdf6cc2cf931fc0e67c14a8b58",
+  "client_card_build": "15.6.0.35747",
+  "client_english_source": "https://api.hearthstonejson.com/v1/35747/enUS/cards.json",
+  "client_zh_source": "historical-card-pool.json",
+  "comparison_source": "historical-random-pool-candidates.json",
+  "evidence_status": "Third-party battle simulator committed November 17, 2019, without a declared client build; neither data set verifies live server eligibility, draw weights, or event ordering.",
+  "simulator_sampling": "random_element indexes an explicit array by std::rand() % array_size; applies only to this simulator.",
+  "legendary_count_independent_crosscheck": {
+    "source": "https://www.youtube.com/watch?v=YBPhptG7XKA",
+    "author": "Old Guardian",
+    "page_display_date_without_timezone": "2019-11-17",
+    "author_description_claim_count": 12,
+    "evidence_limit": "Only the author's description was accessible; video frames, member IDs, build and live server weights were not verified."
+  },
+  "pools": {
+    "original_cost_1": [
+      {
+        "id": "CFM_315",
+        "name_zh": "雄斑虎",
+        "simulator_enum": "AlleyCat"
+      },
+      {
+        "id": "BOT_445",
+        "name_zh": "机械袋鼠",
+        "simulator_enum": "Mecharoo"
+      },
+      {
+        "id": "EX1_509",
+        "name_zh": "鱼人招潮者",
+        "simulator_enum": "MurlocTidecaller"
+      },
+      {
+        "id": "ICC_038",
+        "name_zh": "正义保护者",
+        "simulator_enum": "RighteousProtector"
+      },
+      {
+        "id": "OG_221",
+        "name_zh": "无私的英雄",
+        "simulator_enum": "SelflessHero"
+      },
+      {
+        "id": "CS2_065",
+        "name_zh": "虚空行者",
+        "simulator_enum": "Voidwalker"
+      },
+      {
+        "id": "BGS_028",
+        "name_zh": "蹦蹦兔",
+        "simulator_enum": "PogoHopper"
+      },
+      {
+        "id": "BGS_029",
+        "name_zh": "百变泽鲁斯",
+        "simulator_enum": "ShifterZerus"
+      },
+      {
+        "id": "DAL_077",
+        "name_zh": "毒鳍鱼人",
+        "simulator_enum": "Toxfin"
+      }
+    ],
+    "original_cost_2": [
+      {
+        "id": "EX1_162",
+        "name_zh": "恐狼前锋",
+        "simulator_enum": "DireWolfAlpha"
+      },
+      {
+        "id": "BGS_027",
+        "name_zh": "微型战斗机甲",
+        "simulator_enum": "MicroMachine"
+      },
+      {
+        "id": "EX1_506",
+        "name_zh": "鱼人猎潮者",
+        "simulator_enum": "MurlocTidehunter"
+      },
+      {
+        "id": "UNG_073",
+        "name_zh": "石塘猎人",
+        "simulator_enum": "RockpoolHunter"
+      },
+      {
+        "id": "LOOT_013",
+        "name_zh": "粗俗的矮劣魔",
+        "simulator_enum": "VulgarHomunculus"
+      },
+      {
+        "id": "GVG_085",
+        "name_zh": "吵吵机器人",
+        "simulator_enum": "AnnoyOTron"
+      },
+      {
+        "id": "KAR_005",
+        "name_zh": "慈祥的外婆",
+        "simulator_enum": "KindlyGrandmother"
+      },
+      {
+        "id": "EX1_531",
+        "name_zh": "食腐土狼",
+        "simulator_enum": "ScavengingHyena"
+      },
+      {
+        "id": "GVG_058",
+        "name_zh": "护盾机器人",
+        "simulator_enum": "ShieldedMinibot"
+      },
+      {
+        "id": "DAL_575",
+        "name_zh": "卡德加",
+        "simulator_enum": "Khadgar"
+      }
+    ],
+    "original_cost_4": [
+      {
+        "id": "EX1_062",
+        "name_zh": "老瞎眼",
+        "simulator_enum": "OldMurkEye"
+      },
+      {
+        "id": "AT_121",
+        "name_zh": "人气选手",
+        "simulator_enum": "CrowdFavorite"
+      },
+      {
+        "id": "CFM_610",
+        "name_zh": "魔瘾结晶者",
+        "simulator_enum": "Crystalweaver"
+      },
+      {
+        "id": "DS1_070",
+        "name_zh": "驯兽师",
+        "simulator_enum": "Houndmaster"
+      },
+      {
+        "id": "OG_216",
+        "name_zh": "寄生恶狼",
+        "simulator_enum": "InfestedWolf"
+      },
+      {
+        "id": "BGS_023",
+        "name_zh": "载人收割机",
+        "simulator_enum": "PilotedShredder"
+      },
+      {
+        "id": "BOT_312",
+        "name_zh": "量产型恐吓机",
+        "simulator_enum": "ReplicatingMenace"
+      },
+      {
+        "id": "GVG_055",
+        "name_zh": "废旧螺栓机甲",
+        "simulator_enum": "ScrewjankClunker"
+      },
+      {
+        "id": "UNG_037",
+        "name_zh": "始祖龟执盾者",
+        "simulator_enum": "TortollanShellraiser"
+      },
+      {
+        "id": "BOT_911",
+        "name_zh": "吵吵模组",
+        "simulator_enum": "AnnoyOModule"
+      },
+      {
+        "id": "EX1_093",
+        "name_zh": "阿古斯防御者",
+        "simulator_enum": "DefenderOfArgus"
+      },
+      {
+        "id": "FP1_031",
+        "name_zh": "瑞文戴尔男爵",
+        "simulator_enum": "BaronRivendare"
+      },
+      {
+        "id": "ICC_807",
+        "name_zh": "硬壳清道夫",
+        "simulator_enum": "StrongshellScavenger"
+      },
+      {
+        "id": "BGS_031",
+        "name_zh": "温顺的巨壳龙",
+        "simulator_enum": "GentleMegasaur"
+      }
+    ],
+    "deathrattle_candidates": [
+      {
+        "id": "BOT_445",
+        "name_zh": "机械袋鼠",
+        "simulator_enum": "Mecharoo"
+      },
+      {
+        "id": "OG_221",
+        "name_zh": "无私的英雄",
+        "simulator_enum": "SelflessHero"
+      },
+      {
+        "id": "EX1_556",
+        "name_zh": "麦田傀儡",
+        "simulator_enum": "HarvestGolem"
+      },
+      {
+        "id": "BOT_606",
+        "name_zh": "爆爆机器人",
+        "simulator_enum": "KaboomBot"
+      },
+      {
+        "id": "KAR_005",
+        "name_zh": "慈祥的外婆",
+        "simulator_enum": "KindlyGrandmother"
+      },
+      {
+        "id": "BGS_025",
+        "name_zh": "骑乘迅猛龙",
+        "simulator_enum": "MountedRaptor"
+      },
+      {
+        "id": "CFM_316",
+        "name_zh": "瘟疫鼠群",
+        "simulator_enum": "RatPack"
+      },
+      {
+        "id": "OG_256",
+        "name_zh": "恩佐斯的子嗣",
+        "simulator_enum": "SpawnOfNZoth"
+      },
+      {
+        "id": "OG_216",
+        "name_zh": "寄生恶狼",
+        "simulator_enum": "InfestedWolf"
+      },
+      {
+        "id": "BGS_023",
+        "name_zh": "载人收割机",
+        "simulator_enum": "PilotedShredder"
+      },
+      {
+        "id": "BOT_312",
+        "name_zh": "量产型恐吓机",
+        "simulator_enum": "ReplicatingMenace"
+      },
+      {
+        "id": "UNG_037",
+        "name_zh": "始祖龟执盾者",
+        "simulator_enum": "TortollanShellraiser"
+      },
+      {
+        "id": "BGS_024",
+        "name_zh": "载人飞天魔像",
+        "simulator_enum": "PilotedSkyGolem"
+      },
+      {
+        "id": "EX1_577",
+        "name_zh": "比斯巨兽",
+        "simulator_enum": "TheBeast"
+      },
+      {
+        "id": "BGS_018",
+        "name_zh": "巨狼戈德林",
+        "simulator_enum": "GoldrinnTheGreatWolf"
+      },
+      {
+        "id": "BOT_537",
+        "name_zh": "机械蛋",
+        "simulator_enum": "MechanoEgg"
+      },
+      {
+        "id": "UNG_010",
+        "name_zh": "臃肿的蛇颈龙",
+        "simulator_enum": "SatedThreshadon"
+      },
+      {
+        "id": "EX1_534",
+        "name_zh": "长鬃草原狮",
+        "simulator_enum": "SavannahHighmane"
+      },
+      {
+        "id": "BGS_008",
+        "name_zh": "阴森巨蟒",
+        "simulator_enum": "Ghastcoiler"
+      },
+      {
+        "id": "BGS_012",
+        "name_zh": "坎格尔的学徒",
+        "simulator_enum": "KangorsApprentice"
+      },
+      {
+        "id": "BGS_006",
+        "name_zh": "斯尼德的伐木机",
+        "simulator_enum": "SneedsOldShredder"
+      },
+      {
+        "id": "LOOT_368",
+        "name_zh": "虚空领主",
+        "simulator_enum": "Voidlord"
+      }
+    ],
+    "legendary_candidates": [
+      {
+        "id": "EX1_062",
+        "name_zh": "老瞎眼",
+        "simulator_enum": "OldMurkEye"
+      },
+      {
+        "id": "BGS_029",
+        "name_zh": "百变泽鲁斯",
+        "simulator_enum": "ShifterZerus"
+      },
+      {
+        "id": "ICC_858",
+        "name_zh": "浴火者伯瓦尔",
+        "simulator_enum": "BolvarFireblood"
+      },
+      {
+        "id": "FP1_031",
+        "name_zh": "瑞文戴尔男爵",
+        "simulator_enum": "BaronRivendare"
+      },
+      {
+        "id": "LOE_077",
+        "name_zh": "布莱恩·铜须",
+        "simulator_enum": "BrannBronzebeard"
+      },
+      {
+        "id": "BGS_018",
+        "name_zh": "巨狼戈德林",
+        "simulator_enum": "GoldrinnTheGreatWolf"
+      },
+      {
+        "id": "GVG_021",
+        "name_zh": "玛尔加尼斯",
+        "simulator_enum": "MalGanis"
+      },
+      {
+        "id": "OG_300",
+        "name_zh": "波戈蒙斯塔",
+        "simulator_enum": "TheBoogeymonster"
+      },
+      {
+        "id": "GVG_113",
+        "name_zh": "死神4000型",
+        "simulator_enum": "FoeReaper4000"
+      },
+      {
+        "id": "FP1_010",
+        "name_zh": "迈克斯纳",
+        "simulator_enum": "Maexxna"
+      },
+      {
+        "id": "BGS_006",
+        "name_zh": "斯尼德的伐木机",
+        "simulator_enum": "SneedsOldShredder"
+      },
+      {
+        "id": "BGS_022",
+        "name_zh": "扎普·斯里维克",
+        "simulator_enum": "ZappSlywick"
+      }
+    ]
+  },
+  "differences_from_client_tag_subset": {
+    "original_cost_1": {
+      "simulator_count": 9,
+      "client_tag_subset_count": 7,
+      "simulator_only": [
+        {
+          "id": "BGS_028",
+          "name_zh": "蹦蹦兔",
+          "simulator_enum": "PogoHopper"
+        },
+        {
+          "id": "BGS_029",
+          "name_zh": "百变泽鲁斯",
+          "simulator_enum": "ShifterZerus"
+        }
+      ],
+      "client_tag_subset_only": []
+    },
+    "original_cost_2": {
+      "simulator_count": 10,
+      "client_tag_subset_count": 9,
+      "simulator_only": [
+        {
+          "id": "BGS_027",
+          "name_zh": "微型战斗机甲",
+          "simulator_enum": "MicroMachine"
+        }
+      ],
+      "client_tag_subset_only": []
+    },
+    "original_cost_4": {
+      "simulator_count": 14,
+      "client_tag_subset_count": 12,
+      "simulator_only": [
+        {
+          "id": "BGS_023",
+          "name_zh": "载人收割机",
+          "simulator_enum": "PilotedShredder"
+        },
+        {
+          "id": "BGS_031",
+          "name_zh": "温顺的巨壳龙",
+          "simulator_enum": "GentleMegasaur"
+        }
+      ],
+      "client_tag_subset_only": []
+    },
+    "deathrattle_candidates": {
+      "simulator_count": 22,
+      "client_tag_subset_count": 22,
+      "simulator_only": [],
+      "client_tag_subset_only": []
+    },
+    "legendary_candidates": {
+      "simulator_count": 12,
+      "client_tag_subset_count": 14,
+      "simulator_only": [],
+      "client_tag_subset_only": [
+        {
+          "id": "DAL_575",
+          "name_zh": "卡德加"
+        },
+        {
+          "id": "EX1_577",
+          "name_zh": "比斯巨兽"
+        }
+      ]
+    }
+  }
+}

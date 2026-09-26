@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "source": "H04 build-35747 EX1_103/TB_BaconUps_064 and LOE_077/TB_BaconUps_045 card faces",
+  "historical_unknown": {
+    "brann_repeat_event_order": "unknown",
+    "all_race_server_filter": "unknown",
+    "combat_handoff_priority": "unknown"
+  },
+  "cases": [
+    {
+      "id": "RC-01", "grade": "reference_only", "purpose": "normal source buffs other MURLOC and ALL, excluding itself, hand and unrelated beast",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103"}, {"instance_id": "held", "normal_id": "EX1_509"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "a", "normal_id": "GIL_681"}, {"instance_id": "b", "normal_id": "CFM_315"}]},
+      "action": {"op": "play", "instance_id": "s", "position": 1},
+      "expect_state": {"board_ids": ["m", "s", "a", "b"], "hand_ids": ["held"],
+                       "board_cards": [{"buff_health": 2}, {"normal_id": "EX1_103"}, {"buff_health": 2}, {}],
+                       "hand_cards": [{"normal_id": "EX1_509"}]},
+      "expect_events": ["play", "coldlight_health_buff"],
+      "expect_event_details": [{"type": "play"}, {"type": "coldlight_health_buff", "battlecry_trigger": 1,
+        "repeat_source_instance_id": null, "health_delta": 2, "targets": ["m", "a"], "grade": "reference_rule"}]
+    },
+    {
+      "id": "RC-02", "grade": "reference_only", "purpose": "golden source adds four, queues its triple reward before buff, then collects the reward",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103", "golden": true, "reward_pending": true}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}]},
+      "actions": [{"op": "play", "instance_id": "s"},
+                  {"op": "triple_discover", "options": ["OG_256", "KAR_005", "GIL_681"], "chosen": "GIL_681"}],
+      "expect_state": {"board_ids": ["m", "s"], "hand_ids": ["ref-1"], "serial": 2,
+                       "pending_target_tiers": [], "board_cards": [{"buff_health": 4}, {"reward_pending": false}],
+                       "hand_cards": [{"normal_id": "GIL_681"}]},
+      "expect_events": ["play", "queue_discover", "coldlight_health_buff", "discover"],
+      "expect_event_details": [{"type": "play"}, {"type": "queue_discover", "target_tier": 2},
+        {"type": "coldlight_health_buff", "health_delta": 4, "targets": ["m"]}, {"type": "discover", "card_id": "GIL_681"}]
+    },
+    {
+      "id": "RC-03", "grade": "reference_only", "purpose": "one normal Brann makes normal source add two health twice",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "brann", "normal_id": "LOE_077"}]},
+      "action": {"op": "play", "instance_id": "s"},
+      "expect_state": {"board_cards": [{"buff_health": 4}, {}, {}]},
+      "expect_events": ["play", "coldlight_health_buff", "coldlight_health_buff"],
+      "expect_event_details": [{"type": "play"},
+        {"type": "coldlight_health_buff", "battlecry_trigger": 1, "repeat_source_instance_id": "brann", "health_delta": 2, "targets": ["m"]},
+        {"type": "coldlight_health_buff", "battlecry_trigger": 2, "repeat_source_instance_id": "brann", "health_delta": 2, "targets": ["m"]}]
+    },
+    {
+      "id": "RC-04", "grade": "reference_only", "purpose": "one golden Brann makes normal source add two health three times",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "brann", "normal_id": "LOE_077", "golden": true}]},
+      "action": {"op": "play", "instance_id": "s"},
+      "expect_state": {"board_cards": [{"buff_health": 6}, {}, {}]},
+      "expect_events": ["play", "coldlight_health_buff", "coldlight_health_buff", "coldlight_health_buff"],
+      "expect_event_details": [{"type": "play"},
+        {"type": "coldlight_health_buff", "battlecry_trigger": 1, "repeat_source_instance_id": "brann", "health_delta": 2},
+        {"type": "coldlight_health_buff", "battlecry_trigger": 2, "repeat_source_instance_id": "brann", "health_delta": 2},
+        {"type": "coldlight_health_buff", "battlecry_trigger": 3, "repeat_source_instance_id": "brann", "health_delta": 2}]
+    },
+    {
+      "id": "RC-05", "grade": "reference_only", "purpose": "one normal Brann makes golden source add four health twice",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103", "golden": true}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "brann", "normal_id": "LOE_077"}]},
+      "action": {"op": "play", "instance_id": "s"},
+      "expect_state": {"board_cards": [{"buff_health": 8}, {}, {}]},
+      "expect_events": ["play", "coldlight_health_buff", "coldlight_health_buff"],
+      "expect_event_details": [{"type": "play"},
+        {"type": "coldlight_health_buff", "battlecry_trigger": 1, "repeat_source_instance_id": "brann", "health_delta": 4},
+        {"type": "coldlight_health_buff", "battlecry_trigger": 2, "repeat_source_instance_id": "brann", "health_delta": 4}]
+    },
+    {
+      "id": "RC-06", "grade": "reference_only", "purpose": "one golden Brann and golden source add twelve to a previously buffed other Murloc",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103", "golden": true}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509", "buff_health": 1},
+                            {"instance_id": "brann", "normal_id": "LOE_077", "golden": true}]},
+      "action": {"op": "play", "instance_id": "s"},
+      "expect_state": {"board_cards": [{"buff_health": 13}, {}, {}]},
+      "expect_events": ["play", "coldlight_health_buff", "coldlight_health_buff", "coldlight_health_buff"],
+      "expect_event_details": [{"type": "play"},
+        {"type": "coldlight_health_buff", "battlecry_trigger": 1, "repeat_source_instance_id": "brann", "health_delta": 4},
+        {"type": "coldlight_health_buff", "battlecry_trigger": 2, "repeat_source_instance_id": "brann", "health_delta": 4},
+        {"type": "coldlight_health_buff", "battlecry_trigger": 3, "repeat_source_instance_id": "brann", "health_delta": 4}]
+    },
+    {
+      "id": "RC-07", "grade": "reference_only", "purpose": "source alone is not one of its other Murlocs",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103"}]},
+      "action": {"op": "play", "instance_id": "s"},
+      "expect_state": {"board_ids": ["s"], "board_cards": [{"normal_id": "EX1_103"}]},
+      "expect_events": ["play"]
+    },
+    {
+      "id": "RC-08", "grade": "reference_only", "purpose": "Murloc held in hand is outside the on-board group buff",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103"}, {"instance_id": "held", "normal_id": "EX1_509"}]},
+      "action": {"op": "play", "instance_id": "s"},
+      "expect_state": {"board_ids": ["s"], "hand_cards": [{"instance_id": "held"}]},
+      "expect_events": ["play"]
+    },
+    {
+      "id": "RC-09", "grade": "reference_only", "purpose": "Brann sold before source placement cannot repeat the buff",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}, {"instance_id": "brann", "normal_id": "LOE_077"}]},
+      "actions": [{"op": "sell", "instance_id": "brann"}, {"op": "play", "instance_id": "s"}],
+      "expect_state": {"coins": 4, "board_ids": ["m", "s"], "board_cards": [{"buff_health": 2}, {}]},
+      "expect_events": ["sell", "play", "coldlight_health_buff"]
+    },
+    {
+      "id": "RC-10", "grade": "reference_only", "purpose": "two Brann sources reject golden placement and already queued reward atomically",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103", "golden": true, "reward_pending": true}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"},
+                            {"instance_id": "b1", "normal_id": "LOE_077"},
+                            {"instance_id": "b2", "normal_id": "LOE_077", "golden": true}]},
+      "action": {"op": "play", "instance_id": "s"},
+      "error": "unknown_multi_repeat_order"
+    },
+    {
+      "id": "RC-11", "grade": "reference_only", "purpose": "exact historical sequence cannot be asserted from printed faces",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}]},
+      "action": {"op": "play", "instance_id": "s", "exact_mode": true},
+      "error": "unknown_coldlight_event_order"
+    },
+    {
+      "id": "RC-12", "grade": "reference_only", "purpose": "malformed exact flag rejects without changing recruit state",
+      "initial": {"hand": [{"instance_id": "s", "normal_id": "EX1_103"}],
+                  "board": [{"instance_id": "m", "normal_id": "EX1_509"}]},
+      "action": {"op": "play", "instance_id": "s", "exact_mode": "false"},
+      "error": "invalid_exact_mode"
+    },
+    {
+      "id": "RC-13", "grade": "reference_only", "purpose": "two buffed normal Murlocs merge their +2 health each into the later golden triple",
+      "initial": {"coins": 3, "hand": [{"instance_id": "s", "normal_id": "EX1_103"}],
+                  "board": [{"instance_id": "m1", "normal_id": "EX1_509"}, {"instance_id": "m2", "normal_id": "EX1_509"}],
+                  "shop": [{"instance_id": "m3", "card_id": "EX1_509", "frozen": false}]},
+      "actions": [{"op": "play", "instance_id": "s"}, {"op": "buy", "instance_id": "m3"}],
+      "expect_state": {"board_ids": ["s"], "hand_ids": ["ref-1"], "coins": 0,
+                       "hand_cards": [{"normal_id": "EX1_509", "golden": true, "buff_health": 4,
+                                       "health": 8, "reward_pending": true}]},
+      "expect_events": ["play", "coldlight_health_buff", "buy", "triple"]
+    }
+  ]
+}

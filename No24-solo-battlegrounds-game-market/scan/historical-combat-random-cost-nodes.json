@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "unverified": true,
+  "source": {
+    "card_faces": "H04 build-35747 CardDefs.xml; historical-random-effect-shells.json",
+    "client_candidate_costs": "historical-combat-random-cost-candidates.json; H05 build-35747 cards.json",
+    "reference_pools": "H09 third-party simulator ec2733704590c4de8c02ad7488d7fabe5a779506; historical-community-simulator-pools.json",
+    "single_event_policy": "historical-random-reference.json"
+  },
+  "historical_unknown": {
+    "live_candidate_eligibility": "unknown",
+    "live_draw_weights": "unknown",
+    "live_stock_policy": "unknown",
+    "golden_source_generated_form": "unknown",
+    "multiple_random_deathrattles_same_batch_order": "unknown",
+    "baron_and_random_draw_order": "unknown",
+    "khadgar_and_random_summon_order": "unknown",
+    "generated_random_source_chain": "unknown"
+  },
+  "reference_scope": {
+    "profile": "H09 community arrays are only explicit reference pools; H05 cost and stats are client facts, not live eligibility",
+    "input": "each successful summon consumes one caller-supplied index into the fixed H09 array with grade reference_injected; full-board requests draw nothing",
+    "supported_candidates": "only the listed no-combat-action subsets execute; all other pool indexes reject the entire strike without selecting a substitute",
+    "form": "normal candidate entity is created even when the source is golden; this is a reference decision",
+    "position": "insert sequentially at the dead source's former index, limited to seven friendly units",
+    "repeats": "one surviving Baron repeats the source deathrattle two or three times; a Khadgar interaction rejects",
+    "generated_manifest": "new combat_generated_minion instances use the original source and reference_injected pool grade, then enter terminal damage settlement",
+    "same_batch": "two compiled random-summon sources dying in the same batch reject atomically"
+  },
+  "nodes": [
+    {
+      "normal_id": "BGS_025",
+      "golden_id": "TB_BaconUps_019",
+      "name_zh": "骑乘迅猛龙",
+      "tier": 2,
+      "trigger": "source_died",
+      "family": "summon_original_cost",
+      "candidate_source": "original_cost_1",
+      "original_mana_cost": 1,
+      "normal": {"attempts": 1},
+      "golden": {"attempts": 2},
+      "reference_supported_ids": ["CFM_315", "BGS_028"],
+      "cardface_grade": "H04_client_direct",
+      "candidate_grade": "H09_community_reference_only",
+      "execution_grade": "reference_only"
+    },
+    {
+      "normal_id": "BGS_023",
+      "golden_id": "TB_BaconUps_035",
+      "name_zh": "载人收割机",
+      "tier": 3,
+      "trigger": "source_died",
+      "family": "summon_original_cost",
+      "candidate_source": "original_cost_2",
+      "original_mana_cost": 2,
+      "normal": {"attempts": 1},
+      "golden": {"attempts": 2},
+      "reference_supported_ids": ["BGS_027", "EX1_506"],
+      "cardface_grade": "H04_client_direct",
+      "candidate_grade": "H09_community_reference_only",
+      "execution_grade": "reference_only"
+    },
+    {
+      "normal_id": "BGS_024",
+      "golden_id": "TB_BaconUps_050",
+      "name_zh": "载人飞天魔像",
+      "tier": 4,
+      "trigger": "source_died",
+      "family": "summon_original_cost",
+      "candidate_source": "original_cost_4",
+      "original_mana_cost": 4,
+      "normal": {"attempts": 1},
+      "golden": {"attempts": 2},
+      "reference_supported_ids": ["AT_121", "CFM_610"],
+      "cardface_grade": "H04_client_direct",
+      "candidate_grade": "H09_community_reference_only",
+      "execution_grade": "reference_only"
+    }
+  ]
+}

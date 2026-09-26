@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "client_source": {
+    "url": "https://raw.githubusercontent.com/HearthSim/hsdata/35747/CardDefs.xml",
+    "sha256": "2ac3bec61c4c9efdcab2923a47b3fa2127a23c08d758debb384f68753fb0079a",
+    "evidence": "H04_client_cardface_not_server_execution"
+  },
+  "coverage": {"composite_parent_rows": 13, "parent_forms": 26, "form_vectors": 84},
+  "historical_unknown": {
+    "dynamic_pool_eligibility": "unknown",
+    "simultaneous_death_event_order": "unknown",
+    "historical_summon_insert_position": "unknown",
+    "multiple_multiplier_resolution": "unknown",
+    "hero_damage_after_healing_metric": "unknown",
+    "kangor_resummoned_state": "unknown"
+  },
+  "reference_scope": {
+    "single_effect_event_only": true,
+    "board_limit": 7,
+    "combat_changes_revert_to_recruit_snapshot": true,
+    "kangor_copy_policy": "reference_death_snapshot",
+    "overkill_token_link": "inferred_from_same_build_name_stats_id"
+  },
+  "nodes": [
+    {
+      "normal_id": "OG_256", "golden_id": "TB_BaconUps_025", "name_zh": "恩佐斯的子嗣",
+      "family": "deathrattle_team_buff", "target_race": "ANY",
+      "parameters": {"normal": {"each_stat": 1}, "golden": {"each_stat": 2}},
+      "client_text_zh": {"normal": "<b>亡语：</b>使你的所有随从获得+1/+1。", "golden": "<b>亡语：</b>使你的所有随从获得+2/+2。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "BGS_018", "golden_id": "TB_BaconUps_085", "name_zh": "巨狼戈德林",
+      "family": "deathrattle_team_buff", "target_race": "BEAST",
+      "parameters": {"normal": {"each_stat": 4}, "golden": {"each_stat": 8}},
+      "client_text_zh": {"normal": "<b>亡语：</b>使你的野兽获得+4/+4。", "golden": "<b>亡语：</b>使你的野兽获得+8/+8。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "DAL_575", "golden_id": "TB_BaconUps_034", "name_zh": "卡德加",
+      "family": "card_summon_multiplier",
+      "parameters": {"normal": {"factor": 2}, "golden": {"factor": 3}},
+      "client_text_zh": {"normal": "你的召唤随从的卡牌召唤数量翻倍。", "golden": "你的召唤随从的卡牌召唤数量变为三倍。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "FP1_031", "golden_id": "TB_BaconUps_055", "name_zh": "瑞文戴尔男爵",
+      "family": "ability_repeat", "ability": "亡语",
+      "parameters": {"normal": {"times": 2}, "golden": {"times": 3}},
+      "client_text_zh": {"normal": "你的随从的<b>亡语</b>将触发两次。", "golden": "你的随从的<b>亡语</b>将触发三次。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "LOE_077", "golden_id": "TB_BaconUps_045", "name_zh": "布莱恩·铜须",
+      "family": "ability_repeat", "ability": "战吼",
+      "parameters": {"normal": {"times": 2}, "golden": {"times": 3}},
+      "client_text_zh": {"normal": "你的<b>战吼</b>会触发\n两次。", "golden": "你的<b>战吼</b>会触发\n三次。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "EX1_062", "golden_id": "TB_BaconUps_036", "name_zh": "老瞎眼",
+      "family": "murloc_attack_aura",
+      "parameters": {"normal": {"attack_per_other_murloc": 1}, "golden": {"attack_per_other_murloc": 2}},
+      "client_text_zh": {"normal": "<b>冲锋</b>，在战场上每有一个其他鱼人便获得+1攻击力。", "golden": "<b>冲锋</b>，在战场上每有一个其他鱼人便获得+2攻击力。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "BGS_028", "golden_id": "TB_BaconUps_077", "name_zh": "蹦蹦兔",
+      "family": "pogo_growth",
+      "parameters": {"normal": {"each_stat_per_previous": 2}, "golden": {"each_stat_per_previous": 4}},
+      "client_text_zh": {"normal": "<b>战吼：</b>在本局对战中，你每使用一张蹦蹦兔就会使其获得+2/+2。", "golden": "<b>战吼：</b>在本局对战中，你每使用一张蹦蹦兔就会使其获得+4/+4。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "BGS_010", "golden_id": "TB_BaconUps_083", "name_zh": "安尼赫兰战场军官",
+      "family": "hero_damage_health",
+      "parameters": {"normal": {"health_per_damage": 1}, "golden": {"health_per_damage": 2}},
+      "client_text_zh": {"normal": "<b>战吼：</b>你的英雄每受到一点伤害，便获得+1生命值。", "golden": "<b>战吼：</b>你的英雄每受到一点伤害，便获得+2生命值。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "BOT_911", "golden_id": "TB_BaconUps_099", "name_zh": "吵吵模组",
+      "family": "magnetic_merge",
+      "parameters": {"normal": {"attack": 2, "health": 4}, "golden": {"attack": 4, "health": 8}},
+      "client_text_zh": {"normal": "<b>磁力</b>\n<b>圣盾</b>\n<b>嘲讽</b>", "golden": "<b>磁力</b>\n<b>圣盾</b>\n<b>嘲讽</b>"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "TRL_232", "golden_id": "TB_BaconUps_051", "name_zh": "铁皮恐角龙",
+      "family": "overkill_summon",
+      "parameters": {"normal": {"token_id": "TRL_232t", "attack": 5, "health": 5, "race": "BEAST"}, "golden": {"token_id": "TB_BaconUps_051t", "attack": 10, "health": 10, "race": "BEAST"}},
+      "client_text_zh": {"normal": "<b>超杀：</b>召唤一个5/5的铁皮小恐龙。", "golden": "<b>超杀：</b>召唤一个10/10的铁皮小恐龙。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference", "effect_to_token_id": "inference_from_client_name_stats_id"}
+    },
+    {
+      "normal_id": "GVG_021", "golden_id": "TB_BaconUps_060", "name_zh": "玛尔加尼斯",
+      "family": "demon_hero_aura",
+      "parameters": {"normal": {"each_stat": 2}, "golden": {"each_stat": 4}},
+      "client_text_zh": {"normal": "你的其他恶魔获得+2/+2。你的英雄获得<b>免疫</b>。", "golden": "你的其他恶魔获得+4/+4。你的英雄获得<b>免疫</b>。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "OG_300", "golden_id": "TB_BaconUps_058", "name_zh": "波戈蒙斯塔",
+      "family": "attack_kill_growth",
+      "parameters": {"normal": {"each_stat": 2}, "golden": {"each_stat": 4}},
+      "client_text_zh": {"normal": "每当波戈蒙斯塔攻击并消灭一个随从，便获得+2/+2。", "golden": "每当波戈蒙斯塔攻击并消灭一个随从，便获得+4/+4。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    },
+    {
+      "normal_id": "BGS_012", "golden_id": "TB_BaconUps_087", "name_zh": "坎格尔的学徒",
+      "family": "first_dead_mechs",
+      "parameters": {"normal": {"first_count": 2}, "golden": {"first_count": 4}},
+      "client_text_zh": {"normal": "<b>亡语</b>：召唤本场战斗中最先死亡的两个友方机械。", "golden": "<b>亡语</b>：召唤本场战斗中最先死亡的四个友方机械。"},
+      "evidence": {"card_face": "H04_client_direct", "execution": "bounded_reference"}
+    }
+  ],
+  "vectors": [
+    {"id":"CM-OG_256-BASE","normal_id":"OG_256","input":{"event":"source_died","survivors":[{"id":"b","race":"BEAST"},{"id":"m","race":"MECHANICAL"}]},"expected_by_form":{"normal":{"buffs":{"b":[1,1],"m":[1,1]}},"golden":{"buffs":{"b":[2,2],"m":[2,2]}}}},
+    {"id":"CM-OG_256-NOT-DEAD","normal_id":"OG_256","input":{"event":"source_alive","survivors":[{"id":"b","race":"BEAST"}]},"expected_by_form":{"normal":{"buffs":{}},"golden":{"buffs":{}}}},
+    {"id":"CM-BGS_018-BASE","normal_id":"BGS_018","input":{"event":"source_died","survivors":[{"id":"b","race":"BEAST"},{"id":"m","race":"MECHANICAL"}]},"expected_by_form":{"normal":{"buffs":{"b":[4,4]}},"golden":{"buffs":{"b":[8,8]}}}},
+    {"id":"CM-BGS_018-WRONG-RACE","normal_id":"BGS_018","input":{"event":"source_died","survivors":[{"id":"m","race":"MECHANICAL"}]},"expected_by_form":{"normal":{"buffs":{}},"golden":{"buffs":{}}}},
+    {"id":"CM-DAL_575-BASE","normal_id":"DAL_575","input":{"owner":"friendly","origin":"card","base_count":1,"free_slots":7,"other_multipliers_present":false},"expected_by_form":{"normal":{"summoned_count":2},"golden":{"summoned_count":3}}},
+    {"id":"CM-DAL_575-CAP","normal_id":"DAL_575","input":{"owner":"friendly","origin":"card","base_count":2,"free_slots":1,"other_multipliers_present":false},"expected_by_form":{"normal":{"summoned_count":1},"golden":{"summoned_count":1}}},
+    {"id":"CM-DAL_575-ENEMY","normal_id":"DAL_575","input":{"owner":"opponent","origin":"card","base_count":1,"free_slots":7,"other_multipliers_present":false},"expected_by_form":{"normal":{"summoned_count":1},"golden":{"summoned_count":1}}},
+    {"id":"CM-DAL_575-GONE","normal_id":"DAL_575","input":{"owner":"friendly","origin":"card","base_count":1,"free_slots":7,"other_multipliers_present":false,"source_present":false},"expected_by_form":{"normal":{"summoned_count":1},"golden":{"summoned_count":1}}},
+    {"id":"CM-DAL_575-STACK-UNKNOWN","normal_id":"DAL_575","input":{"owner":"friendly","origin":"card","base_count":1,"free_slots":7,"other_multipliers_present":true},"expected_error":"unknown_multi_multiplier_order"},
+    {"id":"CM-FP1_031-BASE","normal_id":"FP1_031","input":{"owner":"friendly","ability":"亡语","other_repeat_sources_present":false},"expected_by_form":{"normal":{"trigger_count":2},"golden":{"trigger_count":3}}},
+    {"id":"CM-FP1_031-ENEMY","normal_id":"FP1_031","input":{"owner":"opponent","ability":"亡语","other_repeat_sources_present":false},"expected_by_form":{"normal":{"trigger_count":1},"golden":{"trigger_count":1}}},
+    {"id":"CM-FP1_031-GONE","normal_id":"FP1_031","input":{"owner":"friendly","ability":"亡语","other_repeat_sources_present":false,"source_present":false},"expected_by_form":{"normal":{"trigger_count":1},"golden":{"trigger_count":1}}},
+    {"id":"CM-FP1_031-STACK-UNKNOWN","normal_id":"FP1_031","input":{"owner":"friendly","ability":"亡语","other_repeat_sources_present":true},"expected_error":"unknown_multi_repeat_order"},
+    {"id":"CM-FP1_031-SIMULTANEOUS-UNKNOWN","normal_id":"FP1_031","input":{"owner":"friendly","ability":"亡语","other_repeat_sources_present":false,"simultaneous_deaths":true},"expected_error":"unknown_simultaneous_death_order"},
+    {"id":"CM-LOE_077-BASE","normal_id":"LOE_077","input":{"owner":"friendly","ability":"战吼","other_repeat_sources_present":false},"expected_by_form":{"normal":{"trigger_count":2},"golden":{"trigger_count":3}}},
+    {"id":"CM-LOE_077-WRONG-ABILITY","normal_id":"LOE_077","input":{"owner":"friendly","ability":"亡语","other_repeat_sources_present":false},"expected_by_form":{"normal":{"trigger_count":1},"golden":{"trigger_count":1}}},
+    {"id":"CM-LOE_077-GONE","normal_id":"LOE_077","input":{"owner":"friendly","ability":"战吼","other_repeat_sources_present":false,"source_present":false},"expected_by_form":{"normal":{"trigger_count":1},"golden":{"trigger_count":1}}},
+    {"id":"CM-LOE_077-STACK-UNKNOWN","normal_id":"LOE_077","input":{"owner":"friendly","ability":"战吼","other_repeat_sources_present":true},"expected_error":"unknown_multi_repeat_order"},
+    {"id":"CM-EX1_062-BASE","normal_id":"EX1_062","input":{"other_friendly_murlocs":2,"other_enemy_murlocs":1},"expected_by_form":{"normal":{"attack_bonus":3,"keywords":["charge"]},"golden":{"attack_bonus":6,"keywords":["charge"]}}},
+    {"id":"CM-EX1_062-ZERO","normal_id":"EX1_062","input":{"other_friendly_murlocs":0,"other_enemy_murlocs":0},"expected_by_form":{"normal":{"attack_bonus":0,"keywords":["charge"]},"golden":{"attack_bonus":0,"keywords":["charge"]}}},
+    {"id":"CM-BGS_028-BASE","normal_id":"BGS_028","input":{"event":"played_from_hand","previous_pogo_plays":2,"history_ambiguous":false},"expected_by_form":{"normal":{"stat_bonus":[4,4]},"golden":{"stat_bonus":[8,8]}}},
+    {"id":"CM-BGS_028-FIRST","normal_id":"BGS_028","input":{"event":"played_from_hand","previous_pogo_plays":0,"history_ambiguous":false},"expected_by_form":{"normal":{"stat_bonus":[0,0]},"golden":{"stat_bonus":[0,0]}}},
+    {"id":"CM-BGS_028-HISTORY-UNKNOWN","normal_id":"BGS_028","input":{"event":"played_from_hand","previous_pogo_plays":2,"history_ambiguous":true},"expected_error":"unknown_pogo_history_identity"},
+    {"id":"CM-BGS_010-BASE","normal_id":"BGS_010","input":{"event":"played_from_hand","unhealed_hero_damage":6,"hero_healed_since_start":false},"expected_by_form":{"normal":{"health_bonus":6},"golden":{"health_bonus":12}}},
+    {"id":"CM-BGS_010-ZERO","normal_id":"BGS_010","input":{"event":"played_from_hand","unhealed_hero_damage":0,"hero_healed_since_start":false},"expected_by_form":{"normal":{"health_bonus":0},"golden":{"health_bonus":0}}},
+    {"id":"CM-BGS_010-HEALED-UNKNOWN","normal_id":"BGS_010","input":{"event":"played_from_hand","unhealed_hero_damage":3,"hero_healed_since_start":true},"expected_error":"unknown_healed_hero_damage_metric"},
+    {"id":"CM-BOT_911-BASE","normal_id":"BOT_911","input":{"left_neighbor_race":"MECHANICAL","left_neighbor_attack":3,"left_neighbor_health":5,"left_neighbor_keywords":["reborn"],"free_slots":1},"expected_by_form":{"normal":{"result":"fused","attack":5,"health":9,"keywords":["divine_shield","reborn","taunt"]},"golden":{"result":"fused","attack":7,"health":13,"keywords":["divine_shield","reborn","taunt"]}}},
+    {"id":"CM-BOT_911-NONMECH","normal_id":"BOT_911","input":{"left_neighbor_race":"BEAST","left_neighbor_attack":3,"left_neighbor_health":5,"left_neighbor_keywords":[],"free_slots":1},"expected_by_form":{"normal":{"result":"standalone","attack":2,"health":4,"keywords":["divine_shield","taunt"]},"golden":{"result":"standalone","attack":4,"health":8,"keywords":["divine_shield","taunt"]}}},
+    {"id":"CM-TRL_232-BASE","normal_id":"TRL_232","input":{"event":"attack_resolved","effective_damage":8,"target_health_before":5,"attacker_survives":true,"free_slots":1},"expected_by_form":{"normal":{"summoned_count":1,"candidate_token_id":"TRL_232t","token_stats":[5,5],"token_race":"BEAST"},"golden":{"summoned_count":1,"candidate_token_id":"TB_BaconUps_051t","token_stats":[10,10],"token_race":"BEAST"}}},
+    {"id":"CM-TRL_232-EXACT-LETHAL","normal_id":"TRL_232","input":{"event":"attack_resolved","effective_damage":5,"target_health_before":5,"attacker_survives":true,"free_slots":1},"expected_by_form":{"normal":{"summoned_count":0,"candidate_token_id":null,"token_stats":null,"token_race":null},"golden":{"summoned_count":0,"candidate_token_id":null,"token_stats":null,"token_race":null}}},
+    {"id":"CM-TRL_232-FULL","normal_id":"TRL_232","input":{"event":"attack_resolved","effective_damage":8,"target_health_before":5,"attacker_survives":true,"free_slots":0},"expected_by_form":{"normal":{"summoned_count":0,"candidate_token_id":null,"token_stats":null,"token_race":null},"golden":{"summoned_count":0,"candidate_token_id":null,"token_stats":null,"token_race":null}}},
+    {"id":"CM-TRL_232-DYING-UNKNOWN","normal_id":"TRL_232","input":{"event":"attack_resolved","effective_damage":8,"target_health_before":5,"attacker_survives":false,"free_slots":1},"expected_error":"unknown_dying_overkill_source_order"},
+    {"id":"CM-GVG_021-BASE","normal_id":"GVG_021","input":{"source_present":true,"other_friendlies":[{"id":"d","race":"DEMON"},{"id":"n","race":"NONE"}]},"expected_by_form":{"normal":{"buffs":{"d":[2,2]},"hero_immune":true},"golden":{"buffs":{"d":[4,4]},"hero_immune":true}}},
+    {"id":"CM-GVG_021-GONE","normal_id":"GVG_021","input":{"source_present":false,"other_friendlies":[{"id":"d","race":"DEMON"}]},"expected_by_form":{"normal":{"buffs":{},"hero_immune":false},"golden":{"buffs":{},"hero_immune":false}}},
+    {"id":"CM-OG_300-BASE","normal_id":"OG_300","input":{"event":"attack_resolved","self_attacked":true,"target_killed":true,"attacker_survives":true},"expected_by_form":{"normal":{"stat_bonus":[2,2]},"golden":{"stat_bonus":[4,4]}}},
+    {"id":"CM-OG_300-NO-KILL","normal_id":"OG_300","input":{"event":"attack_resolved","self_attacked":true,"target_killed":false,"attacker_survives":true},"expected_by_form":{"normal":{"stat_bonus":[0,0]},"golden":{"stat_bonus":[0,0]}}},
+    {"id":"CM-OG_300-DYING-UNKNOWN","normal_id":"OG_300","input":{"event":"attack_resolved","self_attacked":true,"target_killed":true,"attacker_survives":false},"expected_error":"unknown_dying_attacker_growth_order"},
+    {"id":"CM-BGS_012-BASE","normal_id":"BGS_012","input":{"history_complete":true,"same_event_tie":false,"free_slots":7,"death_history":[{"instance_id":"m1","definition_id":"BOT_445","owner":"friendly","race":"MECHANICAL"},{"instance_id":"b1","definition_id":"OG_216","owner":"friendly","race":"BEAST"},{"instance_id":"e1","definition_id":"BOT_312","owner":"opponent","race":"MECHANICAL"},{"instance_id":"m2","definition_id":"BOT_537","owner":"friendly","race":"MECHANICAL"},{"instance_id":"m3","definition_id":"GVG_106","owner":"friendly","race":"MECHANICAL"},{"instance_id":"m4","definition_id":"BOT_218","owner":"friendly","race":"MECHANICAL"}]},"expected_by_form":{"normal":{"summoned_from":[{"instance_id":"m1","definition_id":"BOT_445"},{"instance_id":"m2","definition_id":"BOT_537"}],"copy_policy":"reference_death_snapshot"},"golden":{"summoned_from":[{"instance_id":"m1","definition_id":"BOT_445"},{"instance_id":"m2","definition_id":"BOT_537"},{"instance_id":"m3","definition_id":"GVG_106"},{"instance_id":"m4","definition_id":"BOT_218"}],"copy_policy":"reference_death_snapshot"}}},
+    {"id":"CM-BGS_012-CAP","normal_id":"BGS_012","input":{"history_complete":true,"same_event_tie":false,"free_slots":1,"death_history":[{"instance_id":"m1","definition_id":"BOT_445","owner":"friendly","race":"MECHANICAL"},{"instance_id":"m2","definition_id":"BOT_537","owner":"friendly","race":"MECHANICAL"}]},"expected_by_form":{"normal":{"summoned_from":[{"instance_id":"m1","definition_id":"BOT_445"}],"copy_policy":"reference_death_snapshot"},"golden":{"summoned_from":[{"instance_id":"m1","definition_id":"BOT_445"}],"copy_policy":"reference_death_snapshot"}}},
+    {"id":"CM-BGS_012-TIE-UNKNOWN","normal_id":"BGS_012","input":{"history_complete":true,"same_event_tie":true,"free_slots":7,"death_history":[]},"expected_error":"unknown_mech_death_history_order"},
+    {"id":"CM-BGS_012-REPEAT-UNKNOWN","normal_id":"BGS_012","input":{"history_complete":true,"same_event_tie":false,"free_slots":7,"death_history":[{"instance_id":"m1","definition_id":"BOT_445","owner":"friendly","race":"MECHANICAL"},{"instance_id":"m1","definition_id":"BOT_445","owner":"friendly","race":"MECHANICAL"}]},"expected_error":"unknown_repeat_death_identity"},
+    {"id":"CM-BGS_012-INCOMPLETE-UNKNOWN","normal_id":"BGS_012","input":{"history_complete":false,"same_event_tie":false,"free_slots":7,"death_history":[]},"expected_error":"unknown_mech_death_history_order"}
+  ]
+}

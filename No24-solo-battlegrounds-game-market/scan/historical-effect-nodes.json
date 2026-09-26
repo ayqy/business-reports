@@ -1,0 +1,3670 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "client_source": {
+    "url": "https://raw.githubusercontent.com/HearthSim/hsdata/35747/CardDefs.xml",
+    "sha256": "2ac3bec61c4c9efdcab2923a47b3fa2127a23c08d758debb384f68753fb0079a",
+    "evidence": "H04_client_cardface_not_server_execution"
+  },
+  "coverage": {
+    "shop_rows": 81,
+    "direct_golden_rows": 68,
+    "typed_direct_golden_rows": 24,
+    "deferred_direct_golden_rows": 16,
+    "separate_inferred_golden_rows": 13,
+    "typed_fixed_token_elsewhere_rows": 15,
+    "typed_composite_elsewhere_rows": 13
+  },
+  "historical_unknown": {
+    "dynamic_pool_eligibility": "unknown",
+    "dynamic_pool_weights": "unknown",
+    "simultaneous_death_event_order": "unknown"
+  },
+  "nodes": [
+    {
+      "normal_id": "UNG_073",
+      "name_zh": "石塘猎人",
+      "golden_id": "TB_BaconUps_061",
+      "family": "battlecry_target_buff",
+      "event": "play_from_hand",
+      "event_tribe": null,
+      "target": {
+        "scope": "selected_one",
+        "tribe": "MURLOC",
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 1,
+        "health": 1,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>使一个友方鱼人获得+1/+1。",
+        "golden": "<b>战吼：</b>使一个友方鱼人获得+2/+2。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "BGS_001",
+      "name_zh": "纳斯雷兹姆监工",
+      "golden_id": "TB_BaconUps_062",
+      "family": "battlecry_target_buff",
+      "event": "play_from_hand",
+      "event_tribe": null,
+      "target": {
+        "scope": "selected_one",
+        "tribe": "DEMON",
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 4,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>使一个友方恶魔获得+2/+2。",
+        "golden": "<b>战吼：</b>使一个友方恶魔获得+4/+4。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "GVG_055",
+      "name_zh": "废旧螺栓机甲",
+      "golden_id": "TB_BaconUps_069",
+      "family": "battlecry_target_buff",
+      "event": "play_from_hand",
+      "event_tribe": null,
+      "target": {
+        "scope": "selected_one",
+        "tribe": "MECHANICAL",
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 4,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>使一个友方机械获得+2/+2。",
+        "golden": "<b>战吼：</b>使一个友方机械获得+4/+4。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "DS1_070",
+      "name_zh": "驯兽师",
+      "golden_id": "TB_BaconUps_068",
+      "family": "battlecry_target_buff",
+      "event": "play_from_hand",
+      "event_tribe": null,
+      "target": {
+        "scope": "selected_one",
+        "tribe": "BEAST",
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": true,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 4,
+        "grant_taunt": true,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>使一个友方野兽获得+2/+2和<b>嘲讽</b>。",
+        "golden": "<b>战吼：</b>使一个友方野兽获得+4/+4和<b>嘲讽</b>。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "CFM_816",
+      "name_zh": "兔妖教头",
+      "golden_id": "TB_BaconUps_074",
+      "family": "battlecry_target_buff",
+      "event": "play_from_hand",
+      "event_tribe": null,
+      "target": {
+        "scope": "selected_one",
+        "tribe": "BEAST",
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 4,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>使一个友方野兽获得+2/+2。",
+        "golden": "<b>战吼：</b>使一个友方野兽获得+4/+4。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "GVG_048",
+      "name_zh": "金刚刃牙兽",
+      "golden_id": "TB_BaconUps_066",
+      "family": "battlecry_group_buff",
+      "event": "play_from_hand",
+      "event_tribe": null,
+      "target": {
+        "scope": "all_other",
+        "tribe": "MECHANICAL",
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>使你的其他机械获得+2攻击力。",
+        "golden": "<b>战吼：</b>使你的其他机械获得+4攻击力。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "EX1_103",
+      "name_zh": "寒光先知",
+      "golden_id": "TB_BaconUps_064",
+      "family": "battlecry_group_buff",
+      "event": "play_from_hand",
+      "event_tribe": null,
+      "target": {
+        "scope": "all_other",
+        "tribe": "MURLOC",
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 0,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 0,
+        "health": 4,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>使你的其他鱼人获得+2生命值。",
+        "golden": "<b>战吼：</b>使你的其他鱼人获得+4生命值。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "CFM_610",
+      "name_zh": "魔瘾结晶者",
+      "golden_id": "TB_BaconUps_070",
+      "family": "battlecry_group_buff",
+      "event": "play_from_hand",
+      "event_tribe": null,
+      "target": {
+        "scope": "all",
+        "tribe": "DEMON",
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 1,
+        "health": 1,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>使你的所有恶魔获得+1/+1。",
+        "golden": "<b>战吼：</b>使你的所有恶魔获得+2/+2。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "ICC_807",
+      "name_zh": "硬壳清道夫",
+      "golden_id": "TB_BaconUps_072",
+      "family": "battlecry_group_buff",
+      "event": "play_from_hand",
+      "event_tribe": null,
+      "target": {
+        "scope": "all",
+        "tribe": null,
+        "keyword": "taunt"
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 4,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>使你具有<b>嘲讽</b>的随从获得+2/+2。",
+        "golden": "<b>战吼：</b>使你具有<b>嘲讽</b>的随从获得+4/+4。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "EX1_093",
+      "name_zh": "阿古斯防御者",
+      "golden_id": "TB_BaconUps_009",
+      "family": "battlecry_group_buff",
+      "event": "play_from_hand",
+      "event_tribe": null,
+      "target": {
+        "scope": "adjacent",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 1,
+        "health": 1,
+        "grant_taunt": true,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": true,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>战吼：</b>使相邻的随从获得+1/+1和<b>嘲讽</b>。",
+        "golden": "<b>战吼：</b>使相邻的随从获得+2/+2和<b>嘲讽</b>。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "EX1_162",
+      "name_zh": "恐狼前锋",
+      "golden_id": "TB_BaconUps_088",
+      "family": "continuous_aura",
+      "event": "aura_recompute",
+      "event_tribe": null,
+      "target": {
+        "scope": "adjacent",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 1,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 2,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "相邻的随从获得+1攻击力。",
+        "golden": "相邻的随从获得+2攻击力。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "EX1_507",
+      "name_zh": "鱼人领军",
+      "golden_id": "TB_BaconUps_008",
+      "family": "continuous_aura",
+      "event": "aura_recompute",
+      "event_tribe": null,
+      "target": {
+        "scope": "all_other",
+        "tribe": "MURLOC",
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "你的其他鱼人获得+2攻击力。",
+        "golden": "你的其他鱼人获得+4攻击力。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "EX1_185",
+      "name_zh": "攻城恶魔",
+      "golden_id": "TB_BaconUps_053",
+      "family": "continuous_aura",
+      "event": "aura_recompute",
+      "event_tribe": null,
+      "target": {
+        "scope": "all_other",
+        "tribe": "DEMON",
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 1,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 2,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>嘲讽</b>\n你的其他恶魔获得+1攻击力。",
+        "golden": "<b>嘲讽</b>\n你的其他恶魔获得+2攻击力。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": [
+        "taunt"
+      ]
+    },
+    {
+      "normal_id": "ULD_179",
+      "name_zh": "方阵指挥官",
+      "golden_id": "TB_BaconUps_038",
+      "family": "continuous_aura",
+      "event": "aura_recompute",
+      "event_tribe": null,
+      "target": {
+        "scope": "all",
+        "tribe": null,
+        "keyword": "taunt"
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "你的<b>嘲讽</b>随从获得+2攻击力。",
+        "golden": "你的<b>嘲讽</b>随从获得+4攻击力。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "AT_121",
+      "name_zh": "人气选手",
+      "golden_id": "TB_BaconUps_037",
+      "family": "trigger_self_buff",
+      "event": "friendly_battlecry_played",
+      "event_tribe": null,
+      "target": {
+        "scope": "self",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 1,
+        "health": 1,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "每当你使用一张具有<b>战吼</b>的牌，便获得+1/+1。",
+        "golden": "每当你使用一张具有<b>战吼</b>的牌，便获得+2/+2。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "BGS_027",
+      "name_zh": "微型战斗机甲",
+      "golden_id": "TB_BaconUps_094",
+      "family": "trigger_self_buff",
+      "event": "recruit_turn_start",
+      "event_tribe": null,
+      "target": {
+        "scope": "self",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 1,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 2,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "在每个回合开始时，获得+1攻击力。",
+        "golden": "在每个回合开始时，获得+2攻击力。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "EX1_509",
+      "name_zh": "鱼人招潮者",
+      "golden_id": "TB_BaconUps_011",
+      "family": "trigger_self_buff",
+      "event": "friendly_murloc_summoned",
+      "event_tribe": "MURLOC",
+      "target": {
+        "scope": "self",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 1,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 2,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "每当你召唤一个鱼人，便获得\n+1攻击力。",
+        "golden": "每当你召唤一个鱼人，便获得\n+2攻击力。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "BGS_004",
+      "name_zh": "愤怒编织者",
+      "golden_id": "TB_BaconUps_079",
+      "family": "trigger_self_buff",
+      "event": "friendly_demon_played",
+      "event_tribe": "DEMON",
+      "target": {
+        "scope": "self",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 1
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 4,
+        "grant_taunt": false,
+        "hero_damage": 1
+      },
+      "client_text_zh": {
+        "normal": "在你使用一个恶魔后，对你的英雄造成1点伤害并获得+2/+2。",
+        "golden": "在你使用一个恶魔后，对你的英雄造成1点伤害并获得+4/+4。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "GIL_655",
+      "name_zh": "腐树巨人",
+      "golden_id": "TB_BaconUps_033",
+      "family": "trigger_self_buff",
+      "event": "friendly_minion_attack_completed",
+      "event_tribe": null,
+      "target": {
+        "scope": "self",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 1,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 2,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "在一个友方随从攻击后，获得+1攻击力。",
+        "golden": "在一个友方随从攻击后，获得+2攻击力。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "GVG_106",
+      "name_zh": "回收机器人",
+      "golden_id": "TB_BaconUps_046",
+      "family": "trigger_self_buff",
+      "event": "friendly_mech_died",
+      "event_tribe": "MECHANICAL",
+      "target": {
+        "scope": "self",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 4,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "每当一个友方机械死亡，便获得+2/+2。",
+        "golden": "每当一个友方机械死亡，便获得+4/+4。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "EX1_531",
+      "name_zh": "食腐土狼",
+      "golden_id": "TB_BaconUps_043",
+      "family": "trigger_self_buff",
+      "event": "friendly_beast_died",
+      "event_tribe": "BEAST",
+      "target": {
+        "scope": "self",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 1,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 2,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "每当一个友方野兽死亡时，便获得+2/+1。",
+        "golden": "每当一个友方野兽死亡时，便获得+4/+2。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "ICC_858",
+      "name_zh": "浴火者伯瓦尔",
+      "golden_id": "TB_BaconUps_047",
+      "family": "trigger_self_buff",
+      "event": "friendly_divine_shield_lost",
+      "event_tribe": null,
+      "target": {
+        "scope": "self",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 2,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 4,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "<b>圣盾</b>\n在一个友方随从失去<b>圣盾</b>后，获得+2攻击力。",
+        "golden": "<b>圣盾</b>\n在一个友方随从失去<b>圣盾</b>后，获得+4攻击力。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": [
+        "divine_shield"
+      ]
+    },
+    {
+      "normal_id": "BGS_017",
+      "name_zh": "族群领袖",
+      "golden_id": "TB_BaconUps_086",
+      "family": "trigger_summoned_buff",
+      "event": "friendly_beast_summoned",
+      "event_tribe": "BEAST",
+      "target": {
+        "scope": "event_subject",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 3,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 6,
+        "health": 0,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "每当你召唤一个野兽，使其获得+3\n攻击力。",
+        "golden": "每当你召唤一个野兽，使其获得+6\n攻击力。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    },
+    {
+      "normal_id": "BGS_021",
+      "name_zh": "熊妈妈",
+      "golden_id": "TB_BaconUps_090",
+      "family": "trigger_summoned_buff",
+      "event": "friendly_beast_summoned",
+      "event_tribe": "BEAST",
+      "target": {
+        "scope": "event_subject",
+        "tribe": null,
+        "keyword": null
+      },
+      "normal_effect": {
+        "attack": 5,
+        "health": 5,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "golden_effect": {
+        "attack": 10,
+        "health": 10,
+        "grant_taunt": false,
+        "hero_damage": 0
+      },
+      "client_text_zh": {
+        "normal": "每当你召唤一个野兽，使其获得+5/+5。",
+        "golden": "每当你召唤一个野兽，使其获得+10/+10。"
+      },
+      "evidence": {
+        "numeric_and_target": "H04_client_cardface_direct",
+        "event_routing": "reference_rule"
+      },
+      "static_keywords": []
+    }
+  ],
+  "vectors": [
+    {
+      "id": "EN-UNG_073-N",
+      "normal_id": "UNG_073",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 1,
+            "health": 1,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-UNG_073-G",
+      "normal_id": "UNG_073",
+      "form": "golden",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-BGS_001-N",
+      "normal_id": "BGS_001",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-BGS_001-G",
+      "normal_id": "BGS_001",
+      "form": "golden",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 4,
+            "health": 4,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-GVG_055-N",
+      "normal_id": "GVG_055",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-GVG_055-G",
+      "normal_id": "GVG_055",
+      "form": "golden",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 4,
+            "health": 4,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-DS1_070-N",
+      "normal_id": "DS1_070",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": true
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-DS1_070-G",
+      "normal_id": "DS1_070",
+      "form": "golden",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 4,
+            "health": 4,
+            "grant_taunt": true
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-CFM_816-N",
+      "normal_id": "CFM_816",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-CFM_816-G",
+      "normal_id": "CFM_816",
+      "form": "golden",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 4,
+            "health": 4,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-GVG_048-N",
+      "normal_id": "GVG_048",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-GVG_048-G",
+      "normal_id": "GVG_048",
+      "form": "golden",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 4,
+            "health": 0,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 4,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_103-N",
+      "normal_id": "EX1_103",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 0,
+            "health": 2,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 0,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_103-G",
+      "normal_id": "EX1_103",
+      "form": "golden",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 0,
+            "health": 4,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 0,
+            "health": 4,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-CFM_610-N",
+      "normal_id": "CFM_610",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 1,
+            "health": 1,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 1,
+            "health": 1,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-CFM_610-G",
+      "normal_id": "CFM_610",
+      "form": "golden",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-ICC_807-N",
+      "normal_id": "ICC_807",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": true
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": true
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-ICC_807-G",
+      "normal_id": "ICC_807",
+      "form": "golden",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": true
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": true
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 4,
+            "health": 4,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 4,
+            "health": 4,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_093-N",
+      "normal_id": "EX1_093",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 1,
+            "health": 1,
+            "grant_taunt": true
+          },
+          "right": {
+            "attack": 1,
+            "health": 1,
+            "grant_taunt": true
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_093-G",
+      "normal_id": "EX1_093",
+      "form": "golden",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": true
+          },
+          "right": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": true
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_162-N",
+      "normal_id": "EX1_162",
+      "form": "normal",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 1,
+            "health": 0,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 1,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_162-G",
+      "normal_id": "EX1_162",
+      "form": "golden",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_507-N",
+      "normal_id": "EX1_507",
+      "form": "normal",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_507-G",
+      "normal_id": "EX1_507",
+      "form": "golden",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 4,
+            "health": 0,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 4,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_185-N",
+      "normal_id": "EX1_185",
+      "form": "normal",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 1,
+            "health": 0,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 1,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": [
+          "taunt"
+        ]
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_185-G",
+      "normal_id": "EX1_185",
+      "form": "golden",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": [
+          "taunt"
+        ]
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-ULD_179-N",
+      "normal_id": "ULD_179",
+      "form": "normal",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": true
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": true
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-ULD_179-G",
+      "normal_id": "ULD_179",
+      "form": "golden",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": true
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": true
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 4,
+            "health": 0,
+            "grant_taunt": false
+          },
+          "right": {
+            "attack": 4,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-AT_121-N",
+      "normal_id": "AT_121",
+      "form": "normal",
+      "input": {
+        "event": "friendly_battlecry_played",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 1,
+            "health": 1,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-AT_121-G",
+      "normal_id": "AT_121",
+      "form": "golden",
+      "input": {
+        "event": "friendly_battlecry_played",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-BGS_027-N",
+      "normal_id": "BGS_027",
+      "form": "normal",
+      "input": {
+        "event": "recruit_turn_start",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 1,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-BGS_027-G",
+      "normal_id": "BGS_027",
+      "form": "golden",
+      "input": {
+        "event": "recruit_turn_start",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_509-N",
+      "normal_id": "EX1_509",
+      "form": "normal",
+      "input": {
+        "event": "friendly_murloc_summoned",
+        "event_tribe": "MURLOC",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 1,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_509-G",
+      "normal_id": "EX1_509",
+      "form": "golden",
+      "input": {
+        "event": "friendly_murloc_summoned",
+        "event_tribe": "MURLOC",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-BGS_004-N",
+      "normal_id": "BGS_004",
+      "form": "normal",
+      "input": {
+        "event": "friendly_demon_played",
+        "event_tribe": "DEMON",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 29,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-BGS_004-G",
+      "normal_id": "BGS_004",
+      "form": "golden",
+      "input": {
+        "event": "friendly_demon_played",
+        "event_tribe": "DEMON",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 4,
+            "health": 4,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 29,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-GIL_655-N",
+      "normal_id": "GIL_655",
+      "form": "normal",
+      "input": {
+        "event": "friendly_minion_attack_completed",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 1,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-GIL_655-G",
+      "normal_id": "GIL_655",
+      "form": "golden",
+      "input": {
+        "event": "friendly_minion_attack_completed",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-GVG_106-N",
+      "normal_id": "GVG_106",
+      "form": "normal",
+      "input": {
+        "event": "friendly_mech_died",
+        "event_tribe": "MECHANICAL",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 2,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-GVG_106-G",
+      "normal_id": "GVG_106",
+      "form": "golden",
+      "input": {
+        "event": "friendly_mech_died",
+        "event_tribe": "MECHANICAL",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 4,
+            "health": 4,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_531-N",
+      "normal_id": "EX1_531",
+      "form": "normal",
+      "input": {
+        "event": "friendly_beast_died",
+        "event_tribe": "BEAST",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 2,
+            "health": 1,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_531-G",
+      "normal_id": "EX1_531",
+      "form": "golden",
+      "input": {
+        "event": "friendly_beast_died",
+        "event_tribe": "BEAST",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 4,
+            "health": 2,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-ICC_858-N",
+      "normal_id": "ICC_858",
+      "form": "normal",
+      "input": {
+        "event": "friendly_divine_shield_lost",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 2,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": [
+          "divine_shield"
+        ]
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-ICC_858-G",
+      "normal_id": "ICC_858",
+      "form": "golden",
+      "input": {
+        "event": "friendly_divine_shield_lost",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "source": {
+            "attack": 4,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": [
+          "divine_shield"
+        ]
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-BGS_017-N",
+      "normal_id": "BGS_017",
+      "form": "normal",
+      "input": {
+        "event": "friendly_beast_summoned",
+        "event_tribe": "BEAST",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 3,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-BGS_017-G",
+      "normal_id": "BGS_017",
+      "form": "golden",
+      "input": {
+        "event": "friendly_beast_summoned",
+        "event_tribe": "BEAST",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 6,
+            "health": 0,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-BGS_021-N",
+      "normal_id": "BGS_021",
+      "form": "normal",
+      "input": {
+        "event": "friendly_beast_summoned",
+        "event_tribe": "BEAST",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 5,
+            "health": 5,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-BGS_021-G",
+      "normal_id": "BGS_021",
+      "form": "golden",
+      "input": {
+        "event": "friendly_beast_summoned",
+        "event_tribe": "BEAST",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {
+          "left": {
+            "attack": 10,
+            "health": 10,
+            "grant_taunt": false
+          }
+        },
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "client_text_values_with_reference_event_routing"
+    },
+    {
+      "id": "EN-EX1_162-AURA-REMOVED",
+      "normal_id": "EX1_162",
+      "form": "normal",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": false,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {},
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "reference_negative_guard"
+    },
+    {
+      "id": "EN-EX1_507-AURA-REMOVED",
+      "normal_id": "EX1_507",
+      "form": "normal",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": false,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {},
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "reference_negative_guard"
+    },
+    {
+      "id": "EN-EX1_185-AURA-REMOVED",
+      "normal_id": "EX1_185",
+      "form": "normal",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": false,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {},
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "reference_negative_guard"
+    },
+    {
+      "id": "EN-ULD_179-AURA-REMOVED",
+      "normal_id": "ULD_179",
+      "form": "normal",
+      "input": {
+        "event": "aura_recompute",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": true
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": true
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": false,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {},
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "reference_negative_guard"
+    },
+    {
+      "id": "EN-UNG_073-BUY",
+      "normal_id": "UNG_073",
+      "form": "normal",
+      "input": {
+        "event": "buy",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {},
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "reference_negative_guard"
+    },
+    {
+      "id": "EN-UNG_073-INVALID-TARGET",
+      "normal_id": "UNG_073",
+      "form": "normal",
+      "input": {
+        "event": "play_from_hand",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MURLOC",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "decoy",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "grade": "reference_negative_guard",
+      "expected_error": "invalid_target"
+    },
+    {
+      "id": "EN-BGS_004-NON-DEMON",
+      "normal_id": "BGS_004",
+      "form": "golden",
+      "input": {
+        "event": "friendly_demon_played",
+        "event_tribe": "BEAST",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "DEMON",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {},
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "reference_negative_guard"
+    },
+    {
+      "id": "EN-GVG_106-NON-MECH",
+      "normal_id": "GVG_106",
+      "form": "golden",
+      "input": {
+        "event": "friendly_mech_died",
+        "event_tribe": "BEAST",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "MECHANICAL",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {},
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "reference_negative_guard"
+    },
+    {
+      "id": "EN-BGS_017-NON-BEAST",
+      "normal_id": "BGS_017",
+      "form": "golden",
+      "input": {
+        "event": "friendly_beast_summoned",
+        "event_tribe": "MECHANICAL",
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {},
+        "hero_health": 30,
+        "source_keywords": []
+      },
+      "grade": "reference_negative_guard"
+    },
+    {
+      "id": "EN-ICC_858-ENEMY-SHIELD",
+      "normal_id": "ICC_858",
+      "form": "golden",
+      "input": {
+        "event": "enemy_divine_shield_lost",
+        "event_tribe": null,
+        "board": [
+          {
+            "id": "left",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "source",
+            "tribe": "NONE",
+            "taunt": false
+          },
+          {
+            "id": "right",
+            "tribe": "BEAST",
+            "taunt": false
+          },
+          {
+            "id": "decoy",
+            "tribe": "NONE",
+            "taunt": false
+          }
+        ],
+        "selected_id": "left",
+        "event_subject_id": "left",
+        "source_present": true,
+        "hero_health": 30
+      },
+      "expected": {
+        "buffs": {},
+        "hero_health": 30,
+        "source_keywords": [
+          "divine_shield"
+        ]
+      },
+      "grade": "reference_negative_guard"
+    }
+  ],
+  "deferred": {
+    "random_or_discover": [
+      "OG_221",
+      "BGS_025",
+      "BOT_606",
+      "KAR_095",
+      "BGS_023",
+      "BGS_029",
+      "BGS_002",
+      "UNG_037",
+      "GVG_027",
+      "KAR_702",
+      "BGS_024",
+      "BGS_020",
+      "BGS_009",
+      "BGS_031",
+      "BGS_008",
+      "BGS_006"
+    ]
+  },
+  "partial_shells": {
+    "random_or_discover_file": "historical-random-effect-shells.json",
+    "status": "trigger_and_quantity_only"
+  },
+  "typed_elsewhere": {
+    "composite_lifecycle": [
+      "OG_256",
+      "BGS_018",
+      "DAL_575",
+      "FP1_031",
+      "LOE_077",
+      "EX1_062",
+      "BGS_028",
+      "BGS_010",
+      "BOT_911",
+      "TRL_232",
+      "GVG_021",
+      "OG_300",
+      "BGS_012"
+    ],
+    "fixed_token_or_capacity": [
+      "CFM_315",
+      "BOT_445",
+      "EX1_506",
+      "KAR_005",
+      "EX1_556",
+      "OG_216",
+      "BOT_312",
+      "EX1_577",
+      "BOT_537",
+      "UNG_010",
+      "EX1_534",
+      "LOOT_368",
+      "CFM_316",
+      "BRM_006",
+      "BOT_218"
+    ],
+    "file": "historical-fixed-token-nodes.json",
+    "composite_file": "historical-composite-nodes.json"
+  }
+}

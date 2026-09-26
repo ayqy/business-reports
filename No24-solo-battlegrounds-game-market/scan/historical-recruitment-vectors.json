@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "historical_status": "reference_only_not_exact_replay",
+  "missing_golden_form_ids": [
+    "ICC_038", "CS2_065", "LOOT_013", "GIL_681", "GVG_085", "GVG_058",
+    "GVG_062", "OG_145", "LOOT_078", "DAL_077", "GVG_113", "BGS_022", "FP1_010"
+  ],
+  "cases": [
+    {
+      "id": "RT-01", "grade": "reference_only", "purpose": "three-coin buy transfers a real offer to hand",
+      "initial": {"shop": [{"instance_id": "s1", "card_id": "ICC_038", "frozen": false}]},
+      "action": {"op": "buy", "instance_id": "s1"},
+      "expect_state": {"coins": 0, "hand_ids": ["s1"], "shop_ids": [], "hand_cards": [{"normal_id": "ICC_038", "golden": false}]},
+      "expect_events": ["buy"]
+    },
+    {
+      "id": "RT-02", "grade": "reference_only", "purpose": "cannot buy without three coins",
+      "initial": {"coins": 2, "shop": [{"instance_id": "s1", "card_id": "ICC_038", "frozen": false}]},
+      "action": {"op": "buy", "instance_id": "s1"}, "error": "insufficient_coins"
+    },
+    {
+      "id": "RT-03", "grade": "reference_only", "purpose": "full hand rejects a buy atomically",
+      "initial": {"hand": [
+        {"instance_id": "h1", "normal_id": "ICC_038"}, {"instance_id": "h2", "normal_id": "CFM_315"},
+        {"instance_id": "h3", "normal_id": "CS2_065"}, {"instance_id": "h4", "normal_id": "BOT_445"},
+        {"instance_id": "h5", "normal_id": "EX1_509"}, {"instance_id": "h6", "normal_id": "OG_221"},
+        {"instance_id": "h7", "normal_id": "EX1_162"}, {"instance_id": "h8", "normal_id": "LOOT_013"},
+        {"instance_id": "h9", "normal_id": "BGS_027"}, {"instance_id": "h10", "normal_id": "EX1_506"}
+      ], "shop": [{"instance_id": "s1", "card_id": "ICC_038", "frozen": false}]},
+      "action": {"op": "buy", "instance_id": "s1"}, "error": "hand_full"
+    },
+    {
+      "id": "RT-04", "grade": "reference_only", "purpose": "sell board unit for one coin",
+      "initial": {"coins": 3, "board": [{"instance_id": "b1", "normal_id": "ICC_038"}]},
+      "action": {"op": "sell", "instance_id": "b1"},
+      "expect_state": {"coins": 4, "board_ids": []}, "expect_events": ["sell"]
+    },
+    {
+      "id": "RT-05", "grade": "reference_only", "purpose": "selling a hand card is rejected",
+      "initial": {"hand": [{"instance_id": "h1", "normal_id": "ICC_038"}]},
+      "action": {"op": "sell", "instance_id": "h1"}, "error": "board_item_missing"
+    },
+    {
+      "id": "RT-06", "grade": "reference_only", "purpose": "reference sale cap is ten",
+      "initial": {"coins": 10, "board": [{"instance_id": "b1", "normal_id": "ICC_038"}]},
+      "action": {"op": "sell", "instance_id": "b1"},
+      "expect_state": {"coins": 10, "board_ids": []}, "expect_events": ["sell"]
+    },
+    {
+      "id": "RT-07", "grade": "reference_only", "purpose": "refresh charges one and fills three tier-one slots",
+      "initial": {"shop": [{"instance_id": "old", "card_id": "ICC_038", "frozen": false}]},
+      "action": {"op": "refresh", "offers": [
+        {"instance_id": "n1", "card_id": "CFM_315"}, {"instance_id": "n2", "card_id": "BOT_445"},
+        {"instance_id": "n3", "card_id": "CS2_065"}]},
+      "expect_state": {"coins": 2, "shop_ids": ["n1", "n2", "n3"], "frozen_ids": []},
+      "expect_events": ["refresh"]
+    },
+    {
+      "id": "RT-08", "grade": "reference_only", "purpose": "reference refresh retains frozen offer and refills all other slots",
+      "initial": {"coins": 1, "shop": [
+        {"instance_id": "f1", "card_id": "ICC_038", "frozen": true},
+        {"instance_id": "u1", "card_id": "CFM_315", "frozen": false}]},
+      "action": {"op": "refresh", "offers": [
+        {"instance_id": "n1", "card_id": "BOT_445"}, {"instance_id": "n2", "card_id": "CS2_065"}]},
+      "expect_state": {"coins": 0, "shop_ids": ["f1", "n1", "n2"], "frozen_ids": ["f1"]},
+      "expect_events": ["refresh"], "expect_event_details": [{"retained": ["f1"]}]
+    },
+    {
+      "id": "RT-09", "grade": "reference_only", "purpose": "failed refresh does not consume injected offers",
+      "initial": {"coins": 0, "shop": [{"instance_id": "old", "card_id": "ICC_038", "frozen": false}]},
+      "action": {"op": "refresh", "offers": [
+        {"instance_id": "n1", "card_id": "CFM_315"}, {"instance_id": "n2", "card_id": "BOT_445"},
+        {"instance_id": "n3", "card_id": "CS2_065"}]}, "error": "insufficient_coins"
+    },
+    {
+      "id": "RT-10", "grade": "reference_only", "purpose": "refresh requires exactly the missing slot count",
+      "action": {"op": "refresh", "offers": [{"instance_id": "n1", "card_id": "CFM_315"}]},
+      "error": "wrong_offer_count"
+    },
+    {
+      "id": "RT-11", "grade": "reference_only", "purpose": "free freeze marks all displayed offers",
+      "initial": {"shop": [
+        {"instance_id": "s1", "card_id": "ICC_038", "frozen": false},
+        {"instance_id": "s2", "card_id": "CFM_315", "frozen": false}]},
+      "action": {"op": "freeze"},
+      "expect_state": {"coins": 3, "frozen_ids": ["s1", "s2"]}, "expect_events": ["freeze"]
+    },
+    {
+      "id": "RT-12", "grade": "reference_only", "purpose": "free second toggle unfreezes all offers",
+      "initial": {"shop": [{"instance_id": "s1", "card_id": "ICC_038", "frozen": true}]},
+      "action": {"op": "freeze"},
+      "expect_state": {"coins": 3, "frozen_ids": []}, "expect_events": ["freeze"]
+    },
+    {
+      "id": "RT-13", "grade": "reference_only", "purpose": "client base upgrade cost is five and existing shop stays visible",
+      "initial": {"coins": 5, "shop": [{"instance_id": "s1", "card_id": "ICC_038", "frozen": false}]},
+      "action": {"op": "upgrade"},
+      "expect_state": {"coins": 0, "tier": 2, "shop_ids": ["s1"], "upgraded_this_round": true},
+      "expect_events": ["upgrade"], "expect_event_details": [{"target_tier": 2, "paid": 5}]
+    },
+    {
+      "id": "RT-14", "grade": "reference_only", "purpose": "skipped-round and hero reductions use explicit reference formula",
+      "initial": {"tier": 2, "coins": 5, "skipped_rounds": 2, "hero_discount": 1},
+      "action": {"op": "upgrade"},
+      "expect_state": {"coins": 1, "tier": 3, "skipped_rounds": 0, "hero_discount": 0},
+      "expect_events": ["upgrade"], "expect_event_details": [{"paid": 4}]
+    },
+    {
+      "id": "RT-15", "grade": "reference_only", "purpose": "upgrade rejects insufficient funds",
+      "action": {"op": "upgrade"}, "error": "insufficient_coins"
+    },
+    {
+      "id": "RT-16", "grade": "reference_only", "purpose": "tier six is the ceiling",
+      "initial": {"tier": 6}, "action": {"op": "upgrade"}, "error": "tier_cap"
+    },
+    {
+      "id": "RT-17", "grade": "reference_only", "purpose": "cross-zone triple merges permanent deltas and returns golden to hand",
+      "initial": {"board": [{"instance_id": "a", "normal_id": "ICC_038", "buff_attack": 1,
+                               "attachments": ["mag-a"]}],
+                  "hand": [{"instance_id": "b", "normal_id": "ICC_038", "buff_health": 2},
+                           {"instance_id": "c", "normal_id": "ICC_038", "buff_attack": 2,
+                            "buff_health": 1, "attachments": ["mag-c"]}]},
+      "action": {"op": "resolve_triple", "card_id": "ICC_038"},
+      "expect_state": {"board_ids": [], "hand_ids": ["ref-1"], "serial": 2,
+                       "pending_target_tiers": [], "hand_cards": [{
+                         "normal_id": "ICC_038", "golden": true,
+                         "golden_form_key": "reference:ICC_038:golden", "attack": 5,
+                         "health": 5, "buff_attack": 3, "buff_health": 3,
+                         "attachments": ["mag-a", "mag-c"], "reward_pending": true}]},
+      "expect_events": ["triple"], "expect_event_details": [{"consumed": ["a", "b", "c"]}]
+    },
+    {
+      "id": "RT-18", "grade": "reference_only", "purpose": "two copies do not synthesize a golden",
+      "initial": {"hand": [{"instance_id": "a", "normal_id": "ICC_038"},
+                           {"instance_id": "b", "normal_id": "ICC_038"}]},
+      "action": {"op": "resolve_triple", "card_id": "ICC_038"},
+      "error": "triple_missing_copies"
+    },
+    {
+      "id": "RT-19", "grade": "reference_only", "purpose": "buying third copy automatically synthesizes exactly one golden",
+      "initial": {"hand": [{"instance_id": "a", "normal_id": "ICC_038"}],
+                  "board": [{"instance_id": "b", "normal_id": "ICC_038"}],
+                  "shop": [{"instance_id": "c", "card_id": "ICC_038", "frozen": false}]},
+      "action": {"op": "buy", "instance_id": "c"},
+      "expect_state": {"coins": 0, "board_ids": [], "hand_ids": ["ref-1"],
+                       "shop_ids": [], "pending_target_tiers": []},
+      "expect_events": ["buy", "triple"]
+    },
+    {
+      "id": "RT-20", "grade": "reference_only", "purpose": "playing golden at tier six queues one capped discovery",
+      "initial": {"tier": 6, "hand": [{"instance_id": "g1", "normal_id": "ICC_038",
+                                           "golden": true, "reward_pending": true}]},
+      "action": {"op": "play", "instance_id": "g1"},
+      "expect_state": {"board_ids": ["g1"], "hand_ids": [], "pending_target_tiers": [6],
+                       "board_cards": [{"reward_pending": false}]},
+      "expect_events": ["play", "queue_discover"]
+    },
+    {
+      "id": "RT-21", "grade": "reference_only", "purpose": "three injected same-tier discovery options yield chosen minion",
+      "initial": {"tier": 2, "pending_rewards": [{"source_instance_id": "g1", "target_tier": 3}]},
+      "action": {"op": "triple_discover", "options": ["AT_121", "OG_216", "BRM_006"],
+                 "chosen": "OG_216"},
+      "expect_state": {"hand_ids": ["ref-1"], "pending_target_tiers": [],
+                       "hand_cards": [{"normal_id": "OG_216", "golden": false}]},
+      "expect_events": ["discover"]
+    },
+    {
+      "id": "RT-22", "grade": "reference_only", "purpose": "discovery rejects an option of the wrong tier",
+      "initial": {"tier": 2, "pending_rewards": [{"source_instance_id": "g1", "target_tier": 3}]},
+      "action": {"op": "triple_discover", "options": ["AT_121", "OG_216", "ICC_038"],
+                 "chosen": "OG_216"}, "error": "invalid_discover_candidate"
+    },
+    {
+      "id": "RT-23", "grade": "reference_only", "purpose": "discovery rejects duplicate option definitions",
+      "initial": {"pending_rewards": [{"source_instance_id": "g1", "target_tier": 2}]},
+      "action": {"op": "triple_discover", "options": ["OG_256", "OG_256", "KAR_005"],
+                 "chosen": "OG_256"}, "error": "invalid_discover_options"
+    },
+    {
+      "id": "RT-24", "grade": "reference_only", "purpose": "choice must be among supplied discovery options",
+      "initial": {"pending_rewards": [{"source_instance_id": "g1", "target_tier": 2}]},
+      "action": {"op": "triple_discover", "options": ["OG_256", "KAR_005", "BGS_001"],
+                 "chosen": "BGS_028"}, "error": "choice_not_offered"
+    },
+    {
+      "id": "RT-25", "grade": "reference_only", "purpose": "frozen offer survives one new round and loses frozen mark",
+      "initial": {"shop": [{"instance_id": "f1", "card_id": "ICC_038", "frozen": true}]},
+      "action": {"op": "advance_round", "offers": [
+        {"instance_id": "n1", "card_id": "CFM_315"}, {"instance_id": "n2", "card_id": "BOT_445"}]},
+      "expect_state": {"round": 2, "coins": 4, "skipped_rounds": 1,
+                       "shop_ids": ["f1", "n1", "n2"], "frozen_ids": []},
+      "expect_events": ["advance_round"]
+    },
+    {
+      "id": "RT-26", "grade": "reference_only", "purpose": "an upgrade this round prevents skipped-round increment",
+      "initial": {"tier": 2, "coins": 0, "upgraded_this_round": true},
+      "action": {"op": "advance_round", "offers": [
+        {"instance_id": "n1", "card_id": "CFM_315"}, {"instance_id": "n2", "card_id": "BOT_445"},
+        {"instance_id": "n3", "card_id": "CS2_065"}, {"instance_id": "n4", "card_id": "OG_256"}]},
+      "expect_state": {"round": 2, "coins": 4, "tier": 2,
+                       "skipped_rounds": 0, "upgraded_this_round": false},
+      "expect_events": ["advance_round"]
+    },
+    {
+      "id": "RT-27", "grade": "reference_only", "purpose": "playing into a seven-unit board is rejected",
+      "initial": {"hand": [{"instance_id": "h", "normal_id": "ICC_038"}], "board": [
+        {"instance_id": "b1", "normal_id": "ICC_038"}, {"instance_id": "b2", "normal_id": "CFM_315"},
+        {"instance_id": "b3", "normal_id": "CS2_065"}, {"instance_id": "b4", "normal_id": "BOT_445"},
+        {"instance_id": "b5", "normal_id": "EX1_509"}, {"instance_id": "b6", "normal_id": "OG_221"},
+        {"instance_id": "b7", "normal_id": "EX1_162"}]},
+      "action": {"op": "play", "instance_id": "h"}, "error": "board_full"
+    },
+    {
+      "id": "RT-28", "grade": "reference_only", "purpose": "recruit play inserts at selected combat position",
+      "initial": {"hand": [{"instance_id": "h", "normal_id": "ICC_038"}],
+                  "board": [{"instance_id": "b", "normal_id": "CFM_315"}]},
+      "action": {"op": "play", "instance_id": "h", "position": 0},
+      "expect_state": {"hand_ids": [], "board_ids": ["h", "b"], "pending_target_tiers": []},
+      "expect_events": ["play"]
+    },
+    {
+      "id": "RT-29", "grade": "reference_only", "purpose": "injected shop offer above tavern tier is rejected",
+      "action": {"op": "refresh", "offers": [
+        {"instance_id": "n1", "card_id": "CFM_315"}, {"instance_id": "n2", "card_id": "BOT_445"},
+        {"instance_id": "n3", "card_id": "OG_256"}]}, "error": "offer_above_tier"
+    },
+    {
+      "id": "RT-30", "grade": "reference_only", "purpose": "frozen middle slot preserves visible position",
+      "initial": {"shop": [
+        {"instance_id": "u1", "card_id": "ICC_038", "frozen": false, "slot": 0},
+        {"instance_id": "f1", "card_id": "CFM_315", "frozen": true, "slot": 1},
+        {"instance_id": "u2", "card_id": "CS2_065", "frozen": false, "slot": 2}]},
+      "action": {"op": "refresh", "offers": [
+        {"instance_id": "n1", "card_id": "BOT_445"},
+        {"instance_id": "n2", "card_id": "EX1_509"}]},
+      "expect_state": {"coins": 2, "shop_ids": ["n1", "f1", "n2"],
+                       "frozen_ids": ["f1"]}, "expect_events": ["refresh"]
+    },
+    {
+      "id": "RT-31", "grade": "reference_only", "purpose": "independent golden client entity is used when present",
+      "initial": {"hand": [{"instance_id": "a", "normal_id": "CFM_315"},
+                           {"instance_id": "b", "normal_id": "CFM_315"},
+                           {"instance_id": "c", "normal_id": "CFM_315"}]},
+      "action": {"op": "resolve_triple", "card_id": "CFM_315"},
+      "expect_state": {"hand_ids": ["ref-1"], "hand_cards": [{
+        "normal_id": "CFM_315", "golden": true,
+        "golden_form_key": "TB_BaconUps_093", "golden_evidence": "client_35747"}]},
+      "expect_events": ["triple"]
+    },
+    {
+      "id": "RT-32", "grade": "reference_only", "purpose": "chosen discovery card may create a third copy in hand",
+      "initial": {"hand": [{"instance_id": "a", "normal_id": "OG_256"},
+                           {"instance_id": "b", "normal_id": "OG_256"}],
+                  "pending_rewards": [{"source_instance_id": "g1", "target_tier": 2}]},
+      "action": {"op": "triple_discover", "options": ["OG_256", "KAR_005", "BGS_001"],
+                 "chosen": "OG_256"},
+      "expect_state": {"hand_ids": ["ref-2"], "serial": 3,
+                       "pending_target_tiers": [], "hand_cards": [{"golden": true,
+                         "normal_id": "OG_256", "reward_pending": true}]},
+      "expect_events": ["discover", "triple"]
+    }
+  ]
+}

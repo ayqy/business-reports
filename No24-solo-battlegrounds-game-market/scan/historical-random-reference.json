@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "unverified": true,
+  "evidence_grade": "reference_design_not_original_server_behavior",
+  "sources": {
+    "card_faces": "historical-random-effect-shells.json; H04 client build 35747",
+    "carddefs_sha256": "2ac3bec61c4c9efdcab2923a47b3fa2127a23c08d758debb384f68753fb0079a",
+    "simulator_commit": "ec2733704590c4de8c02ad7488d7fabe5a779506",
+    "simulator_minion_info_sha256": "dad5b477e705ec2cf9da951a885312a047a427cdf6cc2cf931fc0e67c14a8b58",
+    "simulator_pools": "historical-community-simulator-pools.json; H09 third-party simulator, no declared game build",
+    "shop_rows": "historical-card-pool.json; H03/H04 81-card study inventory",
+    "adapt_entities": "H04 CardDefs.xml build 35747; option texts and IDs only, not an original offer table"
+  },
+  "candidate_sets": {
+    "original_cost_1": "H09 simulator explicit array (9), not server-verified",
+    "original_cost_2": "H09 simulator explicit array (10), not server-verified",
+    "original_cost_4": "H09 simulator explicit array (14), not server-verified",
+    "deathrattle_candidates": "H09 simulator explicit array (22), not server-verified",
+    "legendary_candidates": "H09 simulator explicit array (12), not server-verified",
+    "zerus_transform": "reference: 81 study shop rows except BGS_029 itself (80)",
+    "discover_murloc": "reference: 81 study shop rows whose client_race is MURLOC or ALL (9); includes GIL_681",
+    "adapt": "reference: ten build-35747 option entities below; offer eligibility unverified"
+  },
+  "reference_decisions": {
+    "draw_contract": "caller supplies an independent uniform integer in [0,candidate_count) for every actual draw; vectors inject indexes; no draw for empty candidates or full board",
+    "reference_weight_policy": "uniform per eligible instance or card ID; original server weights are unknown",
+    "input_board": "friendly/enemy are the current board after trigger removal; if the source remains in friendly, caller supplies source_id for other-than-source filtering",
+    "pool_stock": "independent of shop stock; summon draws with replacement; all generated minions are combat-only",
+    "summon_order": "one request at a time until seven slots fill; requests count remains card-face count even when fewer are placed",
+    "board_random_target": "uniform among current eligible instances, re-evaluated after each local action",
+    "shield_eligibility": "Selfless Hero skips instances already bearing Divine Shield; this is a reference choice, not original evidence",
+    "damage": "single-event reference damage consumes Divine Shield or reduces health and removes a dead target before the next hit; other queued death effects are outside this resolver",
+    "tribe_overlap": "card-face tribe order; each tribe independently samples once, so an ALL instance may receive several buffs",
+    "iron_sensei": "leftmost other friendly MECHANICAL or ALL instance; the card face does not say random",
+    "zerus": "caller emits held_round_tick while card is in hand; random replacement preserves normal/golden form, excluding BGS_029 itself",
+    "discover": "three distinct options per offer from MURLOC-or-ALL rows, independent offers for golden form, caller chooses an option; full hand still exposes choice but cannot acquire",
+    "adapt": "three distinct options per offer from ten listed client entities; golden makes two independent offers and may repeat an option between offers; both choices apply to one initial friendly MURLOC-or-ALL snapshot",
+    "empty_candidates": "skip that local request, without drawing or silently choosing another pool",
+    "simultaneous_deaths": "fail closed; no historical or reference ordering asserted for a batch"
+  },
+  "adapt_option_defs": {
+    "UNG_999t2": {"name_zh":"活性孢子","effect":{"kind":"deathrattle_summon","card_id":"UNG_999t2t1","count":2}},
+    "UNG_999t3": {"name_zh":"烈焰利爪","effect":{"kind":"stat_buff","attack":3,"health":0}},
+    "UNG_999t4": {"name_zh":"岩质甲壳","effect":{"kind":"stat_buff","attack":0,"health":3}},
+    "UNG_999t5": {"name_zh":"液态外膜","effect":{"kind":"untargetable_by_spell_or_hero_power"}},
+    "UNG_999t6": {"name_zh":"巨型体态","effect":{"kind":"grant_keyword","keyword":"TAUNT"}},
+    "UNG_999t7": {"name_zh":"闪电之速","effect":{"kind":"grant_keyword","keyword":"WINDFURY"}},
+    "UNG_999t8": {"name_zh":"爆裂护盾","effect":{"kind":"grant_keyword","keyword":"DIVINE_SHIELD"}},
+    "UNG_999t10": {"name_zh":"氤氲迷雾","effect":{"kind":"grant_keyword_until_next_turn","keyword":"STEALTH"}},
+    "UNG_999t13": {"name_zh":"毒液喷吐","effect":{"kind":"grant_keyword","keyword":"POISONOUS"}},
+    "UNG_999t14": {"name_zh":"火山之力","effect":{"kind":"stat_buff","attack":1,"health":1}}
+  },
+  "adapt_option_ids": ["UNG_999t2","UNG_999t3","UNG_999t4","UNG_999t5","UNG_999t6","UNG_999t7","UNG_999t8","UNG_999t10","UNG_999t13","UNG_999t14"],
+  "historical_unknown": {
+    "dynamic_pool_eligibility":"unknown", "dynamic_pool_weights":"unknown", "board_target_selection":"unknown",
+    "multi_tribe_overlap_resolution":"unknown", "repeated_damage_target_reselection":"unknown", "discover_options":"unknown",
+    "adapt_options":"unknown", "zerus_transform_pool_and_tick_phase":"unknown", "simultaneous_death_event_order":"unknown"
+  },
+  "node_policies": {
+    "OG_221":{"kind":"grant_divine_shield","candidate_source":"friendly_board","selector":"uniform_index"},
+    "BGS_025":{"kind":"summon_original_cost","candidate_source":"original_cost_1","selector":"uniform_index"},
+    "BOT_606":{"kind":"damage_enemy","candidate_source":"enemy_board","selector":"uniform_index"},
+    "KAR_095":{"kind":"buff_each_tribe","candidate_source":"friendly_board","selector":"uniform_index_each_tribe"},
+    "BGS_023":{"kind":"summon_original_cost","candidate_source":"original_cost_2","selector":"uniform_index"},
+    "BGS_029":{"kind":"transform_in_hand","candidate_source":"zerus_transform","selector":"uniform_index"},
+    "BGS_002":{"kind":"damage_enemy","candidate_source":"enemy_board","selector":"uniform_index"},
+    "UNG_037":{"kind":"buff_one_friendly","candidate_source":"friendly_board","selector":"uniform_index"},
+    "GVG_027":{"kind":"buff_other_mech","candidate_source":"friendly_board","selector":"leftmost"},
+    "KAR_702":{"kind":"buff_each_tribe","candidate_source":"friendly_board","selector":"uniform_index_each_tribe"},
+    "BGS_024":{"kind":"summon_original_cost","candidate_source":"original_cost_4","selector":"uniform_index"},
+    "BGS_020":{"kind":"discover_murloc","candidate_source":"discover_murloc","selector":"three_distinct_options_per_offer"},
+    "BGS_009":{"kind":"buff_each_tribe","candidate_source":"friendly_board","selector":"uniform_index_each_tribe"},
+    "BGS_031":{"kind":"adapt_all_friendly_murlocs","candidate_source":"adapt","selector":"three_distinct_options_per_offer"},
+    "BGS_008":{"kind":"summon_deathrattle","candidate_source":"deathrattle_candidates","selector":"uniform_index"},
+    "BGS_006":{"kind":"summon_legendary","candidate_source":"legendary_candidates","selector":"uniform_index"}
+  },
+  "vectors_file": "historical-random-reference-vectors.json"
+}

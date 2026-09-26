@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "unverified": true,
+  "source": "H04 build-35747 normal and golden card faces, cross-checked with historical-composite-nodes.json and historical-card-pool.json",
+  "reference_order": [
+    "remove every dead unit in the current death batch and recompute surviving auras",
+    "visit dead units by left/right and original position; each dead source triggers only its own deathrattle",
+    "repeat that source's buff once, or two/three times if one surviving normal/golden friendly Baron is present",
+    "on each repetition visit currently living friendly targets in board order, then notify friendly death listeners",
+    "process any later deaths as the next bounded death batch"
+  ],
+  "historical_unknown": {
+    "simultaneous_death_priority": "unknown",
+    "deathrattle_vs_death_listener_order": "unknown",
+    "deathrattle_vs_fixed_summon_order": "unknown",
+    "baron_same_batch_survival_rule": "unknown",
+    "target_eligibility_for_same_batch_summons": "unknown",
+    "multiple_baron_resolution": "unknown"
+  },
+  "nodes": [
+    {
+      "normal_id": "OG_256",
+      "golden_id": "TB_BaconUps_025",
+      "family": "deathrattle_team_buff",
+      "trigger": "source_died",
+      "target": "friendly_survivors",
+      "normal": {"attack": 1, "health": 1},
+      "golden": {"attack": 2, "health": 2},
+      "cardface_grade": "H04_client_direct",
+      "execution_grade": "reference_only"
+    },
+    {
+      "normal_id": "BGS_018",
+      "golden_id": "TB_BaconUps_085",
+      "family": "deathrattle_team_buff",
+      "trigger": "source_died",
+      "target": "friendly_surviving_beasts",
+      "normal": {"attack": 4, "health": 4},
+      "golden": {"attack": 8, "health": 8},
+      "cardface_grade": "H04_client_direct",
+      "execution_grade": "reference_only"
+    }
+  ]
+}

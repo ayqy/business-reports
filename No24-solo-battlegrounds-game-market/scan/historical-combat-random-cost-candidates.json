@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "build": 35747,
+  "checked_date_beijing": "2026-09-26",
+  "client_source_url": "https://api.hearthstonejson.com/v1/35747/enUS/cards.json",
+  "client_sha256": "cd50550ce04b96c1ee9ab66c5825164830ba3ee18aa2dd1b69ced6b60eceb6ad",
+  "client_source_grade": "H05_build_35747_client_direct_same_extract_family_as_H04",
+  "candidate_source": "H09_community_simulator_ec2733704590c4de8c02ad7488d7fabe5a779506",
+  "candidate_grade": "community_array_only_not_original_server_eligibility",
+  "simulator_minion_info_sha256": "dad5b477e705ec2cf9da951a885312a047a427cdf6cc2cf931fc0e67c14a8b58",
+  "historical_unknown": {
+    "live_candidate_eligibility": "unknown",
+    "live_draw_weights": "unknown",
+    "live_stock_policy": "unknown",
+    "golden_source_generated_form": "unknown"
+  },
+  "pools": {
+    "original_cost_1": [
+      {
+        "id": "CFM_315",
+        "name_zh": "雄斑虎",
+        "original_mana_cost": 1,
+        "attack": 1,
+        "health": 1,
+        "race": "BEAST",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      },
+      {
+        "id": "BOT_445",
+        "name_zh": "机械袋鼠",
+        "original_mana_cost": 1,
+        "attack": 1,
+        "health": 1,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ]
+      },
+      {
+        "id": "EX1_509",
+        "name_zh": "鱼人招潮者",
+        "original_mana_cost": 1,
+        "attack": 1,
+        "health": 2,
+        "race": "MURLOC",
+        "client_mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      {
+        "id": "ICC_038",
+        "name_zh": "正义保护者",
+        "original_mana_cost": 1,
+        "attack": 1,
+        "health": 1,
+        "race": "NONE",
+        "client_mechanics": [
+          "DIVINE_SHIELD",
+          "TAUNT"
+        ]
+      },
+      {
+        "id": "OG_221",
+        "name_zh": "无私的英雄",
+        "original_mana_cost": 1,
+        "attack": 2,
+        "health": 1,
+        "race": "NONE",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ]
+      },
+      {
+        "id": "CS2_065",
+        "name_zh": "虚空行者",
+        "original_mana_cost": 1,
+        "attack": 1,
+        "health": 3,
+        "race": "DEMON",
+        "client_mechanics": [
+          "TAUNT"
+        ]
+      },
+      {
+        "id": "BGS_028",
+        "name_zh": "蹦蹦兔",
+        "original_mana_cost": 1,
+        "attack": 1,
+        "health": 1,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      },
+      {
+        "id": "BGS_029",
+        "name_zh": "百变泽鲁斯",
+        "original_mana_cost": 1,
+        "attack": 1,
+        "health": 1,
+        "race": "NONE",
+        "client_mechanics": []
+      },
+      {
+        "id": "DAL_077",
+        "name_zh": "毒鳍鱼人",
+        "original_mana_cost": 1,
+        "attack": 1,
+        "health": 2,
+        "race": "MURLOC",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      }
+    ],
+    "original_cost_2": [
+      {
+        "id": "EX1_162",
+        "name_zh": "恐狼前锋",
+        "original_mana_cost": 2,
+        "attack": 2,
+        "health": 2,
+        "race": "BEAST",
+        "client_mechanics": [
+          "ADJACENT_BUFF",
+          "AURA"
+        ]
+      },
+      {
+        "id": "BGS_027",
+        "name_zh": "微型战斗机甲",
+        "original_mana_cost": 2,
+        "attack": 1,
+        "health": 2,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      {
+        "id": "EX1_506",
+        "name_zh": "鱼人猎潮者",
+        "original_mana_cost": 2,
+        "attack": 2,
+        "health": 1,
+        "race": "MURLOC",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      },
+      {
+        "id": "UNG_073",
+        "name_zh": "石塘猎人",
+        "original_mana_cost": 2,
+        "attack": 2,
+        "health": 3,
+        "race": "MURLOC",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      },
+      {
+        "id": "LOOT_013",
+        "name_zh": "粗俗的矮劣魔",
+        "original_mana_cost": 2,
+        "attack": 2,
+        "health": 4,
+        "race": "DEMON",
+        "client_mechanics": [
+          "BATTLECRY",
+          "TAUNT"
+        ]
+      },
+      {
+        "id": "GVG_085",
+        "name_zh": "吵吵机器人",
+        "original_mana_cost": 2,
+        "attack": 1,
+        "health": 2,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DIVINE_SHIELD",
+          "TAUNT"
+        ]
+      },
+      {
+        "id": "KAR_005",
+        "name_zh": "慈祥的外婆",
+        "original_mana_cost": 2,
+        "attack": 1,
+        "health": 1,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ]
+      },
+      {
+        "id": "EX1_531",
+        "name_zh": "食腐土狼",
+        "original_mana_cost": 2,
+        "attack": 2,
+        "health": 2,
+        "race": "BEAST",
+        "client_mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      {
+        "id": "GVG_058",
+        "name_zh": "护盾机器人",
+        "original_mana_cost": 2,
+        "attack": 2,
+        "health": 2,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DIVINE_SHIELD"
+        ]
+      },
+      {
+        "id": "DAL_575",
+        "name_zh": "卡德加",
+        "original_mana_cost": 2,
+        "attack": 2,
+        "health": 2,
+        "race": "NONE",
+        "client_mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      }
+    ],
+    "original_cost_4": [
+      {
+        "id": "EX1_062",
+        "name_zh": "老瞎眼",
+        "original_mana_cost": 4,
+        "attack": 2,
+        "health": 4,
+        "race": "MURLOC",
+        "client_mechanics": [
+          "CHARGE"
+        ]
+      },
+      {
+        "id": "AT_121",
+        "name_zh": "人气选手",
+        "original_mana_cost": 4,
+        "attack": 4,
+        "health": 4,
+        "race": "NONE",
+        "client_mechanics": [
+          "TRIGGER_VISUAL"
+        ]
+      },
+      {
+        "id": "CFM_610",
+        "name_zh": "魔瘾结晶者",
+        "original_mana_cost": 4,
+        "attack": 5,
+        "health": 4,
+        "race": "NONE",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      },
+      {
+        "id": "DS1_070",
+        "name_zh": "驯兽师",
+        "original_mana_cost": 4,
+        "attack": 4,
+        "health": 3,
+        "race": "NONE",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      },
+      {
+        "id": "OG_216",
+        "name_zh": "寄生恶狼",
+        "original_mana_cost": 4,
+        "attack": 3,
+        "health": 3,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ]
+      },
+      {
+        "id": "BGS_023",
+        "name_zh": "载人收割机",
+        "original_mana_cost": 4,
+        "attack": 4,
+        "health": 3,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ]
+      },
+      {
+        "id": "BOT_312",
+        "name_zh": "量产型恐吓机",
+        "original_mana_cost": 4,
+        "attack": 3,
+        "health": 1,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE",
+          "MODULAR"
+        ]
+      },
+      {
+        "id": "GVG_055",
+        "name_zh": "废旧螺栓机甲",
+        "original_mana_cost": 4,
+        "attack": 2,
+        "health": 5,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      },
+      {
+        "id": "UNG_037",
+        "name_zh": "始祖龟执盾者",
+        "original_mana_cost": 4,
+        "attack": 2,
+        "health": 6,
+        "race": "NONE",
+        "client_mechanics": [
+          "DEATHRATTLE",
+          "TAUNT"
+        ]
+      },
+      {
+        "id": "BOT_911",
+        "name_zh": "吵吵模组",
+        "original_mana_cost": 4,
+        "attack": 2,
+        "health": 4,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DIVINE_SHIELD",
+          "MODULAR",
+          "TAUNT"
+        ]
+      },
+      {
+        "id": "EX1_093",
+        "name_zh": "阿古斯防御者",
+        "original_mana_cost": 4,
+        "attack": 2,
+        "health": 3,
+        "race": "NONE",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      },
+      {
+        "id": "FP1_031",
+        "name_zh": "瑞文戴尔男爵",
+        "original_mana_cost": 4,
+        "attack": 1,
+        "health": 7,
+        "race": "NONE",
+        "client_mechanics": [
+          "AURA"
+        ]
+      },
+      {
+        "id": "ICC_807",
+        "name_zh": "硬壳清道夫",
+        "original_mana_cost": 4,
+        "attack": 2,
+        "health": 3,
+        "race": "NONE",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      },
+      {
+        "id": "BGS_031",
+        "name_zh": "温顺的巨壳龙",
+        "original_mana_cost": 4,
+        "attack": 5,
+        "health": 4,
+        "race": "BEAST",
+        "client_mechanics": [
+          "BATTLECRY"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "build": 35747,
+  "official_launch_count": 24,
+  "client_hero_resource_count": 28,
+  "limitation": "推定首发24人由官方首发总数、同构建28个编号资源及官方11月19日四名新英雄的集合差得到；缺2019-11-05服务端开关和抽取概率直证。",
+  "rows": [
+    {
+      "hero_id": "TB_BaconShop_HERO_10",
+      "hero_name_zh": "贸易大王加里维克斯",
+      "power_id": "TB_BaconShop_HP_008",
+      "power_cost": 1,
+      "power_summary": "付1金币，把一枚可在招募阶段使用的铸币加入手牌。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_11",
+      "hero_name_zh": "炎魔之王拉格纳罗斯",
+      "power_id": "TB_BaconShop_HP_019",
+      "power_cost": 2,
+      "power_summary": "付2金币，下一场战斗开始时随机对两名敌军各造成8伤害。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_12",
+      "hero_name_zh": "鼠王",
+      "power_id": "TB_BaconShop_HP_041a",
+      "power_cost": null,
+      "power_summary": "被动：每回合轮换一个种族；买入该种族随从时给它增加1攻2生。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_14",
+      "hero_name_zh": "瓦托格尔女王",
+      "power_id": "TB_BaconShop_HP_037a",
+      "power_cost": 1,
+      "power_summary": "付1金币，四类己方单位各随机一名获得1生命。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_15",
+      "hero_name_zh": "堕落的乔治",
+      "power_id": "TB_BaconShop_HP_010",
+      "power_cost": 4,
+      "power_summary": "付4金币，指定己方随从获得圣盾。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_16",
+      "hero_name_zh": "挂机的阿凯",
+      "power_id": "TB_BaconShop_HP_044",
+      "power_cost": null,
+      "power_summary": "被动：前两轮不招募，之后拿到高等级随从；具体等级概率需复核。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_17",
+      "hero_name_zh": "米尔菲丝·法力风暴",
+      "power_id": "TB_BaconShop_HP_015",
+      "power_cost": null,
+      "power_summary": "被动：商店中的机械各获得1攻1生。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_18",
+      "hero_name_zh": "海盗帕奇斯",
+      "power_id": "TB_BaconShop_HP_027",
+      "power_cost": 1,
+      "power_summary": "付1金币，下场战斗开始时随机对两名敌军各造成3伤害。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_19",
+      "hero_name_zh": "老蓟皮",
+      "power_id": "TB_BaconShop_HP_017",
+      "power_cost": 1,
+      "power_summary": "付1金币，下场战斗开始时让己方随从死亡后能召出1/1鱼人。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_20",
+      "hero_name_zh": "普崔塞德教授",
+      "power_id": "TB_BaconShop_HP_018",
+      "power_cost": 1,
+      "power_summary": "付1金币，下场战斗开始时己方最左随从增加10攻击。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_21",
+      "hero_name_zh": "伟大的阿卡扎曼扎拉克",
+      "power_id": "TB_BaconShop_HP_020",
+      "power_cost": 2,
+      "power_summary": "付2金币，从奥秘候选中发现一张并挂到己方战场。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_22",
+      "hero_name_zh": "巫妖王",
+      "power_id": "TB_BaconShop_HP_024",
+      "power_cost": 1,
+      "power_summary": "付1金币，下场战斗开始时己方最右随从得到复生。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_23",
+      "hero_name_zh": "沙德沃克",
+      "power_id": "TB_BaconShop_HP_022",
+      "power_cost": 2,
+      "power_summary": "付2金币，本轮下一次己方战吼结算两次。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_25",
+      "hero_name_zh": "巫妖巴兹亚尔",
+      "power_id": "TB_BaconShop_HP_049",
+      "power_cost": null,
+      "power_summary": "以损失3点英雄生命换一枚可使用铸币。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_27",
+      "hero_name_zh": "辛达苟萨",
+      "power_id": "TB_BaconShop_HP_014",
+      "power_cost": null,
+      "power_summary": "被动：每轮结束时己方已冻结商店随从各增加1攻1生。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "officially_added_2019_11_19_not_launch",
+      "eligibility_evidence": [
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_28",
+      "hero_name_zh": "永恒者托奇",
+      "power_id": "TB_BaconShop_HP_028",
+      "power_cost": 1,
+      "power_summary": "付1金币，刷新商店且最后一格出现更高等级随从。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_30",
+      "hero_name_zh": "奈法利安",
+      "power_id": "TB_BaconShop_HP_043",
+      "power_cost": 1,
+      "power_summary": "付1金币，下场战斗开始时对全体敌军随从各造成1伤害。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_31",
+      "hero_name_zh": "调酒机器人",
+      "power_id": "TB_BaconShop_HP_009",
+      "power_cost": null,
+      "power_summary": "被动：酒馆升级价格减1金币。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_33",
+      "hero_name_zh": "馆长",
+      "power_id": "TB_BaconShop_HP_033",
+      "power_cost": null,
+      "power_summary": "被动：开局有两名1/1全种族融合怪；具体上场区位需复核。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_34",
+      "hero_name_zh": "帕奇维克",
+      "power_id": "TB_BaconShop_HP_035",
+      "power_cost": null,
+      "power_summary": "被动：开局生命为60，而常规英雄为40。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_35",
+      "hero_name_zh": "尤格-萨隆",
+      "power_id": "TB_BaconShop_HP_039",
+      "power_cost": 2,
+      "power_summary": "付2金币，随机雇用一名商店随从并让其增加1攻1生。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_36",
+      "hero_name_zh": "舞者达瑞尔",
+      "power_id": "TB_BaconShop_HP_042",
+      "power_cost": null,
+      "power_summary": "被动：每卖一名随从，商店中随机两名候选各增加1攻1生。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_37",
+      "hero_name_zh": "加拉克苏斯大王",
+      "power_id": "TB_BaconShop_HP_036",
+      "power_cost": 3,
+      "power_summary": "付3金币，己方恶魔各增加1攻1生。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_38",
+      "hero_name_zh": "穆克拉",
+      "power_id": "TB_BaconShop_HP_038",
+      "power_cost": null,
+      "power_summary": "被动：出售野兽后，获得一张香蕉强化牌。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_39",
+      "hero_name_zh": "疯狂金字塔",
+      "power_id": "TB_BaconShop_HP_040",
+      "power_cost": 1,
+      "power_summary": "付1金币，随机一名己方随从增加2生命。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "inferred_launch_24",
+      "eligibility_evidence": [
+        "H01",
+        "H04",
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_40",
+      "hero_name_zh": "芬利·莫格顿爵士",
+      "power_id": "TB_BaconShop_HP_045",
+      "power_cost": 1,
+      "power_summary": "付1金币，随机一名己方随从增加1攻1生；卖随从后可再次使用。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "officially_added_2019_11_19_not_launch",
+      "eligibility_evidence": [
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_42",
+      "hero_name_zh": "伊莉斯·逐星",
+      "power_id": "TB_BaconShop_HP_047",
+      "power_cost": null,
+      "power_summary": "被动：提升酒馆等级时获得一张人才地图。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "officially_added_2019_11_19_not_launch",
+      "eligibility_evidence": [
+        "H06"
+      ]
+    },
+    {
+      "hero_id": "TB_BaconShop_HERO_43",
+      "hero_name_zh": "布莱恩·铜须",
+      "power_id": "TB_BaconShop_HP_048",
+      "power_cost": null,
+      "power_summary": "被动：打出战吼随从后，随机一名友军增加1攻1生。",
+      "client_status": "构建内资源存在；不等于当日上线可选",
+      "launch_eligibility": "officially_added_2019_11_19_not_launch",
+      "eligibility_evidence": [
+        "H06"
+      ]
+    }
+  ],
+  "roster_method": "H01首发24名；H04/H05构建内28个编号玩家英雄资源；H06明确四名于2019-11-19加入。28减四得到24人，仍是集合差推断，不是服务端开关直证。",
+  "roster_evidence": [
+    "H01",
+    "H04",
+    "H05",
+    "H06",
+    "H08"
+  ]
+}

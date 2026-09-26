@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "build": 35747,
+  "checked_date_beijing": "2026-09-26",
+  "client_source_url": "https://api.hearthstonejson.com/v1/35747/enUS/cards.json",
+  "client_sha256": "cd50550ce04b96c1ee9ab66c5825164830ba3ee18aa2dd1b69ced6b60eceb6ad",
+  "client_source_grade": "H05_build_35747_client_direct_same_extract_family_as_H04",
+  "candidate_source": "H09_community_simulator_ec2733704590c4de8c02ad7488d7fabe5a779506",
+  "candidate_grade": "community_array_only_not_original_server_eligibility",
+  "simulator_minion_info_sha256": "dad5b477e705ec2cf9da951a885312a047a427cdf6cc2cf931fc0e67c14a8b58",
+  "count_crosscheck": "H10_author_description_claim_12_only_no_IDs_or_build",
+  "historical_unknown": {
+    "live_candidate_eligibility": "unknown",
+    "live_draw_weights": "unknown",
+    "live_stock_policy": "unknown",
+    "golden_source_generated_form": "unknown",
+    "self_recursive_summon_chain": "unknown"
+  },
+  "pools": {
+    "legendary_candidates": [
+      {
+        "id": "EX1_062",
+        "name_zh": "老瞎眼",
+        "client_rarity": "LEGENDARY",
+        "attack": 2,
+        "health": 4,
+        "race": "MURLOC",
+        "client_mechanics": [
+          "CHARGE"
+        ],
+        "shop_tier": 2
+      },
+      {
+        "id": "BGS_029",
+        "name_zh": "百变泽鲁斯",
+        "client_rarity": "LEGENDARY",
+        "attack": 1,
+        "health": 1,
+        "race": "NONE",
+        "client_mechanics": [],
+        "shop_tier": 3
+      },
+      {
+        "id": "ICC_858",
+        "name_zh": "浴火者伯瓦尔",
+        "client_rarity": "LEGENDARY",
+        "attack": 1,
+        "health": 7,
+        "race": "NONE",
+        "client_mechanics": [
+          "DIVINE_SHIELD",
+          "TRIGGER_VISUAL"
+        ],
+        "shop_tier": 4
+      },
+      {
+        "id": "FP1_031",
+        "name_zh": "瑞文戴尔男爵",
+        "client_rarity": "LEGENDARY",
+        "attack": 1,
+        "health": 7,
+        "race": "NONE",
+        "client_mechanics": [
+          "AURA"
+        ],
+        "shop_tier": 5
+      },
+      {
+        "id": "LOE_077",
+        "name_zh": "布莱恩·铜须",
+        "client_rarity": "LEGENDARY",
+        "attack": 2,
+        "health": 4,
+        "race": "NONE",
+        "client_mechanics": [
+          "AURA"
+        ],
+        "shop_tier": 5
+      },
+      {
+        "id": "BGS_018",
+        "name_zh": "巨狼戈德林",
+        "client_rarity": "LEGENDARY",
+        "attack": 4,
+        "health": 4,
+        "race": "BEAST",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 5
+      },
+      {
+        "id": "GVG_021",
+        "name_zh": "玛尔加尼斯",
+        "client_rarity": "LEGENDARY",
+        "attack": 9,
+        "health": 7,
+        "race": "DEMON",
+        "client_mechanics": [
+          "AURA"
+        ],
+        "shop_tier": 5
+      },
+      {
+        "id": "OG_300",
+        "name_zh": "波戈蒙斯塔",
+        "client_rarity": "LEGENDARY",
+        "attack": 6,
+        "health": 7,
+        "race": "NONE",
+        "client_mechanics": [
+          "TRIGGER_VISUAL"
+        ],
+        "shop_tier": 5
+      },
+      {
+        "id": "GVG_113",
+        "name_zh": "死神4000型",
+        "client_rarity": "LEGENDARY",
+        "attack": 6,
+        "health": 9,
+        "race": "MECHANICAL",
+        "client_mechanics": [],
+        "shop_tier": 6
+      },
+      {
+        "id": "FP1_010",
+        "name_zh": "迈克斯纳",
+        "client_rarity": "LEGENDARY",
+        "attack": 2,
+        "health": 8,
+        "race": "BEAST",
+        "client_mechanics": [
+          "POISONOUS"
+        ],
+        "shop_tier": 6
+      },
+      {
+        "id": "BGS_006",
+        "name_zh": "斯尼德的伐木机",
+        "client_rarity": "LEGENDARY",
+        "attack": 5,
+        "health": 7,
+        "race": "MECHANICAL",
+        "client_mechanics": [
+          "DEATHRATTLE"
+        ],
+        "shop_tier": 6
+      },
+      {
+        "id": "BGS_022",
+        "name_zh": "扎普·斯里维克",
+        "client_rarity": "LEGENDARY",
+        "attack": 7,
+        "health": 10,
+        "race": "NONE",
+        "client_mechanics": [
+          "WINDFURY"
+        ],
+        "shop_tier": 6
+      }
+    ]
+  }
+}

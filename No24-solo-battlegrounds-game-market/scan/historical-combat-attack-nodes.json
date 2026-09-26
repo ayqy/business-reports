@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "unverified": true,
+  "historical_unknown": {
+    "taunt_vs_forced_lowest_attack": "unknown",
+    "equal_lowest_attack_choice_and_weight": "unknown",
+    "second_strike_and_same_tick_trigger_priority": "unknown",
+    "golden_zapp_launch_build_entity_and_stats": "unknown",
+    "overkill_vs_deathrattle_and_listener_order": "unknown",
+    "overkill_source_dies_same_strike": "unknown",
+    "attack_kill_growth_source_dies_same_strike": "unknown",
+    "ironhide_token_generation_link": "unknown"
+  },
+  "nodes": [
+    {
+      "normal_id": "BGS_022",
+      "family": "windfury_lowest_attack",
+      "target_selector": "enemy_lowest_current_attack",
+      "normal": {"strikes_per_turn": 2},
+      "golden": {"strikes_per_turn": 2},
+      "normal_cardface_grade": "H04_client_direct",
+      "golden_cardface_grade": "H04_stats_triple_inferred_H16_windfury_retrospective",
+      "execution_grade": "reference_only",
+      "taunt_conflict_policy": "reject_unverified",
+      "equal_lowest_policy": "require_reference_injected_choice",
+      "version_boundary": "16.2 changes golden Zapp from Windfury to Mega-Windfury; that later rule is excluded from build 35747"
+    },
+    {
+      "normal_id": "TRL_232",
+      "family": "overkill_summon",
+      "trigger": "self_attack_effective_damage_gt_primary_target_health_before",
+      "destination": "friendly",
+      "normal": {"count": 1},
+      "golden": {"count": 1},
+      "tokens": {
+        "normal": {"id": "TRL_232t", "attack": 5, "health": 5,
+                   "race": "BEAST", "keywords": [], "premium": false},
+        "golden": {"id": "TB_BaconUps_051t", "attack": 10, "health": 10,
+                   "race": "BEAST", "keywords": [], "premium": true}
+      },
+      "cardface_grade": "H04_client_direct",
+      "token_link_grade": "inference_from_client_name_stats_id",
+      "execution_grade": "reference_only",
+      "dying_attacker_policy": "reject_unknown"
+    },
+    {
+      "normal_id": "OG_300",
+      "family": "attack_kill_growth",
+      "trigger": "self_attack_killed_primary_target",
+      "normal": {"attack": 2, "health": 2},
+      "golden": {"attack": 4, "health": 4},
+      "cardface_grade": "H04_client_direct",
+      "execution_grade": "reference_only",
+      "dying_attacker_policy": "reject_unknown"
+    }
+  ]
+}

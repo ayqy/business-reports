@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "mode": "reference_2019_launch_week",
+  "build": 35747,
+  "unverified": true,
+  "source": {
+    "card_faces": "H04 build-35747 CardDefs.xml; historical-random-effect-shells.json",
+    "client_candidate_tags": "historical-combat-random-deathrattle-candidates.json; H05 build-35747 cards.json",
+    "reference_pool": "H09 third-party simulator ec2733704590c4de8c02ad7488d7fabe5a779506; historical-community-simulator-pools.json"
+  },
+  "historical_unknown": {
+    "live_candidate_eligibility": "unknown",
+    "live_draw_weights": "unknown",
+    "live_stock_policy": "unknown",
+    "golden_source_generated_form": "unknown",
+    "same_batch_random_order": "unknown",
+    "baron_random_order": "unknown",
+    "khadgar_random_order": "unknown",
+    "generated_recursive_deathrattle_chain": "unknown"
+  },
+  "reference_scope": {
+    "pool": "H09's 22-item array is accepted only with a reference_injected index, never as original-server eligibility",
+    "supported_candidates": "only OG_256 and BGS_018 execute; their normal-form team-buff deathrattles are already compiled in the bounded combat state",
+    "form": "ordinary candidate entities are generated even by a golden source; this is a reference choice",
+    "position": "insert sequentially at the dead source's former index, with a seven-unit side cap",
+    "repeats": "one surviving Baron repeats the source deathrattle two or three times; Khadgar combinations reject",
+    "same_batch": "two compiled random-summon sources dying together reject atomically"
+  },
+  "nodes": [
+    {
+      "normal_id": "BGS_008",
+      "golden_id": "TB_BaconUps_057",
+      "name_zh": "阴森巨蟒",
+      "tier": 6,
+      "trigger": "source_died",
+      "family": "summon_deathrattle",
+      "candidate_source": "deathrattle_candidates",
+      "normal": {"attempts": 2},
+      "golden": {"attempts": 4},
+      "reference_supported_ids": ["OG_256", "BGS_018"],
+      "cardface_grade": "H04_client_direct",
+      "candidate_grade": "H09_community_reference_only",
+      "execution_grade": "reference_only"
+    }
+  ]
+}
